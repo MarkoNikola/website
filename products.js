@@ -188,7 +188,7 @@ const PRODUCTS = [
   },
   
   {
-    group: 'Grijanje, Solarni sustavi',
+    group: 'grijanje',
     cat:   'cirkulacijske-pumpe',
     brand: 'IBO',
     name:  'AMG SOLAR 25-80/180',
@@ -638,7 +638,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'ALAT ZA SAVIJANJE CIJEVI',
     desc:  'Ovaj je alat namijenjen isključivo za precizno, hladno savijanje mekanih bakrenih cijevi za klima uređaje, bez oštećenja ili deformacija. Omogućuje savijanje cijevi do maksimalnog kuta od 90°. Minimalni radijus zakrivljenosti iznosi 2,5 puta promjer cijevi (2,5 x Ø), što sprječava spljoštavanje, gužvanje ili pucanje stijenki cijevi prilikom rada.',
@@ -654,7 +654,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'SPREJ PJENASTI ZA ČIŠĆENJE KLIMA UREĐAJA',
     desc:  'Ovaj proizvod je namjenski pjenasti sprej za čišćenje i higijenizaciju unutarnjih jedinica klima uređaja (isparivača i filtera).',
@@ -665,7 +665,7 @@ const PRODUCTS = [
   },
    {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'CLEAN-L TEKUĆINA ZA DEZINFEKCIJU KLIMA UREĐAJA',
     desc:  'Proizvod je specijalna tekućina za uklanjanje kamenca i pranje, razvijena posebno za čišćenje lamela na isparivačima i kondenzatorima unutarnjih i vanjskih jedinica. Uništava naslage kamenca, tvrdokornu prljavštinu i bakterije koje se razvijaju unutar ovih sklopova.',
@@ -675,7 +675,7 @@ const PRODUCTS = [
   },
 {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'SANIX SPREJ ZA DEZINFEKCIJU KLIMA UREĐAJA',
     desc:  'Glavna namjena ove linije je uništavanje bakterijske flore i neutralizacija neugodnih mirisa koji se razvijaju unutar unutarnjih jedinica klima uređaja uslijed nakupljanja vlage. Tekući sprej namijenjen za izravno prskanje po filterima i izmjenjivaču topline unutarnje jedinice.',
@@ -684,7 +684,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'SANIX TABLETE ZA DEZINFEKCIJU KLIMA UREĐAJA',
     desc:  'Ove su tablete posebno dizajnirane za tretiranje stajaće vode u odvodu kondenzata. Sprječavaju nastanak algi, kamenca i popratnih mirisa. Primjenjuju se tako da se jedna tableta mjesečno ubaci izravno u ugradbenu kadicu za skupljanje kondenzata. Posudica sadrži 33 tableta.',
@@ -693,7 +693,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'MANOMETRI ZA KLIMA UREĐAJE',
     desc:  'Profesionalni manometarski set namijenjen punjenju, pražnjenju i testiranju klimatizacijskih i rashladnih sustava.',
@@ -705,7 +705,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'SET ZA SAVIJANJE CU CIJEVI ZA KLIMA UREĐAJE',
     desc:  'Iznimno praktično i fleksibilno rješenje za hladno oblikovanje bakrenih cijevi, namijenjeno prvenstveno instalaterima klimatizacijskih i rashladnih sustava. Set se sastoji od 4 opruge za savijanje cijevi u rasponu od Ø 1/4",Ø 3/8", Ø 1/2", Ø 5/8" ',
@@ -716,7 +716,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'ALAT ZA PERTLANJE ',
     desc:  'FLA-TOP 45°, komplet s alatom za frikcijsko proširenje cijevi za kutove od 45°, rezačem cijevi i alatom za uklanjanje neravnina s cijevi. Komplet uključuje: steznu šipku i ekscentrični čelični konus za prirubnicu te vilicu s klinom za centriranje i indikatorom položaja. Okretni unutarnji-vanjski odstranjivač srha s cijevi, Ø 50 mm. Rezač cijevi, 5 do 28 mm. Isporučuje se u praktičnoj plastičnoj kutiji.',
@@ -729,7 +729,7 @@ const PRODUCTS = [
   },
   {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'PUMPA ZA KONDENZAT',
     desc:  'Ovaj uređaj služi za prisilno izbacivanje kondenzata iz unutarnjih jedinica klima uređaja u situacijama kada nije moguće izvesti prirodni pad. Može podići vodu s dubine do 2 metra, dok njezina maksimalna visina potiska i ukupna duljina odvodne linije iznose do 12 metara.',
@@ -744,7 +744,7 @@ const PRODUCTS = [
   },
 {
     group: 'hladenje',
-    cat:   'prateci-materijal-hladenje',
+    cat:   'prateci-materijal',
     brand: 'TECNOGAS',
     name:  'MIRISNI SPREJ ZA DEZINFEKCIJU KLIMA UREĐAJA',
     desc:  'Sanet dezinfekcijski sprej idealan je za uklanjanje neugodnih mirisa uzrokovanih plijesni i bakterijskom florom koja može biti prisutna unutar klima uređaja. Dezinfekcijsko i osvježavajuće. Dostupno u mirisima Ocean Blue i Papaya.',
@@ -1774,7 +1774,7 @@ const PRODUCTS = [
   // ── PLIN › PLINSKI PROIZVODI ──────────────────────────────────
   {
     group: 'plin',
-    cat:   'regulatoiri',
+    cat:   'regulatori',
     brand: 'CAVAGNA GROUP',
     name:  'PLIN REGULATOR 2. STUPANJ 10kg/h',
     desc:  'Ovi regulatori se koriste u instalacijama s dvostupanjskom regulacijom, moraju se montirati kao drugi stupanj, nizvodno od regulatora prvog stupnja.',
@@ -1790,7 +1790,7 @@ const PRODUCTS = [
   },
   {
     group: 'plin',
-    cat:   'regulatoiri',
+    cat:   'regulatori',
     brand: 'CAVAGNA GROUP',
     name:  'PLIN REGULATOR 1. STUPANJ 20 - 40kg/h',
     desc:  'Regulatori visokog tlaka obično smanjuju tlak u spremniku na srednji tlak koji koristi drugi regulator.',
