@@ -192,6 +192,16 @@ const LANG = {
     'promo.hp.cat':'Dizalice topline',
     'slider.heating.title':'KLIMA UREĐAJI',
 
+    // MISSING KEYS
+    'about.tagline.start':'Od male radnje do','about.tagline.end':'vodećeg distributera',
+    'about.brands.we':'Brendovi kojima','about.brands.trust':'vjerujemo',
+    'about.partner.badge':'Partner',
+    'about.values.why1':'Zašto kupci','about.values.why2':'biraju',
+    'hero.kpi.brands.lbl2':'u ponudi',
+    'address.street':'Potpolje 36,','address.city':'88260 Čitluk,',
+    'shop.filter.title':'Filtriraj po kategoriji',
+    'shop.empty.desc':'Nema proizvoda za odabrani filtar.',
+
   },
 
   it: {
@@ -381,6 +391,16 @@ const LANG = {
     'promo.fc.cat':'Fancoil','promo.fc.desc':'Fancoil idronico INNOVAtivo, ultra sottile ed efficiente.',
     'promo.hp.cat':'Pompe di calore',
     'slider.heating.title':'CONDIZIONATORI',
+
+    // MISSING KEYS
+    'about.tagline.start':'Da piccolo negozio a','about.tagline.end':'distributore leader',
+    'about.brands.we':'Marchi di cui','about.brands.trust':'ci fidiamo',
+    'about.partner.badge':'Partner',
+    'about.values.why1':'Perché i clienti','about.values.why2':'scelgono',
+    'hero.kpi.brands.lbl2':'disponibili',
+    'address.street':'Potpolje 36,','address.city':'88260 Čitluk,',
+    'shop.filter.title':'Filtra per categoria',
+    'shop.empty.desc':'Nessun prodotto per il filtro selezionato.',
 
   }
 };
