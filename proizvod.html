@@ -420,7 +420,7 @@ function selectVariant(variant, btn) {
   document.getElementById('productCat').textContent = CAT_LABELS[product.cat] || product.cat;
   document.getElementById('productBrand').textContent = product.brand || '';
   document.getElementById('productName').textContent = product.name;
-  document.getElementById('productDesc').textContent = product.desc || '';
+  document.getElementById('productDesc').textContent = (typeof getLang==='function'&&getLang()==='it'&&product.desc_it)||product.desc||'';
 
   // ── Optional brand logo ─────────────────────────────────────
   if (product.brandLogo) {
@@ -521,6 +521,13 @@ function selectVariant(variant, btn) {
 document.querySelectorAll('.mob-menu a').forEach(a =>
   a.addEventListener('click', () => document.querySelector('.mob-menu').classList.remove('open'))
 );
+
+// Re-render desc when language is toggled
+function updateProductDesc() {
+  if (!currentProduct) return;
+  document.getElementById('productDesc').textContent =
+    (typeof getLang==='function'&&getLang()==='it'&&currentProduct.desc_it)||currentProduct.desc||'';
+}
 </script>
   <script src="lang.js?v=2"></script>
 </body>

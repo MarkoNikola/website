@@ -110,6 +110,7 @@ const PRODUCTS = [
     brand: 'Termopan',
     name:  'RADIJATOR PLOČASTI TERMOPAN - KOMPAKT K-22',
     desc:  'Panelni radijatori Termopan nude kombinaciju vrhunskog kvaliteta, performansi i dizajna, zahvaljujući najsavremenijoj i najmodernijoj tehnologiji. Dizajn pruža potpunu fleksibilnost ugradnje.',
+    desc_it: 'I radiatori a pannello Termopan offrono una combinazione di qualità superiore, prestazioni e design, grazie alla tecnologia più moderna e avanzata. Il design garantisce la massima flessibilità di installazione.',
     code:  'K-22',
     img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.jpg',
      variants: [
@@ -130,6 +131,7 @@ const PRODUCTS = [
     brand: 'Termopan',
     name:  'RADIJATOR PLOČASTI TERMOPAN - VENTILSKI VK - K-22',
     desc:  'Panelni radijatori Termopan nude kombinaciju vrhunskog kvaliteta, performansi i dizajna, zahvaljujući najsavremenijoj i najmodernijoj tehnologiji. Dizajn pruža potpunu fleksibilnost ugradnje.',
+    desc_it: 'I radiatori a pannello Termopan offrono una combinazione di qualità superiore, prestazioni e design, grazie alla tecnologia più moderna e avanzata. Il design garantisce la massima flessibilità di installazione.',
     code:  'VK-K-22',
     img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.jpg',
     variants: [
@@ -149,6 +151,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'OHI PRO CIRKULACIJSKA PUMPA',
     desc:  'IBO OHI PRO predstavlja seriju klasičnih (trobrzinskih) cirkulacijskih pumpi s produljenim vijekom trajanja, namijenjenih sustavima centralnog grijanja, klimatizacije te cirkulacije potrošne tople vode.',
+    desc_it: 'IBO OHI PRO è una serie di pompe di circolazione classiche (a 3 velocità) con una lunga durata, destinate ai sistemi di riscaldamento centralizzato, climatizzazione e circolazione di acqua calda sanitaria.',
     code:  'OHI-PRO',
     img: 'images/Grijanje/Cirk. pumpe/IBO OHI PRO.jpg',
     variants: [
@@ -163,6 +166,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'MAGI 2 CIRKULACIJSKA PUMPA',
     desc:  'IBO MAGI 2 je napredna, energetski štedna cirkulacijska pumpa namijenjena za kućnu upotrebu. Opremljen modernim motorom s trajnim magnetom i regulatorom diferencijalnog tlaka, automatski prilagođava svoje performanse trenutnim hidrauličkim potrebama sustava.',
+    desc_it: 'IBO MAGI 2 è una pompa di circolazione avanzata e a risparmio energetico per uso domestico. Dotata di un moderno motore a magneti permanenti e di un regolatore di pressione differenziale, adatta automaticamente le proprie prestazioni alle esigenze idrauliche del sistema.',
     code:  'MAGI-2',
     img: 'images/Grijanje/Cirk. pumpe/IBO MAGI 2.png',
     variants: [
@@ -179,6 +183,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'MAGI H ELEKTRONSKA CIRKULACIJSKA PUMPA',
     desc:  'IBO MAGI H je visokoučinkovita, elektronička cirkulacijska pumpa namijenjena za sustave centralnog grijanja, podnog grijanja, solarne sustave te klimatizaciju.',
+    desc_it: 'IBO MAGI H è una pompa di circolazione elettronica ad alta efficienza, destinata ai sistemi di riscaldamento centralizzato, riscaldamento a pavimento, impianti solari e climatizzazione.',
     code:  'MAGI-H',
     img: 'images/Grijanje/Cirk. pumpe/IBO MAGI H.jpg',
     variants: [
@@ -193,6 +198,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'AMG SOLAR 25-80/180',
     desc:  'IBO AMG Solar 25-80/180 je visokoučinkovita, energetski štedljiva elektronička cirkulacijska pumpa posebno optimizirana za rad u solarnim sustavima i sustavima centralnog grijanja.',
+    desc_it: 'IBO AMG Solar 25-80/180 è una pompa di circolazione elettronica ad alta efficienza e a risparmio energetico, appositamente ottimizzata per impianti solari e sistemi di riscaldamento centralizzato.',
     code:  'AMG-SOLAR',
     img: 'images/Grijanje/Cirk. pumpe/IBO AMG SOLAR.jpg',
   },
@@ -202,6 +208,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'EPRO 151 PLUS',
     desc:  'IBO EPRO 15-15 PLUS je kompaktna, iznimno energetski štedljiva elektronička cirkulacijska pumpa namijenjena isključivo za cirkulaciju tople sanitarne vode (P.T.V. / C.W.U.) u kućanstvima.',
+    desc_it: 'IBO EPRO 15-15 PLUS è una pompa di circolazione elettronica compatta ed estremamente efficiente, destinata esclusivamente alla circolazione di acqua calda sanitaria nelle abitazioni.',
     code:  'EPRO-15-15-PLUS',
     img: 'images/Grijanje/Cirk. pumpe/IBO EPRO 15-15 PLUS.jpg',
   },
@@ -211,6 +218,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'OHI BRONZE',
     desc:  'IBO OHI BRONZE je klasična trobrzinska cirkulacijska pumpa s kućištem od bronce (oznaka BR), namijenjena prvenstveno za cirkulaciju potrošne tople vode (P.T.V.) u stambenim objektima.',
+    desc_it: 'IBO OHI BRONZE è una pompa di circolazione classica a 3 velocità con corpo in bronzo (sigla BR), destinata principalmente alla circolazione di acqua calda sanitaria negli edifici residenziali.',
     code:  'OHI-BR',
     img: 'images/Grijanje/Cirk. pumpe/OHI BR.jpg',
     variants: [
@@ -224,6 +232,7 @@ const PRODUCTS = [
     brand: 'IBO',
     name:  'W15 IH 10',
     desc:  'je kompaktna površinska automatska pumpa za povećanje pritiska vode u hidrauličkim instalacijama.',
+    desc_it: 'È una pompa automatica di superficie compatta per l\'aumento della pressione dell\'acqua negli impianti idraulici.',
     img: 'images/Grijanje/Cirk. pumpe/W15 IH 10.jpg',
   },
 
@@ -246,6 +255,7 @@ const PRODUCTS = [
     brand: 'AUSTRIA EMAIL',
     name:  'SOLARNI SPREMNIK HT ERMR 10 bar - 2 IZMJENJIVAČA',
     desc:  'HT ERMR označava seriju visokokvalitetnih solarnih stojećih bojlera (spremnika tople vode). Ovi uređaji služe za indirektno zagrijavanje i skladištenje potrošne tople vode pomoću dva ugrađena izmjenjivača topline.',
+    desc_it: 'HT ERMR indica una serie di boiler solari verticali di alta qualità (serbatoi di acqua calda). Questi dispositivi servono per il riscaldamento indiretto e l\'accumulo di acqua calda sanitaria tramite due scambiatori di calore integrati.',
     code:  'AE-ERMR',
     img: 'images/Grijanje/SPREMNICI/AE ERMR.webp',
     variants: [ 
@@ -260,6 +270,7 @@ const PRODUCTS = [
     brand: 'AUSTRIA EMAIL',
     name:  'SOLARNI SPREMNIK TSA 10 bar - 2 IZMJENJIVAČA',
     desc:  'Spremnik solarni Austria Email TSA predstavlja kombinirani solarni bojler od 10 bara s dva ugrađena izmjenjivača topline, posebno optimiziran za kućne sustave pripreme tople sanitarne vode.',
+    desc_it: 'Il serbatoio solare Austria Email TSA è un boiler solare combinato da 10 bar con due scambiatori di calore integrati, appositamente ottimizzato per i sistemi domestici di produzione di acqua calda sanitaria.',
     code:  'AE-TSA-02',
     img: 'images/Grijanje/SPREMNICI/ae tsa 2.jpg',
     variants: [
@@ -274,6 +285,7 @@ const PRODUCTS = [
     brand: 'TESY',
     name:  'SOLARNI SPREMNIK - 2 IZMJENJIVAČA',
     desc:  'Visokokvalitetni kombinirani spremnik tople vode s dva izmjenjivača topline. Proizvod potpisuje poznati europski proizvođač TESY. Najčešće se primjenjuje u modernim kućanstvima za povezivanje na bivalentne sustave grijanja, poput kombinacije solarnih kolektora i plinskog kotla ili kotla na kruta goriva.',
+    desc_it: 'Serbatoio combinato di acqua calda di alta qualità con due scambiatori di calore. Prodotto dal noto produttore europeo TESY. Utilizzato principalmente nelle abitazioni moderne per il collegamento a sistemi di riscaldamento bivalenti, come la combinazione di collettori solari e caldaia a gas o a combustibili solidi.',
     code:  'TESY-EV7',
     img: 'images/Grijanje/SPREMNICI/TESY EV7.jpg',
     variants: [
@@ -286,6 +298,7 @@ const PRODUCTS = [
     brand: 'AUSTRIA EMAIL',
     name:  'SPREMNIK DIZALICE TOPLINE - 1 IZMJENJIVAČ',
     desc:  'Austria Email TSA HP predstavlja najnoviju seriju modernih spremnika tople sanitarne vode specijaliziranih za rad s dizalicama topline. HP u nazivu označava Heat Pump (dizalica topline), a glavna odlika ove serije je jedan integrirani izmjenjivač topline iznimno velike površine koji omogućuje visoku učinkovitost prijenosa energije pri niskim radnim temperaturama.',
+    desc_it: 'Austria Email TSA HP rappresenta la più recente serie di serbatoi di acqua calda sanitaria specializzati per l\'uso con pompe di calore. HP nel nome indica Heat Pump (pompa di calore), e la caratteristica principale è un unico scambiatore di calore integrato con superficie molto ampia che garantisce un\'alta efficienza di trasferimento energetico a basse temperature di esercizio.',
     code:  'AE-TSA-HP',
     img: 'images/Grijanje/SPREMNICI/AE TSA.jpg',
     variants: [
@@ -300,6 +313,7 @@ const PRODUCTS = [
     brand: 'AUSTRIA EMAIL',
     name:  'SPREMNIK DIZALICE TOPLINE - 1 IZMJENJIVAČ',
     desc:  'Austria Email TSA 151 predstavlja monovalentni samostojeći spremnik tople vode s jednim izmjenjivačem topline i nazivnim radnim tlakom od 10 bara. ',
+    desc_it: 'Austria Email TSA 151 è un serbatoio monovalente di acqua calda con un unico scambiatore di calore e una pressione di esercizio nominale di 10 bar.',
     code:  'AE-TSA-151',
     img: 'images/Grijanje/SPREMNICI/ae tsa 2.jpg',
     variants: [
@@ -314,6 +328,7 @@ const PRODUCTS = [
     brand: 'THERMOFLUX',
     name:  'SPREMNIK DIZALICE TOPLINE INOX - 2 IZMJENJIVAČA',
     desc:  'Thermoflux STV 320 je visokokvalitetni inox spremnik tople sanitarne vode zapremine 320 litara. Ovaj model je specifično optimiziran za rad s modernim sustavima grijanja poput dizalica topline (toplotnih pumpi) i solarnih sustava.',
+    desc_it: 'Thermoflux STV 320 è un serbatoio in acciaio inox di alta qualità per acqua calda sanitaria da 320 litri, specificamente ottimizzato per l\'uso con moderni sistemi di riscaldamento come pompe di calore e impianti solari.',
     code:  'TF-STV-320',
     img: 'images/Grijanje/SPREMNICI/TF STV320.webp',
  },
@@ -324,6 +339,7 @@ const PRODUCTS = [
     brand: 'LG',
     name:  'THERMA V MONOBLOK',
     desc:  'LG Therma V je visokoučinkovita dizalica topline zrak-voda koja koristi naprednu invertersku tehnologiju za maksimalnu uštedu energije i stabilno grijanje čak i pri ekstremnim zimskim temperaturama. Zahvaljujući ekološkom plinu R32 i tihom radu, predstavlja idealno, dugoročno rješenje za podno grijanje, radijatore i pripremu potrošne tople vode u svakom modernom domu.',
+    desc_it: 'LG Therma V è una pompa di calore aria-acqua ad alta efficienza che utilizza la tecnologia inverter avanzata per il massimo risparmio energetico e un riscaldamento stabile anche nelle temperature invernali più rigide. Grazie al gas ecologico R32 e al funzionamento silenzioso, è la soluzione ideale e duratura per il riscaldamento a pavimento, radiatori e la produzione di acqua calda sanitaria.',
     code:  'LG THERMA V',
     featured: true,
     img: 'images/Grijanje/Dizalice topline/LG THERMA V/LG THERMA V.jpg',
@@ -346,6 +362,7 @@ const PRODUCTS = [
     brand: 'THERMOFLUX',
     name:  'THERMOFLUX MONOBLOK R410A',
     desc:  'THERMOFLUX MONOBLOK R410A  je serija inverterskih dizalica topline zrak-voda, prepoznatljiva po izvrsnom omjeru cijene i kvalitete te visokoj energetskoj učinkovitosti do A+++ razreda. Budući da se radi o monoblok izvedbi, cijeli rashladni krug smješten je unutar jedne vanjske jedinice.',
+    desc_it: 'THERMOFLUX MONOBLOK R410A è una serie di pompe di calore aria-acqua inverter, caratterizzata da un eccellente rapporto qualità-prezzo e un\'alta efficienza energetica fino alla classe A+++. Trattandosi di un monoblocco, l\'intero circuito frigorifero è alloggiato in un\'unica unità esterna.',
     code:  'TF-MONOBLOK-R410A',
     featured: true,
     img: 'images/Grijanje/Dizalice topline/THERMOFLUX/MONOBLOK R410A.webp',
@@ -368,6 +385,7 @@ const PRODUCTS = [
     brand: 'THERMOFLUX',
     name:  'THERMOFLUX MONOBLOK R32',
     desc:  'THERMOFLUX MONOBLOK R32   je inverterska dizalica topline zrak/voda namijenjena za grijanje, hlađenje i pripremu potrošne tople vode. Karakterizira je visoka energetska učinkovitost energetskog razreda A+++, ekološki prihvatljiviji plin R32 te napredna EVI tehnologija ubrizgavanja koja omogućuje stabilan rad na ekstremnim temperaturama.',
+    desc_it: 'THERMOFLUX MONOBLOK R32 è una pompa di calore inverter aria/acqua destinata al riscaldamento, raffreddamento e produzione di acqua calda sanitaria. Si distingue per l\'alta efficienza energetica di classe A+++, il gas R32 più ecologico e la tecnologia di iniezione EVI avanzata che garantisce un funzionamento stabile anche a temperature estreme.',
     code:  'TF-MONOBLOK-R32',
     featured: true,
     img: 'images/Grijanje/Dizalice topline/THERMOFLUX/MONOBLOK R32.webp',
@@ -391,6 +409,7 @@ const PRODUCTS = [
     brand: 'INNOVA',
     name:  'AirLeaf SL',
     desc:  'Innova AirLeaf SL je serija ultra tankih i dizajnerskih hidroničkih ventilokonvektora (fancoila) namijenjenih za grijanje, hlađenje i odvlaživanje prostora. Zbog svoje dubine od svega 129 mm i elegantnog izgleda sa skrivenim kućištem, idealan su izbor za moderne stambene prostore i savršeno se kombiniraju s niskotemperaturnim izvorima poput dizalica topline',
+    desc_it: 'Innova AirLeaf SL è una serie di fancoil idronici ultra sottili e di design, destinati al riscaldamento, raffreddamento e deumidificazione degli ambienti. Con una profondità di soli 129 mm e un aspetto elegante con il corpo nascosto, sono la scelta ideale per ambienti residenziali moderni e si abbinano perfettamente a sorgenti a bassa temperatura come le pompe di calore.',
     code:  'AirLeaf SL',
     featured: true,
     imgs: [ 'images/Grijanje/Fancoil/Innova AirLeaf SL.jpg', 
@@ -421,6 +440,7 @@ const PRODUCTS = [
     brand: 'CLIVET',
     name:  'Aura CFFAC',
     desc:  'Clivet Aura CFFAC je serija svestranih i elegantnih hidroničkih ventilokonvektora (fancoila) s klasičnim AC motorom s 3 brzine, namijenjenih za podnu (parapetnu) ili stropnu montažu. Za razliku od prethodno spomenutog Innova AirLeaf modela koji se fokusira na ultra-tanki profil (129 mm), Clivet Aura donosi robustan talijanski dizajn standardne dubine od 200 mm, vrhunski kapacitet grijanja i hlađenja te visoku fleksibilnost pri ugradnji.',
+    desc_it: 'Clivet Aura CFFAC è una serie di fancoil idronici versatili ed eleganti con motore AC classico a 3 velocità, destinati a installazione a pavimento (parapetto) o a soffitto. A differenza dell\'Innova AirLeaf che punta sul profilo ultra-sottile (129 mm), il Clivet Aura offre un robusto design italiano con profondità standard di 200 mm, prestazioni di riscaldamento e raffreddamento eccellenti e grande flessibilità di installazione.',
     code:  'Aura CFFAC',
     featured: true,
     imgs: [ 'images/Grijanje/Fancoil/Clivet Aura.jpg', 
@@ -453,6 +473,7 @@ const PRODUCTS = [
     brand: 'BPS Clima',
     name:  'BPS Clima FC-VM1',
     desc:  'BPS Clima FC-VM1 je elegantan i snažan ventilokonvektor s ukrasnim kućištem, namijenjen za vidljivu montažu nisko na zid ili na pod (parapetna ugradnja) FC-VM5 FC-VM4 FC-VM3 FC-VM2 FC-VM1 FC-OM1 FC-OM2 .... Predstavlja savršenu i energetski učinkovitu zamjenu za klasične radijatore u sustavima s dizalicama topline ili chillerima, pružajući vrhunsko grijanje i hlađenje prostora.',
+    desc_it: 'BPS Clima FC-VM1 è un fancoil elegante e potente con corpo decorativo, destinato all\'installazione a vista in basso sulla parete o a pavimento (installazione a parapetto). Rappresenta una sostituzione perfetta ed energeticamente efficiente dei classici radiatori nei sistemi con pompe di calore o chiller, garantendo riscaldamento e raffreddamento ottimali.',
     code:  'BPS-FC-VM1',
     featured: true,
     imgs: [ 'images/Grijanje/Fancoil/BPS VM1.jpg',
@@ -484,6 +505,7 @@ const PRODUCTS = [
   brand: 'FRAGMAT',
   name:  'RASTER',
   desc:  'STIROTERMAL DUO je vrlo kompaktna ploča koja omogućuje ravnomjerno opterećenje, sastoji se od tvrdog stiropora i tvrdo profilirane polistirenske folije. Ploče se međusobno čvrsto i vodonepropusno spajaju poprečno i uzdužno po principu >>čep u čep<<, stoga su prikladne za ugradnju ispod cementnog estriha kao i ispod samonivelirajućih estriha u prostorijama gdje je visina poda ograničena. Oblik čepova omogućuje vrlo čvrsto pričvršćivanje cijevi promjera od 14 do 18 mm na udaljenosti od najmanje 50 mm.',
+  desc_it: 'STIROTERMAL DUO è una piastra molto compatta a carico uniforme, composta da polistirolo duro e foglio di polistirene profilato. Le piastre si collegano tra loro in modo saldo ed ermetico trasversalmente e longitudinalmente con il principio "a bottone", adatte per l\'installazione sotto massetti in cemento e massetti autolivellanti dove l\'altezza del pavimento è limitata. La forma dei bottoni consente il fissaggio molto saldo di tubi da 14 a 18 mm di diametro a distanze minime di 50 mm.',
   code:  'RASTER',
   img:   'images/Grijanje/PODNO GRIJANJE/RASTER.png',
   variants: [
@@ -498,6 +520,7 @@ const PRODUCTS = [
   brand: 'Sa.Mi Plastic',
   name:  'CIJEV ZA PODNO GRIJANJE',
   desc:  'Petoslojne cijevi s integriranom EVOH barijerom u središnjem sloju pružaju vrhunsku fleksibilnost, stopostotnu zaštitu od prodora kisika i maksimalnu otpornost na oštećenja tijekom ugradnje podnog grijanja.',
+  desc_it: 'I tubi a cinque strati con barriera EVOH integrata nello strato centrale offrono la massima flessibilità, protezione al 100% dalla penetrazione di ossigeno e la massima resistenza ai danni durante la posa del riscaldamento a pavimento.',
   code:  'PODNO-GRIJANJE',
   img:   'images/Grijanje/PODNO GRIJANJE/CIJEVI.png',
   variants: [
@@ -510,6 +533,7 @@ const PRODUCTS = [
   brand: 'FERRO',
   name:  'RAZDJELNICI ZA PODNO GRIJANJE',
   desc:  'Razdjelnik za podno grijanje je "srce i mozak" cijelog sustava koji prima toplu vodu iz bojlera ili toplinske pumpe te je precizno raspoređuje po pojedinačnim cijevima u prostorijama.',
+  desc_it: 'Il collettore per riscaldamento a pavimento è il "cuore e cervello" dell\'intero sistema: riceve l\'acqua calda dalla caldaia o dalla pompa di calore e la distribuisce con precisione ai singoli tubi nei locali.',
   code:  'RAZDJELNICI',
   img:   'images/Grijanje/PODNO GRIJANJE/RAZDJELNICI.png',
   variants: [
@@ -536,6 +560,7 @@ const PRODUCTS = [
     brand: 'Sa.Mi Plastic',
     name:  'PEX-AL-PEX CIJEV ZA GRIJANJE-HLAĐENJE - BIJELA IZOLACIJA',
     desc:  'Pex-Al-Pex cijev je vrhunska višeslojna kompozitna cijev s tvorničkom bijelom izolacijom, koja zahvaljujući aluminijskoj barijeri i toplinskoj zaštiti pruža maksimalnu energetsku učinkovitost, sprječava kondenzaciju i osigurava dugotrajan rad u sustavima grijanja i hlađenja.',
+    desc_it: 'Il tubo Pex-Al-Pex è un tubo composito multistrato di qualità superiore con isolamento bianco di fabbrica, che grazie alla barriera in alluminio e alla protezione termica garantisce la massima efficienza energetica, previene la condensazione e assicura un funzionamento duraturo nei sistemi di riscaldamento e raffreddamento.',
     code:  'PEX-AL-PEX-GRIJANJE-HLADENJE',
     img: 'images/Grijanje/PEX-AL-PEX/PEX-AL-PEX GRIJANJE-HLAĐENJE.jpg',
     variants: [
@@ -549,6 +574,7 @@ const PRODUCTS = [
     brand: 'Sa.Mi Plastic',
     name:  'PEX-AL-PEX CIJEV ZA VODU - PLAVA IZOLACIJA',
     desc:  'PEX-Al-PEX je visokokvalitetna višeslojna cijev s tvorničkom plavom izolacijom, koja osigurava maksimalnu higijensku ispravnost, sprječava zagrijavanje i kondenzaciju hladne vode te jamči dugotrajnu sigurnost vodovodnih instalacija.',
+    desc_it: 'PEX-Al-PEX è un tubo multistrato di alta qualità con isolamento blu di fabbrica, che garantisce la massima igienicità, previene il riscaldamento e la condensazione dell\'acqua fredda e assicura la sicurezza duratura degli impianti idraulici.',
     code:  'PEX-AL-PEX-PLAVA',
     img: 'images/Grijanje/PEX-AL-PEX/pex-al-pex plava.jpg',
     variants: [
@@ -564,6 +590,7 @@ const PRODUCTS = [
     brand: 'Sa.Mi Plastic',
     name:  'PEX-AL-PEX CIJEV ZA VODU - BEZ IZOLACIJE',
     desc:  'SAMI višeslojnA neizoliranA cijev s kisikovom barijerom, dimenzija 16 x 2 mm, namijenjena za vodovodne sustave, grijanje i podno grijanje.',
+    desc_it: 'Tubo SAMI multistrato non isolato con barriera all\'ossigeno, dimensioni 16 x 2 mm, destinato a impianti idrici, riscaldamento e riscaldamento a pavimento.',
     code:  'PEX-AL-PEX-BEZ-IZOLACIJE',
     img: 'images/Grijanje/PEX-AL-PEX/SAMI 16 BEZ IZOLACIJE.jpg',
     variants: [

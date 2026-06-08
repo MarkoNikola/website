@@ -429,6 +429,7 @@ function setLang(lang) {
   localStorage.setItem('it_lang', lang);
   applyLang(lang);
   if (typeof filterCards === 'function') filterCards();
+  if (typeof updateProductDesc === 'function') updateProductDesc();
 }
 
 function getLang() {

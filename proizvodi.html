@@ -834,7 +834,7 @@ function filterCards() {
       <div class="card-body">
         <div class="card-brand">${p.brand}</div>
         <div class="card-name">${p.name}</div>
-        <div class="card-desc">${p.desc}</div>
+        <div class="card-desc">${(typeof getLang==='function'&&getLang()==='it'&&p.desc_it)||p.desc}</div>
       </div>
       <div class="card-ft">
         <span class="card-link">Pogledaj detalje</span>
