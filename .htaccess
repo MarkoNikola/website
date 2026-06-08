@@ -1,0 +1,14 @@
+Options -Indexes
+RewriteEngine On
+
+# Strip .html from URLs in the browser (canonical clean URLs)
+# /proizvod.html?id=foo  →  /proizvod?id=foo
+RewriteCond %{THE_REQUEST} \s/(.+?)\.html([?\s]) [NC]
+RewriteRule ^ /%1%2 [R=301,L,QSA]
+
+# Internally serve .html files when the extension is absent
+# /proizvod?id=foo  →  /proizvod.html?id=foo  (transparent rewrite)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^.]+)$ $1.html [L,QSA]
