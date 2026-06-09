@@ -24,8 +24,8 @@ const LANG = {
 
     // INDEX HERO
     'hero.badge':'S vama od 1996.',
-    'hero.word.sve':'Sve za','hero.word.heating':'grijanje',
-    'hero.word.and':'i','hero.word.cooling':'klimatizaciju',
+    'hero.word.sve':'Sve što vam treba za vaš','hero.word.heating':'savršen',
+    'hero.word.and':'','hero.word.cooling':'dom',
     'hero.sub':'Sva oprema za grijanje, hlađenje, ventilaciju i sanitariju.',
     'hero.btn.products':'Pogledaj proizvode','hero.btn.quote':'Zatražite ponudu',
     'hero.kpi.years':'Godina iskustva','hero.kpi.market':'Na tržištu od 1996.',
@@ -129,7 +129,7 @@ const LANG = {
     // ABOUT PAGE
     'about.title':'O nama',
     'about.sub':'Vaš pouzdani partner za grijanje, klimatizaciju i vodoinstalacije od 1996.',
-    'about.partner':'Vaš partner','about.for':'za','about.heating':'grijanje','about.cooling':'klimatizaciju',
+    'about.partner':'Sve što vam treba','about.for':'za vaš','about.heating':'savršen','about.cooling':'dom',
     'about.tagline':'Od male radnje do vodećeg distributera',
     'about.intro':'Počeli smo skromno, s jasnom vizijom — pružiti kvalitetnu opremu uz pravu stručnu podršku. Danas smo ovlašteni distributeri vodećih svjetskih brendova.',
     'about.stat.years':'Godina iskustva','about.stat.brands':'Brendova','about.stat.stock':'Artikala stalno',
@@ -180,7 +180,7 @@ const LANG = {
     'product.specs.title':'Tehnički podaci','product.variants':'Odaberite varijantu',
     'product.name.placeholder':'Naziv proizvoda','product.desc.placeholder':'Opis proizvoda...',
     // ALIASES (back-compat for older data-i18n tags)
-    'meta.title.index':'ITALTERM – Grijanje, Klimatizacija i Vodoinstalacije',
+    'meta.title.index':'ITALTERM – Sve što vam treba za vaš savršen dom',
     'meta.title.about':'ITALTERM – O nama','meta.title.contact':'ITALTERM – Kontakt',
     'about.hero.title':'O nama','about.hero.sub':'Vaš pouzdani partner za grijanje, klimatizaciju i vodoinstalacije od 1996.',
     'about.timeline.title':'Naša povijest','about.distributors.title':'Ovlašteni distributer',
@@ -227,8 +227,8 @@ const LANG = {
 
     // INDEX HERO
     'hero.badge':'Con voi dal 1996.',
-    'hero.word.sve':'Tutto per il','hero.word.heating':'riscaldamento',
-    'hero.word.and':'e la','hero.word.cooling':'climatizzazione',
+    'hero.word.sve':'Tutto ciò di cui avete bisogno','hero.word.heating':'per la vostra',
+    'hero.word.and':'','hero.word.cooling':'casa perfetta',
     'hero.sub':'Tutta l\'attrezzatura per riscaldamento, raffreddamento, ventilazione e sanitari.',
     'hero.btn.products':'Vedi prodotti','hero.btn.quote':'Richiedi offerta',
     'hero.kpi.years':'Anni di esperienza','hero.kpi.market':'Sul mercato dal 1996.',
@@ -332,7 +332,7 @@ const LANG = {
     // ABOUT PAGE
     'about.title':'Chi siamo',
     'about.sub':'Il vostro partner affidabile per riscaldamento, climatizzazione e idraulica dal 1996.',
-    'about.partner':'Il vostro partner','about.for':'per il','about.heating':'riscaldamento','about.cooling':'la climatizzazione',
+    'about.partner':'Tutto ciò di cui','about.for':'avete bisogno','about.heating':'per la vostra','about.cooling':'casa perfetta',
     'about.tagline':'Da piccolo negozio a distributore leader',
     'about.intro':'Abbiamo iniziato in modo modesto, con una visione chiara — fornire attrezzatura di qualità con la giusta assistenza tecnica. Oggi siamo distributori autorizzati dei principali marchi mondiali.',
     'about.stat.years':'Anni di esperienza','about.stat.brands':'Marchi','about.stat.stock':'Articoli sempre',
@@ -383,7 +383,7 @@ const LANG = {
     'product.specs.title':'Dati tecnici','product.variants':'Seleziona variante',
     'product.name.placeholder':'Nome prodotto','product.desc.placeholder':'Descrizione prodotto...',
     // ALIASES (back-compat for older data-i18n tags)
-    'meta.title.index':'ITALTERM – Riscaldamento, Climatizzazione e Idraulica','meta.title.about':'ITALTERM – Chi siamo','meta.title.contact':'ITALTERM – Contatti',
+    'meta.title.index':'ITALTERM – Tutto ciò di cui avete bisogno per la vostra casa perfetta','meta.title.about':'ITALTERM – Chi siamo','meta.title.contact':'ITALTERM – Contatti',
     'about.hero.title':'Chi siamo','about.hero.sub':'Il vostro partner affidabile per riscaldamento, climatizzazione e idraulica dal 1996.',
     'about.timeline.title':'La nostra storia','about.distributors.title':'Distributore autorizzato',
     'adv.delivery.title':'Consegna rapida','adv.rate':'Acquisto rateale',
