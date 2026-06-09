@@ -58,8 +58,10 @@ const LANG = {
 
     // OFFER / CATEGORIES
     'hero.offer.title':'Naša ponuda',
+    'hero.offer.tagline':'Cijeli svijet na jednom mjestu!',
     'hero.offer.h1':'Sve što vam treba za vaš','hero.offer.h2':' savršen dom',
     'hero.offer.sub':'Kliknite na kategoriju za pregled kompletnog asortimana ili odaberite specifičan proizvod izravno.',
+    'tag.drainage':'Kanalizacija',
     'cat.heating.title':'Grijanje',
     'cat.heating.desc':'Sustavi centralnog grijanja, dizalice topline i podno grijanje za svaki objekt',
     'cat.cooling.title':'Hlađenje','cat.cooling.desc.short':'Klima uređaji',
@@ -259,8 +261,10 @@ const LANG = {
 
     // OFFER / CATEGORIES
     'hero.offer.title':'La nostra offerta',
+    'hero.offer.tagline':'Il mondo intero in un unico posto!',
     'hero.offer.h1':'Tutto ciò che serve per la vostra','hero.offer.h2':' casa perfetta',
     'hero.offer.sub':'Cliccate su una categoria per vedere l\'assortimento completo o scegliete direttamente un prodotto specifico.',
+    'tag.drainage':'Fognatura',
     'cat.heating.title':'Riscaldamento',
     'cat.heating.desc':'Sistemi di riscaldamento centralizzato, pompe di calore e riscaldamento a pavimento per ogni edificio',
     'cat.cooling.title':'Raffreddamento','cat.cooling.desc.short':'Condizionatori d\'aria',
