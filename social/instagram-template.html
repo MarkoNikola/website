@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Carousel Template — ITALTERM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="vendor/html2canvas.min.js"></script>
+<style>
+:root{--blue:#1BA8D5;--blue-d:#1490b8;--red:#D42525;--red-d:#b31f1f;--dark:#0f1923;--dark2:#1a2d3d;--gray:#f4f6f8;--gray2:#e5e9ed;--gray3:#8898a8;--text:#1a2332;--text2:#4a5568;--preview:340px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--gray);color:var(--text);padding:36px 4%}
+
+/* ---- page chrome (not exported) ---- */
+.page-head{max-width:1200px;margin:0 auto 30px}
+.page-head h1{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.1rem;color:var(--dark);letter-spacing:-.01em}
+.page-head p{color:var(--text2);font-size:14.5px;margin-top:8px;max-width:720px;line-height:1.55}
+.page-head p b{color:var(--text)}
+.toolbar{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
+.tbtn{font-family:'Barlow Condensed',sans-serif;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:14px;border:none;border-radius:4px;padding:11px 22px;cursor:pointer;transition:background .15s,transform .1s}
+.tbtn:active{transform:scale(.97)}
+.tbtn-add{background:var(--blue);color:#fff}
+.tbtn-add:hover{background:var(--blue-d)}
+
+.slides-wrap{max-width:1200px;margin:0 auto;display:flex;flex-wrap:wrap;gap:34px}
+.slide-card{background:#fff;border:1px solid var(--gray2);border-radius:10px;padding:16px;box-shadow:0 2px 10px rgba(15,25,35,.05)}
+.slide-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:8px}
+.slide-tag{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray3)}
+.slide-btns{display:flex;gap:8px}
+.sbtn{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;border:none;border-radius:3px;padding:7px 13px;cursor:pointer}
+.sbtn-dl{background:var(--dark);color:#fff}
+.sbtn-dl:hover{background:var(--dark2)}
+.sbtn-del{background:transparent;color:var(--red);border:1.5px solid var(--red)}
+.sbtn-del:hover{background:var(--red);color:#fff}
+
+/* the frame is the true export-clip boundary, sized down on screen via zoom */
+.slide-frame{width:var(--preview);height:var(--preview);overflow:hidden;border-radius:4px;zoom:calc(var(--preview) / 1080);position:relative}
+.stage{width:1080px;height:1080px;position:relative;overflow:hidden;font-family:'DM Sans',sans-serif}
+
+/* ================= COVER SLIDE ================= */
+.stage.cover{background:linear-gradient(155deg,var(--dark) 0%,var(--dark2) 100%)}
+.cover .accent-bar{position:absolute;top:0;left:0;right:0;height:14px;background:var(--blue)}
+.cover .deco-circle{position:absolute;width:640px;height:640px;border-radius:50%;border:2px solid rgba(27,168,213,.18);right:-220px;bottom:-260px}
+.cover .deco-circle2{position:absolute;width:420px;height:420px;border-radius:50%;border:2px solid rgba(27,168,213,.12);right:-90px;bottom:-120px}
+.cover .cover-inner{position:absolute;top:0;left:0;right:0;bottom:0;padding:110px 90px 0 90px}
+.cover .eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:26px;outline:none}
+.cover .eyebrow::before{content:"";display:inline-block;width:26px;height:4px;background:var(--red);margin-right:14px;vertical-align:middle}
+.cover .headline{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:94px;line-height:.97;color:#fff;letter-spacing:-.01em;outline:none;max-width:880px}
+.cover .subhead{font-family:'DM Sans',sans-serif;font-weight:400;font-size:32px;line-height:1.45;color:rgba(255,255,255,.68);margin-top:34px;max-width:760px;outline:none}
+.cover .cover-footer{position:absolute;left:0;right:0;bottom:0;padding:0 90px 70px;display:flex;align-items:center;justify-content:space-between}
+.cover .logo-pill{background:#fff;border-radius:60px;padding:14px 26px;display:flex;align-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.cover .logo-pill img{height:44px;display:block}
+.cover .swipe{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;letter-spacing:.1em;text-transform:uppercase;color:#fff;display:flex;align-items:center;gap:12px}
+.cover .swipe svg{width:34px;height:34px}
+
+/* ================= CONTENT SLIDE ================= */
+.stage.content{background:#fff}
+.content .img-area{position:absolute;top:0;left:0;right:0;height:620px;background:var(--gray2) center/cover no-repeat;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.content .img-area .placeholder{text-align:center;color:var(--gray3);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:30px;letter-spacing:.03em;text-transform:uppercase;pointer-events:none}
+.content .img-area .placeholder span{display:block;font-family:'DM Sans',sans-serif;font-weight:400;font-size:18px;text-transform:none;letter-spacing:0;color:var(--gray3);margin-top:10px}
+.content .img-area.has-image .placeholder{display:none}
+.content .mini-logo{position:absolute;top:36px;left:36px;background:#fff;border-radius:40px;padding:10px 18px;box-shadow:0 4px 14px rgba(0,0,0,.18);z-index:2}
+.content .mini-logo img{height:26px;display:block}
+.content .page-badge{position:absolute;top:36px;right:36px;background:rgba(15,25,35,.78);color:#fff;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;letter-spacing:.04em;padding:9px 20px;border-radius:40px;z-index:2}
+.content .text-panel{position:absolute;left:0;right:0;bottom:0;top:582px;background:#fff;border-radius:30px 30px 0 0;box-shadow:0 -8px 24px rgba(15,25,35,.08);padding:64px 84px 0}
+.content .kicker{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:26px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);outline:none}
+.content .heading{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:58px;line-height:1.06;color:var(--dark);margin-top:16px;outline:none}
+.content .body-text{font-family:'DM Sans',sans-serif;font-weight:400;font-size:30px;line-height:1.5;color:var(--text2);margin-top:22px;outline:none}
+.file-input{display:none}
+
+.hint{max-width:1200px;margin:26px auto 0;font-size:13px;color:var(--gray3)}
+</style>
+</head>
+<body>
+
+<div class="page-head">
+  <h1>Instagram Carousel Template — ITALTERM</h1>
+  <p>Prvi slajd je <b>naslovnica</b> (headline za cijelu objavu). Svaki sljedeći slajd ima <b>sliku gore</b> i <b>tekst dolje</b>. Klikni izravno na bilo koji tekst da ga urediš, klikni na sivo područje slike da dodaš svoju fotografiju, zatim preuzmi svaki slajd kao PNG (1080×1080) i objavi kao carousel na Instagramu.</p>
+  <div class="toolbar">
+    <button class="tbtn tbtn-add" id="addSlideBtn">+ Dodaj slide</button>
+  </div>
+</div>
+
+<div class="slides-wrap" id="slidesWrap">
+
+  <!-- ========== COVER SLIDE ========== -->
+  <div class="slide-card" data-slide-type="cover">
+    <div class="slide-toolbar">
+      <span class="slide-tag">Slide 1 — Naslovnica</span>
+      <div class="slide-btns">
+        <button class="sbtn sbtn-dl" data-action="download">Preuzmi PNG</button>
+      </div>
+    </div>
+    <div class="slide-frame">
+      <div class="stage cover">
+        <div class="accent-bar"></div>
+        <div class="deco-circle"></div>
+        <div class="deco-circle2"></div>
+        <div class="cover-inner">
+          <div class="eyebrow" contenteditable="true" spellcheck="false">Savjeti Italterm</div>
+          <h1 class="headline" contenteditable="true" spellcheck="false">5 znakova da vam treba servis grijanja</h1>
+          <p class="subhead" contenteditable="true" spellcheck="false">Prije nego počne sezona grijanja, provjerite ovih 5 stvari kod kuće.</p>
+        </div>
+        <div class="cover-footer">
+          <div class="logo-pill"><img src="logo.jpg" alt="Italterm logo"></div>
+          <div class="swipe">Pogledaj više
+            <svg viewBox="0 0 24 24" fill="none" stroke="#1BA8D5" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTENT SLIDE TEMPLATE (first instance) ========== -->
+  <div class="slide-card" data-slide-type="content">
+    <div class="slide-toolbar">
+      <span class="slide-tag">Slide 2</span>
+      <div class="slide-btns">
+        <button class="sbtn sbtn-dl" data-action="download">Preuzmi PNG</button>
+        <button class="sbtn sbtn-del" data-action="remove">Ukloni</button>
+      </div>
+    </div>
+    <div class="slide-frame">
+      <div class="stage content">
+        <div class="img-area" data-role="img-area">
+          <div class="placeholder">Klikni za dodavanje slike<span>Preporučeno 1080×1080 px</span></div>
+          <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="mini-logo"><img src="logo.jpg" alt="Italterm logo"></div>
+        <div class="page-badge" data-role="badge">2/4</div>
+        <div class="text-panel">
+          <div class="kicker" contenteditable="true" spellcheck="false">Savjet 01</div>
+          <h2 class="heading" contenteditable="true" spellcheck="false">Provjerite tlak u sustavu</h2>
+          <p class="body-text" contenteditable="true" spellcheck="false">Idealan tlak je između 1 i 1.5 bara. Ako je niži, sustav neće grijati ravnomjerno.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CONTENT SLIDE (second instance) ========== -->
+  <div class="slide-card" data-slide-type="content">
+    <div class="slide-toolbar">
+      <span class="slide-tag">Slide 3</span>
+      <div class="slide-btns">
+        <button class="sbtn sbtn-dl" data-action="download">Preuzmi PNG</button>
+        <button class="sbtn sbtn-del" data-action="remove">Ukloni</button>
+      </div>
+    </div>
+    <div class="slide-frame">
+      <div class="stage content">
+        <div class="img-area" data-role="img-area">
+          <div class="placeholder">Klikni za dodavanje slike<span>Preporučeno 1080×1080 px</span></div>
+          <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="mini-logo"><img src="logo.jpg" alt="Italterm logo"></div>
+        <div class="page-badge" data-role="badge">3/4</div>
+        <div class="text-panel">
+          <div class="kicker" contenteditable="true" spellcheck="false">Savjet 02</div>
+          <h2 class="heading" contenteditable="true" spellcheck="false">Odzračite radijatore</h2>
+          <p class="body-text" contenteditable="true" spellcheck="false">Zrak u sustavu uzrokuje kuckanje i hladne dijelove radijatora. Odzračite ih prije zime.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CLOSING SLIDE (CTA) ========== -->
+  <div class="slide-card" data-slide-type="content">
+    <div class="slide-toolbar">
+      <span class="slide-tag">Slide 4 — Poziv na akciju</span>
+      <div class="slide-btns">
+        <button class="sbtn sbtn-dl" data-action="download">Preuzmi PNG</button>
+        <button class="sbtn sbtn-del" data-action="remove">Ukloni</button>
+      </div>
+    </div>
+    <div class="slide-frame">
+      <div class="stage content">
+        <div class="img-area" data-role="img-area">
+          <div class="placeholder">Klikni za dodavanje slike<span>Preporučeno 1080×1080 px</span></div>
+          <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="mini-logo"><img src="logo.jpg" alt="Italterm logo"></div>
+        <div class="page-badge" data-role="badge">4/4</div>
+        <div class="text-panel">
+          <div class="kicker" contenteditable="true" spellcheck="false">Trebate pomoć?</div>
+          <h2 class="heading" contenteditable="true" spellcheck="false">Javite nam se</h2>
+          <p class="body-text" contenteditable="true" spellcheck="false">Naš tim je tu za savjet ili servis. Kontaktirajte nas putem poveznice u bio-u.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<p class="hint">Datoteke slika koje dodaš ostaju samo u tvom pregledniku dok radiš — spremaju se tek kad preuzmeš PNG.</p>
+
+<template id="contentSlideTemplate">
+  <div class="slide-card" data-slide-type="content">
+    <div class="slide-toolbar">
+      <span class="slide-tag">Slide</span>
+      <div class="slide-btns">
+        <button class="sbtn sbtn-dl" data-action="download">Preuzmi PNG</button>
+        <button class="sbtn sbtn-del" data-action="remove">Ukloni</button>
+      </div>
+    </div>
+    <div class="slide-frame">
+      <div class="stage content">
+        <div class="img-area" data-role="img-area">
+          <div class="placeholder">Klikni za dodavanje slike<span>Preporučeno 1080×1080 px</span></div>
+          <input type="file" class="file-input" accept="image/*">
+        </div>
+        <div class="mini-logo"><img src="logo.jpg" alt="Italterm logo"></div>
+        <div class="page-badge" data-role="badge">?/?</div>
+        <div class="text-panel">
+          <div class="kicker" contenteditable="true" spellcheck="false">Savjet 0X</div>
+          <h2 class="heading" contenteditable="true" spellcheck="false">Naslov ovog slajda</h2>
+          <p class="body-text" contenteditable="true" spellcheck="false">Ovdje ide kratki opis, savjet ili detalj vezan uz sliku iznad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+(function(){
+  const wrap = document.getElementById('slidesWrap');
+
+  function renumber(){
+    const cards = Array.from(wrap.querySelectorAll('.slide-card'));
+    const total = cards.length;
+    cards.forEach((card, i) => {
+      const n = i + 1;
+      const tagEl = card.querySelector('.slide-tag');
+      const badgeEl = card.querySelector('[data-role="badge"]');
+      if (card.dataset.slideType === 'cover') {
+        tagEl.textContent = 'Slide ' + n + ' — Naslovnica';
+      } else {
+        tagEl.textContent = 'Slide ' + n;
+        if (badgeEl) badgeEl.textContent = n + '/' + total;
+      }
+    });
+  }
+
+  function wireImageArea(area){
+    const input = area.querySelector('.file-input');
+    area.addEventListener('click', () => input.click());
+    input.addEventListener('change', (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        area.style.backgroundImage = 'url("' + reader.result + '")';
+        area.classList.add('has-image');
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function wireCard(card){
+    const imgArea = card.querySelector('[data-role="img-area"]');
+    if (imgArea) wireImageArea(imgArea);
+
+    card.querySelectorAll('[data-action]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const action = btn.dataset.action;
+        if (action === 'download') downloadSlide(card);
+        if (action === 'remove') { card.remove(); renumber(); }
+      });
+    });
+  }
+
+  function downloadSlide(card){
+    const frame = card.querySelector('.slide-frame');
+    const btn = card.querySelector('[data-action="download"]');
+    const originalLabel = btn.textContent;
+    btn.textContent = 'Priprema…';
+    btn.disabled = true;
+    html2canvas(frame, {
+      backgroundColor: null,
+      useCORS: true,
+      onclone: (doc, el) => {
+        el.style.zoom = 1;
+        el.style.width = '1080px';
+        el.style.height = '1080px';
+      }
+    }).then(canvas => {
+      const link = document.createElement('a');
+      const tag = card.querySelector('.slide-tag').textContent.replace(/[^a-z0-9]+/gi, '-').toLowerCase();
+      link.download = 'instagram-' + tag + '.png';
+      link.href = canvas.toDataURL('image/png');
+      link.click();
+    }).finally(() => {
+      btn.textContent = originalLabel;
+      btn.disabled = false;
+    });
+  }
+
+  wrap.querySelectorAll('.slide-card').forEach(wireCard);
+  renumber();
+
+  document.getElementById('addSlideBtn').addEventListener('click', () => {
+    const tpl = document.getElementById('contentSlideTemplate');
+    const clone = tpl.content.firstElementChild.cloneNode(true);
+    wrap.appendChild(clone);
+    wireCard(clone);
+    renumber();
+  });
+})();
+</script>
+
+</body>
+</html>
