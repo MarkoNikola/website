@@ -384,6 +384,34 @@ const PRODUCTS = [
       
   ],
   },
+  {
+    group: 'grijanje',
+    cat:   'magnetni-separatori',
+    brand: 'TECNOGAS',
+    name:  'MAGNETNI SEPARATOR - MAGBLUE',
+    desc:  'Model HEAT PUMP je magnetni separator (odmuljivač) namijenjen posebno toplinskim pumpama, s priključcima 1", ispustom 3/4" i maksimalnim protokom od 3,5 m3/h. Radi pri tlaku do 12 bara i temperaturi do 120°C, uz uklonjivi magnet i mogućnost jednostavnog pražnjenja i čišćenja.',
+    code:  'MAGBLUE',
+    featured: true,
+    imgs:[
+      'images/Grijanje/Dizalice topline/POPRATNI ASORTIMAN/70047 - MAGNETNI SEPARATOR MAGBLUE.jpg',
+      'images/Grijanje/Dizalice topline/POPRATNI ASORTIMAN/70047 - MAGNETNI SEPARATOR MAGBLUE 2.jpg'
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'antivibranti',
+    brand: 'TECNOGAS',
+    name:  'ANTIVIBRANTI ZA DIZALICU TOPLINE / KLIMA UREĐAJ',
+    desc:  'Podni antivibracijski nosači TECNO-BLOCK namijenjeni su stabilnom i sigurnom postavljanju klima uređaja, toplinskih pumpi, odvlaživača i slične opreme, dostupni u više modela — 400 mm, 600 mm i 1000 mm, svaki s utorom od 11 mm. Izrađeni su od vulkanizirane gume otporne na UV zračenje (proizvedene recikliranjem otpadnih guma) i opremljeni antikorozivnim aluminijskim profilom, a isporučuju se s vijcima od nehrđajućeg čelika i libelom za pravilno postavljanje; radna temperatura od -40°C do +80°C.',
+    code:  'tecno-block',
+    featured: true,
+    img: 'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ANTIVIBRANTI/12113 - ANTIVIBRANTI.jpg',
+    variants:[
+      { label: '400 mm',  code: 'TECNO-BLOCK-400',  },
+      { label: '600 mm',  code: 'TECNO-BLOCK-600',  },
+      { label: '1000 mm', code: 'TECNO-BLOCK-1000', },
+    ],
+  },
   // ── GRIJANJE › FANCOIL ────────────────────────────────────────
   {
     group: 'grijanje',
@@ -634,6 +662,20 @@ const PRODUCTS = [
         { label: 'ø10' },
         { label: 'ø12' },
         { label: 'ø16' }
+    ],
+  },
+  {
+    group: 'hladenje',
+    cat:   'vaga-klima',
+    brand: 'TECNOGAS',
+    name:  'VAGA ZA KLIMA UREĐAJE 50 KG',
+    desc:  'Elektronička vaga model ANNA 50 programibilna je vaga nosivosti 50 kg, isporučuje se u prijenosnom koferu otpornom na udarce, a njena instrumentalna usporedba predstavlja obavezan uvjet za dobivanje i održavanje certifikacije tvrtke. Radna je preciznost ±0,05% uz razlučivost od 2 g, napaja se alkalnom baterijom od 9V (autonomija preko 80 sati), a komplet uključuje vagu, kofer, priručnik, pomoćnu bateriju i kuku.',
+    code:  'vaga-klima',
+    imgs: [
+      'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/VAGA/11484  -VAGA ZA KLIME.jpg',
+      'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/VAGA/11484  -VAGA ZA KLIME 2.jpg',
+      'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/VAGA/11484  -VAGA ZA KLIME 3.jpg',
+      'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/VAGA/11484  -VAGA ZA KLIME 4.jpg',
     ],
   },
   {
@@ -1397,6 +1439,15 @@ const PRODUCTS = [
     { label: "ATLANTIC O'PRO SLIM 30L",  code: 'ATLANTIC-OPRO-SLIM-30',  },
     ],
   },
+    {
+    group: 'sanitarije',
+    cat:   'bojleri',
+    brand: 'TECNOGAS',
+    name:  "MAGNEZIJEVA ANODA",
+    desc:  "Magnezijeva anoda ugrađuje se u metalne konstrukcije koje su u kontaktu s elektrolitima (topla voda, tlo, morska voda i sl.) kako bi se spriječila njihova korozija. Koristi se prvenstveno u bojlerima i kotlovima za sanaciju problema korozije nastalih zbog oštećenja unutarnje obloge, a opremljena je čeličnom jezgrom i čepom prilagođenim za bojler.",
+    code:  'MAG-ANODA',
+    img: 'images/VODOMATERIJAL/Bojleri/POPRATNI MATERIJAL/70047 - MAGNEZIJEVA ANODA.jpg',
+  },
   // ── VODOMATERIJAL › CIJEVI ────────────────────────────────────
   {
     group: 'vodomaterijal',
@@ -1774,6 +1825,15 @@ const PRODUCTS = [
   // ── PLIN › PLINSKI PROIZVODI ──────────────────────────────────
   {
     group: 'plin',
+    cat:   'CRIJEVO',
+    brand: 'TECNOGAS',
+    name:  'CRIJEVO ZA PLIN 8mm',
+    desc:  'PVC crijevo 8x13 namijenjeno je za UNP (ukapljeni naftni plin), izrađeno od termoplastične gume s pojačanjem od poliesterskih vlakana visoke čvrstoće, otporno na vremenske utjecaje i starenje. Radna temperatura mu je od -15°C do +60°C, maksimalni radni tlak 0,2 bara, sukladno normi UNI CIG 7140, a proizvod podliježe kontroli kvalitete Talijanskog instituta za znak kvalitete (IMQ).',
+    code:  'Plin-Crijevo',
+    img: 'images/PLIN/PEX CIJEV/50204 - CRIJEVO ZA PLIN 8mm.jpg',
+  },
+  {
+    group: 'plin',
     cat:   'regulatori',
     brand: 'CAVAGNA GROUP',
     name:  'PLIN REGULATOR 2. STUPANJ 10kg/h',
@@ -1803,6 +1863,15 @@ const PRODUCTS = [
         ['Regulator propana EN16129',  '16 bar', '0,5 - 3 bar', '20-40 kg/h'],
       ],
   },
+  },
+  {
+    group: 'plin',
+    cat:   'Plin detektor',
+    brand: 'TECNOGAS',
+    name:  'DETEKTOR PLINA + ELEKTROMAGNETNI VENTIL',
+    desc:  'Model CD98 je komplet za otkrivanje curenja plina za GPL, s napajanjem 230 Vac i priključkom 1/2", u skladu s normom EN 50194. Koristi katalitički senzor visoke osjetljivosti i selektivnosti (otporan na lažne alarme od kuhanja, alkohola, deterdženata i sl.), a komplet uključuje i mesingani elektromagnetski ventil s ručnim resetiranjem.',
+    code:  'DETEKTOR',
+    img: 'images/PLIN/DETEKTOR/554015 - set za detektor plina za metan i LPG.jpg',
   },
 
   // ── PLIN › PLIN PEX-AL-PEX ────────────────────────────────────
