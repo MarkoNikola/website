@@ -199,26 +199,9 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
 </head>
 <body>
 
+<!-- OBAVIJEST / ANNOUNCEMENT BANNER — uredi tekst i datume u announcement.js -->
 <div id="announcement-banner" style="display:none"></div>
-<script>
-(function(){
-  var ANNOUNCEMENT_ACTIVE = true;
-  var START = new Date(2025, 6, 15);
-  var END   = new Date(2025, 7, 5);
-  var msg_hr = '🏖️ Godišnji odmor: 15.07. – 05.08.2025. Narudžbe primamo, isporuke po povratku. Hvala na razumijevanju!';
-  var msg_it = '🏖️ Ferie estive: 15.07. – 05.08.2025. Accettiamo ordini, consegne al nostro rientro. Grazie per la comprensione!';
-  if (!ANNOUNCEMENT_ACTIVE) return;
-  var now = new Date();
-  if (now < START || now > END) return;
-  if (sessionStorage.getItem('ann_dismissed')) return;
-  var lang = localStorage.getItem('it_lang') || 'hr';
-  var msg  = lang === 'it' ? msg_it : msg_hr;
-  var el = document.getElementById('announcement-banner');
-  el.innerHTML = '<div style="max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px"><span style="font-size:14px;font-weight:500">' + msg + '</span><button onclick="document.getElementById(\'announcement-banner\').style.display=\'none\';sessionStorage.setItem(\'ann_dismissed\',\'1\')" style="background:none;border:none;cursor:pointer;color:inherit;font-size:20px;line-height:1;padding:0 4px;flex-shrink:0">✕</button></div>';
-  el.style.cssText = 'display:block;background:#d97706;color:#fff;padding:10px 6%;font-family:DM Sans,sans-serif;position:relative;z-index:1100';
-})();
-</script>
-
+<script src="announcement.js?v=1"></script>
 <!-- TOP UTILITY BAR -->
 <div class="top-utility">
   <div class="top-utility-left">
