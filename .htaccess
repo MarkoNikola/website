@@ -1,6 +1,10 @@
 Options -Indexes
 RewriteEngine On
 
+# ═══════════════════════════════════════════════════════════
+#  CLEAN URLs
+# ═══════════════════════════════════════════════════════════
+
 # Strip .html from URLs in the browser (canonical clean URLs)
 # /proizvod.html?id=foo  →  /proizvod?id=foo
 RewriteCond %{THE_REQUEST} \s/(.+?)\.html([?\s]) [NC]
@@ -12,3 +16,67 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^.]+)$ $1.html [L,QSA]
+
+# ═══════════════════════════════════════════════════════════
+#  TEXT COMPRESSION  (gzip)
+#  Shrinks HTML/CSS/JS by roughly 70–80% over the wire.
+# ═══════════════════════════════════════════════════════════
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript text/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject font/ttf font/otf
+</IfModule>
+
+# ═══════════════════════════════════════════════════════════
+#  BROWSER CACHING
+#  Images/fonts rarely change → cache long.
+#  HTML must stay fresh so site edits appear immediately.
+#  JS/CSS get 1 week; use ?v=2 in the <script> tag to force
+#  an early refresh after you change a file.
+# ═══════════════════════════════════════════════════════════
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault                          "access plus 1 month"
+
+  # Images
+  ExpiresByType image/jpeg                "access plus 1 year"
+  ExpiresByType image/png                 "access plus 1 year"
+  ExpiresByType image/gif                 "access plus 1 year"
+  ExpiresByType image/webp                "access plus 1 year"
+  ExpiresByType image/avif                "access plus 1 year"
+  ExpiresByType image/svg+xml             "access plus 1 year"
+  ExpiresByType image/x-icon              "access plus 1 year"
+
+  # Fonts
+  ExpiresByType font/ttf                  "access plus 1 year"
+  ExpiresByType font/otf                  "access plus 1 year"
+  ExpiresByType font/woff                 "access plus 1 year"
+  ExpiresByType font/woff2                "access plus 1 year"
+
+  # Scripts & styles
+  ExpiresByType text/css                  "access plus 1 week"
+  ExpiresByType application/javascript    "access plus 1 week"
+  ExpiresByType text/javascript           "access plus 1 week"
+
+  # HTML — always revalidate so content changes go live at once
+  ExpiresByType text/html                 "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Long-lived, immutable static assets
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff|woff2|ttf|otf)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Scripts & styles — cacheable but revalidated weekly
+  <FilesMatch "\.(js|css)$">
+    Header set Cache-Control "public, max-age=604800"
+  </FilesMatch>
+
+  # HTML — never served stale
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
