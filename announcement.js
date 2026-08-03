@@ -25,13 +25,17 @@ var END   = new Date(2026, 7, 15);  // 15. kolovoza 2026.
 var title_hr = 'Godišnji odmor';
 var title_it = 'Ferie estive';
 
-var msg_hr = 'Ne radimo od <strong>01.08.</strong> do <strong>15.08.2026.</strong><br><br>' +
-             'Narudžbe zaprimamo i tijekom odmora, a isporuke kreću odmah po povratku. ' +
-             'Hvala na razumijevanju i vidimo se uskoro!';
+var msg_hr = 'Poštovani,<br><br>' + 
+             'Zbog kolektivnog godišnjeg odmora zatvoreni smo od <strong>10.08.</strong> do <strong>15.08.2026.</strong><br><br>' +
+             'S radom nastavljamo u ponedjeljak, <strong>17.08.2026.</strong><br><br> ' +
+             'Hvala na razumijevanju i vidimo se uskoro!<br><br>' +
+             '<strong>ITALTERM d.o.o.</strong>';
 
-var msg_it = 'Siamo chiusi dal <strong>01.08.</strong> al <strong>15.08.2026.</strong><br><br>' +
-             'Accettiamo ordini anche durante le ferie, le consegne riprendono subito al nostro rientro. ' +
-             'Grazie per la comprensione e a presto!';
+var msg_it = 'Gentili clienti,<br><br>' +
+             'A causa delle ferie collettive, la nostra azienda rimarrà chiusa dal <strong>10.08.</strong> al <strong>15.08.2026.</strong><br><br>' +
+             'Riapriremo lunedì, <strong>17.08.2026.</strong><br><br> ' +
+             'Grazie per la comprensione e a presto!<br><br>' +
+             '<strong>ITALTERM d.o.o.</strong>';
 
 var btn_hr = 'U redu';
 var btn_it = 'Va bene';
