@@ -1586,6 +1586,7 @@ const PRODUCTS = [
           { label: '50 cm',  code: '500'  },
           { label: '100 cm', code: '1000' },
           { label: '200 cm', code: '2000' },
+          { label: '300 cm', code: '3000' },
         ] },
     ]
   },
