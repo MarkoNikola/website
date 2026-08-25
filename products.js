@@ -1530,30 +1530,28 @@ const PRODUCTS = [
     group: 'vodomaterijal',
     cat:   'kanalizacija',
     brand: 'VARGON',
-    name:  'PP NISKOŠUMNA CIJEV Ø50',
+    name:  'PP NISKOŠUMNA CIJEV',
     desc:  'Vargokal Plus je inovativni, niskošumni troslojni kanalizacijski sustav za unutarnju odvodnju otpadnih voda u stambenim, poslovnim i industrijskim objektima. Proizvodi ga tvrtka Vargon (članica Wienerberger grupe), a razvijen je s primarnim ciljem maksimalnog smanjenja buke nastale protokom vode kroz instalacije.',
-    code:  'PP-NISKOŠUMNA-50',
+    code:  'PP-NISKOŠUMNA',
     img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL PLUS.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'VARGOKAL-PLUS-250',  },
-      { label: 'Dužina: 50 cm',  code: 'VARGOKAL-PLUS-500',  },
-      { label: 'Dužina: 100 cm',  code: 'VARGOKAL-PLUS-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'VARGOKAL-PLUS-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'VARGON',
-    name:  'PP NISKOŠUMNA CIJEV Ø110',
-    desc:  'Vargokal Plus je inovativni, niskošumni troslojni kanalizacijski sustav za unutarnju odvodnju otpadnih voda u stambenim, poslovnim i industrijskim objektima. Proizvodi ga tvrtka Vargon (članica Wienerberger grupe), a razvijen je s primarnim ciljem maksimalnog smanjenja buke nastale protokom vode kroz instalacije.',
-    code:  'PP-NISKOŠUMNA-110',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL PLUS.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'VARGOKAL-PLUS-250',  },
-      { label: 'Dužina: 50 cm',  code: 'VARGOKAL-PLUS-500',  },
-      { label: 'Dužina: 100 cm',  code: 'VARGOKAL-PLUS-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'VARGOKAL-PLUS-2000',  },
+    // Old per-diameter codes, so existing links still open this product
+    codeAliases: ['PP-NISKOŠUMNA-50','PP-NISKOŠUMNA-110'],
+    // The old codes did NOT include the diameter, so Ø50 and Ø110 both
+    // produced VARGOKAL-PLUS-250 etc. The diameter is now part of the code.
+    codeTemplate: 'VARGOKAL-PLUS-{promjer}-{duzina}',
+    options: [
+      { key: 'promjer', label: 'Promjer', label_it: 'Diametro',
+        values: [
+          { label: 'Ø50',  code: '50'  },
+          { label: 'Ø110', code: '110' },
+        ] },
+      { key: 'duzina', label: 'Dužina', label_it: 'Lunghezza',
+        values: [
+          { label: '25 cm',  code: '250'  },
+          { label: '50 cm',  code: '500'  },
+          { label: '100 cm', code: '1000' },
+          { label: '200 cm', code: '2000' },
+        ] },
     ]
   },
   {
@@ -1614,6 +1612,7 @@ const PRODUCTS = [
           { label: '50 cm',  code: '500'  },
           { label: '100 cm', code: '1000' },
           { label: '200 cm', code: '2000' },
+          { label: '300 cm', code: '3000' },
         ] },
     ]
   },
