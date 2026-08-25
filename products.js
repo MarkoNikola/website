@@ -1560,90 +1560,33 @@ const PRODUCTS = [
     group: 'vodomaterijal',
     cat:   'kanalizacija',
     brand: 'VARGON',
-    name:  'PP CIJEV Ø32',
+    name:  'PP CIJEV',
     desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
-    code:  'PP-CIJEV-32',
+    desc_it: 'I tubi e raccordi per fognatura Vargokal (produttore Vargon) sono sistemi di alta qualità per la fognatura domestica, realizzati in polipropilene (PP) secondo la norma EN 1451-1. Vengono utilizzati per lo scarico interno delle acque reflue e meteoriche negli edifici e per la ventilazione degli impianti di scarico.',
+    code:  'PP-CIJEV',
     img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'PP-32-250',  },
-      { label: 'Dužina: 50 cm',  code: 'PP-32-500',  },
-      { label: 'Dužina: 100 cm',  code: 'PP-32-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'PP-32-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'VARGON',
-    name:  'PP CIJEV Ø40',
-    desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
-    code:  'PP-CIJEV-40',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'PP-40-250',  },
-      { label: 'Dužina: 50 cm',  code: 'PP-40-500',  },
-      { label: 'Dužina: 100 cm',  code: 'PP-40-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'PP-40-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'VARGON',
-    name:  'PP CIJEV Ø75',
-    desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
-    code:  'PP-CIJEV-75',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'PP-75-250',  },
-      { label: 'Dužina: 50 cm',  code: 'PP-75-500',  },
-      { label: 'Dužina: 100 cm',  code: 'PP-75-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'PP-75-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'VARGON',
-    name:  'PP CIJEV Ø110',
-    desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
-    code:  'PP-CIJEV-110',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'PP-110-250',  },
-      { label: 'Dužina: 50 cm',  code: 'PP-110-500',  },
-      { label: 'Dužina: 100 cm',  code: 'PP-110-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'PP-110-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'VARGON',
-    name:  'PP CIJEV Ø125',
-    desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
-    code:  'PP-CIJEV-125',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'PP-125-250',  },
-      { label: 'Dužina: 50 cm',  code: 'PP-125-500',  },
-      { label: 'Dužina: 100 cm',  code: 'PP-125-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'PP-125-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'VARGON',
-    name:  'PP CIJEV Ø160',
-    desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
-    code:  'PP-CIJEV-160',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'PP-160-250',  },
-      { label: 'Dužina: 50 cm',  code: 'PP-160-500',  },
-      { label: 'Dužina: 100 cm',  code: 'PP-160-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'PP-160-2000',  },
+    // Old per-diameter codes, so existing links still open this product
+    codeAliases: ['PP-CIJEV-32','PP-CIJEV-40','PP-CIJEV-75',
+                  'PP-CIJEV-110','PP-CIJEV-125','PP-CIJEV-160'],
+    // Two independent choices; the code is built from both via codeTemplate
+    codeTemplate: 'PP-{promjer}-{duzina}',
+    options: [
+      { key: 'promjer', label: 'Promjer', label_it: 'Diametro',
+        values: [
+          { label: 'Ø32',  code: '32'  },
+          { label: 'Ø40',  code: '40'  },
+          { label: 'Ø75',  code: '75'  },
+          { label: 'Ø110', code: '110' },
+          { label: 'Ø125', code: '125' },
+          { label: 'Ø160', code: '160' },
+        ] },
+      { key: 'duzina', label: 'Dužina', label_it: 'Lunghezza',
+        values: [
+          { label: '25 cm',  code: '250'  },
+          { label: '50 cm',  code: '500'  },
+          { label: '100 cm', code: '1000' },
+          { label: '200 cm', code: '2000' },
+        ] },
     ]
   },
   {

@@ -294,10 +294,13 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:48px 6% 24px;ma
     <!-- Optional spec table — filled by JS only if product has 'specs' -->
     <div class="product-specs" id="productSpecs" style="display:none"></div>
 
+    <!-- Multi-axis option selectors (e.g. promjer + dužina) — built by JS -->
+    <div id="optionBlocks"></div>
+
     <!-- Variant selector (hidden if no variants) -->
     <div class="variant-block" id="variantBlock" style="display:none">
       <div class="variant-header">
-        <span class="variant-lbl">Odaberite varijantu</span>
+        <span class="variant-lbl" data-i18n="product.choose.variant">Odaberite varijantu</span>
         <span class="variant-selected" id="variantSelected"></span>
       </div>
       <div class="variant-buttons" id="variantButtons"></div>
@@ -310,13 +313,13 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:48px 6% 24px;ma
         <div class="meta-val code" id="productCode">—</div>
       </div>
       <div class="meta-item">
-        <div class="meta-lbl">Grupa</div>
+        <div class="meta-lbl" data-i18n="product.group">Grupa</div>
         <div class="meta-val" id="productGroup">—</div>
       </div>
     </div>
 
     <div class="product-actions">
-      <a href="#" id="inquiryBtn" class="btn-p">Zatraži ponudu →</a>
+      <a href="#" id="inquiryBtn" class="btn-p" data-i18n="product.inquiry.btn">Zatraži ponudu →</a>
       <a href="proizvodi" class="btn-s">
         <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
         Natrag na proizvode
@@ -360,11 +363,33 @@ const GROUP_LABELS = {
 
 let currentProduct = null;
 let selectedVariant = null;
+let selectedOptions = {};   // { optionKey: valueObject } for multi-axis products
+
+// Build the code for a multi-axis product by filling {key} in codeTemplate.
+function composeOptionCode() {
+  var tpl = currentProduct.codeTemplate || currentProduct.code;
+  return tpl.replace(/\{(\w+)\}/g, function (m, key) {
+    var v = selectedOptions[key];
+    return v ? v.code : m;
+  });
+}
+
+// "Ø110 · 200 cm" — the chosen value from each axis, in order.
+function composeOptionLabel() {
+  return (currentProduct.options || [])
+    .map(function (o) { return selectedOptions[o.key] && selectedOptions[o.key].label; })
+    .filter(Boolean).join(' · ');
+}
 
 function updateInquiry() {
   let displayCode = currentProduct.code;
   let displayName = currentProduct.name;
-  if (selectedVariant) {
+
+  if (currentProduct.options && currentProduct.options.length) {
+    displayCode = composeOptionCode();
+    var lbl = composeOptionLabel();
+    if (lbl) displayName = currentProduct.name + ' – ' + lbl;
+  } else if (selectedVariant) {
     displayCode = selectedVariant.code;
     displayName = currentProduct.name + ' – ' + selectedVariant.label;
     document.getElementById('variantSelected').innerHTML =
@@ -393,9 +418,68 @@ function selectVariant(variant, btn) {
   updateInquiry();
 }
 
+// ── Multi-axis options (promjer + dužina, …) ────────────────────────
+// Renders one row of buttons per axis. Each axis keeps its own selection,
+// and the product code is composed from all of them via codeTemplate.
+function renderOptionBlocks(product) {
+  const host = document.getElementById('optionBlocks');
+  host.innerHTML = '';
+  // lang.js may not have loaded yet on first paint, so fall back to storage
+  const it = ((typeof getLang === 'function' ? getLang()
+                                             : localStorage.getItem('it_lang')) || 'hr') === 'it';
+
+  product.options.forEach(function (opt) {
+    const block = document.createElement('div');
+    block.className = 'variant-block';
+
+    const head = document.createElement('div');
+    head.className = 'variant-header';
+    const lbl = document.createElement('span');
+    lbl.className = 'variant-lbl';
+    lbl.textContent = (it && opt.label_it) || opt.label;
+    const sel = document.createElement('span');
+    sel.className = 'variant-selected';
+    head.appendChild(lbl); head.appendChild(sel);
+
+    const btns = document.createElement('div');
+    btns.className = 'variant-buttons';
+
+    opt.values.forEach(function (v, i) {
+      const b = document.createElement('button');
+      b.className = 'variant-btn';
+      b.textContent = (it && v.label_it) || v.label;
+      b.onclick = function () {
+        selectedOptions[opt.key] = v;
+        [].forEach.call(btns.children, function (x) { x.classList.remove('active'); });
+        b.classList.add('active');
+        sel.innerHTML = '<strong>' + b.textContent + '</strong>';
+        updateInquiry();
+      };
+      btns.appendChild(b);
+      // keep the current choice across a re-render (language toggle),
+      // otherwise start on the first value
+      const prev = selectedOptions[opt.key];
+      if (prev ? prev.code === v.code : i === 0) setTimeout(function () { b.click(); }, 0);
+    });
+
+    block.appendChild(head); block.appendChild(btns);
+    host.appendChild(block);
+  });
+}
+
+// Called by lang.js on first paint and whenever the language is toggled.
+function updateProductOptions() {
+  if (currentProduct && currentProduct.options && currentProduct.options.length) {
+    renderOptionBlocks(currentProduct);
+  }
+}
+
 (function() {
   const code = new URLSearchParams(location.search).get('id');
-  const product = PRODUCTS.find(p => p.code === code);
+  // Exact code, else an old code kept in codeAliases (so links to products
+  // that have since been merged into one still resolve).
+  const product = PRODUCTS.find(p => p.code === code)
+    || PRODUCTS.find(p => (p.codeAliases || []).indexOf(code) !== -1);
   if (!product) {
     document.querySelector('.product-wrap').innerHTML =
       '<div style="grid-column:1/-1;text-align:center;padding:60px 20px">' +
@@ -503,8 +587,10 @@ function selectVariant(variant, btn) {
     }
   }
 
-  // Variants
-  if (product.variants && product.variants.length > 0) {
+  // Multi-axis options take precedence over a flat variant list
+  if (product.options && product.options.length > 0) {
+    renderOptionBlocks(product);
+  } else if (product.variants && product.variants.length > 0) {
     document.getElementById('variantBlock').style.display = 'block';
     const wrap = document.getElementById('variantButtons');
     product.variants.forEach((v, i) => {

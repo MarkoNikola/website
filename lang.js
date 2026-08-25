@@ -28,6 +28,8 @@ const LANG = {
     'hero.word.and':'','hero.word.cooling':'dom',
     'hero.sub':'Sva oprema za grijanje, hlađenje, ventilaciju i sanitariju.',
     'hero.btn.products':'Pogledaj proizvode','hero.btn.quote':'Zatražite ponudu',
+    'product.group':'Grupa','product.inquiry.btn':'Zatraži ponudu →',
+    'product.choose.variant':'Odaberite varijantu',
     'hero.kpi.years':'Godina iskustva','hero.kpi.market':'Na tržištu od 1996.',
     'hero.kpi.brands':'Brendova u ponudi','hero.kpi.brands.lbl':'Vodeći svjetski proizvođači',
     'hero.scroll':'Nastavi',
@@ -235,6 +237,8 @@ const LANG = {
     'hero.word.and':'','hero.word.cooling':'casa perfetta',
     'hero.sub':'Tutta l\'attrezzatura per riscaldamento, raffreddamento, ventilazione e sanitari.',
     'hero.btn.products':'Vedi prodotti','hero.btn.quote':'Richiedi offerta',
+    'product.group':'Gruppo','product.inquiry.btn':'Richiedi offerta →',
+    'product.choose.variant':'Scegliete la variante',
     'hero.kpi.years':'Anni di esperienza','hero.kpi.market':'Sul mercato dal 1996.',
     'hero.kpi.brands':'Marchi disponibili','hero.kpi.brands.lbl':'Produttori leader mondiali',
     'hero.scroll':'Continua',
@@ -437,15 +441,27 @@ function applyLang(lang) {
   document.documentElement.lang = lang;
 }
 
+// Content rendered by page scripts (product cards, product description,
+// option labels) is not covered by [data-i18n], so it has to be refreshed
+// explicitly — both when the language is toggled AND on first paint, since
+// lang.js loads after those scripts have already run.
+function refreshDynamicContent() {
+  if (typeof filterCards === 'function')          filterCards();
+  if (typeof updateProductDesc === 'function')    updateProductDesc();
+  if (typeof updateProductOptions === 'function') updateProductOptions();
+}
+
 function setLang(lang) {
   localStorage.setItem('it_lang', lang);
   applyLang(lang);
-  if (typeof filterCards === 'function') filterCards();
-  if (typeof updateProductDesc === 'function') updateProductDesc();
+  refreshDynamicContent();
 }
 
 function getLang() {
   return localStorage.getItem('it_lang') || 'hr';
 }
 
-document.addEventListener('DOMContentLoaded', () => applyLang(getLang()));
+document.addEventListener('DOMContentLoaded', () => {
+  applyLang(getLang());
+  refreshDynamicContent();
+});
