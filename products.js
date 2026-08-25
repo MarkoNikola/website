@@ -1593,45 +1593,27 @@ const PRODUCTS = [
     group: 'vodomaterijal',
     cat:   'kanalizacija',
     brand: 'PEŠTAN',
-    name:  'UKC CIJEV Ø110 ZA KANALIZACIJU',
+    name:  'UKC CIJEV ZA KANALIZACIJU',
     desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
-    code:  'UKC-CIJEV-110',
+    code:  'UKC-CIJEV',
     img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PEŠTAN UKC.webp',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'UKC-110-250',  },
-      { label: 'Dužina: 50 cm',  code: 'UKC-110-500',  },
-      { label: 'Dužina: 100 cm',  code: 'UKC-110-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'UKC-110-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'PEŠTAN',
-    name:  'UKC CIJEV Ø125 ZA KANALIZACIJU',
-    desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
-    code:  'UKC-CIJEV-125',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PEŠTAN UKC.webp',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'UKC-125-250',  },
-      { label: 'Dužina: 50 cm',  code: 'UKC-125-500',  },
-      { label: 'Dužina: 100 cm',  code: 'UKC-125-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'UKC-125-2000',  },
-    ]
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'kanalizacija',
-    brand: 'PEŠTAN',
-    name:  'UKC CIJEV Ø160 ZA KANALIZACIJU',
-    desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
-    code:  'UKC-CIJEV-160',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PEŠTAN UKC.webp',
-    variants: [
-      { label: 'Dužina: 25 cm',  code: 'UKC-160-250',  },
-      { label: 'Dužina: 50 cm',  code: 'UKC-160-500',  },
-      { label: 'Dužina: 100 cm',  code: 'UKC-160-1000',  },
-      { label: 'Dužina: 200 cm',  code: 'UKC-160-2000',  },
+    // Old per-diameter codes, so existing links still open this product
+    codeAliases: ['UKC-CIJEV-110','UKC-CIJEV-125','UKC-CIJEV-160'],
+    codeTemplate: 'UKC-{promjer}-{duzina}',
+    options: [
+      { key: 'promjer', label: 'Promjer', label_it: 'Diametro',
+        values: [
+          { label: 'Ø110', code: '110' },
+          { label: 'Ø125', code: '125' },
+          { label: 'Ø160', code: '160' },
+        ] },
+      { key: 'duzina', label: 'Dužina', label_it: 'Lunghezza',
+        values: [
+          { label: '25 cm',  code: '250'  },
+          { label: '50 cm',  code: '500'  },
+          { label: '100 cm', code: '1000' },
+          { label: '200 cm', code: '2000' },
+        ] },
     ]
   },
   {
