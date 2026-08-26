@@ -16,7 +16,7 @@
 //  DATUMI: mjesec se broji od 0!  0=siječanj … 6=srpanj, 7=kolovoz … 11=prosinac
 // ═══════════════════════════════════════════════════════════════
 
-var ANNOUNCEMENT_ACTIVE = true;
+var ANNOUNCEMENT_ACTIVE = false;
 var STYLE               = 'popup';
 
 var START = new Date(2026, 7, 1);   // 1. kolovoza 2026.
