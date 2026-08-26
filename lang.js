@@ -50,6 +50,10 @@ const LANG = {
     'slider.s4.h1':'Sustavi','slider.s4.h2':'navodnjavanja','slider.s4.h3':'za vrt i poljoprivredu',
     'cat.irrigation.desc':'Kompletna oprema za navodnjavanje — cijevi, pumpe, rasprskivači i automatika.',
     'slider.btn.fc':'Pogledaj opremu',
+    'slider.s5.tag':'Ventilokonvektori',
+    'slider.s5.h1':'INNOVA AirLeaf','slider.s5.h2':'elegantni, ultra tanki i nečujni',
+    'slider.s5.h3':'ventilokonvektori',
+    'cat.fancoil.desc':'Spojite vrhunski talijanski dizajn i naprednu tehnologiju klimatizacije uz INNOVA AirLeaf ventilokonvektore.',
     'product.inquiry':'Zatraži ponudu',
 
     // ADVANTAGES STRIP
@@ -269,6 +273,10 @@ const LANG = {
     'slider.s4.h1':'Sistemi','slider.s4.h2':'di irrigazione','slider.s4.h3':'per giardino e agricoltura',
     'cat.irrigation.desc':'Attrezzatura completa per irrigazione — tubi, pompe, irrigatori e automazione.',
     'slider.btn.fc':'Vedi attrezzatura',
+    'slider.s5.tag':'Ventilconvettori',
+    'slider.s5.h1':'INNOVA AirLeaf','slider.s5.h2':'eleganti, ultrasottili e silenziosi',
+    'slider.s5.h3':'ventilconvettori',
+    'cat.fancoil.desc':'Unite il design italiano di alto livello e la tecnologia avanzata di climatizzazione con i ventilconvettori INNOVA AirLeaf.',
     'product.inquiry':'Richiedi offerta',
 
     // ADVANTAGES STRIP
