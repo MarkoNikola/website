@@ -1,0 +1,20 @@
+{
+  // Terminal → Run Task…  (ili Ctrl+Shift+B za zadani zadatak)
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ITALTERM: pokreni server",
+      "type": "shell",
+      "command": "node serve-local.js",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": { "kind": "build", "isDefault": true },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "runOptions": { "instanceLimit": 1 }
+    }
+  ]
+}

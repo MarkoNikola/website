@@ -1,0 +1,14 @@
+{
+  // F5 → pokreće server i otvara Chrome na http://localhost:3000
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Otvori ITALTERM u pregledniku",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "preLaunchTask": "ITALTERM: pokreni server"
+    }
+  ]
+}

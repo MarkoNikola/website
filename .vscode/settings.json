@@ -1,0 +1,17 @@
+{
+  // Live Server ne čita .htaccess, pa čiste adrese (/proizvod) kod njega
+  // ne rade. Koristi zadatak "ITALTERM: pokreni server" umjesto njega.
+  // Ako ipak pokreneš Live Server, barem neka gleda isti port.
+  "liveServer.settings.port": 5500,
+
+  "files.associations": { "*.html": "html" },
+  "html.format.wrapLineLength": 0,
+  "editor.formatOnSave": false,
+
+  // products.js je velik — isključi teške provjere da editor ostane brz
+  "javascript.suggest.autoImports": false,
+  "search.exclude": {
+    "**/images/**": true,
+    "**/.git": true
+  }
+}
