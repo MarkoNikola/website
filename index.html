@@ -16,7 +16,7 @@
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap"></noscript>
 <style>
 
-:root{--blue:#1BA8D5;--blue-d:#1490b8;--red:#D42525;--red-d:#b31f1f;--dark:#0f1923;--dark2:#1a2d3d;--gray:#f4f6f8;--gray2:#e5e9ed;--gray3:#8898a8;--text:#1a2332;--text2:#4a5568}
+:root{--blue:#1BA8D5;--blue-d:#1490b8;--red:#D42525;--red-d:#b31f1f;--dark:#0f1923;--dark2:#1a2d3d;--gray:#f4f6f8;--gray2:#e5e9ed;--gray3:#8898a8;--text:#1a2332;--text2:#4a5568;--steel:#7C8B99}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;color:var(--text);background:#fff;overflow-x:hidden}
@@ -167,6 +167,79 @@ footer ul li a:hover{color:var(--blue)}
 .brand-tile img{height:36px;width:auto;object-fit:contain;opacity:.75;transition:opacity .25s;filter:grayscale(30%)}
 .brand-tile:hover img{opacity:1;filter:grayscale(0%)}
 .brand-dark img{border-radius:6px;padding:4px 8px;background:#1a1a1a}
+
+/* ═══════════════════════════════════════════════════════════════
+   NOVA LINIJA — istaknuta traka  (npr. Steelpres)
+   Sve za uređivanje je u HTML-u ispod, potraži "NOVA LINIJA".
+   ═══════════════════════════════════════════════════════════════ */
+.newline{
+  background:linear-gradient(135deg,var(--dark2) 0%,var(--dark) 100%);
+  display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch;
+  position:relative;overflow:hidden;
+}
+.newline-copy{
+  padding:54px 4% 54px 6%;display:flex;flex-direction:column;
+  gap:16px;align-items:flex-start;justify-content:center;position:relative;z-index:1;
+}
+.newline-brand{height:32px;width:auto;display:block;border-radius:3px}
+.newline-pill{
+  display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:11px;
+  font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--dark);
+  background:var(--blue);padding:4px 12px;border-radius:3px;
+}
+.newline h2{
+  font-family:'Barlow Condensed',sans-serif;font-weight:800;line-height:1.02;margin:0;
+  color:#fff;font-size:clamp(2rem,4vw,2.95rem);letter-spacing:-.01em;
+}
+.newline h2 .reg{font-size:.4em;vertical-align:super;color:var(--steel);font-weight:700}
+.newline h2 .l2{display:block;color:var(--steel)}
+.newline p{
+  margin:0;color:rgba(255,255,255,.63);font-size:15.5px;font-weight:300;
+  line-height:1.72;max-width:46ch;
+}
+.newline-chips{display:flex;flex-wrap:wrap;gap:8px}
+.newline-chip{
+  font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;
+  letter-spacing:.04em;padding:6px 13px;border-radius:4px;
+  border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.8);
+}
+.newline-btn{
+  display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:15px;
+  font-weight:700;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;
+  padding:12px 26px;border-radius:4px;background:var(--blue);color:#fff;margin-top:4px;
+  transition:background .2s;
+}
+.newline-btn:hover{background:var(--blue-d)}
+.newline-seals{display:flex;gap:18px;flex-wrap:wrap;margin-top:2px}
+.newline-seal{display:flex;align-items:center;gap:7px;font-size:12.5px;color:rgba(255,255,255,.58)}
+.newline-seal i{width:12px;height:12px;border-radius:50%;border:1.5px solid rgba(255,255,255,.26);flex-shrink:0}
+
+/* Fotografija — puni desni stup. Vidi upute u HTML-u za dimenzije. */
+.newline-shot{position:relative;min-height:430px;overflow:hidden;background:#2b3742}
+.newline-shot img{
+  position:absolute;inset:0;width:100%;height:100%;display:block;
+  object-fit:cover;
+  /* ▼ POMAK KADRA — ako je osoba/alat odrezan, promijeni drugi broj.
+       50% 38% = vodoravno po sredini, okomito malo iznad sredine.
+       Manji drugi broj = vidi se viši dio slike.                     */
+  object-position:50% 38%;
+}
+/* lijevi rub fotografije se stapa s tamnom podlogom — bez oštrog reza */
+.newline-shot::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,rgba(15,25,35,.96) 0%,rgba(15,25,35,.55) 18%,
+             rgba(15,25,35,.06) 46%,transparent 68%);
+}
+@media(max-width:900px){
+  .newline{grid-template-columns:1fr}
+  .newline-shot{min-height:280px;order:-1}
+  .newline-shot::after{background:linear-gradient(0deg,rgba(15,25,35,.95) 0%,
+    rgba(15,25,35,.3) 45%,transparent 78%)}
+  .newline-copy{padding:32px 7% 38px}
+  .newline h2{font-size:1.9rem}
+  .newline p{font-size:14.5px}
+  .newline-seals{display:none}
+}
 
 /* ── CATEGORY CARDS ── */
 .cat-section{background:var(--gray);padding:88px 6%}
@@ -656,6 +729,75 @@ footer ul li a:hover{color:var(--blue)}
     <span data-i18n="adv.years">30+ godina iskustva</span>
   </div>
 </div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NOVA LINIJA — STEELPRES
+     ───────────────────────────────────────────────────────────────
+     1. FOTOGRAFIJA
+        Datoteka:  images/ui/steelpres.webp   (putanja je u <img> ispod)
+        Dimenzije: 1800 × 1100 px  (omjer ~16:10)  — minimalno 1400 × 900
+        Format:    .webp ako je moguće (manja datoteka), inače .jpg
+        Veličina:  ciljaj ispod 150 KB
+
+        VAŽNO — kadar je VODORAVAN. Okomita (portretna) fotografija bit će
+        odrezana gore i dolje. Ako imaš samo okomitu sliku, izreži je na
+        1800 × 1100 prije uploada ili podesi "object-position" u CSS-u
+        (potraži "POMAK KADRA" gore u <style>).
+
+        Na mobitelu se ista slika prikazuje kao traka 100% × 280 px, pa
+        neka glavni motiv bude blizu sredine.
+
+     2. PROIZVODI
+        Gumb vodi na  proizvodi?cat=steelpres
+        Ta kategorija ZASAD NE POSTOJI u products.js — dok se ne doda
+        barem jedan proizvod, lista će biti prazna.
+        Kad dodaješ proizvode, u products.js stavi:
+            group: 'vodomaterijal',
+            cat:   'steelpres',
+        Kategorija se mora dodati i u sidebar u proizvodi.html
+        (potraži data-cat="..." i dodaj isti redak za steelpres),
+        inače filter tiho ne radi.
+
+     3. TEKST
+        Sav tekst dolazi iz lang.js (ključevi newline.*), da radi
+        na hrvatskom i talijanskom. Ne mijenjaj ga ovdje — mijenjaj u lang.js.
+
+     4. ISKLJUČIVANJE
+        Ako sekciju treba privremeno maknuti, dodaj style="display:none"
+        na <section class="newline"> ispod.
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="newline">
+  <div class="newline-copy">
+    <!-- logo proizvođača; zamijeni ako linija nije Raccorderie Metalliche -->
+    <img class="newline-brand" src="images/ui/raccorderie-metalliche.webp"
+         alt="Raccorderie Metalliche" width="119" height="72" loading="lazy" decoding="async">
+    <span class="newline-pill" data-i18n="newline.badge">Nova linija</span>
+    <h2>
+      <span data-i18n="newline.title">STEELPRES</span><span class="reg">®</span>
+      <span class="l2" data-i18n="newline.subtitle">press-fitting sustav</span>
+    </h2>
+    <p><span data-i18n="newline.desc">Spoj se presa alatom u nekoliko sekundi — bez plamena, bez zavarivanja, bez čekanja da se instalacija ohladi. Ugljični i nehrđajući čelik za vodu, grijanje, plin i komprimirani zrak.</span></p>
+    <div class="newline-chips">
+      <span class="newline-chip" data-i18n="newline.chip1">Ø15 – 108 mm</span>
+      <span class="newline-chip" data-i18n="newline.chip2">Ugljični i inox čelik</span>
+      <span class="newline-chip" data-i18n="newline.chip3">Bez plamena</span>
+    </div>
+    <div class="newline-seals">
+      <span class="newline-seal"><i style="background:#1f2933"></i><span data-i18n="newline.seal1">EPDM — voda, grijanje</span></span>
+      <span class="newline-seal"><i style="background:#E8B416"></i><span data-i18n="newline.seal2">HNBR — plin</span></span>
+      <span class="newline-seal"><i style="background:#3E8E5A"></i><span data-i18n="newline.seal3">FKM — solarni</span></span>
+    </div>
+    <a class="newline-btn" href="proizvodi?cat=steelpres" data-i18n="newline.cta">Pogledaj Steelpres →</a>
+  </div>
+
+  <!-- ▼ FOTOGRAFIJA — vidi upute gore. Dok slike nema, prikazuje se
+         prazno tamno polje (nema slomljene ikone). -->
+  <div class="newline-shot">
+    <img src="images/ui/steelpres.webp" alt="Steelpres press-fitting montaža"
+         loading="lazy" decoding="async"
+         onerror="this.style.display='none'">
+  </div>
+</section>
 
 <!-- CATEGORY CARDS -->
 <section class="cat-section" id="products">

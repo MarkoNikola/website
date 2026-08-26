@@ -58,6 +58,16 @@ const LANG = {
     'adv.advice':'Stručno savjetovanje',
     'adv.years':'30+ godina iskustva',
 
+
+    // NOVA LINIJA (istaknuta traka na naslovnici — npr. Steelpres)
+    'newline.badge':'Nova linija',
+    'newline.title':'STEELPRES',
+    'newline.subtitle':'press-fitting sustav',
+    'newline.desc':'Spoj se presa alatom u nekoliko sekundi — bez plamena, bez zavarivanja, bez čekanja da se instalacija ohladi. Ugljični i nehrđajući čelik za vodu, grijanje, plin i komprimirani zrak.',
+    'newline.chip1':'Ø15 – 108 mm','newline.chip2':'Ugljični i inox čelik','newline.chip3':'Bez plamena',
+    'newline.seal1':'EPDM — voda, grijanje','newline.seal2':'HNBR — plin','newline.seal3':'FKM — solarni',
+    'newline.cta':'Pogledaj Steelpres →',
+
     // OFFER / CATEGORIES
     'hero.offer.title':'Naša ponuda',
     'hero.offer.tagline':'Cijeli svijet na jednom mjestu!',
@@ -266,6 +276,16 @@ const LANG = {
     'adv.experience':'Esperienza e competenza',
     'adv.advice':'Consulenza esperta',
     'adv.years':'30+ anni di esperienza',
+
+
+    // NUOVA LINEA (fascia in evidenza in home — es. Steelpres)
+    'newline.badge':'Novità',
+    'newline.title':'STEELPRES',
+    'newline.subtitle':'sistema a pressare',
+    'newline.desc':'La giunzione si pressa con l\'utensile in pochi secondi — senza fiamma, senza saldatura, senza attendere il raffreddamento dell\'impianto. Acciaio al carbonio e inox per acqua, riscaldamento, gas e aria compressa.',
+    'newline.chip1':'Ø15 – 108 mm','newline.chip2':'Acciaio al carbonio e inox','newline.chip3':'Senza fiamma',
+    'newline.seal1':'EPDM — acqua, riscaldamento','newline.seal2':'HNBR — gas','newline.seal3':'FKM — solare',
+    'newline.cta':'Scopri Steelpres →',
 
     // OFFER / CATEGORIES
     'hero.offer.title':'La nostra offerta',
