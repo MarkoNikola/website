@@ -597,6 +597,8 @@ const PRODUCTS = [
     { label: 'ø16mm',  code: '',  },
     ]
   },
+
+
   // ── GRIJANJE › CIJEVI ─────────────────────────────────────────
  /* {
     group: 'grijanje',
@@ -1515,16 +1517,188 @@ const PRODUCTS = [
   },
 
   // ── VODOMATERIJAL › VENTILI ───────────────────────────────────
- /* {
+  
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS KOLJENO' ,
+    desc:  '',
+    code:  'PEX-KOLJ',
+    img: 'images/PEX/PEX KOLJENO 16, 20.jpg',
+    variants: [
+      { label: '16',  code: 'PEX-KOLJ-16',  },
+      { label: '20',  code: 'PEX-KOLJ-20',  },
+      { label: '26',  code: 'PEX-KOLJ-26',  },
+      { label: '32',  code: 'PEX-KOLJ-32',  },
+    ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS ZIDNO KOLJENO 16 - 1/2"',
+    desc:  '',
+    code:  'PEX-KOLJ-ZIDNO-16',
+    img: 'images/PEX/PEX KOLJENO SA NOSAČOM 16 - 1_2 Ž. NAVOJ.jpg',
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS KOLJENO 16 - 1/2"',
+    desc:  '',
+    code:  'PEX-KOLJ-NAVOJ-16',
+    img: 'images/PEX/PEX KOLJENO 16 - 1_2 Ž NAVOJ.jpg',
+    variants: [
+      { label: '16 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-KOLJ-U.N.-16',  },
+      { label: '20 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-KOLJ-U.N.-20',  },
+      { label: '16 - 1/2" VANJSKI NAVOJ',    code: 'PEX-KOLJ-V.N-16',  },
+      { label: '20 - 1/2" VANJSKI NAVOJ',    code: 'PEX-KOLJ-V.N-20',  },
+    ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS VENTIL PODŽBUKNI',
+    desc:  '',
+    code:  'PEX-VENTIL',
+    img: 'images/PEX/PODŽBUKNI VENTIL.jpg',
+    variants: [
+      { label: '16',  code: 'PEX-VENTIL-16',  },
+      { label: '20',  code: 'PEX-VENTIL-20',  },
+    ]
+  },
+{
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS PRELAZ RAVNI',
+    desc:  '',
+    code:  'PEX-PRELAZ',
+    img: 'images/PEX/PEX PRELAZ 16 - 1_2.jpg',
+    variants: [
+      { label: '16 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-PRELAZ-U.N.-16',  },
+      { label: '20 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-PREALZ-U.N.-20',  },
+      { label: '16 - 1/2" VANJSKI NAVOJ',    code: 'PEX-PRELAZ-V.N-16',  },
+      { label: '20 - 1/2" VANJSKI NAVOJ',    code: 'PEX-PRELAZ-V.N-20',  },
+      { label: '20 - 3/4" VANJSKI NAVOJ',    code: 'PEX-PRELAZ-V.N-20-34',  },
+      { label: '26 - 3/4" VANJSKI NAVOJ',    code: 'PEX-PRELAZ-V.N-26-34',  },
+    ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS T KOMAD',
+    desc:  '',
+    code:  'PEX-T',
+    img: 'images/PEX/T KOMAD.jpg',
+    variants: [
+      { label: '16 x 16 x 16',  code: 'PEX-T-16',  },
+      { label: '20 x 20 x 20',  code: 'PEX-T-20',  },
+      { label: '26 x 26 x 26',  code: 'PEX-T-26',  },
+      { label: '16 x 20 x 16',  code: 'PEX-T-162016',  },
+      { label: '16 x 16 x 20',  code: 'PEX-T-161620',  },
+      { label: '20 x 16 x 20',  code: 'PEX-T-201620',  },
+      { label: '20 x 20 x 16',  code: 'PEX-T-202016',  },
+      { label: '26 x 16 x 26',  code: 'PEX-T-261626',  },
+      { label: '26 x 20 x 26',  code: 'PEX-T-262026',  },
+    ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS REDUKCIJA',
+    desc:  '',
+    code:  'PEX-REDUKCIJA',
+    img: 'images/PEX/REDUKCIJA.jpg',
+    variants: [
+      { label: '20 - 16',  code: 'PEX-RED-2016',  },
+      { label: '26 - 16',  code: 'PEX-RED-2616',  },
+      { label: '26 - 20',  code: 'PEX-RED-2620',  },
+    ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS SPOJNICA',
+    desc:  '',
+    code:  'PEX-SPOJNICA',
+    img: 'images/PEX/SPOJNICA.jpg',
+    variants: [
+      { label: '16',  code: 'PEX-SPOJ-16',  },
+      { label: '20',  code: 'PEX-SPOJ-20',  },
+      { label: '26',  code: 'PEX-SPOJ-26',  },
+      ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS POLUSPOJNICA ZA CIJEV 16',
+    desc:  '',
+    code:  'PEX-POLUSP',
+    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ.jpg',
+    variants: [
+      { label: '16',  code: 'PEX-POLUSPOJ-16',  },
+      ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: '',
+    name:  'PRESS POLUSPOJNICA ZA CIJEV EUROKONUS',
+    desc:  '',
+    code:  'PEX-POLUSP-EK',
+    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ EUROKONUS.jpg',
+    variants: [
+      { label: '16 - 3/4"',  code: 'PEX-POLUSPOJ-16-3/4',  },
+      { label: '20 - 3/4"',  code: 'PEX-POLUSPOJ-20-3/4',  },
+      ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'razdjelnici',
+    brand: '',
+    name:  'RAZDJELNIK MODULARNI 16 - 3/4 - S KOSIM VENTILIMA',
+    desc:  '',
+    code:  'RAZDJELNIK-MODULARNI',
+    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
+    variants: [
+      { label: '3 IZLAZA',  code: 'RAZD-MODUL-3-IZL',  },
+      { label: '4 IZLAZA"', code: 'RAZD-MODUL-4-IZL',  },
+      { label: '5 IZLAZA"', code: 'RAZD-MODUL-5-IZL',  },
+      ]
+  },
+  {
     group: 'vodomaterijal',
     cat:   'ventili',
-    brand: 'Raccorderie Metalliche',
-    name:  'Kuglični ventil DN20 PN25',
-    desc:  'Mesing kuglični ventil DN20, PN25. Poluga ručka, PTFE brtva. Za vodu i plin.',
-    code:  'RM-KV-20-25',
-    // img: 'images/rm-kuglicni-dn20.jpg',
-  },*/
-
+    brand: '',
+    name:  'KUGL VENTIL 3/4" ZA RAZDJELNIK',
+    desc:  '',
+    code:  'VENTIL-RAZDJELNIK',
+    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
+    variants: [
+      { label: 'PLAVA RUČKA',  code: 'PLAVI',  },
+      { label: 'CRVENA RUČKA"', code: 'CRVENI',  },
+      ]
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'razdjelnici',
+    brand: '',
+    name:  'ORMAR ZA MODULARNE RAZDJELNIKE',
+    desc:  '',
+    code:  'ORMAR-RAZDJELNIK',
+    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
+    variants: [
+      { label: '240 x 400 x 80 mm',  code: 'ORM-RAZDJ',  },
+      ]
+  },
   // ── VODOMATERIJAL › KANALIZACIJA ──────────────────────────────
   {
     group: 'vodomaterijal',
@@ -1573,6 +1747,7 @@ const PRODUCTS = [
         values: [
           { label: 'Ø32',  code: '32'  },
           { label: 'Ø40',  code: '40'  },
+          { label: 'Ø50',  code: '50'  },
           { label: 'Ø75',  code: '75'  },
           { label: 'Ø110', code: '110' },
           { label: 'Ø125', code: '125' },
