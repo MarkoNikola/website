@@ -358,30 +358,33 @@ footer ul li a:hover{color:var(--blue)}
 }
 
 /* ── PROMO SLIDER ── */
-.promo-slider{position:relative;overflow:hidden;background:var(--dark2);height:420px}
+.promo-slider{position:relative;overflow:hidden;background:var(--dark2);height:480px}
 @media(max-width:768px){.promo-slider{height:300px}}
 .promo-slides{display:flex;height:100%;transition:transform .6s cubic-bezier(.4,0,.2,1)}
 .promo-slide{min-width:100%;height:100%;position:relative;display:flex;align-items:center;padding:0 8%;overflow:hidden}
-.promo-slide-bg{position:absolute;inset:0;background-size:cover;background-position:left center;filter:brightness(.45)}
+.promo-slide-bg{position:absolute;inset:0;background-size:cover;background-position:left center;filter:brightness(.62) saturate(1.06)}
 @media(max-width:768px){.promo-slide-bg{background-position:left top}.promo-arrow{display:none!important}}
-.promo-slide-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,22,32,.85) 40%,transparent 100%)}
+.promo-slide-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,22,32,.92) 0%,rgba(13,22,32,.72) 42%,rgba(13,22,32,.15) 78%,transparent 100%),linear-gradient(0deg,rgba(13,22,32,.55) 0%,transparent 34%)}
 .promo-slide-content{position:relative;z-index:2;max-width:560px}
-.promo-tag{display:inline-flex;align-items:center;gap:7px;background:rgba(27,168,213,.15);border:1px solid rgba(27,168,213,.4);color:var(--blue);padding:5px 13px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+.promo-tag-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;animation:promoBlip 2s infinite}
+@keyframes promoBlip{0%,100%{opacity:1}50%{opacity:.25}}
+@media(prefers-reduced-motion:reduce){.promo-tag-dot{animation:none}}
+.promo-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(27,168,213,.2);border:1px solid rgba(27,168,213,.62);color:var(--blue);padding:5px 13px;border-radius:20px;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
 .promo-slide h2{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:#fff;line-height:.95;margin-bottom:14px}
 .promo-slide h2 .acc{color:var(--blue)}
 .promo-slide h2 .rd{color:var(--red)}
 .promo-slide p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:26px;max-width:420px}
 .promo-slide-btns{display:flex;gap:12px;flex-wrap:wrap}
 /* Arrows */
-.promo-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;backdrop-filter:blur(6px)}
+.promo-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:50px;height:50px;border-radius:50%;background:rgba(13,22,32,.5);border:1px solid rgba(255,255,255,.38);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .2s;backdrop-filter:blur(6px)}
 .promo-arrow:hover{background:var(--blue);border-color:var(--blue)}
 .promo-arrow svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 .promo-arrow.prev{left:20px}
 .promo-arrow.next{right:20px}
 /* Dots */
-.promo-dots{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
-.promo-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:background .2s,transform .2s}
-.promo-dot.active{background:var(--blue);transform:scale(1.3)}
+.promo-dots{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);display:flex;gap:9px;z-index:10}
+.promo-dot{width:9px;height:9px;border-radius:20px;background:rgba(255,255,255,.42);cursor:pointer;transition:width .25s,background .2s}
+.promo-dot.active{width:30px;background:var(--blue)}
 /* Autoplay bar */
 .promo-progress{position:absolute;bottom:0;left:0;height:3px;background:var(--blue);z-index:10;animation:none}
 .promo-progress.running{animation:progbar var(--dur,5s) linear forwards}
@@ -548,7 +551,7 @@ footer ul li a:hover{color:var(--blue)}
       <div class="promo-slide-bg" style="background-image:url('images/INDEX SLIDER/CLIVET NATIV INDEX SLIDER.webp');background-position:left center"></div>
       <div class="promo-slide-overlay"></div>
       <div class="promo-slide-content">
-        <div class="promo-tag" data-i18n="nav.mm.cooling">Hlađenje</div>
+        <div class="promo-tag"><i class="promo-tag-dot"></i><span data-i18n="nav.mm.cooling">Hlađenje</span></div>
         <h2><span data-i18n="slider.s1.h1">Klima</span> <span class="acc" data-i18n="slider.s1.h2">uređaji</span><br><span data-i18n="slider.s1.h3">za svaki prostor</span></h2>
         <p data-i18n="slider.s1.p">Inverterski uređaji Clivet. Grijanje i hlađenje u jednom.</p>
         <div class="promo-slide-btns">
@@ -563,7 +566,7 @@ footer ul li a:hover{color:var(--blue)}
       <div class="promo-slide-bg" style="background-image:url('images/INDEX SLIDER/LG THERMA V INDEX SLIDER.jpg');background-position:left center"></div>
       <div class="promo-slide-overlay"></div>
       <div class="promo-slide-content">
-        <div class="promo-tag" data-i18n="nav.mm.heating">Grijanje</div>
+        <div class="promo-tag"><i class="promo-tag-dot"></i><span data-i18n="nav.mm.heating">Grijanje</span></div>
         <h2><span data-i18n="slider.s2.h1">Dizalice</span> <span class="rd" data-i18n="slider.s2.h2">topline</span><br><span data-i18n="slider.s2.h3">LG THERMA V</span></h2>
         <p data-i18n="slider.s2.p"><span data-i18n="promo.hp.desc">Najnovija generacija toplinskih pumpi zrak/voda. Ušteda do 75% na grijanju, rad do -25°C.</span></p>
         <div class="promo-slide-btns">
@@ -578,7 +581,7 @@ footer ul li a:hover{color:var(--blue)}
       <div class="promo-slide-bg" style="background-image:url('images/INDEX SLIDER/podno.jpg');background-position:left center"></div>
       <div class="promo-slide-overlay"></div>
       <div class="promo-slide-content">
-        <div class="promo-tag" data-i18n="slider.s3.tag">Podno grijanje</div>
+        <div class="promo-tag"><i class="promo-tag-dot"></i><span data-i18n="slider.s3.tag">Podno grijanje</span></div>
         <h2><span data-i18n="slider.s3.h1">Podno</span> <span class="acc" data-i18n="slider.s3.h2">grijanje</span><br><span data-i18n="slider.s3.h3">za udobnost doma</span></h2>
         <p data-i18n="slider.s3.p">Sustavi podnog grijanja s kompletnom opremom — cijevi, razdjelnički ormarići, regulatori.</p>
         <div class="promo-slide-btns">
@@ -593,7 +596,7 @@ footer ul li a:hover{color:var(--blue)}
       <div class="promo-slide-bg" style="background-image:url('images/INDEX SLIDER/navodnjavanje.jpg');background-position:left center"></div>
       <div class="promo-slide-overlay"></div>
       <div class="promo-slide-content">
-        <div class="promo-tag" data-i18n="slider.s4.tag">Navodnjavanje</div>
+        <div class="promo-tag"><i class="promo-tag-dot"></i><span data-i18n="slider.s4.tag">Navodnjavanje</span></div>
         <h2><span data-i18n="slider.s4.h1">Sustavi</span> <span class="acc" data-i18n="slider.s4.h2">navodnjavanja</span><br><span data-i18n="slider.s4.h3">za vrt i poljoprivredu</span></h2>
         <p><span data-i18n="cat.irrigation.desc">Kompletna oprema za navodnjavanje — cijevi, pumpe, rasprskivači i automatika.</span></p>
         <div class="promo-slide-btns">
@@ -643,8 +646,11 @@ footer ul li a:hover{color:var(--blue)}
 
   function resetProgress(){
     progress.classList.remove('running');
-    progress.style.animation = 'none';
-    void progress.offsetWidth; // reflow
+    progress.style.animation = 'none';   // kill the running animation
+    void progress.offsetWidth;           // force a reflow so it restarts
+    progress.style.animation = '';       // clear it again — an inline value
+                                         // outranks the .running rule and
+                                         // would stop the bar animating at all
     progress.style.setProperty('--dur', DUR+'ms');
     progress.classList.add('running');
   }
