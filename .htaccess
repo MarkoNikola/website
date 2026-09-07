@@ -7,7 +7,14 @@ RewriteEngine On
 
 # Strip .html from URLs in the browser (canonical clean URLs)
 # /proizvod.html?id=foo  →  /proizvod?id=foo
+#
+# EXCEPTION: search-engine ownership files must stay reachable at their
+# exact .html address. Google requests google<code>.html and needs a 200;
+# a 301 to /google<code> fails verification. Do not remove these lines
+# while the site is verified in Search Console.
 RewriteCond %{THE_REQUEST} \s/(.+?)\.html([?\s]) [NC]
+RewriteCond %{REQUEST_URI} !^/google[0-9a-z]+\.html$ [NC]
+RewriteCond %{REQUEST_URI} !^/BingSiteAuth\.xml$ [NC]
 RewriteRule ^ /%1%2 [R=301,L,QSA]
 
 # Internally serve .html files when the extension is absent
