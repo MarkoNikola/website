@@ -600,15 +600,109 @@ const PRODUCTS = [
 
 
   // ── GRIJANJE › CIJEVI ─────────────────────────────────────────
- /* {
+ {
     group: 'grijanje',
-    cat:   'cijevi-grijanje',
-    brand: 'Viega',
-    name:  'Bakarna cijev 15mm – 5m',
-    desc:  'Tvrda bakarna cijev Ø15 mm, dužina 5 m. EN 1057, za instalacije grijanja i vode.',
-    code:  'VI-BAK-15-5M',
-    // img: 'images/viega-bakar-15.jpg',
-  },*/
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Cijev',
+    desc:  'SteelPRES cijevi izrađene su od uzdužno varenog ugljičnog čelika s vanjskom galvanskom zaštitom od cinka, što ih čini iznimno čvrstima i otpornima na koroziju. Proizvode se u dimenzijama od Ø 15 mm do Ø 108 mm te su idealne za brzu ugradnju u zatvorenim sustavima grijanja, hlađenja i komprimiranog zraka.',
+    code:  'SteelPRES-Cijev',
+    img: 'images/STEELPRES/Steel/Cijevi.webp',
+    variants: [
+    { label: 'SteelPRES cijev Ø15mm',  code: 'SteelPRES-Cijev-15',  },
+    { label: 'SteelPRES cijev Ø18mm',  code: 'SteelPRES-Cijev-18',  },
+    { label: 'SteelPRES cijev Ø22mm',  code: 'SteelPRES-Cijev-22',  },
+    { label: 'SteelPRES cijev Ø28mm',  code: 'SteelPRES-Cijev-28',  },
+    { label: 'SteelPRES cijev Ø35mm',  code: 'SteelPRES-Cijev-35',  },
+    { label: 'SteelPRES cijev Ø42mm',  code: 'SteelPRES-Cijev-42',  },
+    { label: 'SteelPRES cijev Ø54mm',  code: 'SteelPRES-Cijev-54',  },
+  ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Koljeno',
+    desc:  'SteelPRES koljena služe za brzu i pouzdanu promjenu smjera cjevovoda pod kutom od 90° ili 45°, uz mogućnost direktnog prešanja ili spajanja na navojne elemente. Proizvode se u Ž-Ž i M-Ž izvedbama s integriranim EPDM brtvama koje jamče potpunu nepropusnost sustava.',
+    code:  'SteelPRES-Koljeno',
+    img: 'images/STEELPRES/Steel/Koljeno.jpg',
+    variants: [
+    { label: 'SteelPRES koljeno Ø15mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-15',  },
+    { label: 'SteelPRES koljeno Ø18mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-18',  },
+    { label: 'SteelPRES koljeno Ø22mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-22',  },
+    { label: 'SteelPRES koljeno Ø28mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-28',  },
+    { label: 'SteelPRES koljeno Ø35mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-35',  },
+    { label: 'SteelPRES koljeno Ø42mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-42',  },
+    { label: 'SteelPRES koljeno Ø54mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-54',  },
+  ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES T komad',
+    desc:  'SteelPRES T-komadi omogućuju jednostavno račvanje i skretanje protoka u cjevovodu, a dostupni su u ravnomjernim, reduciranim i izvedbama s unutarnjim navojem. Izrađeni su s preciznim M-profilom za prešanje i integriranim brtvama koje osiguravaju brzu ugradnju bez curenja.',
+    code:  'SteelPRES-T-Komad',
+    img: 'images/STEELPRES/Steel/T.jpg',
+    variants: [
+    { label: 'SteelPRES T-komad Ø15mm / 15-15-15 / 15-15-18 / 15-18-18',  code: 'SteelPRES-T-Komad-15',  },
+    { label: 'SteelPRES T-komad Ø18mm / 18-18-18 / 18-18-22 / 18-22-22',  code: 'SteelPRES-T-Komad-18',  },
+    { label: 'SteelPRES T-komad Ø22mm / 22-22-22 / 22-22-28 / 22-28-28',  code: 'SteelPRES-T-Komad-22',  },
+    { label: 'SteelPRES T-komad Ø28mm / 28-28-28 / 28-28-35 / 28-35-35',  code: 'SteelPRES-T-Komad-28',  },
+    { label: 'SteelPRES T-komad Ø35mm / 35-35-35 / 35-35-42 / 35-42-42',  code: 'SteelPRES-T-Komad-35',  },
+    { label: 'SteelPRES T-komad Ø42mm / 42-42-42 / 42-42-54 / 42-54-54',  code: 'SteelPRES-T-Komad-42',  },
+    { label: 'SteelPRES T-komad Ø54mm / 54-54-54 / 54-54-76 / 54-76-76',  code: 'SteelPRES-T-Komad-54',  },
+    ]
+  },
+
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES T komad s navojem',
+    desc:  'SteelPRES cijevi izrađene su od uzdužno varenog ugljičnog čelika s vanjskom galvanskom zaštitom od cinka, što ih čini iznimno čvrstima i otpornima na koroziju. Proizvode se u dimenzijama od Ø 15 mm do Ø 108 mm te su idealne za brzu ugradnju u zatvorenim sustavima grijanja, hlađenja i komprimiranog zraka.',
+    code:  'SteelPRES-T-Komad-Navoj',
+    img: 'images/STEELPRES/Steel/t - navoj.jpg',
+
+  },
+
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Spojnica',
+    desc:  'SteelPRES spojnice služe za ravno spajanje dviju cijevi jednake dimenzije, a dostupne su kao standardne (s graničnikom u sredini) ili klizne (bez graničnika) koje su idealne za brze popravke na postojećim cjevovodima. Zahvaljujući M-profilu za prešanje i visokootpornim EPDM brtvama, omogućuju trenutno i sigurno spajanje bez potrebe za zavarivanjem.',
+    code:  'SteelPRES-Spojnica',
+    img: 'images/STEELPRES/Steel/Spojnica.jpg',
+    variants: [
+    { label: 'SteelPRES spojnica Ø15mm',  code: 'SteelPRES-Spojnica-15',  },
+    { label: 'SteelPRES spojnica Ø18mm',  code: 'SteelPRES-Spojnica-18',  },
+    { label: 'SteelPRES spojnica Ø22mm',  code: 'SteelPRES-Spojnica-22',  },
+    { label: 'SteelPRES spojnica Ø28mm',  code: 'SteelPRES-Spojnica-28',  },
+    { label: 'SteelPRES spojnica Ø35mm',  code: 'SteelPRES-Spojnica-35',  },
+    { label: 'SteelPRES spojnica Ø42mm',  code: 'SteelPRES-Spojnica-42',  },
+    { label: 'SteelPRES spojnica Ø54mm',  code: 'SteelPRES-Spojnica-54',  },
+    ]
+  },
+
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Redukcije',
+    desc:  'SteelPRES redukcije primjenjuju se za elegantno i nepropusno prelaženje s većeg na manji promjer cijevi unutar iste linije cjevovoda. Izrađuju se u M-Ž izvedbi s vanjskim pocinčanim slojem, što omogućuje da se širi dio preša na cijev, a uži dio izravno umeće u susjedni fiting radi uštede na prostoru i materijalu.',
+    code:  'SteelPRES-Redukcije',
+    img: 'images/STEELPRES/Steel/Spojnica.jpg',
+    variants: [
+    { label: 'SteelPRES redukcija Ø15-18mm',  code: 'SteelPRES-Redukcija-15-18',  },
+    { label: 'SteelPRES redukcija Ø18-22mm',  code: 'SteelPRES-Redukcija-18-22',  },
+    { label: 'SteelPRES redukcija Ø22-28mm',  code: 'SteelPRES-Redukcija-22-28',  },
+    { label: 'SteelPRES redukcija Ø28-35mm',  code: 'SteelPRES-Redukcija-28-35',  },
+    { label: 'SteelPRES redukcija Ø35-42mm',  code: 'SteelPRES-Redukcija-35-42',  },
+    { label: 'SteelPRES redukcija Ø42-54mm',  code: 'SteelPRES-Redukcija-42-54',  },
+    ]
+  },
+
 
   // ── GRIJANJE › IZOLACIJA ──────────────────────────────────────
   /*{

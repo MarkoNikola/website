@@ -438,6 +438,11 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
           <span class="sf-item-count" id="sfc-cijevi-grijanje">0</span>
         </label>
         <label class="sf-item">
+          <input type="checkbox" class="sf-cb" data-group="grijanje" data-cat="steelpres" onchange="resetPageAndFilter()">
+          <span class="sf-item-label">SteelPRES</span>
+          <span class="sf-item-count" id="sfc-steelpres">0</span>
+        </label>
+        <label class="sf-item">
           <input type="checkbox" class="sf-cb" data-group="grijanje" data-cat="izolacija" onchange="resetPageAndFilter()">
           <span class="sf-item-label">Izolacija</span>
           <span class="sf-item-count" id="sfc-izolacija">0</span>
@@ -694,6 +699,7 @@ const CAT_LABELS = {
   'fancoil':'Fancoil',
   'pex-al-pex':'PEX-AL-PEX',
   'cijevi-grijanje':'Cijevi',
+  'steelpres':'SteelPRES press-fitting',
   'izolacija':'Izolacija',
   'podno-grijanje':'Podno grijanje',
   'ovjesni-pribor':'Ovjesni pribor',
