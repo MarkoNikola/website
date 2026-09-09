@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 
-const SITE = 'https://italterm.net';
+const SITE = 'https://www.italterm.net';
 
 // Statične stranice. priority je relativan (0.0–1.0) — koristi se samo
 // za usporedbu stranica unutar iste domene.

@@ -2,7 +2,7 @@ Options -Indexes
 RewriteEngine On
 
 # ═══════════════════════════════════════════════════════════
-#  JEDNA SLUŽBENA ADRESA  →  https://italterm.net
+#  JEDNA SLUŽBENA ADRESA  →  https://www.italterm.net
 #
 #  Bez ovoga stranica je dostupna na četiri različite adrese:
 #    http://italterm.net        http://www.italterm.net
@@ -13,27 +13,24 @@ RewriteEngine On
 #  Mora stajati PRIJE pravila za clean URL-ove da se ne bi
 #  događala dva preusmjeravanja zaredom (sporije i lošije za SEO).
 #
-#  ŽELITE LI www UMJESTO BEZ www: zamijenite ova dva bloka
-#  blokom koji je zakomentiran ispod njih.
+#  VAŽNO: adresa ovdje mora biti ista kao canonical i og:url oznake
+#  u HTML datotekama. Ako mijenjate jedno — mijenjajte oboje.
 # ═══════════════════════════════════════════════════════════
 
-# 1) http → https
+# 1) bez www → www   (istovremeno prebacuje i na https)
+#    Uvjet !^localhost štiti lokalni razvoj (serve-local.js).
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} !^localhost [NC]
+RewriteCond %{HTTP_HOST} !^127\. [NC]
+RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# 2) http → https   (za posjete na www.italterm.net bez https)
+#    X-Forwarded-Proto se provjerava jer Hostinger SSL završava na
+#    proxyju ispred stranice, pa %{HTTPS} zna pisati "off" i kad je
+#    veza sigurna. Bez te linije nastaje beskonačna petlja.
 RewriteCond %{HTTPS} !=on
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-
-# 2) www → bez www
-RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
-
-# ─── Varijanta za www (ako se predomislite) ─────────────────
-# Obrišite blok 2) iznad i odkomentirajte ove tri linije.
-# U svim HTML datotekama tada treba i canonical/og:url promijeniti
-# iz https://italterm.net u https://www.italterm.net
-#
-# RewriteCond %{HTTP_HOST} !^www\. [NC]
-# RewriteCond %{HTTP_HOST} !^localhost [NC]
-# RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # ═══════════════════════════════════════════════════════════
 #  CLEAN URLs
