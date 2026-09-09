@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google Search Console — vlasništvo stranice. NE BRISATI: Google povremeno provjerava ovu oznaku. -->
 <meta name="google-site-verification" content="BoZgzKif48cTgPoS5cWS-3aErc8s3nGjhpheQWXSqvY">
+<!-- ═══ SEO ═══════════════════════════════════════════════════════════
+     Opis stranice koji Google prikazuje ispod naslova u rezultatima
+     pretrage. Držite ga na 140–160 znakova.
+     og:* i twitter:* oznake kontroliraju kako izgleda pregled (slika +
+     naslov) kada netko podijeli link na Facebooku, WhatsAppu, Viberu ili
+     LinkedInu. Slika je images/ui/og-image.jpg (1200×630).
+     ═══════════════════════════════════════════════════════════════════ -->
+<meta name="description" content="Detalji proizvoda iz ITALTERM kataloga – tehnički podaci, varijante i upit za ponudu.">
+<link rel="canonical" href="https://italterm.net/proizvod">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="ITALTERM">
+<meta property="og:locale" content="hr_HR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:url" content="https://italterm.net/proizvod">
+<meta property="og:title" content="Detalji proizvoda – ITALTERM">
+<meta property="og:description" content="Detalji proizvoda iz ITALTERM kataloga – tehnički podaci, varijante i upit za ponudu.">
+<meta property="og:image" content="https://italterm.net/images/ui/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ITALTERM poslovnica u Čitluku">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Detalji proizvoda – ITALTERM">
+<meta name="twitter:description" content="Detalji proizvoda iz ITALTERM kataloga – tehnički podaci, varijante i upit za ponudu.">
+<meta name="twitter:image" content="https://italterm.net/images/ui/og-image.jpg">
+
 <title>Detalji proizvoda – ITALTERM</title>
 <!-- Favicon (logo u tabu) -->
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -477,6 +503,70 @@ function updateProductOptions() {
   }
 }
 
+/* ═══ SEO za pojedinačni proizvod ═══════════════════════════════════
+   Ova stranica je jedan predložak koji prikazuje bilo koji proizvod
+   (/proizvod?id=ŠIFRA). Zato se opis, canonical link, slika za dijeljenje
+   i strukturirani podaci moraju postaviti iz JavaScripta, za svaki
+   proizvod posebno. Bez ovoga bi Google za svih 138 proizvoda vidio isti
+   generički opis i tretirao ih kao duplikate.
+   Ne treba ništa mijenjati kad dodajete proizvode — radi automatski.
+   ═══════════════════════════════════════════════════════════════════ */
+function applySeo(product) {
+  const SITE = 'https://italterm.net';
+  const url  = SITE + '/proizvod?id=' + encodeURIComponent(product.code);
+  const img  = product.img || (product.imgs && product.imgs[0]);
+  // encodeURI: putanje slika sadrže razmake ("CIJEVI ZA KANALIZACIJU"), a
+  // og:image mora biti ispravan URL inače Facebook/WhatsApp ne dohvate sliku.
+  const abs  = img ? encodeURI(SITE + '/' + String(img).replace(/^\//, ''))
+                   : SITE + '/images/ui/og-image.jpg';
+
+  // Opis: prve ~160 znakova opisa proizvoda, prekinuto na cijeloj riječi.
+  let desc = (product.desc || '').replace(/\s+/g, ' ').trim();
+  if (!desc) desc = product.name + ' – dostupno u ITALTERM katalogu. Pošaljite upit za ponudu.';
+  if (desc.length > 160) desc = desc.slice(0, 157).replace(/\s+\S*$/, '') + '…';
+
+  const set = (sel, attr, val) => {
+    const el = document.querySelector(sel);
+    if (el) el.setAttribute(attr, val);
+  };
+  set('meta[name="description"]',      'content', desc);
+  set('link[rel="canonical"]',         'href',    url);
+  set('meta[property="og:url"]',       'content', url);
+  set('meta[property="og:title"]',     'content', product.name + ' – ITALTERM');
+  set('meta[property="og:description"]','content', desc);
+  set('meta[property="og:image"]',     'content', abs);
+  set('meta[name="twitter:title"]',    'content', product.name + ' – ITALTERM');
+  set('meta[name="twitter:description"]','content', desc);
+  set('meta[name="twitter:image"]',    'content', abs);
+
+  // og:image:width/height vrijede samo za zajedničku og-image.jpg; kod
+  // slike proizvoda su netočni pa ih uklanjamo.
+  if (img) {
+    document.querySelectorAll('meta[property="og:image:width"],meta[property="og:image:height"]')
+      .forEach(el => el.remove());
+  }
+
+  // Product schema — Google je koristi za prikaz proizvoda u pretrazi.
+  // Cijene ne objavljujemo, pa nema offers bloka.
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    sku: product.code,
+    description: desc,
+    url: url,
+    category: (typeof CAT_LABELS !== 'undefined' && CAT_LABELS[product.cat]) || product.cat,
+    brand: { '@type': 'Brand', name: product.brand || 'ITALTERM' },
+    seller: { '@type': 'Organization', '@id': SITE + '/#organizacija', name: 'ITALTERM d.o.o.' }
+  };
+  if (img) data.image = abs;
+
+  const s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify(data);
+  document.head.appendChild(s);
+}
+
 (function() {
   const code = new URLSearchParams(location.search).get('id');
   // Exact code, else an old code kept in codeAliases (so links to products
@@ -562,6 +652,7 @@ function updateProductOptions() {
   }
   document.getElementById('productGroup').textContent = GROUP_LABELS[product.group] || product.group;
   document.title = product.name + ' – ITALTERM';
+  applySeo(product);
 
   // Image gallery — supports `img` (single) and `imgs` (multiple)
   var images = product.imgs && product.imgs.length > 0

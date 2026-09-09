@@ -5,6 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google Search Console — vlasništvo stranice. NE BRISATI: Google povremeno provjerava ovu oznaku. -->
 <meta name="google-site-verification" content="BoZgzKif48cTgPoS5cWS-3aErc8s3nGjhpheQWXSqvY">
+<!-- ═══ SEO ═══════════════════════════════════════════════════════════
+     Opis stranice koji Google prikazuje ispod naslova u rezultatima
+     pretrage. Držite ga na 140–160 znakova.
+     og:* i twitter:* oznake kontroliraju kako izgleda pregled (slika +
+     naslov) kada netko podijeli link na Facebooku, WhatsAppu, Viberu ili
+     LinkedInu. Slika je images/ui/og-image.jpg (1200×630).
+     ═══════════════════════════════════════════════════════════════════ -->
+<meta name="description" content="ITALTERM Čitluk – distributer opreme za grijanje, klimatizaciju, vodoinstalacije, sanitarije, kanalizaciju i navodnjavanje. Od 1996. godine.">
+<link rel="canonical" href="https://italterm.net/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ITALTERM">
+<meta property="og:locale" content="hr_HR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:url" content="https://italterm.net/">
+<meta property="og:title" content="ITALTERM – Sve što vam treba za vaš savršen dom">
+<meta property="og:description" content="ITALTERM Čitluk – distributer opreme za grijanje, klimatizaciju, vodoinstalacije, sanitarije, kanalizaciju i navodnjavanje. Od 1996. godine.">
+<meta property="og:image" content="https://italterm.net/images/ui/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ITALTERM poslovnica u Čitluku">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ITALTERM – Sve što vam treba za vaš savršen dom">
+<meta name="twitter:description" content="ITALTERM Čitluk – distributer opreme za grijanje, klimatizaciju, vodoinstalacije, sanitarije, kanalizaciju i navodnjavanje. Od 1996. godine.">
+<meta name="twitter:image" content="https://italterm.net/images/ui/og-image.jpg">
+
 <title data-i18n="meta.title.index">ITALTERM – Grijanje, Klimatizacija i Vodoinstalacije</title>
 <!-- Favicon (logo u tabu) -->
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -398,6 +424,49 @@ footer ul li a:hover{color:var(--blue)}
 .lang-btn{background:none;border:1.5px solid rgba(255,255,255,.18);border-radius:4px;cursor:pointer;padding:2px 3px;display:flex;align-items:center;opacity:.6;transition:opacity .15s,border-color .15s}
 .lang-btn:hover,.lang-btn.lang-active{opacity:1;border-color:var(--blue)}
 </style>
+
+<!-- ═══ Strukturirani podaci (Schema.org) ═════════════════════════════
+     Ovo Google čita da bi znao da smo fizička tvrtka: adresa, telefon,
+     radno vrijeme. Pomaže kod prikaza u Google Mapsu i lokalnoj pretrazi.
+     AKO SE PROMIJENI adresa, telefon ili radno vrijeme — izmijenite i ovdje.
+     Provjera ispravnosti: https://search.google.com/test/rich-results
+     ═══════════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HardwareStore",
+  "@id": "https://italterm.net/#organizacija",
+  "name": "ITALTERM d.o.o.",
+  "description": "Distributer opreme za grijanje, klimatizaciju, vodoinstalacije, sanitarije, kanalizaciju i navodnjavanje. Posluje od 1996. godine.",
+  "url": "https://italterm.net/",
+  "logo": "https://italterm.net/images/ui/italterm.webp",
+  "image": "https://italterm.net/images/ui/og-image.jpg",
+  "foundingDate": "1996",
+  "email": "italterm@tel.net.ba",
+  "telephone": "+38736644152",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Potpolje 36",
+    "postalCode": "88260",
+    "addressLocality": "\u010citluk",
+    "addressCountry": "BA"
+  },
+  "areaServed": { "@type": "Country", "name": "Bosna i Hercegovina" },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  }],
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "telephone": "+38763353771",
+    "email": "italterm@tel.net.ba",
+    "availableLanguage": ["hr","it"]
+  }]
+}
+</script>
 </head>
 <body>
 

@@ -1,0 +1,7 @@
+# ITALTERM d.o.o. — https://italterm.net
+# Cijela stranica je otvorena za indeksiranje.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://italterm.net/sitemap.xml
