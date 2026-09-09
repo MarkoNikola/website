@@ -1,4 +1,19 @@
 // ═══════════════════════════════════════════════════════════════════
+//  VAŽNO NAKON IZMJENE OVE DATOTEKE
+//
+//  Preglednici i Hostingerov server drže staru kopiju do tjedan dana, pa
+//  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
+//  učitava s brojem verzije:
+//
+//      <script src="products.js?v=3"></script>
+//
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=3 → v=4) u OBJE datoteke:
+//      proizvodi.html   i   proizvod.html
+//  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
+//  verziju. Isto vrijedi i za lang.js.
+//
+//  I ne zaboravite:  node build-sitemap.js  →  novi sitemap.xml
+// ═══════════════════════════════════════════════════════════════════
 //  ITALTERM – Katalog proizvoda
 //  Uredite ovu datoteku da dodate, izmijenite ili uklonite proizvode.
 // ═══════════════════════════════════════════════════════════════════
