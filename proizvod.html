@@ -70,6 +70,10 @@ nav{position:fixed;top:36px;left:0;right:0;z-index:1000;background:rgba(13,22,32
 
 /* Product Layout */
 .product-wrap{max-width:1200px;margin:0 auto;padding:36px 6%;display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+/* Bez min-width:0 grid stupac se raširi prema najširem sadržaju (široka
+   tablica) i razvuče cijelu stranicu u stranu umjesto da se tablica
+   klizno pomiče unutar svog okvira. */
+.product-wrap > *{min-width:0}
 
 /* Image */
 .product-img{background:var(--gray);border:1px solid var(--gray2);border-radius:10px;aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
@@ -111,8 +115,22 @@ nav{position:fixed;top:36px;left:0;right:0;z-index:1000;background:rgba(13,22,32
 .product-specs-table thead th{background:#fff;font-family:'Barlow Condensed',sans-serif;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--gray3);font-weight:700}
 .product-specs-table tbody tr:last-child td{border-bottom:none}
 .product-specs-table tbody tr:hover{background:rgba(27,168,213,.04)}
-.product-specs-table td:first-child{font-weight:600;color:var(--text);width:35%}
 .product-specs-table td{color:var(--text2)}
+/* Naziv modela ne lomimo ("EZCOOL 27M" u dva reda izgleda kao greška).
+   Vrijednosti se smiju lomiti — inače tablica postane pretjerano široka. */
+.product-specs-table td:first-child{font-weight:600;color:var(--text);white-space:nowrap}
+/* Široke tablice (npr. plinski regulatori) na mobitelu se klizno pomiču
+   unutar svog okvira umjesto da razvuku cijelu stranicu u stranu. */
+.specs-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.specs-scroll .product-specs-table{min-width:100%}
+/* Široka prva kolona ima smisla samo kod tablica s 1-2 stupca vrijednosti;
+   kod širih bi stisnula brojke pa bi se "2,90 kW" lomilo u dva reda. */
+.product-specs-table.narrow td:first-child{width:35%}
+/* Red s napomenom ("Preporučena primjena") — puna širina ispod svog reda. */
+.product-specs-table tr.has-note td{border-bottom:none;padding-bottom:3px}
+.product-specs-table tr.spec-note td{white-space:normal;padding:0 14px 11px;font-size:12.5px;line-height:1.5;color:var(--gray3)}
+.spec-note-lbl{display:block;font-family:'Barlow Condensed',sans-serif;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);font-weight:700;margin-bottom:2px}
+.product-specs-table tr.spec-note:hover{background:none}
 @media(max-width:600px){.product-specs-table{font-size:12.5px}.product-specs-table th,.product-specs-table td{padding:7px 10px}}
 
 /* Variant selector */
@@ -631,23 +649,58 @@ function applySeo(product) {
     if (product.specs.title) {
       html += '<div class="product-specs-title">' + product.specs.title + '</div>';
     }
-    html += '<table class="product-specs-table">';
-    if (product.specs.headers && product.specs.headers.length > 0) {
+    /* Stupci s dugim tekstom (npr. "Preporučena primjena" kod klima
+       uređaja) ne stanu u usku tablicu — svaka riječ završi u svom redu.
+       Zato takve stupce vadimo iz tablice i prikazujemo kao napomenu
+       preko cijele širine ispod pripadajućeg reda.
+       Tablice s kratkim vrijednostima (fancoil, plinski regulatori)
+       ostaju obične tablice — prag od 40 znakova ih ne dira. */
+    var LONG_CELL = 40;
+    var headers   = product.specs.headers || [];
+    var colCount  = Math.max.apply(null, product.specs.rows.map(function(r) { return r.length; }));
+
+    var longCols = [];
+    for (var c = 0; c < colCount; c++) {
+      var isLong = product.specs.rows.some(function(row) {
+        return row[c] && String(row[c]).length > LONG_CELL;
+      });
+      if (isLong) longCols.push(c);
+    }
+    var shortCols = [];
+    for (var c2 = 0; c2 < colCount; c2++) {
+      if (longCols.indexOf(c2) === -1) shortCols.push(c2);
+    }
+
+    html += '<div class="specs-scroll">';
+    html += '<table class="product-specs-table' +
+            (shortCols.length <= 2 ? ' narrow' : '') + '">';
+    if (headers.length > 0) {
       html += '<thead><tr>';
-      product.specs.headers.forEach(function(h) {
-        html += '<th>' + h + '</th>';
+      shortCols.forEach(function(c) {
+        html += '<th>' + (headers[c] || '') + '</th>';
       });
       html += '</tr></thead>';
     }
     html += '<tbody>';
     product.specs.rows.forEach(function(row) {
-      html += '<tr>';
-      row.forEach(function(cell) {
-        html += '<td>' + cell + '</td>';
+      html += '<tr' + (longCols.length ? ' class="has-note"' : '') + '>';
+      shortCols.forEach(function(c) {
+        html += '<td>' + (row[c] == null ? '' : row[c]) + '</td>';
       });
       html += '</tr>';
+
+      // Napomene idu u zaseban red preko svih stupaca. Naziv stupca
+      // ispisujemo samo ako ih ima više od jednog — inače bi se isti
+      // natpis ponavljao uz svaki red bez ikakve koristi.
+      longCols.forEach(function(c) {
+        if (!row[c]) return;
+        html += '<tr class="spec-note"><td colspan="' + shortCols.length + '">' +
+                (headers[c] && longCols.length > 1
+                   ? '<span class="spec-note-lbl">' + headers[c] + '</span>' : '') +
+                row[c] + '</td></tr>';
+      });
     });
-    html += '</tbody></table>';
+    html += '</tbody></table></div>';
     specBox.innerHTML = html;
   }
   document.getElementById('productGroup').textContent = GROUP_LABELS[product.group] || product.group;
