@@ -603,6 +603,10 @@ const PRODUCTS = [
  {
     group: 'grijanje',
     cat:   'steelpres',
+    // Cijev se prikazuje i pod "Cijevi" i pod "SteelPRES" — `cat` ostaje
+    // glavna kategorija (koristi se u breadcrumbu), `cats` nabraja sve
+    // filtre u kojima se proizvod pojavljuje.
+    cats:  ['steelpres', 'cijevi-grijanje'],
     brand: 'RM',
     name:  'SteelPRES Cijev',
     desc:  'SteelPRES cijevi izrađene su od uzdužno varenog ugljičnog čelika s vanjskom galvanskom zaštitom od cinka, što ih čini iznimno čvrstima i otpornima na koroziju. Proizvode se u dimenzijama od Ø 15 mm do Ø 108 mm te su idealne za brzu ugradnju u zatvorenim sustavima grijanja, hlađenja i komprimiranog zraka.',

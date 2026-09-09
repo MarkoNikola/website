@@ -34,12 +34,19 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
 // najvrjednije stranice — netko tko traži "radijatori" treba doći na popis
 // radijatora. Uzimamo samo kombinacije koje stvarno imaju proizvoda, pa
 // prazne kategorije iz sidebara ne završe u sitemapu.
+// Proizvod se može nalaziti u više kategorija/grupa (vidi products.js:
+// polja `cats` i `groups`) — tada se pojavljuje u svakoj od njih.
+const prodCats   = p => p.cats   || (p.cat   ? [p.cat]   : []);
+const prodGroups = p => p.groups || (p.group ? [p.group] : []);
+
 const seen = new Map();
 for (const p of PRODUCTS) {
-  if (p.group) seen.set('group=' + p.group, (seen.get('group=' + p.group) || 0) + 1);
-  if (p.group && p.cat) {
-    const k = 'group=' + p.group + '&cat=' + p.cat;
-    seen.set(k, (seen.get(k) || 0) + 1);
+  for (const g of prodGroups(p)) {
+    seen.set('group=' + g, (seen.get('group=' + g) || 0) + 1);
+    for (const c of prodCats(p)) {
+      const k = 'group=' + g + '&cat=' + c;
+      seen.set(k, (seen.get(k) || 0) + 1);
+    }
   }
 }
 const listUrls = [...seen.entries()].map(([q, count]) => ({

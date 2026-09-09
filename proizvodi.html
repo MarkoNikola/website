@@ -278,6 +278,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
             <li><a href="proizvodi?group=grijanje&cat=podno-grijanje" data-i18n="nav.mm.underfloor">Podno grijanje</a></li>
             <li><a href="proizvodi?group=grijanje&cat=spremnici" data-i18n="nav.mm.tanks">Spremnici, bojleri</a></li>
             <li><a href="proizvodi?group=grijanje&cat=fancoil" data-i18n="nav.mm.fancoil">Fancoil</a></li>
+            <li><a href="proizvodi?group=grijanje&cat=steelpres" data-i18n="nav.mm.steelpres">SteelPRES press-fitting</a></li>
             <li><a href="proizvodi?group=grijanje" data-i18n="nav.mm.all.heating">Sve iz grijanja →</a></li>
           </ul>
         </div>
@@ -751,12 +752,27 @@ let currentPage = 1;           // current pagination page
 const PRODUCTS_PER_PAGE = 40;  // items per page
 
 // ── Count products per cat/group ──────────────────────────────
+/* ═══ Proizvod u više kategorija ═════════════════════════════════════
+   Neki proizvodi pripadaju na dva mjesta — SteelPRES cijev je i cijev i
+   dio SteelPRES sustava, pa se mora vidjeti pod oba filtra.
+
+   U products.js se to piše ovako:
+
+       cat:  'steelpres',                       ← glavna (za breadcrumb)
+       cats: ['steelpres', 'cijevi-grijanje'],  ← sve u kojima se prikazuje
+
+   Isto vrijedi i za grupe (groups), ako proizvod pripada u npr. i
+   grijanje i vodomaterijal. Proizvodi bez cats/groups rade kao i prije.
+   ═══════════════════════════════════════════════════════════════════ */
+function prodCats(p)   { return p.cats   || (p.cat   ? [p.cat]   : []); }
+function prodGroups(p) { return p.groups || (p.group ? [p.group] : []); }
+
 function buildCounts() {
   const catCount = {};
   const groupCount = {};
   PRODUCTS.forEach(p => {
-    catCount[p.cat] = (catCount[p.cat] || 0) + 1;
-    groupCount[p.group] = (groupCount[p.group] || 0) + 1;
+    prodCats(p).forEach(c   => { catCount[c]   = (catCount[c]   || 0) + 1; });
+    prodGroups(p).forEach(g => { groupCount[g] = (groupCount[g] || 0) + 1; });
   });
   // Update sidebar counts
   document.querySelectorAll('.sf-item-count').forEach(el => {
@@ -811,8 +827,8 @@ function filterCards() {
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
   const filtered = PRODUCTS.filter(p => {
-    const groupOk = quickGroupFilter === 'sve' || p.group === quickGroupFilter;
-    const catOk   = checkedCats.size === 0 || checkedCats.has(p.cat);
+    const groupOk = quickGroupFilter === 'sve' || prodGroups(p).indexOf(quickGroupFilter) !== -1;
+    const catOk   = checkedCats.size === 0 || prodCats(p).some(c => checkedCats.has(c));
     const brandOk = !activeBrand || (p.brand && p.brand.toLowerCase() === activeBrand.toLowerCase());
     const variantText = p.variants ? p.variants.map(v => v.label + ' ' + v.code).join(' ') : '';
     const searchOk = !query || [p.brand,p.name,p.desc,p.code,variantText].join(' ').toLowerCase().includes(query);
@@ -1034,8 +1050,8 @@ function applyListSeo(group, cat) {
   // kategorije. Isti oblik generira i build-sitemap.js.
   let canonGroup = (group && groupLabel) ? group : null;
   if (catLabel && !canonGroup) {
-    const owner = PRODUCTS.find(p => p.cat === cat);
-    if (owner && owner.group) canonGroup = owner.group;
+    const owner = PRODUCTS.find(p => prodCats(p).indexOf(cat) !== -1);
+    if (owner) canonGroup = prodGroups(owner)[0] || null;
   }
 
   const q = [];
@@ -1045,7 +1061,8 @@ function applyListSeo(group, cat) {
 
   // Koliko artikala stvarno stoji iza ovog filtra — ide u opis.
   const n = PRODUCTS.filter(p =>
-    (!groupLabel || p.group === group) && (!catLabel || p.cat === cat)
+    (!groupLabel || prodGroups(p).indexOf(group) !== -1) &&
+    (!catLabel   || prodCats(p).indexOf(cat)     !== -1)
   ).length;
 
   // Hrvatska množina: 1 artikal / 2-4 artikla / 5+ artikala
