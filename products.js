@@ -628,10 +628,7 @@ const PRODUCTS = [
     brand: 'CLIVET',
     name:  'CLIVET Nativ serija',
     desc:  'Clivet Nativ je inverter klima uređaj renomiranog talijanskog brenda Clivet. Ističe se odličnom kvalitetom te pruža energetski učinkovito hlađenje (A++) i grijanje (A+) uz visoku pouzdanost.',
-    code:  'CLIVET-NATIV',
-    // Stara šifra je bila 'Clivet Nativ'. Google je već indeksirao tu adresu,
-    // pa je ostavljamo ovdje da stari linkovi i dalje rade.
-    codeAliases: ['Clivet Nativ'],
+    code:  'Clivet Nativ',
     featured: true,
     imgs: ['images/Hlađenje/Klima uređaji/Clivet Nativ AC.jpg',
             'images/Hlađenje/Klima uređaji/Clivet Nativ klima uređaj.jpg'
@@ -659,7 +656,7 @@ const PRODUCTS = [
     brand: 'CLIVET',
     name:  'CLIVET EZCOOL serija',
     desc:  'Clivet EZCOOL je moderni inverter klima uređaj talijanskog brenda Clivet koji u prvom planu ima praktičnost i jednostavnost održavanja (Easy Clean koncept s magnetnim filterima na vrhu koji se skidaju u par sekundi). Pruža energetski učinkovito hlađenje (A++) i grijanje (A+) uz moderan dizajn, tihi rad te integriranu pripremu za Wi-Fi upravljanje i napredne funkcije poput "Follow Me" i "Active Clean".',
-    code:  'CLIVET-EZCOOL',
+    code:  'Clivet EZCOOL',
     featured: true,
     imgs: ['images/Hlađenje/Klima uređaji/EZCOOL.jpg',
             'images/Hlađenje/Klima uređaji/EZCOOL klima.jpg'
