@@ -1001,11 +1001,93 @@ function closeMobSidebar() {
   document.body.style.overflow = '';
 }
 
+/* ═══ SEO za filtrirane liste ═══════════════════════════════════════
+   /proizvodi?cat=klima-uredaji je za Google zasebna stranica i upravo su
+   te stranice najvrjednije — netko tko traži "klima uređaji" treba doći
+   na popis klima uređaja, a ne na cijeli katalog.
+
+   Bez ovoga sve filtrirane liste dijele naslov, opis i canonical cijelog
+   kataloga, pa ih Google ili odbaci kao duplikate ili sam izmisli naslov
+   iz teksta na stranici.
+
+   Radi automatski za svaku kategoriju iz CAT_LABELS — kad dodate novu
+   kategoriju u sidebar, ovdje nema što mijenjati.
+   ═══════════════════════════════════════════════════════════════════ */
+function applyListSeo(group, cat) {
+  const SITE = 'https://www.italterm.net';
+
+  const catLabel   = cat   ? (CAT_LABELS[cat]   || null) : null;
+  const groupLabel = group ? (GROUP_NAMES[group] || null) : null;
+
+  // Nepoznat cat/group u linku se tiho ignorira pri filtriranju, pa ga
+  // ovdje tretiramo kao da nije ni zadan — inače bismo Googleu prijavili
+  // canonical na adresu koja ne prikazuje ništa.
+  // Ista lista je dostupna na dvije adrese: ?cat=radijatori i
+  // ?group=grijanje&cat=radijatori. Da Google ne bi vidio duplikat, uvijek
+  // prijavljujemo duži oblik — grupu dohvatimo iz prvog proizvoda te
+  // kategorije. Isti oblik generira i build-sitemap.js.
+  let canonGroup = (group && groupLabel) ? group : null;
+  if (catLabel && !canonGroup) {
+    const owner = PRODUCTS.find(p => p.cat === cat);
+    if (owner && owner.group) canonGroup = owner.group;
+  }
+
+  const q = [];
+  if (canonGroup)        q.push('group=' + encodeURIComponent(canonGroup));
+  if (cat   && catLabel) q.push('cat='   + encodeURIComponent(cat));
+  const url = SITE + '/proizvodi' + (q.length ? '?' + q.join('&') : '');
+
+  // Koliko artikala stvarno stoji iza ovog filtra — ide u opis.
+  const n = PRODUCTS.filter(p =>
+    (!groupLabel || p.group === group) && (!catLabel || p.cat === cat)
+  ).length;
+
+  // Hrvatska množina: 1 artikal / 2-4 artikla / 5+ artikala
+  // (11-14 su iznimka: "11 artikala", ne "11 artikal")
+  const artikala = k => {
+    const d = k % 10, s = k % 100;
+    if (d === 1 && s !== 11) return k + ' artikal';
+    if (d >= 2 && d <= 4 && (s < 12 || s > 14)) return k + ' artikla';
+    return k + ' artikala';
+  };
+
+  let title, desc;
+  if (catLabel) {
+    title = catLabel + ' – ITALTERM';
+    desc  = catLabel + ' iz ITALTERM ponude' +
+            (groupLabel ? ' (' + groupLabel.toLowerCase() + ')' : '') +
+            ' – ' + artikala(n) +
+            '. Zatražite ponudu, isporuka po cijeloj BiH.';
+  } else if (groupLabel) {
+    title = groupLabel + ' – ITALTERM';
+    desc  = 'Oprema za ' + groupLabel.toLowerCase() + ' iz ITALTERM ponude – ' +
+            artikala(n) +
+            '. Zatražite ponudu, isporuka po cijeloj BiH.';
+  } else {
+    return; // nefiltrirani katalog — statične oznake iz <head> su točne
+  }
+
+  document.title = title;
+
+  const set = (sel, attr, val) => {
+    const el = document.querySelector(sel);
+    if (el) el.setAttribute(attr, val);
+  };
+  set('meta[name="description"]',        'content', desc);
+  set('link[rel="canonical"]',           'href',    url);
+  set('meta[property="og:url"]',         'content', url);
+  set('meta[property="og:title"]',       'content', title);
+  set('meta[property="og:description"]', 'content', desc);
+  set('meta[name="twitter:title"]',      'content', title);
+  set('meta[name="twitter:description"]','content', desc);
+}
+
 // ── URL params ────────────────────────────────────────────────
 (function() {
   const p = new URLSearchParams(window.location.search);
   const group = p.get('group');
   const cat   = p.get('cat');
+  applyListSeo(group, cat);
   if (group) {
     const btn = document.querySelector(`.gtab[data-group="${group}"]`);
     quickGroup(group, btn);

@@ -30,8 +30,28 @@ const today = new Date().toISOString().slice(0, 10);
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
                           .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+// Filtrirane liste (/proizvodi?group=…&cat=…). Ovo su komercijalno
+// najvrjednije stranice — netko tko traži "radijatori" treba doći na popis
+// radijatora. Uzimamo samo kombinacije koje stvarno imaju proizvoda, pa
+// prazne kategorije iz sidebara ne završe u sitemapu.
+const seen = new Map();
+for (const p of PRODUCTS) {
+  if (p.group) seen.set('group=' + p.group, (seen.get('group=' + p.group) || 0) + 1);
+  if (p.group && p.cat) {
+    const k = 'group=' + p.group + '&cat=' + p.cat;
+    seen.set(k, (seen.get(k) || 0) + 1);
+  }
+}
+const listUrls = [...seen.entries()].map(([q, count]) => ({
+  loc: SITE + '/proizvodi?' + q,
+  changefreq: 'weekly',
+  // Kategorije s više artikala su korisnije odredište pa im dajemo prednost.
+  priority: count >= 5 ? '0.8' : '0.6',
+}));
+
 const urls = [
   ...PAGES.map(p => ({ loc: SITE + p.loc, changefreq: p.changefreq, priority: p.priority })),
+  ...listUrls,
   ...PRODUCTS.map(p => ({
     loc: SITE + '/proizvod?id=' + encodeURIComponent(p.code),
     changefreq: 'monthly',
