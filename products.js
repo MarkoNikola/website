@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=3"></script>
+//      <script src="products.js?v=4"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=3 → v=4) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=4 → v=5) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -664,14 +664,31 @@ const PRODUCTS = [
     code:  'SteelPRES-T-Komad',
     img: 'images/STEELPRES/Steel/T.jpg',
     variants: [
-    { label: 'SteelPRES T-komad Ø15mm / 15-15-15 / 15-15-18 / 15-18-18',  code: 'SteelPRES-T-Komad-15',  },
-    { label: 'SteelPRES T-komad Ø18mm / 18-18-18 / 18-18-22 / 18-22-22',  code: 'SteelPRES-T-Komad-18',  },
-    { label: 'SteelPRES T-komad Ø22mm / 22-22-22 / 22-22-28 / 22-28-28',  code: 'SteelPRES-T-Komad-22',  },
-    { label: 'SteelPRES T-komad Ø28mm / 28-28-28 / 28-28-35 / 28-35-35',  code: 'SteelPRES-T-Komad-28',  },
-    { label: 'SteelPRES T-komad Ø35mm / 35-35-35 / 35-35-42 / 35-42-42',  code: 'SteelPRES-T-Komad-35',  },
-    { label: 'SteelPRES T-komad Ø42mm / 42-42-42 / 42-42-54 / 42-54-54',  code: 'SteelPRES-T-Komad-42',  },
-    { label: 'SteelPRES T-komad Ø54mm / 54-54-54 / 54-54-76 / 54-76-76',  code: 'SteelPRES-T-Komad-54',  },
-    ]
+      { label: 'SteelPRES T-komad 15-15-15', code: 'SteelPRES-T-Komad-15-15-15' },
+      { label: 'SteelPRES T-komad 18-15-18', code: 'SteelPRES-T-Komad-18-15-18' },
+      { label: 'SteelPRES T-komad 18-18-18', code: 'SteelPRES-T-Komad-18-18-18' },
+      { label: 'SteelPRES T-komad 22-15-22', code: 'SteelPRES-T-Komad-22-15-22' },
+      { label: 'SteelPRES T-komad 22-18-22', code: 'SteelPRES-T-Komad-22-18-22' },
+      { label: 'SteelPRES T-komad 22-22-22', code: 'SteelPRES-T-Komad-22-22-22' },
+      { label: 'SteelPRES T-komad 28-15-28', code: 'SteelPRES-T-Komad-28-15-28' },
+      { label: 'SteelPRES T-komad 28-18-28', code: 'SteelPRES-T-Komad-28-18-28' },
+      { label: 'SteelPRES T-komad 28-22-28', code: 'SteelPRES-T-Komad-28-22-28' },
+      { label: 'SteelPRES T-komad 28-28-28', code: 'SteelPRES-T-Komad-28-28-28' },
+      { label: 'SteelPRES T-komad 35-15-35', code: 'SteelPRES-T-Komad-35-15-35' },
+      { label: 'SteelPRES T-komad 35-18-35', code: 'SteelPRES-T-Komad-35-18-35' },
+      { label: 'SteelPRES T-komad 35-22-35', code: 'SteelPRES-T-Komad-35-22-35' },
+      { label: 'SteelPRES T-komad 35-28-35', code: 'SteelPRES-T-Komad-35-28-35' },
+      { label: 'SteelPRES T-komad 35-35-35', code: 'SteelPRES-T-Komad-35-35-35' },
+      { label: 'SteelPRES T-komad 42-22-42', code: 'SteelPRES-T-Komad-42-22-42' },
+      { label: 'SteelPRES T-komad 42-28-42', code: 'SteelPRES-T-Komad-42-28-42' },
+      { label: 'SteelPRES T-komad 42-35-42', code: 'SteelPRES-T-Komad-42-35-42' },
+      { label: 'SteelPRES T-komad 42-42-42', code: 'SteelPRES-T-Komad-42-42-42' },
+      { label: 'SteelPRES T-komad 54-22-54', code: 'SteelPRES-T-Komad-54-22-54' },
+      { label: 'SteelPRES T-komad 54-28-54', code: 'SteelPRES-T-Komad-54-28-54' },
+      { label: 'SteelPRES T-komad 54-35-54', code: 'SteelPRES-T-Komad-54-35-54' },
+      { label: 'SteelPRES T-komad 54-42-54', code: 'SteelPRES-T-Komad-54-42-54' },
+      { label: 'SteelPRES T-komad 54-54-54', code: 'SteelPRES-T-Komad-54-54-54' },
+    ],
   },
 
   {
@@ -683,6 +700,20 @@ const PRODUCTS = [
     code:  'SteelPRES-T-Komad-Navoj',
     img: 'images/STEELPRES/Steel/t - navoj.jpg',
 
+    variants: [
+      { label: 'SteelPRES T-komad s navojem Ø15mm – 1/2" – Ø15mm', code: 'SteelPRES-T-Komad-Navoj-15-12' },
+      { label: 'SteelPRES T-komad s navojem Ø18mm – 1/2" – Ø18mm', code: 'SteelPRES-T-Komad-Navoj-18-12' },
+      { label: 'SteelPRES T-komad s navojem Ø22mm – 1/2" – Ø22mm', code: 'SteelPRES-T-Komad-Navoj-22-12' },
+      { label: 'SteelPRES T-komad s navojem Ø22mm – 3/4" – Ø22mm', code: 'SteelPRES-T-Komad-Navoj-22-34' },
+      { label: 'SteelPRES T-komad s navojem Ø28mm – 1/2" – Ø28mm', code: 'SteelPRES-T-Komad-Navoj-28-12' },
+      { label: 'SteelPRES T-komad s navojem Ø28mm – 3/4" – Ø28mm', code: 'SteelPRES-T-Komad-Navoj-28-34' },
+      { label: 'SteelPRES T-komad s navojem Ø35mm – 1/2" – Ø35mm', code: 'SteelPRES-T-Komad-Navoj-35-12' },
+      { label: 'SteelPRES T-komad s navojem Ø35mm – 3/4" – Ø35mm', code: 'SteelPRES-T-Komad-Navoj-35-34' },
+      { label: 'SteelPRES T-komad s navojem Ø42mm – 1/2" – Ø42mm', code: 'SteelPRES-T-Komad-Navoj-42-12' },
+      { label: 'SteelPRES T-komad s navojem Ø42mm – 3/4" – Ø42mm', code: 'SteelPRES-T-Komad-Navoj-42-34' },
+      { label: 'SteelPRES T-komad s navojem Ø54mm – 1/2" – Ø54mm', code: 'SteelPRES-T-Komad-Navoj-54-12' },
+      { label: 'SteelPRES T-komad s navojem Ø54mm – 3/4" – Ø54mm', code: 'SteelPRES-T-Komad-Navoj-54-34' },
+    ],
   },
 
   {
@@ -713,13 +744,22 @@ const PRODUCTS = [
     code:  'SteelPRES-Redukcije',
     img: 'images/STEELPRES/Steel/Spojnica.jpg',
     variants: [
-    { label: 'SteelPRES redukcija Ø15-18mm',  code: 'SteelPRES-Redukcija-15-18',  },
-    { label: 'SteelPRES redukcija Ø18-22mm',  code: 'SteelPRES-Redukcija-18-22',  },
-    { label: 'SteelPRES redukcija Ø22-28mm',  code: 'SteelPRES-Redukcija-22-28',  },
-    { label: 'SteelPRES redukcija Ø28-35mm',  code: 'SteelPRES-Redukcija-28-35',  },
-    { label: 'SteelPRES redukcija Ø35-42mm',  code: 'SteelPRES-Redukcija-35-42',  },
-    { label: 'SteelPRES redukcija Ø42-54mm',  code: 'SteelPRES-Redukcija-42-54',  },
-    ]
+      { label: 'SteelPRES redukcija Ø18 – Ø15mm', code: 'SteelPRES-Redukcija-18-15' },
+      { label: 'SteelPRES redukcija Ø22 – Ø15mm', code: 'SteelPRES-Redukcija-22-15' },
+      { label: 'SteelPRES redukcija Ø22 – Ø18mm', code: 'SteelPRES-Redukcija-22-18' },
+      { label: 'SteelPRES redukcija Ø28 – Ø15mm', code: 'SteelPRES-Redukcija-28-15' },
+      { label: 'SteelPRES redukcija Ø28 – Ø18mm', code: 'SteelPRES-Redukcija-28-18' },
+      { label: 'SteelPRES redukcija Ø28 – Ø22mm', code: 'SteelPRES-Redukcija-28-22' },
+      { label: 'SteelPRES redukcija Ø35 – Ø22mm', code: 'SteelPRES-Redukcija-35-22' },
+      { label: 'SteelPRES redukcija Ø35 – Ø28mm', code: 'SteelPRES-Redukcija-35-28' },
+      { label: 'SteelPRES redukcija Ø42 – Ø22mm', code: 'SteelPRES-Redukcija-42-22' },
+      { label: 'SteelPRES redukcija Ø42 – Ø28mm', code: 'SteelPRES-Redukcija-42-28' },
+      { label: 'SteelPRES redukcija Ø42 – Ø35mm', code: 'SteelPRES-Redukcija-42-35' },
+      { label: 'SteelPRES redukcija Ø54 – Ø22mm', code: 'SteelPRES-Redukcija-54-22' },
+      { label: 'SteelPRES redukcija Ø54 – Ø28mm', code: 'SteelPRES-Redukcija-54-28' },
+      { label: 'SteelPRES redukcija Ø54 – Ø35mm', code: 'SteelPRES-Redukcija-54-35' },
+      { label: 'SteelPRES redukcija Ø54 – Ø42mm', code: 'SteelPRES-Redukcija-54-42' },
+    ],
   },
 
 
@@ -735,6 +775,124 @@ const PRODUCTS = [
   },*/
 
   // ── HLAĐENJE › KLIMA UREĐAJI ──────────────────────────────────
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Čep',
+    desc:  'SteelPRES čep zatvara kraj cijevi ili neiskorišteni priključak u sustavu. Presa se istim alatom kao i ostali SteelPRES spojevi — bez zavarivanja i bez otvorenog plamena.',
+    code:  'SteelPRES-Cep',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/STEELPRES/Steel/Cep.jpg',
+    variants: [
+      { label: 'SteelPRES čep Ø15mm', code: 'SteelPRES-Cep-15' },
+      { label: 'SteelPRES čep Ø18mm', code: 'SteelPRES-Cep-18' },
+      { label: 'SteelPRES čep Ø22mm', code: 'SteelPRES-Cep-22' },
+      { label: 'SteelPRES čep Ø28mm', code: 'SteelPRES-Cep-28' },
+      { label: 'SteelPRES čep Ø35mm', code: 'SteelPRES-Cep-35' },
+      { label: 'SteelPRES čep Ø42mm', code: 'SteelPRES-Cep-42' },
+      { label: 'SteelPRES čep Ø54mm', code: 'SteelPRES-Cep-54' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Luk',
+    desc:  'SteelPRES luk blage zakrivljenosti mijenja smjer cjevovoda uz manji otpor strujanju nego klasično koljeno. Spaja se presanjem, bez zavarivanja.',
+    code:  'SteelPRES-Luk',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/STEELPRES/Steel/Luk.jpg',
+    variants: [
+      { label: 'SteelPRES luk Ø22mm', code: 'SteelPRES-Luk-22' },
+      { label: 'SteelPRES luk Ø28mm', code: 'SteelPRES-Luk-28' },
+      { label: 'SteelPRES luk Ø35mm', code: 'SteelPRES-Luk-35' },
+      { label: 'SteelPRES luk Ø42mm', code: 'SteelPRES-Luk-42' },
+      { label: 'SteelPRES luk Ø54mm', code: 'SteelPRES-Luk-54' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Poluholender',
+    desc:  'SteelPRES poluholender omogućuje rastavljivi spoj cjevovoda na uređaj ili armaturu — pumpu, bojler, razdjelnik — pa se element može odvojiti bez rezanja cijevi.',
+    code:  'SteelPRES-Poluholender',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/STEELPRES/Steel/Poluholender.jpg',
+    variants: [
+      { label: 'SteelPRES poluholender 3/4" – Ø15mm', code: 'SteelPRES-Poluholender-34-15' },
+      { label: 'SteelPRES poluholender 3/4" – Ø18mm', code: 'SteelPRES-Poluholender-34-18' },
+      { label: 'SteelPRES poluholender 1" – Ø22mm', code: 'SteelPRES-Poluholender-1-22' },
+      { label: 'SteelPRES poluholender 1" – Ø28mm', code: 'SteelPRES-Poluholender-1-28' },
+      { label: 'SteelPRES poluholender 5/4" – Ø28mm', code: 'SteelPRES-Poluholender-54-28' },
+      { label: 'SteelPRES poluholender 5/4" – Ø35mm', code: 'SteelPRES-Poluholender-54-35' },
+      { label: 'SteelPRES poluholender 6/4" – Ø42mm', code: 'SteelPRES-Poluholender-64-42' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Prelaz Mufa (unutarnji navoj)',
+    desc:  'SteelPRES prelaz s unutarnjim navojem povezuje presani dio instalacije s navojnim priključkom. Koristi se ondje gdje se cjevovod spaja na armaturu ili uređaj s vanjskim navojem.',
+    code:  'SteelPRES-Prelaz-Mufa',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/STEELPRES/Steel/Prelaz-Mufa.jpg',
+    variants: [
+      { label: 'SteelPRES prelaz mufa 1/2" – Ø15mm', code: 'SteelPRES-Prelaz-Mufa-12-15' },
+      { label: 'SteelPRES prelaz mufa 1/2" – Ø18mm', code: 'SteelPRES-Prelaz-Mufa-12-18' },
+      { label: 'SteelPRES prelaz mufa 1/2" – Ø22mm', code: 'SteelPRES-Prelaz-Mufa-12-22' },
+      { label: 'SteelPRES prelaz mufa 3/4" – Ø18mm', code: 'SteelPRES-Prelaz-Mufa-34-18' },
+      { label: 'SteelPRES prelaz mufa 3/4" – Ø22mm', code: 'SteelPRES-Prelaz-Mufa-34-22' },
+      { label: 'SteelPRES prelaz mufa 3/4" – Ø28mm', code: 'SteelPRES-Prelaz-Mufa-34-28' },
+      { label: 'SteelPRES prelaz mufa 1" – Ø22mm', code: 'SteelPRES-Prelaz-Mufa-1-22' },
+      { label: 'SteelPRES prelaz mufa 1" – Ø28mm', code: 'SteelPRES-Prelaz-Mufa-1-28' },
+      { label: 'SteelPRES prelaz mufa 1" – Ø35mm', code: 'SteelPRES-Prelaz-Mufa-1-35' },
+      { label: 'SteelPRES prelaz mufa 5/4" – Ø35mm', code: 'SteelPRES-Prelaz-Mufa-54-35' },
+      { label: 'SteelPRES prelaz mufa 6/4" – Ø42mm', code: 'SteelPRES-Prelaz-Mufa-64-42' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Prelaz Nipl (vanjski navoj)',
+    desc:  'SteelPRES prelaz s vanjskim navojem povezuje presani dio instalacije s navojnim priključkom uređaja ili armature s unutarnjim navojem.',
+    code:  'SteelPRES-Prelaz-Nipl',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/STEELPRES/Steel/Prelaz-Nipl.jpg',
+    variants: [
+      { label: 'SteelPRES prelaz nipl 1/2" – Ø15mm', code: 'SteelPRES-Prelaz-Nipl-12-15' },
+      { label: 'SteelPRES prelaz nipl 1/2" – Ø18mm', code: 'SteelPRES-Prelaz-Nipl-12-18' },
+      { label: 'SteelPRES prelaz nipl 1/2" – Ø22mm', code: 'SteelPRES-Prelaz-Nipl-12-22' },
+      { label: 'SteelPRES prelaz nipl 3/4" – Ø18mm', code: 'SteelPRES-Prelaz-Nipl-34-18' },
+      { label: 'SteelPRES prelaz nipl 3/4" – Ø22mm', code: 'SteelPRES-Prelaz-Nipl-34-22' },
+      { label: 'SteelPRES prelaz nipl 3/4" – Ø28mm', code: 'SteelPRES-Prelaz-Nipl-34-28' },
+      { label: 'SteelPRES prelaz nipl 1" – Ø22mm', code: 'SteelPRES-Prelaz-Nipl-1-22' },
+      { label: 'SteelPRES prelaz nipl 1" – Ø28mm', code: 'SteelPRES-Prelaz-Nipl-1-28' },
+      { label: 'SteelPRES prelaz nipl 1" – Ø35mm', code: 'SteelPRES-Prelaz-Nipl-1-35' },
+      { label: 'SteelPRES prelaz nipl 5/4" – Ø35mm', code: 'SteelPRES-Prelaz-Nipl-54-35' },
+      { label: 'SteelPRES prelaz nipl 6/4" – Ø42mm', code: 'SteelPRES-Prelaz-Nipl-64-42' },
+      { label: 'SteelPRES prelaz nipl 2" – Ø54mm', code: 'SteelPRES-Prelaz-Nipl-2-54' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'steelpres',
+    brand: 'RM',
+    name:  'SteelPRES Zaobilaz',
+    desc:  'SteelPRES zaobilaz (premosnica) omogućuje križanje dviju cijevi u istoj ravnini bez dodatnih koljena — jedna se cijev nadvisuje preko druge.',
+    code:  'SteelPRES-Zaobilaz',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/STEELPRES/Steel/Zaobilaz.jpg',
+    variants: [
+      { label: 'SteelPRES zaobilaz Ø15mm', code: 'SteelPRES-Zaobilaz-15' },
+      { label: 'SteelPRES zaobilaz Ø18mm', code: 'SteelPRES-Zaobilaz-18' },
+      { label: 'SteelPRES zaobilaz Ø22mm', code: 'SteelPRES-Zaobilaz-22' },
+      { label: 'SteelPRES zaobilaz Ø28mm', code: 'SteelPRES-Zaobilaz-28' },
+    ],
+  },
   {
     group: 'hladenje',
     cat:   'klima-uredaji',
