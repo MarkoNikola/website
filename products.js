@@ -614,8 +614,8 @@ const PRODUCTS = [
   },
 
 
-  // ── GRIJANJE › CIJEVI ─────────────────────────────────────────
- {
+  // ── GRIJANJE › STEELPRES (press-fitting sustav, Raccorderie Metalliche) ──
+  {
     group: 'grijanje',
     cat:   'steelpres',
     // Cijev se prikazuje i pod "Cijevi" i pod "SteelPRES" — `cat` ostaje
@@ -696,7 +696,7 @@ const PRODUCTS = [
     cat:   'steelpres',
     brand: 'RM',
     name:  'SteelPRES T komad s navojem',
-    desc:  'SteelPRES cijevi izrađene su od uzdužno varenog ugljičnog čelika s vanjskom galvanskom zaštitom od cinka, što ih čini iznimno čvrstima i otpornima na koroziju. Proizvode se u dimenzijama od Ø 15 mm do Ø 108 mm te su idealne za brzu ugradnju u zatvorenim sustavima grijanja, hlađenja i komprimiranog zraka.',
+    desc:  'SteelPRES T-komad s unutarnjim navojem služi za odvajanje ogranka s navojnim priključkom — npr. za termometar, ispust ili spoj na armaturu. Prolazni krajevi presaju se kao i ostali SteelPRES spojevi.',
     code:  'SteelPRES-T-Komad-Navoj',
     img: 'images/STEELPRES/Steel/t - navoj.jpg',
 
@@ -762,19 +762,6 @@ const PRODUCTS = [
     ],
   },
 
-
-  // ── GRIJANJE › IZOLACIJA ──────────────────────────────────────
-  /*{
-    group: 'grijanje',
-    cat:   'izolacija',
-    brand: 'THERMOFLUX',
-    name:  'Armaflex AF-1 Ø18mm – 2m',
-    desc:  'Elastomerna izolacija za cijevi Ø18 mm, debljina 19 mm. Samoljepljiva, dužina 2 m.',
-    code:  'TF-AF-18-2M',
-    // img: 'images/thermoflux-armaflex-18.jpg',
-  },*/
-
-  // ── HLAĐENJE › KLIMA UREĐAJI ──────────────────────────────────
   {
     group: 'grijanje',
     cat:   'steelpres',
@@ -893,6 +880,20 @@ const PRODUCTS = [
       { label: 'SteelPRES zaobilaz Ø28mm', code: 'SteelPRES-Zaobilaz-28' },
     ],
   },
+
+
+  // ── GRIJANJE › IZOLACIJA ──────────────────────────────────────
+  /*{
+    group: 'grijanje',
+    cat:   'izolacija',
+    brand: 'THERMOFLUX',
+    name:  'Armaflex AF-1 Ø18mm – 2m',
+    desc:  'Elastomerna izolacija za cijevi Ø18 mm, debljina 19 mm. Samoljepljiva, dužina 2 m.',
+    code:  'TF-AF-18-2M',
+    // img: 'images/thermoflux-armaflex-18.jpg',
+  },*/
+
+  // ── HLAĐENJE › KLIMA UREĐAJI ──────────────────────────────────
   {
     group: 'hladenje',
     cat:   'klima-uredaji',
