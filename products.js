@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=9"></script>
+//      <script src="products.js?v=10"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=9 → v=10) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=10 → v=11) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2759,6 +2759,7 @@ const PRODUCTS = [
   {
     group: 'grijanje',
     cat:   'izolacija',
+    brand: 'KAIMANN',
     name:  'IZOLACIJA ZA CIJEVI 13 mm',
     desc:  'Cijevna izolacija debljine stijenke 13 mm za sustave grijanja i hlađenja. Smanjuje toplinske gubitke na razvodu i sprječava kondenzaciju na hladnim cijevima.',
     code:  'IZO-13',
@@ -2782,6 +2783,7 @@ const PRODUCTS = [
   {
     group: 'grijanje',
     cat:   'izolacija',
+    brand: 'KAIMANN',
     name:  'IZOLACIJA ZA CIJEVI 9 mm',
     desc:  'Cijevna izolacija debljine stijenke 9 mm za sustave grijanja i hlađenja. Tanja izvedba za razvode gdje je prostor ograničen.',
     code:  'IZO-9',
@@ -2803,6 +2805,7 @@ const PRODUCTS = [
   {
     group: 'grijanje',
     cat:   'izolacija',
+    brand: 'KAIMANN',
     name:  'IZOLACIJA U PLOČI',
     desc:  'Izolacijska ploča za oblaganje spremnika, kanala, armatura i svih površina na koje se cijevna izolacija ne može postaviti.',
     code:  'IZO-PLOCA',
@@ -2818,6 +2821,7 @@ const PRODUCTS = [
   {
     group: 'grijanje',
     cat:   'izolacija',
+    brand: 'KAIMANN',
     name:  'IZOLACIJA U PLOČI – SAMOLJEPLJIVA',
     desc:  'Izolacijska ploča s ljepljivim slojem na poleđini — postavlja se bez dodatnog ljepila, skidanjem zaštitne folije.',
     code:  'IZO-PLOCA-SL',
@@ -2835,6 +2839,7 @@ const PRODUCTS = [
   {
     group: 'vodomaterijal',
     cat:   'izolacija-vodo',
+    brand: 'KAIMANN',
     name:  'IZOLACIJA ZA CIJEVI 6 mm',
     desc:  'Cijevna izolacija debljine stijenke 6 mm za vodovodne instalacije. Štiti od kondenzacije na hladnoj vodi i smanjuje gubitke na toploj.',
     code:  'IZO-6',
@@ -2849,6 +2854,7 @@ const PRODUCTS = [
   {
     group: 'vodomaterijal',
     cat:   'izolacija-vodo',
+    brand: 'KAIMANN',
     name:  'IZOLACIJA ZA CIJEVI 4 mm',
     desc:  'Tanka cijevna izolacija debljine stijenke 4 mm za vodovodne instalacije, namijenjena razvodima u zidu i u estrihu.',
     code:  'IZO-4',
