@@ -536,7 +536,7 @@ footer ul li a:hover{color:var(--blue)}
           <ul>
             <li><a href="proizvodi?group=plin&cat=regulatori" data-i18n="nav.mm.regulators">Regulatori</a></li>
             <li><a href="proizvodi?group=plin" data-i18n="nav.mm.gas.material">Plinski materijal</a></li>
-            <li><a href="proizvodi?group=plin&cat=plin-pex" data-i18n="nav.mm.gas.pex">Plin PEX-AL-PEX</a></li>
+            <li><a href="proizvodi?group=plin&cat=plin-pex" data-i18n="nav.mm.gas.pex">Fitinzi za plin</a></li>
             <li><a href="proizvodi?group=plin&cat=cijevi-plin" data-i18n="nav.mm.gas.pipes">Cijevi za plin</a></li>
           </ul>
         </div>
@@ -998,7 +998,8 @@ footer ul li a:hover{color:var(--blue)}
         <p><span data-i18n="cat.gas.desc">Plinska instalacija i PEX-AL-PEX cijevi za plinske sustave</span></p>
         <div class="cat-tags">
           <span class="cat-tag" onclick="event.stopPropagation();location.href='proizvodi?cat=regulatori'" data-i18n="nav.mm.regulators">Regulatori</span>
-          <span class="cat-tag" onclick="event.stopPropagation();location.href='proizvodi?cat=plin-pex'" data-i18n="tag.gas.pex">Plin PEX-AL-PEX</span>
+          <span class="cat-tag" onclick="event.stopPropagation();location.href='proizvodi?cat=cijevi-plin'" data-i18n="nav.mm.gas.pipes">Cijevi za plin</span>
+          <span class="cat-tag" onclick="event.stopPropagation();location.href='proizvodi?cat=plin-pex'" data-i18n="tag.gas.pex">Fitinzi za plin</span>
         </div>
         <span class="cat-cta" data-i18n="cat.cta">Pogledaj sve</span>
       </div>
@@ -1235,6 +1236,6 @@ document.querySelectorAll('.mob-menu a').forEach(a=>a.addEventListener('click',(
 const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:0.07});
 document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
 </script>
-  <script src="lang.js?v=4"></script>
+  <script src="lang.js?v=5"></script>
 </body>
 </html>

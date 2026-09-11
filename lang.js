@@ -15,7 +15,7 @@ const LANG = {
     'nav.mm.all.heating':'Sve iz grijanja →','nav.mm.ac':'Klima uređaji',
     'nav.mm.accessories':'Prateći materijal','nav.mm.ac.pipes':'Cijevi za klima uređaje',
     'nav.mm.regulators':'Regulatori','nav.mm.gas.material':'Plinski materijal',
-    'nav.mm.gas.pex':'Plin PEX-AL-PEX','nav.mm.gas.pipes':'Cijevi za plin','nav.mm.kitchen.faucets':'Kuhinjske slavine',
+    'nav.mm.gas.pex':'Fitinzi za plin','nav.mm.gas.pipes':'Cijevi za plin','nav.mm.kitchen.faucets':'Kuhinjske slavine',
     'nav.mm.shower.faucets':'Tuš slavine','nav.mm.sink.faucets':'Umivaonik slavine',
     'nav.mm.baths':'Kade i kabine','nav.mm.boilers':'Bojleri',
     'nav.mm.all.sanitary':'Sve sanitarije →','nav.mm.water.tanks':'Spremnici',
@@ -94,7 +94,7 @@ const LANG = {
     'tag.boilers':'Kotlovi','tag.heatpumps':'Dizalice topline','tag.underfloor':'Podno grijanje',
     'tag.pumps':'Cirkulacijske pumpe','tag.fancoil':'Fancoil','tag.ac':'Klima uređaji',
     'tag.pex':'PEX-AL-PEX','tag.steelpres':'Steelpres','tag.irrigation2':'Navodnjavanja',
-    'tag.sanitary':'Sanitarija','tag.gas.prod':'Plinski proizvodi','tag.gas.pex':'Plin PEX-AL-PEX',
+    'tag.sanitary':'Sanitarija','tag.gas.prod':'Plinski proizvodi','tag.gas.pex':'Fitinzi za plin',
 
     // PROMO FEATURED PRODUCT CARDS
     'promo.ac.desc':'Clivet Nativ serija je svestran i energetski učinkovit inverter klima uređaj (razred A++/A+) kompatibilan sa Single i Multi Split sustavima, koji nudi optimalno hlađenje i grijanje uz višesmjerni protok zraka, iznimno tih rad te mogućnost pametnog Wi-Fi upravljanja aplikacijom.',
@@ -239,7 +239,7 @@ const LANG = {
     'nav.mm.all.heating':'Tutto il riscaldamento →','nav.mm.ac':'Condizionatori',
     'nav.mm.accessories':'Materiale accessorio','nav.mm.ac.pipes':'Tubi per climatizzatori',
     'nav.mm.regulators':'Regolatori','nav.mm.gas.material':'Materiale per gas',
-    'nav.mm.gas.pex':'Gas PEX-AL-PEX','nav.mm.gas.pipes':'Tubi per gas','nav.mm.kitchen.faucets':'Rubinetti cucina',
+    'nav.mm.gas.pex':'Raccordi per gas','nav.mm.gas.pipes':'Tubi per gas','nav.mm.kitchen.faucets':'Rubinetti cucina',
     'nav.mm.shower.faucets':'Rubinetti doccia','nav.mm.sink.faucets':'Rubinetti lavabo',
     'nav.mm.baths':'Vasche e cabine','nav.mm.boilers':'Boiler',
     'nav.mm.all.sanitary':'Tutti i sanitari →','nav.mm.water.tanks':'Serbatoi',
@@ -318,7 +318,7 @@ const LANG = {
     'tag.boilers':'Caldaie','tag.heatpumps':'Pompe di calore','tag.underfloor':'Risc. a pavimento',
     'tag.pumps':'Pompe di circolazione','tag.fancoil':'Fancoil','tag.ac':'Condizionatori',
     'tag.pex':'PEX-AL-PEX','tag.steelpres':'Steelpres','tag.irrigation2':'Irrigazione',
-    'tag.sanitary':'Sanitari','tag.gas.prod':'Prodotti gas','tag.gas.pex':'Gas PEX-AL-PEX',
+    'tag.sanitary':'Sanitari','tag.gas.prod':'Prodotti gas','tag.gas.pex':'Raccordi per gas',
 
     // PROMO FEATURED PRODUCT CARDS
     'promo.ac.desc':'La serie Clivet Nativ è un condizionatore inverter versatile ed efficiente dal punto di vista energetico (classe A++/A+) compatibile con sistemi Single e Multi Split, che offre raffreddamento e riscaldamento ottimali con flusso d\'aria multidirezionale, funzionamento estremamente silenzioso e controllo intelligente Wi-Fi tramite app.',
