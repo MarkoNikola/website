@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=4"></script>
+//      <script src="products.js?v=5"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=4 → v=5) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=5 → v=6) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2330,4 +2330,423 @@ const PRODUCTS = [
     { label: 'KOLJENO SA NAVOJEM F',  code: '',  },
     ],
   },
+
+  // ── VODOMATERIJAL › CIJEVI (PP-R, Aquatechnik) ────────────────
+  {
+    group: 'vodomaterijal',
+    cat:   'cijevi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR CIJEV Fusio-technik SDR 6',
+    desc:  'Jednoslojne polipropilenske (PP-R) cijevi visoke otpornosti na pritisak, temperaturu i agresivne kemikalije. Primarno se koriste za pouzdan transport tople i hladne vode, stlačenog zraka te tekućina u stambenim i industrijskim sustavima.',
+    code:  'PPR-FUSIO-SDR6',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/FUSIO-SDR6.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: 'PPR-FUSIO-SDR6-20' },
+      { label: 'Ø 25 mm', code: 'PPR-FUSIO-SDR6-25' },
+      { label: 'Ø 32 mm', code: 'PPR-FUSIO-SDR6-32' },
+      { label: 'Ø 40 mm', code: 'PPR-FUSIO-SDR6-40' },
+      { label: 'Ø 50 mm', code: 'PPR-FUSIO-SDR6-50' },
+      { label: 'Ø 63 mm', code: 'PPR-FUSIO-SDR6-63' },
+      { label: 'Ø 75 mm', code: 'PPR-FUSIO-SDR6-75' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'cijevi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR CIJEV Faser Fiber-T SDR 7,4',
+    desc:  'Troslojne polipropilenske cijevi ojačane staklenim vlaknima koje smanjuju linearno toplinsko istezanje za čak 70% u odnosu na klasične cijevi. Namijenjene su za sustave sanitarne tople i hladne vode te grijanje pri visokim radnim pritiscima.',
+    code:  'PPR-FASER-FIBER-T',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/FASER-FIBER-T.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: 'PPR-FASER-FIBER-T-20' },
+      { label: 'Ø 25 mm', code: 'PPR-FASER-FIBER-T-25' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'cijevi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR CIJEV Faser Fiber-COND SDR 11',
+    desc:  'Vlaknima ojačane višeslojne cijevi projektirane za klimatizaciju, hlađenje, grijanje i industrijske mehaničke sustave. Zahvaljujući tanjoj stijenci i smanjenom širenju na temperaturi, omogućuju veći protok i ekonomičniju instalaciju.',
+    code:  'PPR-FASER-FIBER-COND',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/FASER-FIBER-COND.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: 'PPR-FASER-FIBER-COND-20' },
+      { label: 'Ø 25 mm', code: 'PPR-FASER-FIBER-COND-25' },
+      { label: 'Ø 32 mm', code: 'PPR-FASER-FIBER-COND-32' },
+      { label: 'Ø 40 mm', code: 'PPR-FASER-FIBER-COND-40' },
+      { label: 'Ø 50 mm', code: 'PPR-FASER-FIBER-COND-50' },
+      { label: 'Ø 63 mm', code: 'PPR-FASER-FIBER-COND-63' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'cijevi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR CIJEV Rainwater SDR 11',
+    desc:  'Specijalizirane polipropilenske cijevi prepoznatljive ljubičaste boje, namijenjene isključivo za transport reciklirane i kišnice (nisu za pitku vodu). Proizvedene su s aditivima otpornim na fluktuacije pH vrijednosti i kemikalije, idealne za navodnjavanje, ispiranje toaleta i tehničku upotrebu.',
+    code:  'PPR-RAINWATER',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/RAINWATER.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: 'PPR-RAINWATER-20' },
+      { label: 'Ø 25 mm', code: 'PPR-RAINWATER-25' },
+      { label: 'Ø 32 mm', code: 'PPR-RAINWATER-32' },
+    ],
+  },
+
+  // ── VODOMATERIJAL › FITINZI (PP-R, Aquatechnik) ───────────────
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KOLJENO 90°',
+    desc:  'Spojni komad pod kutom od 90 stupnjeva koji služi za skretanje i promjenu smjera cjevovoda pod pravim kutom.',
+    code:  'PPR-KOLJENO-90',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '63108' },
+      { label: 'Ø 25 mm', code: '63110' },
+      { label: 'Ø 32 mm', code: '63112' },
+      { label: 'Ø 40 mm', code: '63114' },
+      { label: 'Ø 50 mm', code: '63116' },
+      { label: 'Ø 63 mm', code: '63118' },
+      { label: 'Ø 75 mm', code: '63120' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KOLJENO 90° muško/žensko',
+    desc:  'Koljeno pod 90° s jednim muškim i jednim ženskim krajem, omogućuje izravno spajanje unutar drugog fitinga bez dodatne cijevi.',
+    code:  'PPR-KOLJENO-90-MZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90-MZ.jpg',
+    variants: [
+      { label: 'Ø 20 mm MŽ', code: '63308' },
+      { label: 'Ø 25 mm MŽ', code: '63310' },
+      { label: 'Ø 32 mm MŽ', code: '63312' },
+      { label: 'Ø 40 mm MŽ', code: '63314' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KOLJENO 45°',
+    desc:  'Spojni fiting za blago skretanje smjera trase cjevovoda pod kutom od 45 stupnjeva.',
+    code:  'PPR-KOLJENO-45',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-45.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '63508' },
+      { label: 'Ø 25 mm', code: '63510' },
+      { label: 'Ø 32 mm', code: '63512' },
+      { label: 'Ø 40 mm', code: '63514' },
+      { label: 'Ø 50 mm', code: '63516' },
+      { label: 'Ø 63 mm', code: '63518' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KOLJENO 45° muško/žensko',
+    desc:  'Koljeno pod 45° s muškim i ženskim priključkom za izravno spajanje fitinga u fiting.',
+    code:  'PPR-KOLJENO-45-MZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-45-MZ.jpg',
+    variants: [
+      { label: 'Ø 20 mm MŽ', code: '63708' },
+      { label: 'Ø 25 mm MŽ', code: '63710' },
+      { label: 'Ø 32 mm MŽ', code: '63712' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KOLJENO 90° sa ženskim navojem',
+    desc:  'Prijelazno koljeno od 90° koje spaja PPR cijev na jednoj strani s metalnim navojnim spojem na drugoj strani.',
+    code:  'PPR-KOLJENO-90-NZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90-NZ.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" Ž', code: '67008' },
+      { label: 'Ø 20 mm × 3/4" Ž', code: '67010' },
+      { label: 'Ø 25 mm × 3/4" Ž', code: '67014' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR ZIDNO KOLJENO s pričvrsnicom',
+    desc:  'Zidno koljeno s unutarnjim navojem i nosačem s rupama za čvrsto fiksiranje miješalica i slavina na zid.',
+    code:  'PPR-ZIDNO-KOLJENO',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/ZIDNO-KOLJENO.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" Ž', code: '67108' },
+      { label: 'Ø 25 mm × 1/2" Ž', code: '67710' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR T-KOMAD',
+    desc:  'Standardni fiting u obliku slova "T" za razdvajanje jednog glavnog toka u dva sporedna ogranka jednake veličine.',
+    code:  'PPR-T-KOMAD',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/T-KOMAD.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '64108' },
+      { label: 'Ø 25 mm', code: '64110' },
+      { label: 'Ø 32 mm', code: '64112' },
+      { label: 'Ø 40 mm', code: '64114' },
+      { label: 'Ø 50 mm', code: '64116' },
+      { label: 'Ø 63 mm', code: '64118' },
+      { label: 'Ø 75 mm', code: '64120' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR T-KOMAD reducirani',
+    desc:  'T-komad koji omogućuje odvajanje cijevi na sporedni ogranak manjeg promjera u odnosu na prolazni vod.',
+    code:  'PPR-T-KOMAD-RED',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/T-KOMAD-RED.jpg',
+    variants: [
+      { label: 'Ø 20 × 25 × 20 mm', code: '64218' },
+      { label: 'Ø 25 × 20 × 20 mm', code: '64220' },
+      { label: 'Ø 25 × 20 × 25 mm', code: '64222' },
+      { label: 'Ø 32 × 25 × 25 mm', code: '64232' },
+      { label: 'Ø 32 × 20 × 32 mm', code: '64234' },
+      { label: 'Ø 32 × 25 × 32 mm', code: '64240' },
+      { label: 'Ø 40 × 20 × 40 mm', code: '64242' },
+      { label: 'Ø 40 × 25 × 40 mm', code: '64244' },
+      { label: 'Ø 40 × 32 × 40 mm', code: '64245' },
+      { label: 'Ø 50 × 20 × 50 mm', code: '64246' },
+      { label: 'Ø 50 × 25 × 50 mm', code: '64247' },
+      { label: 'Ø 50 × 32 × 50 mm', code: '64248' },
+      { label: 'Ø 50 × 40 × 50 mm', code: '64250' },
+      { label: 'Ø 63 × 20 × 63 mm', code: '64251' },
+      { label: 'Ø 63 × 25 × 63 mm', code: '64252' },
+      { label: 'Ø 63 × 32 × 63 mm', code: '64254' },
+      { label: 'Ø 63 × 40 × 63 mm', code: '64256' },
+      { label: 'Ø 63 × 50 × 63 mm', code: '64258' },
+      { label: 'Ø 75 × 63 × 75 mm', code: '64260' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KRIŽNI KOMAD',
+    desc:  'Četverostruki spojni fiting koji služi za križanje dva cjevovoda u istoj ravnini pod kutom od 90°.',
+    code:  'PPR-KRIZNI',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KRIZNI.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '64308' },
+      { label: 'Ø 25 mm', code: '64310' },
+      { label: 'Ø 32 mm', code: '64312' },
+      { label: 'Ø 40 mm', code: '64314' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR ČEP',
+    desc:  'Završni fiting namijenjen za trajno ili privremeno zatvaranje kraja polipropilenske cijevi.',
+    code:  'PPR-CEP',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/CEP.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '65008' },
+      { label: 'Ø 25 mm', code: '65010' },
+      { label: 'Ø 32 mm', code: '65012' },
+      { label: 'Ø 40 mm', code: '65014' },
+      { label: 'Ø 50 mm', code: '65016' },
+      { label: 'Ø 63 mm', code: '65018' },
+      { label: 'Ø 75 mm', code: '65020' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR ZAOBILAZNI LUK',
+    desc:  'Oblikovani cijevni luk koji omogućuje premošćivanje i ukrižavanje dviju cijevi bez međusobnog dodirivanja.',
+    code:  'PPR-ZAOBILAZNI-LUK',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/ZAOBILAZNI-LUK.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '65408' },
+      { label: 'Ø 25 mm', code: '65410' },
+      { label: 'Ø 32 mm', code: '65412' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR PRIJELAZNA MUFA sa ženskim navojem',
+    desc:  'Ravno prijelazno spojno tijelo koje s jedne strane ima varivu PPR mufu, a s druge unutrašnji metalni navoj.',
+    code:  'PPR-MUFA-NZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/MUFA-NZ.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" Ž', code: '66008' },
+      { label: 'Ø 20 mm × 3/4" Ž', code: '66009' },
+      { label: 'Ø 25 mm × 1/2" Ž', code: '66010' },
+      { label: 'Ø 25 mm × 3/4" Ž', code: '66011' },
+      { label: 'Ø 32 mm × 1" Ž (sa šesterokutom za ključ)', code: '66112' },
+      { label: 'Ø 40 mm × 1 1/4" Ž (sa šesterokutom za ključ)', code: '66114' },
+      { label: 'Ø 50 mm × 1 1/2" Ž (sa šesterokutom za ključ)', code: '66116' },
+      { label: 'Ø 63 mm × 2" Ž (sa šesterokutom za ključ)', code: '66118' },
+      { label: 'Ø 75 mm × 2 1/2" Ž (sa šesterokutom za ključ)', code: '66120' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR PRIJELAZNA MUFA s muškim navojem',
+    desc:  'Ravni spojni komad koji spaja PPR cijev polifuzijskim zavarivanjem na vanjski metalni navoj.',
+    code:  'PPR-MUFA-NM',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/MUFA-NM.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" M', code: '66208' },
+      { label: 'Ø 20 mm × 3/4" M', code: '66209' },
+      { label: 'Ø 25 mm × 1/2" M', code: '66210' },
+      { label: 'Ø 25 mm × 3/4" M', code: '66211' },
+      { label: 'Ø 32 mm × 1" M (sa šesterokutom za ključ)', code: '66312' },
+      { label: 'Ø 40 mm × 1 1/4" M (sa šesterokutom za ključ)', code: '66314' },
+      { label: 'Ø 50 mm × 1 1/2" M (sa šesterokutom za ključ)', code: '66316' },
+      { label: 'Ø 63 mm × 2" M (sa šesterokutom za ključ)', code: '66318' },
+      { label: 'Ø 75 mm × 2 1/2" M (sa šesterokutom za ključ)', code: '66320' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR DVOSTRUKI ZIDNI KOMPLET sa ženskim navojem',
+    desc:  'Prethodno razmaknut par zidnih koljena na nosaču, namijenjen za jednostavnu i preciznu ugradnju zidnih miješalica.',
+    code:  'PPR-ZIDNI-KOMPLET',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/ZIDNI-KOMPLET.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" Ž (razmak 150 mm)', code: '67178' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KOLJENO 90° s muškim navojem',
+    desc:  'Prijelazno koljeno od 90° za spajanje plastične cijevi s opremom ili fitingom koji ima ženski navoj.',
+    code:  'PPR-KOLJENO-90-NM',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90-NM.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" M', code: '67508' },
+      { label: 'Ø 20 mm × 3/4" M', code: '67500' },
+      { label: 'Ø 25 mm × 3/4" M', code: '67510' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR T-KOMAD sa ženskim navojem',
+    desc:  'T-komad čiji je srednji odvojak opremljen unutarnjim metalnim navojem za priključak opreme ili mjernih instrumenata.',
+    code:  'PPR-T-KOMAD-NZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/T-KOMAD-NZ.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" Ž × Ø 20 mm', code: '68008' },
+      { label: 'Ø 25 mm × 1/2" Ž × Ø 25 mm', code: '68010' },
+      { label: 'Ø 25 mm × 3/4" Ž × Ø 25 mm', code: '68011' },
+      { label: 'Ø 32 mm × 3/4" Ž × Ø 32 mm', code: '68014' },
+      { label: 'Ø 32 mm × 1" Ž × Ø 32 mm', code: '68016' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'fitinzi',
+    brand: 'AQUATECHNIK',
+    name:  'PPR HOLENDER sa ženskim navojem',
+    desc:  'Rastavljiva PPR spojnica (holender) s navojnom maticom koja omogućuje lako rastavljanje i održavanje dijelova instalacije.',
+    code:  'PPR-HOLENDER-NZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/HOLENDER-NZ.jpg',
+    variants: [
+      { label: 'Ø 20 mm × 1/2" Ž', code: '69282' },
+      { label: 'Ø 25 mm × 3/4" Ž', code: '69284' },
+      { label: 'Ø 32 mm × 1" Ž', code: '69286' },
+    ],
+  },
+
+  // ── VODOMATERIJAL › VENTILI (PP-R, Aquatechnik) ───────────────
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    brand: 'AQUATECHNIK',
+    name:  'PPR KUGLASTI VENTIL',
+    desc:  'Plastični kuglasti ventil na zavarivanje koji služi za otvaranje i zatvaranje protoka fluida u sustavu.',
+    code:  'PPR-KUGL-VENTIL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/KUGL-VENTIL.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '40228' },
+      { label: 'Ø 25 mm', code: '40230' },
+      { label: 'Ø 32 mm', code: '40232' },
+      { label: 'Ø 40 mm', code: '40234' },
+      { label: 'Ø 50 mm', code: '40236' },
+      { label: 'Ø 63 mm', code: '40238' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    brand: 'AQUATECHNIK',
+    name:  'PPR PODŽBUKNI ZAPORNI VENTIL',
+    desc:  'Podžbukni ventil na zavarivanje namijenjen za ugradnju u zid, s ukrasnom ručkom i kapom za kontrolu protoka vode.',
+    code:  'PPR-PODZ-VENTIL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/PODZ-VENTIL.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '40719' },
+      { label: 'Ø 25 mm', code: '40721' },
+      { label: 'Ø 32 mm', code: '40723' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    brand: 'AQUATECHNIK',
+    name:  'PPR PODŽBUKNI KUGLASTI ZAPORNI VENTIL',
+    desc:  'Podžbukni kuglasti ventil sa skrivenom ručkom koji pruža brzi prekid dovoda vode zaokretom od 90°.',
+    code:  'PPR-PODZ-KUGL-VENTIL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/PPR/PODZ-KUGL-VENTIL.jpg',
+    variants: [
+      { label: 'Ø 20 mm', code: '40730' },
+      { label: 'Ø 25 mm', code: '40732' },
+    ],
+  },
+
 ];
