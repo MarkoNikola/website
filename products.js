@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=5"></script>
+//      <script src="products.js?v=6"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=5 → v=6) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=6 → v=7) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2368,6 +2368,11 @@ const PRODUCTS = [
   {
     group: 'vodomaterijal',
     cat:   'cijevi',
+    // Koristi se i za grijanje/hlađenje, pa se prikazuje i pod
+    // Grijanje › Cijevi. `group`/`cat` ostaju glavni (za breadcrumb),
+    // a `groups`/`cats` nabrajaju sve filtre u kojima se pojavljuje.
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['cijevi', 'cijevi-grijanje'],
     brand: 'AQUATECHNIK',
     name:  'PPR CIJEV Faser Fiber-COND SDR 11',
     desc:  'Vlaknima ojačane višeslojne cijevi projektirane za klimatizaciju, hlađenje, grijanje i industrijske mehaničke sustave. Zahvaljujući tanjoj stijenci i smanjenom širenju na temperaturi, omogućuju veći protok i ekonomičniju instalaciju.',

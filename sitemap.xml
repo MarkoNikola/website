@@ -223,6 +223,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.italterm.net/proizvodi?group=vodomaterijal&amp;cat=cijevi-grijanje</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=cijevi</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.italterm.net/proizvod?id=K-22</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
