@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=8"></script>
+//      <script src="products.js?v=9"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=8 → v=9) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=9 → v=10) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2751,6 +2751,118 @@ const PRODUCTS = [
     variants: [
       { label: 'Ø 20 mm', code: '40730' },
       { label: 'Ø 25 mm', code: '40732' },
+    ],
+  },
+
+
+  // ── GRIJANJE › IZOLACIJA ──────────────────────────────────────
+  {
+    group: 'grijanje',
+    cat:   'izolacija',
+    name:  'IZOLACIJA ZA CIJEVI 13 mm',
+    desc:  'Cijevna izolacija debljine stijenke 13 mm za sustave grijanja i hlađenja. Smanjuje toplinske gubitke na razvodu i sprječava kondenzaciju na hladnim cijevima.',
+    code:  'IZO-13',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/IZOLACIJA/IZO-13.jpg',
+    variants: [
+      { label: '13 × Ø15 mm', code: 'IZO-13-15' },
+      { label: '13 × Ø18 mm', code: 'IZO-13-18' },
+      { label: '13 × Ø22 mm', code: 'IZO-13-22' },
+      { label: '13 × Ø28 mm', code: 'IZO-13-28' },
+      { label: '13 × Ø35 mm', code: 'IZO-13-35' },
+      { label: '13 × Ø42 mm', code: 'IZO-13-42' },
+      { label: '13 × Ø48 mm', code: 'IZO-13-48' },
+      { label: '13 × Ø54 mm', code: 'IZO-13-54' },
+      { label: '13 × Ø60 mm', code: 'IZO-13-60' },
+      { label: '13 × Ø76 mm', code: 'IZO-13-76' },
+      { label: '13 × Ø89 mm', code: 'IZO-13-89' },
+      { label: '13 × Ø108 mm', code: 'IZO-13-108' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'izolacija',
+    name:  'IZOLACIJA ZA CIJEVI 9 mm',
+    desc:  'Cijevna izolacija debljine stijenke 9 mm za sustave grijanja i hlađenja. Tanja izvedba za razvode gdje je prostor ograničen.',
+    code:  'IZO-9',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/IZOLACIJA/IZO-9.jpg',
+    variants: [
+      { label: '9 × Ø15 mm', code: 'IZO-9-15' },
+      { label: '9 × Ø18 mm', code: 'IZO-9-18' },
+      { label: '9 × Ø22 mm', code: 'IZO-9-22' },
+      { label: '9 × Ø28 mm', code: 'IZO-9-28' },
+      { label: '9 × Ø35 mm', code: 'IZO-9-35' },
+      { label: '9 × Ø42 mm', code: 'IZO-9-42' },
+      { label: '9 × Ø48 mm', code: 'IZO-9-48' },
+      { label: '9 × Ø54 mm', code: 'IZO-9-54' },
+      { label: '9 × Ø60 mm', code: 'IZO-9-60' },
+      { label: '9 × Ø76 mm', code: 'IZO-9-76' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'izolacija',
+    name:  'IZOLACIJA U PLOČI',
+    desc:  'Izolacijska ploča za oblaganje spremnika, kanala, armatura i svih površina na koje se cijevna izolacija ne može postaviti.',
+    code:  'IZO-PLOCA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/IZOLACIJA/IZO-PLOCA.jpg',
+    variants: [
+      { label: '6 mm', code: 'IZO-PLOCA-6' },
+      { label: '10 mm', code: 'IZO-PLOCA-10' },
+      { label: '13 mm', code: 'IZO-PLOCA-13' },
+      { label: '19 mm', code: 'IZO-PLOCA-19' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'izolacija',
+    name:  'IZOLACIJA U PLOČI – SAMOLJEPLJIVA',
+    desc:  'Izolacijska ploča s ljepljivim slojem na poleđini — postavlja se bez dodatnog ljepila, skidanjem zaštitne folije.',
+    code:  'IZO-PLOCA-SL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/IZOLACIJA/IZO-PLOCA-SL.jpg',
+    variants: [
+      { label: '6 mm', code: 'IZO-PLOCA-SL-6' },
+      { label: '10 mm', code: 'IZO-PLOCA-SL-10' },
+      { label: '13 mm', code: 'IZO-PLOCA-SL-13' },
+      { label: '19 mm', code: 'IZO-PLOCA-SL-19' },
+    ],
+  },
+
+  // ── VODOMATERIJAL › IZOLACIJA ─────────────────────────────────
+  {
+    group: 'vodomaterijal',
+    cat:   'izolacija-vodo',
+    name:  'IZOLACIJA ZA CIJEVI 6 mm',
+    desc:  'Cijevna izolacija debljine stijenke 6 mm za vodovodne instalacije. Štiti od kondenzacije na hladnoj vodi i smanjuje gubitke na toploj.',
+    code:  'IZO-6',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/IZOLACIJA/IZO-6.jpg',
+    variants: [
+      { label: '6 × Ø20 mm', code: 'IZO-6-20' },
+      { label: '6 × Ø25 mm', code: 'IZO-6-25' },
+      { label: '6 × Ø32/35 mm', code: 'IZO-6-32-35' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'izolacija-vodo',
+    name:  'IZOLACIJA ZA CIJEVI 4 mm',
+    desc:  'Tanka cijevna izolacija debljine stijenke 4 mm za vodovodne instalacije, namijenjena razvodima u zidu i u estrihu.',
+    code:  'IZO-4',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/IZOLACIJA/IZO-4.jpg',
+    variants: [
+      { label: '4 × Ø15 mm', code: 'IZO-4-15' },
+      { label: '4 × Ø18 mm', code: 'IZO-4-18' },
+      { label: '4 × Ø22 mm', code: 'IZO-4-22' },
+      { label: '4 × Ø28 mm', code: 'IZO-4-28' },
+      { label: '4 × Ø35 mm', code: 'IZO-4-35' },
+      { label: '4 × Ø42 mm', code: 'IZO-4-42' },
+      { label: '4 × Ø54 mm', code: 'IZO-4-54' },
+      { label: '4 × Ø60 mm', code: 'IZO-4-60' },
     ],
   },
 
