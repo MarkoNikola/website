@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=11"></script>
+//      <script src="products.js?v=12"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=11 → v=12) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=12 → v=13) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2873,78 +2873,40 @@ const PRODUCTS = [
   },
 
 
-  // ── GRIJANJE › OVJESNI PRIBOR (obujmice, Walraven) ────────────
+  // ── GRIJANJE › OVJESNI PRIBOR ─────────────────────────────────
   {
     group: 'grijanje',
     cat:   'ovjesni-pribor',
     brand: 'WALRAVEN',
-    name:  'WALRAVEN BIS 2S OBUJMICA S IZOLACIJOM M8/M10',
-    desc:  'Dvovijčana obujmica s EPDM gumenom izolacijom i priključnim navojem M8/M10. Guma prigušuje prijenos zvuka i vibracija s cjevovoda na konstrukciju, a dvovijčana izvedba omogućuje pritezanje s obje strane.',
-    code:  'WAL-BIS-2S',
+    name:  'KONZOLA S GUMOM',
+    desc:  'Obujmica (konzola) s gumenom izolacijom za pričvršćivanje cijevi na zid ili strop. Guma prigušuje prijenos zvuka i vibracija s cjevovoda na konstrukciju. Dostupna u rasponu od Ø 15 do Ø 250 mm.',
+    code:  'KONZOLA-GUMA',
     img: 'images/Grijanje/OVJESNI PRIBOR/walraven-bis-2s.webp',
+    // ŠIFRE: dolje su privremene oznake izvedene iz promjera. Kad budu
+    // poznati Walravenovi kataloški brojevi, zamijenite vrijednosti u
+    // polju `code` (npr. code: '334 3 116') — `label` ostaje isti.
     variants: [
-      { label: 'Ø 63 – 67 mm', code: '334 3 064' },
-      { label: 'Ø 74 – 80 mm', code: '334 3 078' },
-      { label: 'Ø 86 – 92 mm', code: '334 3 092' },
-      { label: 'Ø 108 – 116 mm', code: '334 3 116' },
-      { label: 'Ø 125 – 130 mm', code: '334 3 130' },
-      { label: 'Ø 135 – 141 mm', code: '334 3 141' },
-      { label: 'Ø 159 – 168 mm', code: '334 3 168' },
-      { label: 'Ø 193 – 200 mm', code: '334 3 200' },
-    ],
-  },
-  {
-    group: 'grijanje',
-    cat:   'ovjesni-pribor',
-    brand: 'WALRAVEN',
-    name:  'WALRAVEN STANDARDNA OBUJMICA S IZOLACIJOM',
-    desc:  'Standardna obujmica s gumenom izolacijom za male i srednje promjere cijevi. Koristi se za pričvršćivanje vodovodnih i grijaćih razvoda uz prigušenje vibracija.',
-    code:  'WAL-STD',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/OVJESNI PRIBOR/wal-std.jpg',
-    variants: [
-      { label: 'Ø 15 – 18 mm', code: '336 3 018' },
-      { label: 'Ø 19 – 23 mm', code: '336 3 023' },
-      { label: 'Ø 25 – 28 mm', code: '336 3 028' },
-      { label: 'Ø 32 – 35 mm', code: '336 3 035' },
-      { label: 'Ø 40 – 43 mm', code: '336 3 043' },
-      { label: 'Ø 48 – 51 mm', code: '336 3 051' },
-      { label: 'Ø 50 – 54 mm', code: '336 3 054' },
-      { label: 'Ø 58 – 62 mm', code: '336 3 062' },
-    ],
-  },
-  {
-    group: 'grijanje',
-    cat:   'ovjesni-pribor',
-    brand: 'WALRAVEN',
-    name:  'WALRAVEN TEŠKA OBUJMICA S BRZOM KOPČOM',
-    desc:  'Ojačana obujmica s gumenom izolacijom i brzom kopčom koja omogućuje zatvaranje bez alata. Namijenjena je većim promjerima i težim cjevovodima.',
-    code:  'WAL-TESKA',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/OVJESNI PRIBOR/wal-teska.jpg',
-    variants: [
-      { label: 'Ø 64 – 70 mm', code: '336 2 067' },
-      { label: 'Ø 75 – 80 mm', code: '336 2 080' },
-      { label: 'Ø 108 – 112 mm', code: '336 2 112' },
-      { label: 'Ø 125 – 132 mm', code: '336 2 132' },
-      { label: 'Ø 160 – 169 mm', code: '336 2 169' },
-    ],
-  },
-  {
-    group: 'grijanje',
-    cat:   'ovjesni-pribor',
-    brand: 'WALRAVEN',
-    name:  'WALRAVEN KSB2 OBUJMICA S IZOLACIJOM M8/M10',
-    desc:  'Obujmica serije KSB2 s gumenom izolacijom i priključkom M8/M10, dostupna u širokom rasponu promjera — od malih razvoda do cijevi promjera preko 300 mm.',
-    code:  'WAL-KSB2',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/OVJESNI PRIBOR/wal-ksb2.jpg',
-    variants: [
-      { label: 'Ø 15 – 19 mm', code: '339 6 015' },
-      { label: 'Ø 67 – 73 mm', code: '339 6 070' },
-      { label: 'Ø 108 – 115 mm', code: '339 6 115' },
-      { label: 'Ø 193 – 200 mm', code: '339 6 200' },
-      { label: 'Ø 305 – 312 mm', code: '339 6 310' },
+      { label: 'Ø 15 – 19 mm', code: 'KONZOLA-GUMA-15-19' },
+      { label: 'Ø 20 – 23 mm', code: 'KONZOLA-GUMA-20-23' },
+      { label: 'Ø 25 – 28 mm', code: 'KONZOLA-GUMA-25-28' },
+      { label: 'Ø 31 – 35 mm', code: 'KONZOLA-GUMA-31-35' },
+      { label: 'Ø 40 – 43 mm', code: 'KONZOLA-GUMA-40-43' },
+      { label: 'Ø 47 – 51 mm', code: 'KONZOLA-GUMA-47-51' },
+      { label: 'Ø 52 – 56 mm', code: 'KONZOLA-GUMA-52-56' },
+      { label: 'Ø 57 – 64 mm', code: 'KONZOLA-GUMA-57-64' },
+      { label: 'Ø 64 – 67 mm', code: 'KONZOLA-GUMA-64-67' },
+      { label: 'Ø 70 – 76 mm', code: 'KONZOLA-GUMA-70-76' },
+      { label: 'Ø 79 – 85 mm', code: 'KONZOLA-GUMA-79-85' },
+      { label: 'Ø 86 – 91 mm', code: 'KONZOLA-GUMA-86-91' },
+      { label: 'Ø 100 – 106 mm', code: 'KONZOLA-GUMA-100-106' },
+      { label: 'Ø 108 – 116 mm', code: 'KONZOLA-GUMA-108-116' },
+      { label: 'Ø 124 – 132 mm', code: 'KONZOLA-GUMA-124-132' },
+      { label: 'Ø 133 – 141 mm', code: 'KONZOLA-GUMA-133-141' },
+      { label: 'Ø 159 – 168 mm', code: 'KONZOLA-GUMA-159-168' },
+      { label: 'Ø 200 – 210 mm', code: 'KONZOLA-GUMA-200-210' },
+      { label: 'Ø 210 – 219 mm', code: 'KONZOLA-GUMA-210-219' },
+      { label: 'Ø 219 – 225 mm', code: 'KONZOLA-GUMA-219-225' },
+      { label: 'Ø 244 – 250 mm', code: 'KONZOLA-GUMA-244-250' },
     ],
   },
 
