@@ -17,9 +17,9 @@ const LANG = {
     'nav.mm.regulators':'Regulatori','nav.mm.gas.material':'Plinski materijal',
     'nav.mm.gas.pex':'Fitinzi za plin','nav.mm.gas.pipes':'Cijevi za plin','nav.mm.kitchen.faucets':'Kuhinjske slavine',
     'nav.mm.shower.faucets':'Tuš slavine','nav.mm.sink.faucets':'Umivaonik slavine',
-    'nav.mm.baths':'Kade i kabine','nav.mm.boilers':'Bojleri',
+    'nav.mm.baths':'Tuš kabine','nav.mm.boilers':'Bojleri',
     'nav.mm.all.sanitary':'Sve sanitarije →','nav.mm.water.tanks':'Spremnici',
-    'nav.mm.pipes':'Cijevi','nav.mm.fittings':'Fitinzi','nav.mm.insulation':'Izolacija','nav.mm.valves':'Ventili','nav.mm.drainage':'Cijevi za kanalizaciju',
+    'nav.mm.pipes':'Cijevi','nav.mm.fittings':'Fitinzi','nav.mm.insulation':'Izolacija','nav.mm.bidet.faucets':'Bide slavine','nav.mm.cisterns':'Vodokotlići','nav.mm.alkaten':'Alkaten cijevi','nav.mm.irrigation':'Navodnjavanje','nav.mm.manifolds':'Razdjelnici i ormari','nav.mm.pexalpex':'PEX-AL-PEX','nav.mm.valves':'Ventili','nav.mm.drainage':'Cijevi za kanalizaciju',
     'util.hours':'Pon – Pet: 08:00 – 17:00',
     'util.whatsapp':'WhatsApp','util.viber':'Viber',
 
@@ -241,9 +241,9 @@ const LANG = {
     'nav.mm.regulators':'Regolatori','nav.mm.gas.material':'Materiale per gas',
     'nav.mm.gas.pex':'Raccordi per gas','nav.mm.gas.pipes':'Tubi per gas','nav.mm.kitchen.faucets':'Rubinetti cucina',
     'nav.mm.shower.faucets':'Rubinetti doccia','nav.mm.sink.faucets':'Rubinetti lavabo',
-    'nav.mm.baths':'Vasche e cabine','nav.mm.boilers':'Boiler',
+    'nav.mm.baths':'Cabine doccia','nav.mm.boilers':'Boiler',
     'nav.mm.all.sanitary':'Tutti i sanitari →','nav.mm.water.tanks':'Serbatoi',
-    'nav.mm.pipes':'Tubi','nav.mm.fittings':'Raccordi','nav.mm.insulation':'Isolamento','nav.mm.valves':'Valvole','nav.mm.drainage':'Tubi di scarico',
+    'nav.mm.pipes':'Tubi','nav.mm.fittings':'Raccordi','nav.mm.insulation':'Isolamento','nav.mm.bidet.faucets':'Rubinetti per bidet','nav.mm.cisterns':'Cassette di risciacquo','nav.mm.alkaten':'Tubi Alkaten','nav.mm.irrigation':'Irrigazione','nav.mm.manifolds':'Collettori e cassette','nav.mm.pexalpex':'PEX-AL-PEX','nav.mm.valves':'Valvole','nav.mm.drainage':'Tubi di scarico',
     'util.hours':'Lun – Ven: 08:00 – 17:00',
     'util.whatsapp':'WhatsApp','util.viber':'Viber',
 
