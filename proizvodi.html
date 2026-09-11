@@ -295,6 +295,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
             <li><a href="proizvodi?group=plin&cat=regulatori" data-i18n="nav.mm.regulators">Regulatori</a></li>
             <li><a href="proizvodi?group=plin&cat=plinski-materijal" data-i18n="nav.mm.gas.material">Plinski materijal</a></li>
             <li><a href="proizvodi?group=plin&cat=plin-pex" data-i18n="nav.mm.gas.pex">Plin PEX-AL-PEX</a></li>
+            <li><a href="proizvodi?group=plin&cat=cijevi-plin" data-i18n="nav.mm.gas.pipes">Cijevi za plin</a></li>
           </ul>
         </div>
         <div class="mm-col">
@@ -630,6 +631,11 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
           <span class="sf-item-label">Plin PEX-AL-PEX</span>
           <span class="sf-item-count" id="sfc-plin-pex">0</span>
         </label>
+        <label class="sf-item">
+          <input type="checkbox" class="sf-cb" data-group="plin" data-cat="cijevi-plin" onchange="resetPageAndFilter()">
+          <span class="sf-item-label">Cijevi za plin</span>
+          <span class="sf-item-count" id="sfc-cijevi-plin">0</span>
+        </label>
       </div>
     </div>
 
@@ -690,7 +696,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
   </div>
 </footer>
 
-<script src="products.js?v=6"></script>
+<script src="products.js?v=7"></script>
 <script>
 const CAT_LABELS = {
   // Grijanje
@@ -728,6 +734,7 @@ const CAT_LABELS = {
   'alkaten':'Alkaten',
   'navodnjavanje':'Navodnjavanje',
   'ventili':'Ventili',
+  'cijevi-plin':'Cijevi za plin',
   'fitinzi':'Fitinzi',
   'kanalizacija':'Cijevi za kanalizaciju',
   // Plin
@@ -1156,6 +1163,6 @@ document.querySelectorAll('.mob-menu a').forEach(a =>
   setTimeout(update, 50);
 })();
 </script>
-  <script src="lang.js?v=3"></script>
+  <script src="lang.js?v=4"></script>
 </body>
 </html>

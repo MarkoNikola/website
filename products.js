@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=6"></script>
+//      <script src="products.js?v=7"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=6 → v=7) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=7 → v=8) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2245,6 +2245,9 @@ const PRODUCTS = [
   {
     group: 'plin',
     cat:   'plin-pex',
+    // Cijev se prikazuje i pod Plin › Cijevi za plin, uz postojeći
+    // filtar Plin PEX-AL-PEX (koji sadrži i fitinge).
+    cats:  ['plin-pex', 'cijevi-plin'],
     brand: '',
     name:  'PLIN PEX-AL-PEX CIJEV',
     desc:  'Plinske cijevi Pex-Al-Pex predstavljaju visokosiguran, višeslojni kompozitni sustav s aluminijskom jezgrom koji zahvaljujući izvrsnoj fleksibilnosti, nepropusnosti za kisik i otpornosti na koroziju omogućuje brzu i dugotrajnu ugradnju u kućne plinske instalacije.',
