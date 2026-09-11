@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=10"></script>
+//      <script src="products.js?v=11"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=10 → v=11) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=11 → v=12) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2869,6 +2869,82 @@ const PRODUCTS = [
       { label: '4 × Ø42 mm', code: 'IZO-4-42' },
       { label: '4 × Ø54 mm', code: 'IZO-4-54' },
       { label: '4 × Ø60 mm', code: 'IZO-4-60' },
+    ],
+  },
+
+
+  // ── GRIJANJE › OVJESNI PRIBOR (obujmice, Walraven) ────────────
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'WALRAVEN BIS 2S OBUJMICA S IZOLACIJOM M8/M10',
+    desc:  'Dvovijčana obujmica s EPDM gumenom izolacijom i priključnim navojem M8/M10. Guma prigušuje prijenos zvuka i vibracija s cjevovoda na konstrukciju, a dvovijčana izvedba omogućuje pritezanje s obje strane.',
+    code:  'WAL-BIS-2S',
+    img: 'images/Grijanje/OVJESNI PRIBOR/walraven-bis-2s.webp',
+    variants: [
+      { label: 'Ø 63 – 67 mm', code: '334 3 064' },
+      { label: 'Ø 74 – 80 mm', code: '334 3 078' },
+      { label: 'Ø 86 – 92 mm', code: '334 3 092' },
+      { label: 'Ø 108 – 116 mm', code: '334 3 116' },
+      { label: 'Ø 125 – 130 mm', code: '334 3 130' },
+      { label: 'Ø 135 – 141 mm', code: '334 3 141' },
+      { label: 'Ø 159 – 168 mm', code: '334 3 168' },
+      { label: 'Ø 193 – 200 mm', code: '334 3 200' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'WALRAVEN STANDARDNA OBUJMICA S IZOLACIJOM',
+    desc:  'Standardna obujmica s gumenom izolacijom za male i srednje promjere cijevi. Koristi se za pričvršćivanje vodovodnih i grijaćih razvoda uz prigušenje vibracija.',
+    code:  'WAL-STD',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/wal-std.jpg',
+    variants: [
+      { label: 'Ø 15 – 18 mm', code: '336 3 018' },
+      { label: 'Ø 19 – 23 mm', code: '336 3 023' },
+      { label: 'Ø 25 – 28 mm', code: '336 3 028' },
+      { label: 'Ø 32 – 35 mm', code: '336 3 035' },
+      { label: 'Ø 40 – 43 mm', code: '336 3 043' },
+      { label: 'Ø 48 – 51 mm', code: '336 3 051' },
+      { label: 'Ø 50 – 54 mm', code: '336 3 054' },
+      { label: 'Ø 58 – 62 mm', code: '336 3 062' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'WALRAVEN TEŠKA OBUJMICA S BRZOM KOPČOM',
+    desc:  'Ojačana obujmica s gumenom izolacijom i brzom kopčom koja omogućuje zatvaranje bez alata. Namijenjena je većim promjerima i težim cjevovodima.',
+    code:  'WAL-TESKA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/wal-teska.jpg',
+    variants: [
+      { label: 'Ø 64 – 70 mm', code: '336 2 067' },
+      { label: 'Ø 75 – 80 mm', code: '336 2 080' },
+      { label: 'Ø 108 – 112 mm', code: '336 2 112' },
+      { label: 'Ø 125 – 132 mm', code: '336 2 132' },
+      { label: 'Ø 160 – 169 mm', code: '336 2 169' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'WALRAVEN KSB2 OBUJMICA S IZOLACIJOM M8/M10',
+    desc:  'Obujmica serije KSB2 s gumenom izolacijom i priključkom M8/M10, dostupna u širokom rasponu promjera — od malih razvoda do cijevi promjera preko 300 mm.',
+    code:  'WAL-KSB2',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/wal-ksb2.jpg',
+    variants: [
+      { label: 'Ø 15 – 19 mm', code: '339 6 015' },
+      { label: 'Ø 67 – 73 mm', code: '339 6 070' },
+      { label: 'Ø 108 – 115 mm', code: '339 6 115' },
+      { label: 'Ø 193 – 200 mm', code: '339 6 200' },
+      { label: 'Ø 305 – 312 mm', code: '339 6 310' },
     ],
   },
 
