@@ -73,7 +73,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=steelpres</loc>
+    <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=bakar</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -83,6 +83,12 @@
     <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=steelpres</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.italterm.net/proizvodi?group=hladenje</loc>
@@ -416,6 +422,42 @@
   </url>
   <url>
     <loc>https://www.italterm.net/proizvod?id=PEX-AL-PEX-BEZ-IZOLACIJE</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=CU-CIJEV</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=CU-KOLJENO</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=CU-TEE</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=CU-MUFA</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=CU-REDUKCIJA</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=CU-ZAOBILAZ</loc>
     <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

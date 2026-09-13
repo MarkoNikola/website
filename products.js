@@ -7,7 +7,7 @@
 //
 //      <script src="products.js?v=16"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=14 → v=15) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=16 → v=17) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -616,6 +616,9 @@ const PRODUCTS = [
   {
     group: 'grijanje',
     cat:   'bakar',
+    // Bakrena cijev je i cijev i dio Cu sustava — prikazuje se pod oba
+    // filtra. `cat` ostaje glavna (koristi se u breadcrumbu).
+    cats:  ['bakar', 'cijevi-grijanje'],
     name:  'Cu CIJEV',
     desc:  'Bakrena cijev za instalacije grijanja, hlađenja i vodovoda prema standardu EN 1057. Spaja se lemljenjem ili presanjem, a dostupna je u promjerima od Ø 15 do Ø 54 mm.',
     code:  'CU-CIJEV',
