@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=13"></script>
+//      <script src="products.js?v=14"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=13 → v=14) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=14 → v=15) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -246,7 +246,8 @@ const PRODUCTS = [
     cat:   'cirkulacijske-pumpe',
     brand: 'IBO',
     name:  'W15 IH 10',
-    desc:  'je kompaktna površinska automatska pumpa za povećanje pritiska vode u hidrauličkim instalacijama.',
+    code:  'W15-IH-10',
+    desc:  'IBO W15 IH 10 je kompaktna površinska automatska pumpa za povećanje pritiska vode u hidrauličkim instalacijama.',
     desc_it: 'È una pompa automatica di superficie compatta per l\'aumento della pressione dell\'acqua negli impianti idraulici.',
     img: 'images/Grijanje/Cirk. pumpe/W15 IH 10.jpg',
   },
