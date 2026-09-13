@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=14"></script>
+//      <script src="products.js?v=15"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=14 → v=15) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=15 → v=16) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -665,30 +665,32 @@ const PRODUCTS = [
     code:  'SteelPRES-T-Komad',
     img: 'images/STEELPRES/Steel/T.jpg',
     variants: [
-      { label: 'SteelPRES T-komad 15-15-15', code: 'SteelPRES-T-Komad-15-15-15' },
-      { label: 'SteelPRES T-komad 18-15-18', code: 'SteelPRES-T-Komad-18-15-18' },
-      { label: 'SteelPRES T-komad 18-18-18', code: 'SteelPRES-T-Komad-18-18-18' },
-      { label: 'SteelPRES T-komad 22-15-22', code: 'SteelPRES-T-Komad-22-15-22' },
-      { label: 'SteelPRES T-komad 22-18-22', code: 'SteelPRES-T-Komad-22-18-22' },
-      { label: 'SteelPRES T-komad 22-22-22', code: 'SteelPRES-T-Komad-22-22-22' },
-      { label: 'SteelPRES T-komad 28-15-28', code: 'SteelPRES-T-Komad-28-15-28' },
-      { label: 'SteelPRES T-komad 28-18-28', code: 'SteelPRES-T-Komad-28-18-28' },
-      { label: 'SteelPRES T-komad 28-22-28', code: 'SteelPRES-T-Komad-28-22-28' },
-      { label: 'SteelPRES T-komad 28-28-28', code: 'SteelPRES-T-Komad-28-28-28' },
-      { label: 'SteelPRES T-komad 35-15-35', code: 'SteelPRES-T-Komad-35-15-35' },
-      { label: 'SteelPRES T-komad 35-18-35', code: 'SteelPRES-T-Komad-35-18-35' },
-      { label: 'SteelPRES T-komad 35-22-35', code: 'SteelPRES-T-Komad-35-22-35' },
-      { label: 'SteelPRES T-komad 35-28-35', code: 'SteelPRES-T-Komad-35-28-35' },
-      { label: 'SteelPRES T-komad 35-35-35', code: 'SteelPRES-T-Komad-35-35-35' },
-      { label: 'SteelPRES T-komad 42-22-42', code: 'SteelPRES-T-Komad-42-22-42' },
-      { label: 'SteelPRES T-komad 42-28-42', code: 'SteelPRES-T-Komad-42-28-42' },
-      { label: 'SteelPRES T-komad 42-35-42', code: 'SteelPRES-T-Komad-42-35-42' },
-      { label: 'SteelPRES T-komad 42-42-42', code: 'SteelPRES-T-Komad-42-42-42' },
-      { label: 'SteelPRES T-komad 54-22-54', code: 'SteelPRES-T-Komad-54-22-54' },
-      { label: 'SteelPRES T-komad 54-28-54', code: 'SteelPRES-T-Komad-54-28-54' },
-      { label: 'SteelPRES T-komad 54-35-54', code: 'SteelPRES-T-Komad-54-35-54' },
-      { label: 'SteelPRES T-komad 54-42-54', code: 'SteelPRES-T-Komad-54-42-54' },
-      { label: 'SteelPRES T-komad 54-54-54', code: 'SteelPRES-T-Komad-54-54-54' },
+      // Varijante se grupiraju po polju `group` (vidi proizvod.html).
+      // Proizvodi bez tog polja prikazuju se kao i dosad, u jednom nizu.
+      { label: '15-15-15', code: 'SteelPRES-T-Komad-15-15-15', group: 'Ravni', group_it: 'Diritti' },
+      { label: '18-18-18', code: 'SteelPRES-T-Komad-18-18-18', group: 'Ravni', group_it: 'Diritti' },
+      { label: '22-22-22', code: 'SteelPRES-T-Komad-22-22-22', group: 'Ravni', group_it: 'Diritti' },
+      { label: '28-28-28', code: 'SteelPRES-T-Komad-28-28-28', group: 'Ravni', group_it: 'Diritti' },
+      { label: '35-35-35', code: 'SteelPRES-T-Komad-35-35-35', group: 'Ravni', group_it: 'Diritti' },
+      { label: '42-42-42', code: 'SteelPRES-T-Komad-42-42-42', group: 'Ravni', group_it: 'Diritti' },
+      { label: '54-54-54', code: 'SteelPRES-T-Komad-54-54-54', group: 'Ravni', group_it: 'Diritti' },
+      { label: '18-15-18', code: 'SteelPRES-T-Komad-18-15-18', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '22-15-22', code: 'SteelPRES-T-Komad-22-15-22', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '22-18-22', code: 'SteelPRES-T-Komad-22-18-22', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '28-15-28', code: 'SteelPRES-T-Komad-28-15-28', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '28-18-28', code: 'SteelPRES-T-Komad-28-18-28', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '28-22-28', code: 'SteelPRES-T-Komad-28-22-28', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-15-35', code: 'SteelPRES-T-Komad-35-15-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-18-35', code: 'SteelPRES-T-Komad-35-18-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-22-35', code: 'SteelPRES-T-Komad-35-22-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-28-35', code: 'SteelPRES-T-Komad-35-28-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '42-22-42', code: 'SteelPRES-T-Komad-42-22-42', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '42-28-42', code: 'SteelPRES-T-Komad-42-28-42', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '42-35-42', code: 'SteelPRES-T-Komad-42-35-42', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-22-54', code: 'SteelPRES-T-Komad-54-22-54', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-28-54', code: 'SteelPRES-T-Komad-54-28-54', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-35-54', code: 'SteelPRES-T-Komad-54-35-54', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-42-54', code: 'SteelPRES-T-Komad-54-42-54', group: 'Reducirani', group_it: 'Ridotti' },
     ],
   },
 
