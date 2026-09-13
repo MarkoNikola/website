@@ -461,7 +461,7 @@ function updateInquiry() {
     var it = ((typeof getLang === 'function' ? getLang()
                                              : localStorage.getItem('it_lang')) || 'hr') === 'it';
     var grp = (it && selectedVariant.group_it) || selectedVariant.group;
-    var vLabel = (grp ? grp + ' · ' : '') + ((it && selectedVariant.label_it) || selectedVariant.label);
+    var vLabel = ((it && selectedVariant.label_it) || selectedVariant.label) + (grp ? ' · ' + grp : '');
     displayName = currentProduct.name + ' – ' + vLabel;
     document.getElementById('variantSelected').innerHTML =
       'Odabrano: <strong>' + vLabel + '</strong>';
