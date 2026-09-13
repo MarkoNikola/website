@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=15"></script>
+//      <script src="products.js?v=16"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=15 → v=16) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=16 → v=17) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2910,6 +2910,159 @@ const PRODUCTS = [
       { label: 'Ø 210 – 219 mm', code: 'KONZOLA-GUMA-210-219' },
       { label: 'Ø 219 – 225 mm', code: 'KONZOLA-GUMA-219-225' },
       { label: 'Ø 244 – 250 mm', code: 'KONZOLA-GUMA-244-250' },
+    ],
+  },
+
+
+  // ── GRIJANJE › BAKAR (Cu) ─────────────────────────────────────
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'Cu CIJEV',
+    desc:  'Bakrena cijev za instalacije grijanja, hlađenja i vodovoda prema standardu EN 1057. Spaja se lemljenjem ili presanjem, a dostupna je u promjerima od Ø 15 do Ø 54 mm.',
+    code:  'CU-CIJEV',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/BAKAR/cu-cijev.jpg',
+    variants: [
+      { label: 'Ø 15 mm', code: 'CU-CIJEV-15' },
+      { label: 'Ø 18 mm', code: 'CU-CIJEV-18' },
+      { label: 'Ø 22 mm', code: 'CU-CIJEV-22' },
+      { label: 'Ø 28 mm', code: 'CU-CIJEV-28' },
+      { label: 'Ø 35 mm', code: 'CU-CIJEV-35' },
+      { label: 'Ø 42 mm', code: 'CU-CIJEV-42' },
+      { label: 'Ø 54 mm', code: 'CU-CIJEV-54' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'Cu KOLJENO',
+    desc:  'Bakreno koljeno za promjenu smjera cjevovoda pod 90° ili 45°. Dostupno u izvedbi žensko-žensko te muško-žensko (MŽ) za izravno spajanje u sljedeći fiting bez međukomada.',
+    code:  'CU-KOLJENO',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/BAKAR/cu-koljeno.jpg',
+    variants: [
+      { label: 'Ø 15 mm', code: 'CU-KOLJENO-15', group: '90°', group_it: '90°' },
+      { label: 'Ø 18 mm', code: 'CU-KOLJENO-18', group: '90°', group_it: '90°' },
+      { label: 'Ø 22 mm', code: 'CU-KOLJENO-22', group: '90°', group_it: '90°' },
+      { label: 'Ø 28 mm', code: 'CU-KOLJENO-28', group: '90°', group_it: '90°' },
+      { label: 'Ø 35 mm', code: 'CU-KOLJENO-35', group: '90°', group_it: '90°' },
+      { label: 'Ø 42 mm', code: 'CU-KOLJENO-42', group: '90°', group_it: '90°' },
+      { label: 'Ø 54 mm', code: 'CU-KOLJENO-54', group: '90°', group_it: '90°' },
+      { label: 'Ø 15 mm', code: 'CU-KOLJENO-15-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 18 mm', code: 'CU-KOLJENO-18-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 22 mm', code: 'CU-KOLJENO-22-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 28 mm', code: 'CU-KOLJENO-28-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 35 mm', code: 'CU-KOLJENO-35-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 42 mm', code: 'CU-KOLJENO-42-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 54 mm', code: 'CU-KOLJENO-54-MZ', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 15 mm', code: 'CU-KOLJENO-15-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 18 mm', code: 'CU-KOLJENO-18-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 22 mm', code: 'CU-KOLJENO-22-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 28 mm', code: 'CU-KOLJENO-28-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 35 mm', code: 'CU-KOLJENO-35-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 42 mm', code: 'CU-KOLJENO-42-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 54 mm', code: 'CU-KOLJENO-54-45', group: '45°', group_it: '45°' },
+      { label: 'Ø 15 mm', code: 'CU-KOLJENO-15-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 18 mm', code: 'CU-KOLJENO-18-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 22 mm', code: 'CU-KOLJENO-22-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 28 mm', code: 'CU-KOLJENO-28-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 35 mm', code: 'CU-KOLJENO-35-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 42 mm', code: 'CU-KOLJENO-42-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 54 mm', code: 'CU-KOLJENO-54-45-MZ', group: '45° MŽ', group_it: '45° M/F' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'Cu T-KOMAD',
+    desc:  'Bakreni T-komad za račvanje cjevovoda. Ravni imaju sva tri priključka istog promjera, a reducirani manji srednji odvojak.',
+    code:  'CU-TEE',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/BAKAR/cu-tee.jpg',
+    variants: [
+      { label: '15-15-15', code: 'CU-TEE-15-15-15', group: 'Ravni', group_it: 'Diritti' },
+      { label: '18-18-18', code: 'CU-TEE-18-18-18', group: 'Ravni', group_it: 'Diritti' },
+      { label: '22-22-22', code: 'CU-TEE-22-22-22', group: 'Ravni', group_it: 'Diritti' },
+      { label: '28-28-28', code: 'CU-TEE-28-28-28', group: 'Ravni', group_it: 'Diritti' },
+      { label: '35-35-35', code: 'CU-TEE-35-35-35', group: 'Ravni', group_it: 'Diritti' },
+      { label: '42-42-42', code: 'CU-TEE-42-42-42', group: 'Ravni', group_it: 'Diritti' },
+      { label: '54-54-54', code: 'CU-TEE-54-54-54', group: 'Ravni', group_it: 'Diritti' },
+      { label: '18-15-18', code: 'CU-TEE-18-15-18', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '22-15-22', code: 'CU-TEE-22-15-22', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '22-18-22', code: 'CU-TEE-22-18-22', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '28-15-28', code: 'CU-TEE-28-15-28', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '28-18-28', code: 'CU-TEE-28-18-28', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '28-22-28', code: 'CU-TEE-28-22-28', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-15-35', code: 'CU-TEE-35-15-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-18-35', code: 'CU-TEE-35-18-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-22-35', code: 'CU-TEE-35-22-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '35-28-35', code: 'CU-TEE-35-28-35', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '42-22-42', code: 'CU-TEE-42-22-42', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '42-28-42', code: 'CU-TEE-42-28-42', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '42-35-42', code: 'CU-TEE-42-35-42', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-22-54', code: 'CU-TEE-54-22-54', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-28-54', code: 'CU-TEE-54-28-54', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-35-54', code: 'CU-TEE-54-35-54', group: 'Reducirani', group_it: 'Ridotti' },
+      { label: '54-42-54', code: 'CU-TEE-54-42-54', group: 'Reducirani', group_it: 'Ridotti' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'Cu MUFA',
+    desc:  'Bakrena mufa (spojnica) za produženje cjevovoda spajanjem dviju cijevi istog promjera.',
+    code:  'CU-MUFA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/BAKAR/cu-mufa.jpg',
+    variants: [
+      { label: 'Ø 15 mm', code: 'CU-MUFA-15' },
+      { label: 'Ø 18 mm', code: 'CU-MUFA-18' },
+      { label: 'Ø 22 mm', code: 'CU-MUFA-22' },
+      { label: 'Ø 28 mm', code: 'CU-MUFA-28' },
+      { label: 'Ø 35 mm', code: 'CU-MUFA-35' },
+      { label: 'Ø 42 mm', code: 'CU-MUFA-42' },
+      { label: 'Ø 54 mm', code: 'CU-MUFA-54' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'Cu REDUKCIJA',
+    desc:  'Bakrena redukcija za prijelaz s većeg na manji promjer cjevovoda.',
+    code:  'CU-REDUKCIJA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/BAKAR/cu-redukcija.jpg',
+    variants: [
+      { label: 'Ø 18 – 15 mm', code: 'CU-REDUKCIJA-18-15' },
+      { label: 'Ø 22 – 15 mm', code: 'CU-REDUKCIJA-22-15' },
+      { label: 'Ø 22 – 18 mm', code: 'CU-REDUKCIJA-22-18' },
+      { label: 'Ø 28 – 15 mm', code: 'CU-REDUKCIJA-28-15' },
+      { label: 'Ø 28 – 18 mm', code: 'CU-REDUKCIJA-28-18' },
+      { label: 'Ø 28 – 22 mm', code: 'CU-REDUKCIJA-28-22' },
+      { label: 'Ø 35 – 22 mm', code: 'CU-REDUKCIJA-35-22' },
+      { label: 'Ø 35 – 28 mm', code: 'CU-REDUKCIJA-35-28' },
+      { label: 'Ø 42 – 22 mm', code: 'CU-REDUKCIJA-42-22' },
+      { label: 'Ø 42 – 28 mm', code: 'CU-REDUKCIJA-42-28' },
+      { label: 'Ø 42 – 35 mm', code: 'CU-REDUKCIJA-42-35' },
+      { label: 'Ø 54 – 28 mm', code: 'CU-REDUKCIJA-54-28' },
+      { label: 'Ø 54 – 35 mm', code: 'CU-REDUKCIJA-54-35' },
+      { label: 'Ø 54 – 42 mm', code: 'CU-REDUKCIJA-54-42' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'Cu ZAOBILAZ',
+    desc:  'Bakreni zaobilaz (premosnica) omogućuje križanje dviju cijevi u istoj ravnini bez dodatnih koljena.',
+    code:  'CU-ZAOBILAZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/BAKAR/cu-zaobilaz.jpg',
+    variants: [
+      { label: 'Ø 15 mm', code: 'CU-ZAOBILAZ-15' },
+      { label: 'Ø 18 mm', code: 'CU-ZAOBILAZ-18' },
+      { label: 'Ø 22 mm', code: 'CU-ZAOBILAZ-22' },
+      { label: 'Ø 28 mm', code: 'CU-ZAOBILAZ-28' },
     ],
   },
 
