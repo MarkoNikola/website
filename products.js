@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=12"></script>
+//      <script src="products.js?v=13"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=12 → v=13) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=13 → v=14) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -1981,7 +1981,7 @@ const PRODUCTS = [
     name:  'KUGL VENTIL 3/4" ZA RAZDJELNIK',
     desc:  '',
     code:  'VENTIL-RAZDJELNIK',
-    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
+    img: 'images/PEX/KUGL VENTIL 3_4 ZA RAZDJELNIK - PLAVA-CRVENA RUČKA.jpg',
     variants: [
       { label: 'PLAVA RUČKA',  code: 'PLAVI',  },
       { label: 'CRVENA RUČKA"', code: 'CRVENI',  },
@@ -1994,7 +1994,7 @@ const PRODUCTS = [
     name:  'ORMAR ZA MODULARNE RAZDJELNIKE',
     desc:  '',
     code:  'ORMAR-RAZDJELNIK',
-    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
+    img: 'images/PEX/ORMAR ZA MODULARNE RAZDJELNIKE.jpg',
     variants: [
       { label: '240 x 400 x 80 mm',  code: 'ORM-RAZDJ',  },
       ]
@@ -2096,7 +2096,7 @@ const PRODUCTS = [
     cat:   'kanalizacija',
     brand: 'VARGON',
     name:  'PP KOLJENO',
-   // desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
+   desc:  'Vargokal koljeno od polipropilena (PP) za promjenu smjera unutarnje kanalizacije prema standardu EN 1451-1. Spaja se brtvenim prstenom, bez ljepila i bez alata.',
     code:  'PP-KOLJENO',
     img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP KOLJENO.jpg',
     variants: [
@@ -2125,7 +2125,7 @@ const PRODUCTS = [
     cat:   'kanalizacija',
     brand: 'VARGON',
     name:  'PP RAČVA',
-   // desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
+   desc:  'Vargokal račva od polipropilena (PP) za spajanje ogranka na glavni vod unutarnje kanalizacije prema standardu EN 1451-1. Spaja se brtvenim prstenom, bez ljepila i bez alata.',
     code:  'PP-RAČVA',
     imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP RAČVA.jpg',
       'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP RAČVA REDUCIRANA.jpg',
@@ -2160,7 +2160,7 @@ const PRODUCTS = [
     cat:   'kanalizacija',
     brand: 'PEŠTAN',
     name:  'UKC KOLJENO',
-   // desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
+    desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
     code:  'UKC-KOLJENO',
     imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/UKC KOLJENO.jpg'
     ],
@@ -2178,7 +2178,7 @@ const PRODUCTS = [
     cat:   'kanalizacija',
     brand: 'PEŠTAN',
     name:  'UKC RAČVA',
-   // desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
+    desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
     code:  'UKC-RAČVA',
     imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/UKC RAČVA.webp'
     ],
@@ -2340,7 +2340,7 @@ const PRODUCTS = [
     desc:  'Jednoslojne polipropilenske (PP-R) cijevi visoke otpornosti na pritisak, temperaturu i agresivne kemikalije. Primarno se koriste za pouzdan transport tople i hladne vode, stlačenog zraka te tekućina u stambenim i industrijskim sustavima.',
     code:  'PPR-FUSIO-SDR6',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/FUSIO-SDR6.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/SDR6.jpg',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-FUSIO-SDR6-20' },
       { label: 'Ø 25 mm', code: 'PPR-FUSIO-SDR6-25' },
@@ -2359,7 +2359,7 @@ const PRODUCTS = [
     desc:  'Troslojne polipropilenske cijevi ojačane staklenim vlaknima koje smanjuju linearno toplinsko istezanje za čak 70% u odnosu na klasične cijevi. Namijenjene su za sustave sanitarne tople i hladne vode te grijanje pri visokim radnim pritiscima.',
     code:  'PPR-FASER-FIBER-T',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/FASER-FIBER-T.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/FUSIO-TECHNIK-faser-FIBER-T-SDR-74.jpg',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-FASER-FIBER-T-20' },
       { label: 'Ø 25 mm', code: 'PPR-FASER-FIBER-T-25' },
@@ -2378,7 +2378,7 @@ const PRODUCTS = [
     desc:  'Vlaknima ojačane višeslojne cijevi projektirane za klimatizaciju, hlađenje, grijanje i industrijske mehaničke sustave. Zahvaljujući tanjoj stijenci i smanjenom širenju na temperaturi, omogućuju veći protok i ekonomičniju instalaciju.',
     code:  'PPR-FASER-FIBER-COND',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/FASER-FIBER-COND.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/FIBER-COND.jpg',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-FASER-FIBER-COND-20' },
       { label: 'Ø 25 mm', code: 'PPR-FASER-FIBER-COND-25' },
@@ -2396,7 +2396,7 @@ const PRODUCTS = [
     desc:  'Specijalizirane polipropilenske cijevi prepoznatljive ljubičaste boje, namijenjene isključivo za transport reciklirane i kišnice (nisu za pitku vodu). Proizvedene su s aditivima otpornim na fluktuacije pH vrijednosti i kemikalije, idealne za navodnjavanje, ispiranje toaleta i tehničku upotrebu.',
     code:  'PPR-RAINWATER',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/RAINWATER.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/rain-water.jpg',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-RAINWATER-20' },
       { label: 'Ø 25 mm', code: 'PPR-RAINWATER-25' },
@@ -2413,7 +2413,7 @@ const PRODUCTS = [
     desc:  'Spojni komad pod kutom od 90 stupnjeva koji služi za skretanje i promjenu smjera cjevovoda pod pravim kutom.',
     code:  'PPR-KOLJENO-90',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/KOLJENO/at kolj.webp',
     variants: [
       { label: 'Ø 20 mm', code: '63108' },
       { label: 'Ø 25 mm', code: '63110' },
