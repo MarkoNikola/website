@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=16"></script>
+//      <script src="products.js?v=17"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=16 → v=17) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=17 → v=18) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2562,68 +2562,35 @@ const PRODUCTS = [
     group: 'vodomaterijal',
     cat:   'fitinzi',
     brand: 'AQUATECHNIK',
-    name:  'PPR KOLJENO 90°',
-    desc:  'Spojni komad pod kutom od 90 stupnjeva koji služi za skretanje i promjenu smjera cjevovoda pod pravim kutom.',
-    code:  'PPR-KOLJENO-90',
-    // SLIKA: dodajte kad bude dostupna, npr.
+    name:  'PPR KOLJENO',
+    desc:  'Koljeno za promjenu smjera PPR cjevovoda pod 90° ili 45°. Dostupno u izvedbi žensko-žensko te muško-žensko (MŽ), koja se spaja izravno u sljedeći fiting bez međukomada.',
+    code:  'PPR-KOLJENO',
+    // Nastalo spajanjem četiri zasebna proizvoda. Stare šifre ostaju ovdje
+    // da linkovi na njih (uključujući one koje je Google već indeksirao)
+    // i dalje otvaraju ovu stranicu.
+    codeAliases: ['PPR-KOLJENO-90', 'PPR-KOLJENO-90-MZ', 'PPR-KOLJENO-45', 'PPR-KOLJENO-45-MZ'],
     img: 'images/VODOMATERIJAL/AQUATECHNIK/KOLJENO/at kolj.webp',
     variants: [
-      { label: 'Ø 20 mm', code: '63108' },
-      { label: 'Ø 25 mm', code: '63110' },
-      { label: 'Ø 32 mm', code: '63112' },
-      { label: 'Ø 40 mm', code: '63114' },
-      { label: 'Ø 50 mm', code: '63116' },
-      { label: 'Ø 63 mm', code: '63118' },
-      { label: 'Ø 75 mm', code: '63120' },
-    ],
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'fitinzi',
-    brand: 'AQUATECHNIK',
-    name:  'PPR KOLJENO 90° muško/žensko',
-    desc:  'Koljeno pod 90° s jednim muškim i jednim ženskim krajem, omogućuje izravno spajanje unutar drugog fitinga bez dodatne cijevi.',
-    code:  'PPR-KOLJENO-90-MZ',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90-MZ.jpg',
-    variants: [
-      { label: 'Ø 20 mm MŽ', code: '63308' },
-      { label: 'Ø 25 mm MŽ', code: '63310' },
-      { label: 'Ø 32 mm MŽ', code: '63312' },
-      { label: 'Ø 40 mm MŽ', code: '63314' },
-    ],
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'fitinzi',
-    brand: 'AQUATECHNIK',
-    name:  'PPR KOLJENO 45°',
-    desc:  'Spojni fiting za blago skretanje smjera trase cjevovoda pod kutom od 45 stupnjeva.',
-    code:  'PPR-KOLJENO-45',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-45.jpg',
-    variants: [
-      { label: 'Ø 20 mm', code: '63508' },
-      { label: 'Ø 25 mm', code: '63510' },
-      { label: 'Ø 32 mm', code: '63512' },
-      { label: 'Ø 40 mm', code: '63514' },
-      { label: 'Ø 50 mm', code: '63516' },
-      { label: 'Ø 63 mm', code: '63518' },
-    ],
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'fitinzi',
-    brand: 'AQUATECHNIK',
-    name:  'PPR KOLJENO 45° muško/žensko',
-    desc:  'Koljeno pod 45° s muškim i ženskim priključkom za izravno spajanje fitinga u fiting.',
-    code:  'PPR-KOLJENO-45-MZ',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-45-MZ.jpg',
-    variants: [
-      { label: 'Ø 20 mm MŽ', code: '63708' },
-      { label: 'Ø 25 mm MŽ', code: '63710' },
-      { label: 'Ø 32 mm MŽ', code: '63712' },
+      { label: 'Ø 20 mm', code: '63108', group: '90°', group_it: '90°' },
+      { label: 'Ø 25 mm', code: '63110', group: '90°', group_it: '90°' },
+      { label: 'Ø 32 mm', code: '63112', group: '90°', group_it: '90°' },
+      { label: 'Ø 40 mm', code: '63114', group: '90°', group_it: '90°' },
+      { label: 'Ø 50 mm', code: '63116', group: '90°', group_it: '90°' },
+      { label: 'Ø 63 mm', code: '63118', group: '90°', group_it: '90°' },
+      { label: 'Ø 75 mm', code: '63120', group: '90°', group_it: '90°' },
+      { label: 'Ø 20 mm MŽ', code: '63308', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 25 mm MŽ', code: '63310', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 32 mm MŽ', code: '63312', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 40 mm MŽ', code: '63314', group: '90° MŽ', group_it: '90° M/F' },
+      { label: 'Ø 20 mm', code: '63508', group: '45°', group_it: '45°' },
+      { label: 'Ø 25 mm', code: '63510', group: '45°', group_it: '45°' },
+      { label: 'Ø 32 mm', code: '63512', group: '45°', group_it: '45°' },
+      { label: 'Ø 40 mm', code: '63514', group: '45°', group_it: '45°' },
+      { label: 'Ø 50 mm', code: '63516', group: '45°', group_it: '45°' },
+      { label: 'Ø 63 mm', code: '63518', group: '45°', group_it: '45°' },
+      { label: 'Ø 20 mm MŽ', code: '63708', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 25 mm MŽ', code: '63710', group: '45° MŽ', group_it: '45° M/F' },
+      { label: 'Ø 32 mm MŽ', code: '63712', group: '45° MŽ', group_it: '45° M/F' },
     ],
   },
   {
