@@ -247,6 +247,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.italterm.net/proizvodi?group=vodomaterijal&amp;cat=ppr-fitinzi</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=izolacija</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -1237,7 +1243,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.italterm.net/proizvod?id=PPR-KOLJENO-90-NZ</loc>
+    <loc>https://www.italterm.net/proizvod?id=PPR-KOLJENO-NAVOJ</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1292,12 +1298,6 @@
   </url>
   <url>
     <loc>https://www.italterm.net/proizvod?id=PPR-ZIDNI-KOMPLET</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.italterm.net/proizvod?id=PPR-KOLJENO-90-NM</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

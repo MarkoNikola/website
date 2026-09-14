@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=17"></script>
+//      <script src="products.js?v=18"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=17 → v=18) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=18 → v=19) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -2560,7 +2560,7 @@ const PRODUCTS = [
   // ── VODOMATERIJAL › FITINZI (PP-R, Aquatechnik) ───────────────
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR KOLJENO',
     desc:  'Koljeno za promjenu smjera PPR cjevovoda pod 90° ili 45°. Dostupno u izvedbi žensko-žensko te muško-žensko (MŽ), koja se spaja izravno u sljedeći fiting bez međukomada.',
@@ -2595,22 +2595,28 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
-    name:  'PPR KOLJENO 90° sa ženskim navojem',
-    desc:  'Prijelazno koljeno od 90° koje spaja PPR cijev na jednoj strani s metalnim navojnim spojem na drugoj strani.',
-    code:  'PPR-KOLJENO-90-NZ',
+    name:  'PPR KOLJENO S NAVOJEM',
+    desc:  'Prijelazno koljeno od 90° koje s jedne strane ima PPR nastavak za zavarivanje, a s druge metalni navoj — unutarnji (ženski) ili vanjski (muški).',
+    code:  'PPR-KOLJENO-NAVOJ',
+    // Nastalo spajanjem dvaju zasebnih proizvoda; stare šifre ostaju
+    // da postojeći linkovi i dalje otvaraju ovu stranicu.
+    codeAliases: ['PPR-KOLJENO-90-NZ', 'PPR-KOLJENO-90-NM'],
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90-NZ.jpg',
+    // img: 'images/VODOMATERIJAL/AQUATECHNIK/KOLJENO/koljeno-navoj.jpg',
     variants: [
-      { label: 'Ø 20 mm × 1/2" Ž', code: '67008' },
-      { label: 'Ø 20 mm × 3/4" Ž', code: '67010' },
-      { label: 'Ø 25 mm × 3/4" Ž', code: '67014' },
+      { label: 'Ø 20 mm × 1/2" Ž', code: '67008', group: 'PPR Koljeno – ženski/unutarnji navoj', group_it: 'Gomito PPR – filetto femmina/interno' },
+      { label: 'Ø 20 mm × 3/4" Ž', code: '67010', group: 'PPR Koljeno – ženski/unutarnji navoj', group_it: 'Gomito PPR – filetto femmina/interno' },
+      { label: 'Ø 25 mm × 3/4" Ž', code: '67014', group: 'PPR Koljeno – ženski/unutarnji navoj', group_it: 'Gomito PPR – filetto femmina/interno' },
+      { label: 'Ø 20 mm × 1/2" M', code: '67508', group: 'PPR Koljeno – muški/vanjski navoj', group_it: 'Gomito PPR – filetto maschio/esterno' },
+      { label: 'Ø 20 mm × 3/4" M', code: '67500', group: 'PPR Koljeno – muški/vanjski navoj', group_it: 'Gomito PPR – filetto maschio/esterno' },
+      { label: 'Ø 25 mm × 3/4" M', code: '67510', group: 'PPR Koljeno – muški/vanjski navoj', group_it: 'Gomito PPR – filetto maschio/esterno' },
     ],
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR ZIDNO KOLJENO s pričvrsnicom',
     desc:  'Zidno koljeno s unutarnjim navojem i nosačem s rupama za čvrsto fiksiranje miješalica i slavina na zid.',
@@ -2624,7 +2630,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR T-KOMAD',
     desc:  'Standardni fiting u obliku slova "T" za razdvajanje jednog glavnog toka u dva sporedna ogranka jednake veličine.',
@@ -2643,7 +2649,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR T-KOMAD reducirani',
     desc:  'T-komad koji omogućuje odvajanje cijevi na sporedni ogranak manjeg promjera u odnosu na prolazni vod.',
@@ -2674,7 +2680,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR KRIŽNI KOMAD',
     desc:  'Četverostruki spojni fiting koji služi za križanje dva cjevovoda u istoj ravnini pod kutom od 90°.',
@@ -2690,7 +2696,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR ČEP',
     desc:  'Završni fiting namijenjen za trajno ili privremeno zatvaranje kraja polipropilenske cijevi.',
@@ -2709,7 +2715,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR ZAOBILAZNI LUK',
     desc:  'Oblikovani cijevni luk koji omogućuje premošćivanje i ukrižavanje dviju cijevi bez međusobnog dodirivanja.',
@@ -2724,7 +2730,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR PRIJELAZNA MUFA sa ženskim navojem',
     desc:  'Ravno prijelazno spojno tijelo koje s jedne strane ima varivu PPR mufu, a s druge unutrašnji metalni navoj.',
@@ -2745,7 +2751,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR PRIJELAZNA MUFA s muškim navojem',
     desc:  'Ravni spojni komad koji spaja PPR cijev polifuzijskim zavarivanjem na vanjski metalni navoj.',
@@ -2766,7 +2772,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR DVOSTRUKI ZIDNI KOMPLET sa ženskim navojem',
     desc:  'Prethodno razmaknut par zidnih koljena na nosaču, namijenjen za jednostavnu i preciznu ugradnju zidnih miješalica.',
@@ -2779,22 +2785,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
-    brand: 'AQUATECHNIK',
-    name:  'PPR KOLJENO 90° s muškim navojem',
-    desc:  'Prijelazno koljeno od 90° za spajanje plastične cijevi s opremom ili fitingom koji ima ženski navoj.',
-    code:  'PPR-KOLJENO-90-NM',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/PPR/KOLJENO-90-NM.jpg',
-    variants: [
-      { label: 'Ø 20 mm × 1/2" M', code: '67508' },
-      { label: 'Ø 20 mm × 3/4" M', code: '67500' },
-      { label: 'Ø 25 mm × 3/4" M', code: '67510' },
-    ],
-  },
-  {
-    group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR T-KOMAD sa ženskim navojem',
     desc:  'T-komad čiji je srednji odvojak opremljen unutarnjim metalnim navojem za priključak opreme ili mjernih instrumenata.',
@@ -2811,7 +2802,7 @@ const PRODUCTS = [
   },
   {
     group: 'vodomaterijal',
-    cat:   'fitinzi',
+    cat:   'ppr-fitinzi',
     brand: 'AQUATECHNIK',
     name:  'PPR HOLENDER sa ženskim navojem',
     desc:  'Rastavljiva PPR spojnica (holender) s navojnom maticom koja omogućuje lako rastavljanje i održavanje dijelova instalacije.',
