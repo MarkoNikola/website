@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=18"></script>
+//      <script src="products.js?v=19"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=18 → v=19) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=19 → v=20) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -3019,6 +3019,223 @@ const PRODUCTS = [
       { label: 'Ø 219 – 225 mm', code: 'KONZOLA-GUMA-219-225' },
       { label: 'Ø 244 – 250 mm', code: 'KONZOLA-GUMA-244-250' },
     ],
+  },
+
+
+  // ── GRIJANJE › OVJESNI PRIBOR (Walraven) ──────────────────────
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'SET ZA MONTAŽU UMIVAONIKA',
+    desc:  'Set za pričvršćivanje umivaonika na zid: 2 usadna vijka, 2 podloške, 2 vodilice, 2 šesterokutne matice i 2 tipla. Prikladan za beton, opeku, silikatne blokove i prirodni kamen.',
+    code:  '065 7 600',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/set-umivaonik.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'ROZETA ZA CIJEV',
+    desc:  'Plastična rozeta (PP, bijela RAL 9016) za prekrivanje prodora cijevi kroz zid ili pod. Najčešće se koristi na priključcima radijatora.',
+    code:  '067 1 415',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/rozeta.jpg',
+    variants: [
+      { label: 'Ø 15 mm', code: '067 1 415' },
+      { label: 'Ø 18 mm', code: '067 1 418' },
+      { label: 'Ø 22 mm', code: '067 1 422' },
+      { label: 'Ø 28 mm', code: '067 1 428' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'OVJESNA TRAKA',
+    desc:  'Pocinčana perforirana traka za ovjes i pričvršćivanje cijevi i instalacija. Reže se na željenu duljinu i oblikuje prema potrebi.',
+    code:  '083 1 017',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/ovjesna-traka.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'UČVRSNICA ZA CIJEV',
+    desc:  'Učvrsnica za pričvršćivanje cijevi na zid ili strop. Dostupna u jednodijelnoj i dvodijelnoj izvedbi.',
+    code:  '085 2 013',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/ucvrsnica.jpg',
+    variants: [
+      { label: 'Jednodijelna', code: '085 2 013' },
+      { label: 'Dvodijelna', code: '085 2 213' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'MESINGANI TIPL WBA M8',
+    desc:  'Mesingani tipl (sidro) WBA za lagana i srednja opterećenja. Nazubljena vanjska površina sprječava okretanje u rupi i poboljšava prihvat.',
+    code:  '610 7 008',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/wba-tipl.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'TIPL ZA GIPS-KARTON WPF',
+    desc:  'Tipl WPF s vijkom za pričvršćivanje u gips-kartonske ploče i šuplje stijenke.',
+    code:  '611 0 063',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/wpf-tipl.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'ŠESTEROKUTNA MATICA',
+    desc:  'Šesterokutna matica od pocinčanog čelika za navojne šipke i ovjesne sustave.',
+    code:  '612 3 008',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/matica.jpg',
+    variants: [
+      { label: 'M8', code: '612 3 008' },
+      { label: 'M10', code: '612 3 010' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'BETONSKI VIJAK W-HLX-N (turbo vijak)',
+    desc:  'Betonski vijak W-HLX-N za izravnu ugradnju u beton, bez tipla. Ima europsko tehničko odobrenje (ETA) za napukli i nenapukli beton.',
+    code:  '625 3 3304',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/w-hlx-n.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'NAVOJNA ŠIPKA 1 m',
+    desc:  'Navojna šipka prema DIN 976-1, duljine 1 m, od pocinčanog čelika. Osnovni element ovjesa instalacija sa stropa.',
+    code:  '630 3 010',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/navojna-sipka.jpg',
+    variants: [
+      { label: 'M8', code: '630 3 008' },
+      { label: 'M10', code: '630 3 010' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'SPOJNICA NAVOJNE ŠIPKE (duga matica)',
+    desc:  'Duga matica za produženje i spajanje dviju navojnih šipki.',
+    code:  '645 3 830',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/spojnica-sipke.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'MONTAŽNA ŠINA RapidRail® 2 m',
+    desc:  'Montažna šina RapidRail® duljine 2 m, s kontinuiranom perforacijom. Osnova za konstrukcije ovjesa cijevi i lakših instalacija.',
+    code:  '650 5 015',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/sina.jpg',
+    variants: [
+      { label: '30 × 20 mm (WM15)', code: '650 5 015' },
+      { label: '30 × 30 mm (WM2)', code: '650 5 002' },
+      { label: '30 × 45 mm (WM30)', code: '650 5 030' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'HAMMERFIX – klizna matica s navojnim svornjakom',
+    desc:  'Tvornički sastavljena klizna matica s navojnim svornjakom, podloškom i oprugom. Umeće se u utor šine i omogućuje brzo spajanje obujmica i navojnih šipki na šinu.',
+    code:  '652 3 803',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/hammerfix.jpg',
+    variants: [
+      { label: 'M8 × 30 mm', code: '652 3 803' },
+      { label: 'M8 × 40 mm', code: '652 3 804' },
+      { label: 'M8 × 50 mm', code: '652 3 805' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'SPOJNICA ZA ŠINE WM0–35, 200 mm',
+    desc:  'Spojnica za nastavljanje dviju montažnih šina RapidRail®, duljine 200 mm.',
+    code:  '654 3 001',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/spojnica-sine.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'ZIDNA KONZOLA RapidRail®',
+    desc:  'Zidna konzola za montažnu šinu RapidRail® WM2 (30 × 30 mm). Nosi šinu odmaknutu od zida, za vođenje cijevi uz zid.',
+    code:  '660 3 230',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/zidna-konzola.jpg',
+    variants: [
+      { label: '250 mm', code: '660 3 225' },
+      { label: '300 mm', code: '660 3 230' },
+      { label: '400 mm', code: '660 3 240' },
+      { label: '500 mm', code: '660 3 250' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'ZIDNA PLOČA ZA ŠINU',
+    desc:  'Zidna ploča za spajanje montažne šine na zid, strop ili pod. Isporučuje se s predmontiranom kliznom maticom RapidRail®.',
+    code:  '661 3 200',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/zidna-ploca.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'PODUPIRAČ ZA ŠINU, 300 mm',
+    desc:  'Kosi podupirač koji dodatno ukrućuje zidnu konzolu i povećava nosivost konstrukcije.',
+    code:  '662 8 230',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/podupirac.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'WALRAVEN',
+    name:  'STARLOCK I – sustav za vezice',
+    desc:  'STARLOCK I sustav za brzo povezivanje i pričvršćivanje snopova kabela i cijevi vezicama.',
+    code:  '090 9 011',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/starlock.jpg',
+  },
+  {
+    group: 'grijanje',
+    cat:   'ovjesni-pribor',
+    brand: 'TANGIT',
+    name:  'TANGIT UNI-LOCK konac za brtvljenje navoja, 160 m',
+    desc:  'Konac za brtvljenje navojnih spojeva na plastičnim i metalnim cijevima, 160 m. Poliamid, za vodu i plin do 130 °C, prema EN 751-2. Brži od paste i PTFE trake.',
+    code:  '218 1 160',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/OVJESNI PRIBOR/tangit-unilock.jpg',
   },
 
 ];
