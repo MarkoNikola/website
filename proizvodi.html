@@ -758,7 +758,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
   </div>
 </footer>
 
-<script src="products.js?v=26"></script>
+<script src="products.js?v=27"></script>
 <script>
 const CAT_LABELS = {
   // Grijanje
@@ -848,6 +848,75 @@ const PRODUCTS_PER_PAGE = 40;  // items per page
    ═══════════════════════════════════════════════════════════════════ */
 function prodCats(p)   { return p.cats   || (p.cat   ? [p.cat]   : []); }
 function prodGroups(p) { return p.groups || (p.group ? [p.group] : []); }
+
+/* ═══ REDOSLIJED PRIKAZA PROIZVODA ═══════════════════════════════════
+   Kartice se NE slažu redoslijedom iz products.js nego po ovom popisu
+   potkategorija. Želite li premjestiti cijelu skupinu proizvoda gore
+   ili dolje u katalogu, samo pomaknite njezin redak u ovom popisu —
+   u products.js ništa ne treba dirati.
+
+   Unutar jedne potkategorije zadržava se redoslijed iz products.js
+   (osim što `featured: true` proizvodi idu na vrh svoje skupine).
+
+   Potkategorija koje ovdje NEMA prikazuje se na kraju kataloga.
+   ═══════════════════════════════════════════════════════════════════ */
+const CAT_ORDER = [
+  'dizalice-topline',            // Dizalice topline
+  'fancoil',                     // Fancoil
+  'klima-uredaji',               // Klime
+  'prateci-materijal',           // Oprema za klimu
+  'cijevi-klima',                //   "
+  'radijatori',                  // Radijatori
+  'spremnici',                   // Spremnici
+  'bojleri',                     // Bojleri
+  'cirkulacijske-pumpe',         // Cirkulacijske pumpe
+  'ekspanzione-posude',          // Ekspanzione posude
+  'ekspanzione-posude-grijanje', //   "  (isti proizvodi pod Grijanjem)
+  'vodokotlici',                 // Vodokotlići — ugradbeni pa nadžbukni
+  'slavine-kuhinjske',           // Slavine
+  'slavine-umivaonik',           //   "
+  'slavine-tus',                 //   "
+  'slavine-bide',                //   "
+  'kade',                        // Kade
+  'kabine',                      //   "
+  'podno-grijanje',              // Raster, cijev za podno, razdjelnici
+  'pex-al-pex',                  // PEX cijevi
+  'fitinzi',                     // PEX (press) fitinzi
+  'razdjelnici',                 //   "
+  'plinski-materijal',           // Plinski materijal
+  'regulatori',                  //   "
+  'plin-pex',                    //   "
+  'cijevi-plin',                 //   "
+  'bakar',                       // Bakar
+  'mesing-fitinzi',              // Mesing
+  'mesing-fitinzi-grijanje',     //   "  (isti proizvodi pod Grijanjem)
+  'pocincano-fitinzi',           // Pocinčano
+  'pocincano-fitinzi-grijanje',  //   "  (isti proizvodi pod Grijanjem)
+  'steelpres',                   // SteelPRES
+  'cijevi',                      // Vodomaterijal (PPR)
+  'cijevi-grijanje',             //   "
+  'ppr-fitinzi',                 //   "
+  'ventili',                     //   "
+  'izolacija',                   // Izolacija
+  'izolacija-vodo',              //   "
+  'alkaten',                     // Alkaten
+  'navodnjavanje',               // Navodnjavanje
+  'kanalizacija',                // Kanalizacija
+  'ovjesni-pribor',              // Walraven
+];
+
+const CAT_RANK = {};
+CAT_ORDER.forEach(function (c, i) { CAT_RANK[c] = i; });
+
+// Proizvod koji stoji u više potkategorija dobiva najraniju od njih,
+// da isti artikl ne skače ovisno o tome koji je filtar uključen.
+function catRank(p) {
+  var best = CAT_ORDER.length;
+  prodCats(p).forEach(function (c) {
+    if (CAT_RANK[c] !== undefined && CAT_RANK[c] < best) best = CAT_RANK[c];
+  });
+  return best;
+}
 
 // Naziv proizvoda na trenutnom jeziku (neobavezan `name_it`).
 function prodName(p) {
@@ -944,8 +1013,13 @@ function filterCards() {
     return groupOk && catOk && brandOk && searchOk;
   });
 
-  // Sort: featured products first, others after (stable order)
-  filtered.sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
+  // Redoslijed: po CAT_ORDER (vidi popis gore), a unutar iste
+  // potkategorije istaknuti (`featured`) proizvodi idu prvi.
+  // Array.prototype.sort je stabilan, pa ostalo ostaje kako je u
+  // products.js.
+  filtered.sort((a, b) =>
+    (catRank(a) - catRank(b)) ||
+    ((b.featured ? 1 : 0) - (a.featured ? 1 : 0)));
 
   const count = filtered.length;
   document.getElementById('countLabel').textContent = count;
