@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=24"></script>
+//      <script src="products.js?v=25"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -3625,6 +3625,133 @@ const PRODUCTS = [
       { label: '5/4"', code: 'MESING-TEE-54' },
       { label: '6/4"', code: 'MESING-TEE-64' },
       { label: '2"', code: 'MESING-TEE-2' },
+    ],
+  },
+
+  {
+    group: 'vodomaterijal',
+    cat:   'mesing-fitinzi',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['mesing-fitinzi', 'mesing-fitinzi-grijanje'],
+    name:    'MESING HOLENDER KOLJENO',
+    name_it: 'BOCCHETTONE GOMITO',
+    desc:    'Mesingano holender koljeno spaja promjenu smjera pod 90° i rastavljivi spoj u jednom komadu. Instalacija se odvaja odvrtanjem holender matice, bez rezanja cijevi — korisno ispred bojlera, pumpi i ventila koji se servisiraju.',
+    desc_it: 'Bocchettone a gomito in ottone: unisce in un solo pezzo il cambio di direzione a 90° e il giunto smontabile. L\'impianto si stacca svitando il dado, senza tagliare il tubo — utile prima di boiler, pompe e valvole da manutenere.',
+    code:  'MESING-HOLENDER-KOLJENO',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/MESING/MESING-HOLENDER-KOLJENO.webp',
+    variants: [
+      { label: '1/2"', code: 'MESING-HOLENDER-KOLJENO-12' },
+      { label: '3/4"', code: 'MESING-HOLENDER-KOLJENO-34' },
+      { label: '1"', code: 'MESING-HOLENDER-KOLJENO-1' },
+      { label: '5/4"', code: 'MESING-HOLENDER-KOLJENO-54' },
+      { label: '6/4"', code: 'MESING-HOLENDER-KOLJENO-64' },
+      { label: '2"', code: 'MESING-HOLENDER-KOLJENO-2' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'mesing-fitinzi',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['mesing-fitinzi', 'mesing-fitinzi-grijanje'],
+    name:    'MESING KODULO',
+    name_it: 'CODOLI M.F. LEGGERI',
+    desc:    'Mesingani kodulo je kratki nastavak s vanjskim navojem na jednoj i unutarnjim navojem veće dimenzije na drugoj strani. Služi za prelazak na veći navoj uz minimalno produženje instalacije.',
+    desc_it: 'Codolo in ottone: raccordo corto con filetto maschio su un lato e filetto femmina di misura maggiore sull\'altro. Serve a passare a un filetto più grande allungando l\'impianto il minimo indispensabile.',
+    code:  'MESING-KODULO',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/MESING/MESING-KODULO.webp',
+    variants: [
+      { label: '3/8" × 1/2"', code: 'MESING-KODULO-38-12' },
+      { label: '1/2" × 3/4"', code: 'MESING-KODULO-12-34' },
+      { label: '3/4" × 1"', code: 'MESING-KODULO-34-1' },
+      { label: '1" × 5/4"', code: 'MESING-KODULO-1-54' },
+      { label: '5/4" × 6/4"', code: 'MESING-KODULO-54-64' },
+      { label: '6/4" × 2"', code: 'MESING-KODULO-64-2' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'mesing-fitinzi',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['mesing-fitinzi', 'mesing-fitinzi-grijanje'],
+    name:    'MESING KRIŽ',
+    name_it: 'CROCE',
+    desc:    'Mesingani križ s unutarnjim navojem na sve četiri strane. Spaja četiri voda u jednoj točki — koristi se ondje gdje bi inače trebala dva T-komada jedan uz drugi.',
+    desc_it: 'Croce in ottone con filetto femmina su tutti e quattro i lati. Unisce quattro linee in un solo punto — si usa dove altrimenti servirebbero due raccordi a T affiancati.',
+    code:  'MESING-KRIZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/MESING/MESING-KRIZ.webp',
+    variants: [
+      { label: '1/2"', code: 'MESING-KRIZ-12' },
+      { label: '3/4"', code: 'MESING-KRIZ-34' },
+      { label: '1"', code: 'MESING-KRIZ-1' },
+      { label: '5/4"', code: 'MESING-KRIZ-54' },
+      { label: '6/4"', code: 'MESING-KRIZ-64' },
+      { label: '2"', code: 'MESING-KRIZ-2' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'mesing-fitinzi',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['mesing-fitinzi', 'mesing-fitinzi-grijanje'],
+    name:    'MESING PRIKLJUČAK ZA BADANJ',
+    name_it: 'RACCORDI PER SERBATOI',
+    desc:    'Mesingani priključak za badanj (spremnik). Provlači se kroz stijenku posude i steže maticom s brtvom, pa se na navoj izvana spaja slavina, ventil ili crijevo. Koristi se na plastičnim i metalnim spremnicima za vodu.',
+    desc_it: 'Raccordo in ottone per serbatoi. Passa attraverso la parete del serbatoio e si serra con dado e guarnizione; al filetto esterno si collega rubinetto, valvola o tubo. Adatto a serbatoi d\'acqua in plastica e in metallo.',
+    code:  'MESING-BADANJ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/MESING/MESING-BADANJ.webp',
+    variants: [
+      { label: '1/2"', code: 'MESING-BADANJ-12' },
+      { label: '3/4"', code: 'MESING-BADANJ-34' },
+      { label: '1"', code: 'MESING-BADANJ-1' },
+      { label: '5/4"', code: 'MESING-BADANJ-54' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'mesing-fitinzi',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['mesing-fitinzi', 'mesing-fitinzi-grijanje'],
+    name:    'MESING PRIKLJUČAK ZA ŠALUF',
+    name_it: 'RACCORDI PORTAGOMMA PER IRRIGAZIONE',
+    desc:    'Mesingani priključak za šaluf (crijevo) — s jedne strane navoj, s druge nazubljeni nastavak preko kojeg se navlači crijevo i steže obujmicom. Prva brojka označava veličinu navoja u colima, druga vanjski promjer crijeva u milimetrima.',
+    desc_it: 'Raccordo portagomma in ottone — filetto su un lato e codolo dentellato sull\'altro, sul quale si infila il tubo fissandolo con una fascetta. Il primo numero indica la misura del filetto in pollici, il secondo il diametro del tubo in millimetri.',
+    code:  'MESING-SALUF',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/MESING/MESING-SALUF.webp',
+    variants: [
+      { label: '1/2" × Ø 10 mm', code: 'MESING-SALUF-12-10' },
+      { label: '1/2" × Ø 15 mm', code: 'MESING-SALUF-12-15' },
+      { label: '1/2" × Ø 20 mm', code: 'MESING-SALUF-12-20' },
+      { label: '3/4" × Ø 20 mm', code: 'MESING-SALUF-34-20' },
+      { label: '3/4" × Ø 25 mm', code: 'MESING-SALUF-34-25' },
+      { label: '1" × Ø 20 mm', code: 'MESING-SALUF-1-20' },
+      { label: '1" × Ø 25 mm', code: 'MESING-SALUF-1-25' },
+      { label: '1" × Ø 27 mm', code: 'MESING-SALUF-1-27' },
+      { label: '1" × Ø 30 mm', code: 'MESING-SALUF-1-30' },
+      { label: '1" × Ø 32 mm', code: 'MESING-SALUF-1-32' },
+      { label: '5/4" × Ø 32 mm', code: 'MESING-SALUF-54-32' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'mesing-fitinzi',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['mesing-fitinzi', 'mesing-fitinzi-grijanje'],
+    name:    'MESING NAVOJ DUGI',
+    name_it: 'TUTTO FILETTO GIALLE',
+    desc:    'Mesingani dugi navoj — cijevni nastavak narezan po cijeloj dužini (40 mm). Koristi se za premošćivanje razmaka između dva elementa i za podešavanje dubine uvrtanja, jer se može uvrnuti koliko je potrebno.',
+    desc_it: 'Tutto filetto in ottone — nipplo filettato per l\'intera lunghezza (40 mm). Serve a colmare la distanza tra due elementi e a regolare la profondità di avvitamento, dato che si può avvitare quanto serve.',
+    code:  'MESING-NAVOJ-DUGI',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/MESING/MESING-NAVOJ-DUGI.webp',
+    variants: [
+      { label: '1/2" × 40 mm', code: 'MESING-NAVOJ-DUGI-12-40' },
+      { label: '3/4" × 40 mm', code: 'MESING-NAVOJ-DUGI-34-40' },
+      { label: '1" × 40 mm', code: 'MESING-NAVOJ-DUGI-1-40' },
     ],
   },
 
