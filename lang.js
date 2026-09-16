@@ -137,6 +137,14 @@ const LANG = {
     'footer.cats.title':'Kategorije','footer.co.title':'Tvrtka',
     'footer.contact':'Kontakt','footer.mob':'Mob','footer.tel':'Tel','footer.email':'Email',
     'footer.copyright':'© 2026 ITALTERM d.o.o. Sva prava pridržana.',
+    'footer.privacy':'Pravila privatnosti',
+    'nf.title1':'Ova stranica',
+    'nf.title2':'ne postoji',
+    'nf.sub':'Možda je adresa pogrešno upisana ili je proizvod u međuvremenu premješten. Krenite od početne ili pretražite katalog.',
+    'nf.btn.products':'Pretraži katalog',
+    'nf.btn.home':'Natrag na početnu',
+    'nf.groups':'Ili odaberite kategoriju',
+
 
     // CONTACT PAGE
     'contact.title':'Kontaktirajte','contact.title2':'nas',
@@ -361,6 +369,14 @@ const LANG = {
     'footer.cats.title':'Categorie','footer.co.title':'Azienda',
     'footer.contact':'Contatti','footer.mob':'Cel','footer.tel':'Tel','footer.email':'Email',
     'footer.copyright':'© 2026 ITALTERM d.o.o. Tutti i diritti riservati.',
+    'footer.privacy':'Informativa sulla privacy',
+    'nf.title1':'Questa pagina',
+    'nf.title2':'non esiste',
+    'nf.sub':"Forse l'indirizzo è stato digitato male o il prodotto è stato spostato. Tornate alla home o cercate nel catalogo.",
+    'nf.btn.products':'Cerca nel catalogo',
+    'nf.btn.home':'Torna alla home',
+    'nf.groups':'Oppure scegliete una categoria',
+
 
     // CONTACT PAGE
     'contact.title':'Contattateci','contact.title2':'',
@@ -479,6 +495,10 @@ function refreshDynamicContent() {
   if (typeof filterCards === 'function')          filterCards();
   if (typeof updateProductDesc === 'function')    updateProductDesc();
   if (typeof updateProductOptions === 'function') updateProductOptions();
+  // Općenita kuka: stranica može definirati onLangChange() i sama
+  // osvježiti ono što [data-i18n] ne pokriva (npr. duži tekstovi na
+  // privatnost.html koji se prebacuju u cijelim blokovima).
+  if (typeof onLangChange === 'function')         onLangChange();
 }
 
 function setLang(lang) {

@@ -127,7 +127,7 @@ const PRODUCTS = [
     desc:  'Panelni radijatori Termopan nude kombinaciju vrhunskog kvaliteta, performansi i dizajna, zahvaljujući najsavremenijoj i najmodernijoj tehnologiji. Dizajn pruža potpunu fleksibilnost ugradnje.',
     desc_it: 'I radiatori a pannello Termopan offrono una combinazione di qualità superiore, prestazioni e design, grazie alla tecnologia più moderna e avanzata. Il design garantisce la massima flessibilità di installazione.',
     code:  'K-22',
-    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.jpg',
+    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.webp',
      variants: [
     { label: '600 X 400',  code: '',  notes: '...'  },
     { label: '600 X 600',  code: '',  notes: '...'  },
@@ -148,7 +148,7 @@ const PRODUCTS = [
     desc:  'Panelni radijatori Termopan nude kombinaciju vrhunskog kvaliteta, performansi i dizajna, zahvaljujući najsavremenijoj i najmodernijoj tehnologiji. Dizajn pruža potpunu fleksibilnost ugradnje.',
     desc_it: 'I radiatori a pannello Termopan offrono una combinazione di qualità superiore, prestazioni e design, grazie alla tecnologia più moderna e avanzata. Il design garantisce la massima flessibilità di installazione.',
     code:  'VK-K-22',
-    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.jpg',
+    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.webp',
     variants: [
     { label: '600 X 400',  code: '',  notes: '...'  },
     { label: '600 X 600',  code: '',  notes: '...'  },
@@ -168,7 +168,7 @@ const PRODUCTS = [
     desc:  'IBO OHI PRO predstavlja seriju klasičnih (trobrzinskih) cirkulacijskih pumpi s produljenim vijekom trajanja, namijenjenih sustavima centralnog grijanja, klimatizacije te cirkulacije potrošne tople vode.',
     desc_it: 'IBO OHI PRO è una serie di pompe di circolazione classiche (a 3 velocità) con una lunga durata, destinate ai sistemi di riscaldamento centralizzato, climatizzazione e circolazione di acqua calda sanitaria.',
     code:  'OHI-PRO',
-    img: 'images/Grijanje/Cirk. pumpe/IBO OHI PRO.jpg',
+    img: 'images/Grijanje/Cirk. pumpe/IBO OHI PRO.webp',
     variants: [
     { label: '25-60/180',  code: 'OHI-PRO-25-60-180',  notes: '...'  },
     { label: '25-80/180',  code: 'OHI-PRO-25-60-180',  notes: '...'  },
@@ -183,7 +183,7 @@ const PRODUCTS = [
     desc:  'IBO MAGI 2 je napredna, energetski štedna cirkulacijska pumpa namijenjena za kućnu upotrebu. Opremljen modernim motorom s trajnim magnetom i regulatorom diferencijalnog tlaka, automatski prilagođava svoje performanse trenutnim hidrauličkim potrebama sustava.',
     desc_it: 'IBO MAGI 2 è una pompa di circolazione avanzata e a risparmio energetico per uso domestico. Dotata di un moderno motore a magneti permanenti e di un regolatore di pressione differenziale, adatta automaticamente le proprie prestazioni alle esigenze idrauliche del sistema.',
     code:  'MAGI-2',
-    img: 'images/Grijanje/Cirk. pumpe/IBO MAGI 2.png',
+    img: 'images/Grijanje/Cirk. pumpe/IBO MAGI 2.webp',
     variants: [
     { label: '25-60/180',  code: 'MAGI-2-25-60-180',  notes: '...' },
     { label: '25-80/180',  code: 'MAGI-2-25-80-180',  notes: '...'  },
@@ -200,7 +200,7 @@ const PRODUCTS = [
     desc:  'IBO MAGI H je visokoučinkovita, elektronička cirkulacijska pumpa namijenjena za sustave centralnog grijanja, podnog grijanja, solarne sustave te klimatizaciju.',
     desc_it: 'IBO MAGI H è una pompa di circolazione elettronica ad alta efficienza, destinata ai sistemi di riscaldamento centralizzato, riscaldamento a pavimento, impianti solari e climatizzazione.',
     code:  'MAGI-H',
-    img: 'images/Grijanje/Cirk. pumpe/IBO MAGI H.jpg',
+    img: 'images/Grijanje/Cirk. pumpe/IBO MAGI H.webp',
     variants: [
     {label: "25-120/180", code: "MAGI-H-25-120-180", notes: "..."    },
     {label: "32-120/180", code: "MAGI-H-32-120-180", notes: "..."},
@@ -215,7 +215,7 @@ const PRODUCTS = [
     desc:  'IBO AMG Solar 25-80/180 je visokoučinkovita, energetski štedljiva elektronička cirkulacijska pumpa posebno optimizirana za rad u solarnim sustavima i sustavima centralnog grijanja.',
     desc_it: 'IBO AMG Solar 25-80/180 è una pompa di circolazione elettronica ad alta efficienza e a risparmio energetico, appositamente ottimizzata per impianti solari e sistemi di riscaldamento centralizzato.',
     code:  'AMG-SOLAR',
-    img: 'images/Grijanje/Cirk. pumpe/IBO AMG SOLAR.jpg',
+    img: 'images/Grijanje/Cirk. pumpe/IBO AMG SOLAR.webp',
   },
   {
     group: 'grijanje',
@@ -225,7 +225,7 @@ const PRODUCTS = [
     desc:  'IBO EPRO 15-15 PLUS je kompaktna, iznimno energetski štedljiva elektronička cirkulacijska pumpa namijenjena isključivo za cirkulaciju tople sanitarne vode (P.T.V. / C.W.U.) u kućanstvima.',
     desc_it: 'IBO EPRO 15-15 PLUS è una pompa di circolazione elettronica compatta ed estremamente efficiente, destinata esclusivamente alla circolazione di acqua calda sanitaria nelle abitazioni.',
     code:  'EPRO-15-15-PLUS',
-    img: 'images/Grijanje/Cirk. pumpe/IBO EPRO 15-15 PLUS.jpg',
+    img: 'images/Grijanje/Cirk. pumpe/IBO EPRO 15-15 PLUS.webp',
   },
   {
     group: 'grijanje',
@@ -235,7 +235,7 @@ const PRODUCTS = [
     desc:  'IBO OHI BRONZE je klasična trobrzinska cirkulacijska pumpa s kućištem od bronce (oznaka BR), namijenjena prvenstveno za cirkulaciju potrošne tople vode (P.T.V.) u stambenim objektima.',
     desc_it: 'IBO OHI BRONZE è una pompa di circolazione classica a 3 velocità con corpo in bronzo (sigla BR), destinata principalmente alla circolazione di acqua calda sanitaria negli edifici residenziali.',
     code:  'OHI-BR',
-    img: 'images/Grijanje/Cirk. pumpe/OHI BR.jpg',
+    img: 'images/Grijanje/Cirk. pumpe/OHI BR.webp',
     variants: [
     { label: '15-60/130',  code: 'OHI-BR-15-60-130',  notes: '...'  },
     { label: '25-60/130',  code: 'OHI-BR-25-60-130',  notes: '...'  },
@@ -249,7 +249,7 @@ const PRODUCTS = [
     code:  'W15-IH-10',
     desc:  'IBO W15 IH 10 je kompaktna površinska automatska pumpa za povećanje pritiska vode u hidrauličkim instalacijama.',
     desc_it: 'È una pompa automatica di superficie compatta per l\'aumento della pressione dell\'acqua negli impianti idraulici.',
-    img: 'images/Grijanje/Cirk. pumpe/W15 IH 10.jpg',
+    img: 'images/Grijanje/Cirk. pumpe/W15 IH 10.webp',
   },
 
 
@@ -288,7 +288,7 @@ const PRODUCTS = [
     desc:  'Spremnik solarni Austria Email TSA predstavlja kombinirani solarni bojler od 10 bara s dva ugrađena izmjenjivača topline, posebno optimiziran za kućne sustave pripreme tople sanitarne vode.',
     desc_it: 'Il serbatoio solare Austria Email TSA è un boiler solare combinato da 10 bar con due scambiatori di calore integrati, appositamente ottimizzato per i sistemi domestici di produzione di acqua calda sanitaria.',
     code:  'AE-TSA-02',
-    img: 'images/Grijanje/SPREMNICI/ae tsa 2.jpg',
+    img: 'images/Grijanje/SPREMNICI/ae tsa 2.webp',
     variants: [
     { label: '200 L',  code: 'AE-TSA-202',  notes: '...'  },
     { label: '300 L',  code: 'AE-TSA-302',  notes: '...'  },
@@ -303,7 +303,7 @@ const PRODUCTS = [
     desc:  'Visokokvalitetni kombinirani spremnik tople vode s dva izmjenjivača topline. Proizvod potpisuje poznati europski proizvođač TESY. Najčešće se primjenjuje u modernim kućanstvima za povezivanje na bivalentne sustave grijanja, poput kombinacije solarnih kolektora i plinskog kotla ili kotla na kruta goriva.',
     desc_it: 'Serbatoio combinato di acqua calda di alta qualità con due scambiatori di calore. Prodotto dal noto produttore europeo TESY. Utilizzato principalmente nelle abitazioni moderne per il collegamento a sistemi di riscaldamento bivalenti, come la combinazione di collettori solari e caldaia a gas o a combustibili solidi.',
     code:  'TESY-EV7',
-    img: 'images/Grijanje/SPREMNICI/TESY EV7.jpg',
+    img: 'images/Grijanje/SPREMNICI/TESY EV7.webp',
     variants: [
     { label: '200 L',  code: 'TESY-EV7-200',  notes: '...'  },
     ],
@@ -316,7 +316,7 @@ const PRODUCTS = [
     desc:  'Austria Email TSA HP predstavlja najnoviju seriju modernih spremnika tople sanitarne vode specijaliziranih za rad s dizalicama topline. HP u nazivu označava Heat Pump (dizalica topline), a glavna odlika ove serije je jedan integrirani izmjenjivač topline iznimno velike površine koji omogućuje visoku učinkovitost prijenosa energije pri niskim radnim temperaturama.',
     desc_it: 'Austria Email TSA HP rappresenta la più recente serie di serbatoi di acqua calda sanitaria specializzati per l\'uso con pompe di calore. HP nel nome indica Heat Pump (pompa di calore), e la caratteristica principale è un unico scambiatore di calore integrato con superficie molto ampia che garantisce un\'alta efficienza di trasferimento energetico a basse temperature di esercizio.',
     code:  'AE-TSA-HP',
-    img: 'images/Grijanje/SPREMNICI/AE TSA.jpg',
+    img: 'images/Grijanje/SPREMNICI/AE TSA.webp',
     variants: [
     { label: '200 L',  code: 'AE-TSA-HP-201',  notes: '...'  },
     { label: '300 L',  code: 'AE-TSA-HP-301',  notes: '...'  },
@@ -331,7 +331,7 @@ const PRODUCTS = [
     desc:  'Austria Email TSA 151 predstavlja monovalentni samostojeći spremnik tople vode s jednim izmjenjivačem topline i nazivnim radnim tlakom od 10 bara. ',
     desc_it: 'Austria Email TSA 151 è un serbatoio monovalente di acqua calda con un unico scambiatore di calore e una pressione di esercizio nominale di 10 bar.',
     code:  'AE-TSA-151',
-    img: 'images/Grijanje/SPREMNICI/ae tsa 2.jpg',
+    img: 'images/Grijanje/SPREMNICI/ae tsa 2.webp',
     variants: [
     //{ label: '200 L',  code: 'AE-TSA-151-200',  notes: '...'  },
     //{ label: '300 L',  code: 'AE-TSA-151-300',  notes: '...'  },
@@ -358,7 +358,7 @@ const PRODUCTS = [
     desc_it: 'LG Therma V è una pompa di calore aria-acqua ad alta efficienza che utilizza la tecnologia inverter avanzata per il massimo risparmio energetico e un riscaldamento stabile anche nelle temperature invernali più rigide. Grazie al gas ecologico R32 e al funzionamento silenzioso, è la soluzione ideale e duratura per il riscaldamento a pavimento, radiatori e la produzione di acqua calda sanitaria.',
     code:  'LG THERMA V',
     featured: true,
-    img: 'images/Grijanje/Dizalice topline/LG THERMA V/LG THERMA V.jpg',
+    img: 'images/Grijanje/Dizalice topline/LG THERMA V/LG THERMA V.webp',
     variants: [
     { label: '5.5 kW ',   code: 'LG-THERMA-V-5K-1Ø',  notes: 'MONOFAZA'  },
     { label: '7.0 kW ',   code: 'LG-THERMA-V-7K-1Ø',  notes: 'MONOFAZA'  },
@@ -428,8 +428,8 @@ const PRODUCTS = [
     desc_it: 'Innova AirLeaf SL è una serie di fancoil idronici ultra sottili e di design, destinati al riscaldamento, raffreddamento e deumidificazione degli ambienti. Con una profondità di soli 129 mm e un aspetto elegante con il corpo nascosto, sono la scelta ideale per ambienti residenziali moderni e si abbinano perfettamente a sorgenti a bassa temperatura come le pompe di calore.',
     code:  'AirLeaf SL',
     featured: true,
-    imgs: [ 'images/Grijanje/Fancoil/Innova AirLeaf SL.jpg', 
-            'images/Grijanje/Fancoil/Innova AirLeaf SL show.jpg'
+    imgs: [ 'images/Grijanje/Fancoil/Innova AirLeaf SL.webp', 
+            'images/Grijanje/Fancoil/Innova AirLeaf SL show.webp'
           ],
     variants: [
     { label: 'AirLeaf SL 200',  code: 'AirLeaf-SL-200',  },
@@ -459,8 +459,8 @@ const PRODUCTS = [
     desc_it: 'Clivet Aura CFFAC è una serie di fancoil idronici versatili ed eleganti con motore AC classico a 3 velocità, destinati a installazione a pavimento (parapetto) o a soffitto. A differenza dell\'Innova AirLeaf che punta sul profilo ultra-sottile (129 mm), il Clivet Aura offre un robusto design italiano con profondità standard di 200 mm, prestazioni di riscaldamento e raffreddamento eccellenti e grande flessibilità di installazione.',
     code:  'Aura CFFAC',
     featured: true,
-    imgs: [ 'images/Grijanje/Fancoil/Clivet Aura.jpg', 
-            'images/Grijanje/Fancoil/Clivet Aura CFFAC.jpg'
+    imgs: [ 'images/Grijanje/Fancoil/Clivet Aura.webp', 
+            'images/Grijanje/Fancoil/Clivet Aura CFFAC.webp'
           ],
     variants: [
     { label: 'Aura CFFAC 1',  code: 'Aura-CFFAC-1',  },
@@ -492,8 +492,8 @@ const PRODUCTS = [
     desc_it: 'BPS Clima FC-VM1 è un fancoil elegante e potente con corpo decorativo, destinato all\'installazione a vista in basso sulla parete o a pavimento (installazione a parapetto). Rappresenta una sostituzione perfetta ed energeticamente efficiente dei classici radiatori nei sistemi con pompe di calore o chiller, garantendo riscaldamento e raffreddamento ottimali.',
     code:  'BPS-FC-VM1',
     featured: true,
-    imgs: [ 'images/Grijanje/Fancoil/BPS VM1.jpg',
-            'images/Grijanje/Fancoil/BPS FC VM1.jpg',     
+    imgs: [ 'images/Grijanje/Fancoil/BPS VM1.webp',
+            'images/Grijanje/Fancoil/BPS FC VM1.webp',     
           ],
     variants: [
     { label: 'FC 22 - VM1',  code: 'BPS-FC-VM1',  },
@@ -523,7 +523,7 @@ const PRODUCTS = [
   desc:  'STIROTERMAL DUO je vrlo kompaktna ploča koja omogućuje ravnomjerno opterećenje, sastoji se od tvrdog stiropora i tvrdo profilirane polistirenske folije. Ploče se međusobno čvrsto i vodonepropusno spajaju poprečno i uzdužno po principu >>čep u čep<<, stoga su prikladne za ugradnju ispod cementnog estriha kao i ispod samonivelirajućih estriha u prostorijama gdje je visina poda ograničena. Oblik čepova omogućuje vrlo čvrsto pričvršćivanje cijevi promjera od 14 do 18 mm na udaljenosti od najmanje 50 mm.',
   desc_it: 'STIROTERMAL DUO è una piastra molto compatta a carico uniforme, composta da polistirolo duro e foglio di polistirene profilato. Le piastre si collegano tra loro in modo saldo ed ermetico trasversalmente e longitudinalmente con il principio "a bottone", adatte per l\'installazione sotto massetti in cemento e massetti autolivellanti dove l\'altezza del pavimento è limitata. La forma dei bottoni consente il fissaggio molto saldo di tubi da 14 a 18 mm di diametro a distanze minime di 50 mm.',
   code:  'RASTER',
-  img:   'images/Grijanje/PODNO GRIJANJE/RASTER.png',
+  img:   'images/Grijanje/PODNO GRIJANJE/RASTER.webp',
   variants: [
     { label: 'STIROTERMAL DUO 33mm',  code: 'STIROTERMAL-11',  },
     { label: 'STIROTERMAL DUO 42mm',  code: 'STIROTERMAL-20',  },
@@ -538,7 +538,7 @@ const PRODUCTS = [
   desc:  'Petoslojne cijevi s integriranom EVOH barijerom u središnjem sloju pružaju vrhunsku fleksibilnost, stopostotnu zaštitu od prodora kisika i maksimalnu otpornost na oštećenja tijekom ugradnje podnog grijanja.',
   desc_it: 'I tubi a cinque strati con barriera EVOH integrata nello strato centrale offrono la massima flessibilità, protezione al 100% dalla penetrazione di ossigeno e la massima resistenza ai danni durante la posa del riscaldamento a pavimento.',
   code:  'PODNO-GRIJANJE',
-  img:   'images/Grijanje/PODNO GRIJANJE/CIJEVI.png',
+  img:   'images/Grijanje/PODNO GRIJANJE/CIJEVI.webp',
   variants: [
     { label: 'ø16mm',  code: 'SAMI-16',  },
   ],
@@ -551,7 +551,7 @@ const PRODUCTS = [
   desc:  'Razdjelnik za podno grijanje je "srce i mozak" cijelog sustava koji prima toplu vodu iz bojlera ili toplinske pumpe te je precizno raspoređuje po pojedinačnim cijevima u prostorijama.',
   desc_it: 'Il collettore per riscaldamento a pavimento è il "cuore e cervello" dell\'intero sistema: riceve l\'acqua calda dalla caldaia o dalla pompa di calore e la distribuisce con precisione ai singoli tubi nei locali.',
   code:  'RAZDJELNICI',
-  img:   'images/Grijanje/PODNO GRIJANJE/RAZDJELNICI.png',
+  img:   'images/Grijanje/PODNO GRIJANJE/RAZDJELNICI.webp',
   variants: [
     { label: '2 IZLAZA',  code: '',  },
     { label: '3 IZLAZA',  code: '',  },
@@ -578,7 +578,7 @@ const PRODUCTS = [
     desc:  'Pex-Al-Pex cijev je vrhunska višeslojna kompozitna cijev s tvorničkom bijelom izolacijom, koja zahvaljujući aluminijskoj barijeri i toplinskoj zaštiti pruža maksimalnu energetsku učinkovitost, sprječava kondenzaciju i osigurava dugotrajan rad u sustavima grijanja i hlađenja.',
     desc_it: 'Il tubo Pex-Al-Pex è un tubo composito multistrato di qualità superiore con isolamento bianco di fabbrica, che grazie alla barriera in alluminio e alla protezione termica garantisce la massima efficienza energetica, previene la condensazione e assicura un funzionamento duraturo nei sistemi di riscaldamento e raffreddamento.',
     code:  'PEX-AL-PEX-GRIJANJE-HLADENJE',
-    img: 'images/Grijanje/PEX-AL-PEX/PEX-AL-PEX GRIJANJE-HLAĐENJE.jpg',
+    img: 'images/Grijanje/PEX-AL-PEX/PEX-AL-PEX GRIJANJE-HLAĐENJE.webp',
     variants: [
     { label: 'ø16mm',  code: '',  },
     { label: 'ø20mm',  code: '',  },
@@ -592,7 +592,7 @@ const PRODUCTS = [
     desc:  'PEX-Al-PEX je visokokvalitetna višeslojna cijev s tvorničkom plavom izolacijom, koja osigurava maksimalnu higijensku ispravnost, sprječava zagrijavanje i kondenzaciju hladne vode te jamči dugotrajnu sigurnost vodovodnih instalacija.',
     desc_it: 'PEX-Al-PEX è un tubo multistrato di alta qualità con isolamento blu di fabbrica, che garantisce la massima igienicità, previene il riscaldamento e la condensazione dell\'acqua fredda e assicura la sicurezza duratura degli impianti idraulici.',
     code:  'PEX-AL-PEX-PLAVA',
-    img: 'images/Grijanje/PEX-AL-PEX/pex-al-pex plava.jpg',
+    img: 'images/Grijanje/PEX-AL-PEX/pex-al-pex plava.webp',
     variants: [
     { label: 'ø16mm',  code: '',  },
     { label: 'ø20mm',  code: '',  },
@@ -608,7 +608,7 @@ const PRODUCTS = [
     desc:  'SAMI višeslojnA neizoliranA cijev s kisikovom barijerom, dimenzija 16 x 2 mm, namijenjena za vodovodne sustave, grijanje i podno grijanje.',
     desc_it: 'Tubo SAMI multistrato non isolato con barriera all\'ossigeno, dimensioni 16 x 2 mm, destinato a impianti idrici, riscaldamento e riscaldamento a pavimento.',
     code:  'PEX-AL-PEX-BEZ-IZOLACIJE',
-    img: 'images/Grijanje/PEX-AL-PEX/SAMI 16 BEZ IZOLACIJE.jpg',
+    img: 'images/Grijanje/PEX-AL-PEX/SAMI 16 BEZ IZOLACIJE.webp',
     variants: [
     { label: 'ø16mm',  code: '',  },
     ]
@@ -623,7 +623,7 @@ const PRODUCTS = [
     desc:  'Bakrena cijev za instalacije grijanja, hlađenja i vodovoda prema standardu EN 1057. Spaja se lemljenjem ili presanjem, a dostupna je u promjerima od Ø 15 do Ø 54 mm.',
     code:  'CU-CIJEV',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/CU CIJEVI/CU CIJEVI.jpg',
+    img: 'images/Grijanje/CU CIJEVI/CU CIJEVI.webp',
     variants: [
       { label: 'Ø 15 mm', code: 'CU-CIJEV-15' },
       { label: 'Ø 18 mm', code: 'CU-CIJEV-18' },
@@ -642,10 +642,10 @@ const PRODUCTS = [
     code:  'CU-KOLJENO',
     // SLIKA: dodajte kad bude dostupna, npr.
     imgs: [
-      'images/Grijanje/CU CIJEVI/CU KOLJENO.jpg',
-      'images/Grijanje/CU CIJEVI/CU KOLJENO MŽ.jpg',
-      'images/Grijanje/CU CIJEVI/CU KOLJENO 45.jpg',
-      'images/Grijanje/CU CIJEVI/CU KOLJENO 45 MŽ.jpg'
+      'images/Grijanje/CU CIJEVI/CU KOLJENO.webp',
+      'images/Grijanje/CU CIJEVI/CU KOLJENO MŽ.webp',
+      'images/Grijanje/CU CIJEVI/CU KOLJENO 45.webp',
+      'images/Grijanje/CU CIJEVI/CU KOLJENO 45 MŽ.webp'
     ],
     variants: [
       { label: 'Ø 15 mm', code: 'CU-KOLJENO-15', group: '90°', group_it: '90°' },
@@ -685,7 +685,7 @@ const PRODUCTS = [
     desc:  'Bakreni T-komad za račvanje cjevovoda. Ravni imaju sva tri priključka istog promjera, a reducirani manji srednji odvojak.',
     code:  'CU-TEE',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/CU CIJEVI/CU TEE.jpg',
+    img: 'images/Grijanje/CU CIJEVI/CU TEE.webp',
     variants: [
       { label: '15-15-15', code: 'CU-TEE-15-15-15', group: 'Ravni', group_it: 'Diritti' },
       { label: '18-18-18', code: 'CU-TEE-18-18-18', group: 'Ravni', group_it: 'Diritti' },
@@ -720,7 +720,7 @@ const PRODUCTS = [
     desc:  'Bakrena mufa (spojnica) za produženje cjevovoda spajanjem dviju cijevi istog promjera.',
     code:  'CU-MUFA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/CU CIJEVI/CU MUFA.jpg',
+    img: 'images/Grijanje/CU CIJEVI/CU MUFA.webp',
     variants: [
       { label: 'Ø 15 mm', code: 'CU-MUFA-15' },
       { label: 'Ø 18 mm', code: 'CU-MUFA-18' },
@@ -739,8 +739,8 @@ const PRODUCTS = [
     code:  'CU-REDUKCIJA',
     // SLIKA: dodajte kad bude dostupna, npr.
     imgs: [
-      'images/Grijanje/CU CIJEVI/CU REDUKCIJA.jpg',
-      'images/Grijanje/CU CIJEVI/CU REDUKCIJA MŽ.jpg'
+      'images/Grijanje/CU CIJEVI/CU REDUKCIJA.webp',
+      'images/Grijanje/CU CIJEVI/CU REDUKCIJA MŽ.webp'
     ],
     variants: [
       { label: 'Ø 18 – 15 mm', code: 'CU-REDUKCIJA-18-15' },
@@ -766,7 +766,7 @@ const PRODUCTS = [
     desc:  'Bakreni zaobilaz (premosnica) omogućuje križanje dviju cijevi u istoj ravnini bez dodatnih koljena.',
     code:  'CU-ZAOBILAZ',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/CU CIJEVI/CU ZAOBILAZ.jpg',
+    img: 'images/Grijanje/CU CIJEVI/CU ZAOBILAZ.webp',
     variants: [
       { label: 'Ø 15 mm', code: 'CU-ZAOBILAZ-15' },
       { label: 'Ø 18 mm', code: 'CU-ZAOBILAZ-18' },
@@ -845,7 +845,7 @@ const PRODUCTS = [
     name:  'SteelPRES Koljeno',
     desc:  'SteelPRES koljena služe za brzu i pouzdanu promjenu smjera cjevovoda pod kutom od 90° ili 45°, uz mogućnost direktnog prešanja ili spajanja na navojne elemente. Proizvode se u Ž-Ž i M-Ž izvedbama s integriranim EPDM brtvama koje jamče potpunu nepropusnost sustava.',
     code:  'SteelPRES-Koljeno',
-    img: 'images/STEELPRES/Steel/Koljeno.jpg',
+    img: 'images/STEELPRES/Steel/Koljeno.webp',
     variants: [
     { label: 'Koljeno Ø15mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-15',  },
     { label: 'Koljeno Ø18mm / 90° / 45° / 90° MŽ / 45° MŽ',  code: 'SteelPRES-Koljeno-18',  },
@@ -863,7 +863,7 @@ const PRODUCTS = [
     name:  'SteelPRES T komad',
     desc:  'SteelPRES T-komadi omogućuju jednostavno račvanje i skretanje protoka u cjevovodu, a dostupni su u ravnomjernim, reduciranim i izvedbama s unutarnjim navojem. Izrađeni su s preciznim M-profilom za prešanje i integriranim brtvama koje osiguravaju brzu ugradnju bez curenja.',
     code:  'SteelPRES-T-Komad',
-    img: 'images/STEELPRES/Steel/T.jpg',
+    img: 'images/STEELPRES/Steel/T.webp',
     variants: [
       // Varijante se grupiraju po polju `group` (vidi proizvod.html).
       // Proizvodi bez tog polja prikazuju se kao i dosad, u jednom nizu.
@@ -901,7 +901,7 @@ const PRODUCTS = [
     name:  'SteelPRES T komad s navojem',
     desc:  'SteelPRES T-komad s unutarnjim navojem služi za odvajanje ogranka s navojnim priključkom — npr. za termometar, ispust ili spoj na armaturu. Prolazni krajevi presaju se kao i ostali SteelPRES spojevi.',
     code:  'SteelPRES-T-Komad-Navoj',
-    img: 'images/STEELPRES/Steel/t - navoj.jpg',
+    img: 'images/STEELPRES/Steel/t - navoj.webp',
 
     variants: [
       { label: 'T-komad s navojem Ø15mm – 1/2" – Ø15mm', code: 'SteelPRES-T-Komad-Navoj-15-12' },
@@ -926,7 +926,7 @@ const PRODUCTS = [
     name:  'SteelPRES Spojnica',
     desc:  'SteelPRES spojnice služe za ravno spajanje dviju cijevi jednake dimenzije, a dostupne su kao standardne (s graničnikom u sredini) ili klizne (bez graničnika) koje su idealne za brze popravke na postojećim cjevovodima. Zahvaljujući M-profilu za prešanje i visokootpornim EPDM brtvama, omogućuju trenutno i sigurno spajanje bez potrebe za zavarivanjem.',
     code:  'SteelPRES-Spojnica',
-    img: 'images/STEELPRES/Steel/Spojnica.jpg',
+    img: 'images/STEELPRES/Steel/Spojnica.webp',
     variants: [
     { label: 'Spojnica Ø15mm',  code: 'SteelPRES-Spojnica-15',  },
     { label: 'Spojnica Ø18mm',  code: 'SteelPRES-Spojnica-18',  },
@@ -945,7 +945,7 @@ const PRODUCTS = [
     name:  'SteelPRES Redukcije',
     desc:  'SteelPRES redukcije primjenjuju se za elegantno i nepropusno prelaženje s većeg na manji promjer cijevi unutar iste linije cjevovoda. Izrađuju se u M-Ž izvedbi s vanjskim pocinčanim slojem, što omogućuje da se širi dio preša na cijev, a uži dio izravno umeće u susjedni fiting radi uštede na prostoru i materijalu.',
     code:  'SteelPRES-Redukcije',
-    img: 'images/STEELPRES/Steel/Spojnica.jpg',
+    img: 'images/STEELPRES/Steel/Spojnica.webp',
     variants: [
       { label: 'Redukcija Ø18 – Ø15mm', code: 'SteelPRES-Redukcija-18-15' },
       { label: 'Redukcija Ø22 – Ø15mm', code: 'SteelPRES-Redukcija-22-15' },
@@ -992,7 +992,7 @@ const PRODUCTS = [
     desc:  'SteelPRES luk blage zakrivljenosti mijenja smjer cjevovoda uz manji otpor strujanju nego klasično koljeno. Spaja se presanjem, bez zavarivanja.',
     code:  'SteelPRES-Luk',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/STEELPRES/Steel/Luk.png',
+    img: 'images/STEELPRES/Steel/Luk.webp',
     variants: [
       { label: 'Luk Ø22mm', code: 'SteelPRES-Luk-22' },
       { label: 'Luk Ø28mm', code: 'SteelPRES-Luk-28' },
@@ -1009,7 +1009,7 @@ const PRODUCTS = [
     desc:  'SteelPRES poluholender omogućuje rastavljivi spoj cjevovoda na uređaj ili armaturu — pumpu, bojler, razdjelnik — pa se element može odvojiti bez rezanja cijevi.',
     code:  'SteelPRES-Poluholender',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/STEELPRES/Steel/Poluholender.jpg',
+    img: 'images/STEELPRES/Steel/Poluholender.webp',
     variants: [
       { label: 'Poluholender 3/4" – Ø15mm', code: 'SteelPRES-Poluholender-34-15' },
       { label: 'Poluholender 3/4" – Ø18mm', code: 'SteelPRES-Poluholender-34-18' },
@@ -1028,7 +1028,7 @@ const PRODUCTS = [
     desc:  'SteelPRES prelaz s unutarnjim navojem povezuje presani dio instalacije s navojnim priključkom. Koristi se ondje gdje se cjevovod spaja na armaturu ili uređaj s vanjskim navojem.',
     code:  'SteelPRES-Prelaz-Mufa',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/STEELPRES/Steel/Mufa-prelaz.jpg',
+    img: 'images/STEELPRES/Steel/Mufa-prelaz.webp',
     variants: [
       { label: 'Mufa prelaz 1/2" – Ø15mm', code: 'SteelPRES-Prelaz-Mufa-12-15' },
       { label: 'Mufa prelaz 1/2" – Ø18mm', code: 'SteelPRES-Prelaz-Mufa-12-18' },
@@ -1051,7 +1051,7 @@ const PRODUCTS = [
     desc:  'SteelPRES prelaz s vanjskim navojem povezuje presani dio instalacije s navojnim priključkom uređaja ili armature s unutarnjim navojem.',
     code:  'SteelPRES-Prelaz-Nipl',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/STEELPRES/Steel/Nipl-prelaz.jpg',
+    img: 'images/STEELPRES/Steel/Nipl-prelaz.webp',
     variants: [
       { label: 'Nipl prelaz 1/2" – Ø15mm', code: 'SteelPRES-Prelaz-Nipl-12-15' },
       { label: 'Nipl prelaz 1/2" – Ø18mm', code: 'SteelPRES-Prelaz-Nipl-12-18' },
@@ -1075,7 +1075,7 @@ const PRODUCTS = [
     desc:  'SteelPRES zaobilaz (premosnica) omogućuje križanje dviju cijevi u istoj ravnini bez dodatnih koljena — jedna se cijev nadvisuje preko druge.',
     code:  'SteelPRES-Zaobilaz',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/STEELPRES/Steel/zaobilaz.jpg',
+    img: 'images/STEELPRES/Steel/zaobilaz.webp',
     variants: [
       { label: 'Zaobilaz Ø15mm', code: 'SteelPRES-Zaobilaz-15' },
       { label: 'Zaobilaz Ø18mm', code: 'SteelPRES-Zaobilaz-18' },
@@ -1093,8 +1093,8 @@ const PRODUCTS = [
     desc:  'Clivet Nativ je inverter klima uređaj renomiranog talijanskog brenda Clivet. Ističe se odličnom kvalitetom te pruža energetski učinkovito hlađenje (A++) i grijanje (A+) uz visoku pouzdanost.',
     code:  'Clivet Nativ',
     featured: true,
-    imgs: ['images/Hlađenje/Klima uređaji/Clivet Nativ AC.jpg',
-            'images/Hlađenje/Klima uređaji/Clivet Nativ klima uređaj.jpg'
+    imgs: ['images/Hlađenje/Klima uređaji/Clivet Nativ AC.webp',
+            'images/Hlađenje/Klima uređaji/Clivet Nativ klima uređaj.webp'
     ],
     variants: [
     { label: 'NATIV 27M',  code: 'NATIV 27M',  },
@@ -1121,8 +1121,8 @@ const PRODUCTS = [
     desc:  'Clivet EZCOOL je moderni inverter klima uređaj talijanskog brenda Clivet koji u prvom planu ima praktičnost i jednostavnost održavanja (Easy Clean koncept s magnetnim filterima na vrhu koji se skidaju u par sekundi). Pruža energetski učinkovito hlađenje (A++) i grijanje (A+) uz moderan dizajn, tihi rad te integriranu pripremu za Wi-Fi upravljanje i napredne funkcije poput "Follow Me" i "Active Clean".',
     code:  'Clivet EZCOOL',
     featured: true,
-    imgs: ['images/Hlađenje/Klima uređaji/EZCOOL.jpg',
-            'images/Hlađenje/Klima uređaji/EZCOOL klima.jpg'
+    imgs: ['images/Hlađenje/Klima uređaji/EZCOOL.webp',
+            'images/Hlađenje/Klima uređaji/EZCOOL klima.webp'
     ],
     variants: [
     { label: 'EZCOOL 27M',  code: 'EZCOOL 27M',  },
@@ -1148,7 +1148,7 @@ const PRODUCTS = [
     name:  'CIJEVI ZA KLIMA UREĐAJE',
     desc:  'Predizolirana bakrena cijev namijenjena za klimatizacijske i split sustave, koja zahvaljujući specijalnom polimernom omotaču pruža iznimnu otpornost na UV zrake, mehanička oštećenja i stvaranje kondenzacije.',
     code:  'cijevi-klima',
-    img: 'images/Hlađenje/OPREMA ZA KLIME/ISOCLIMA/Cijevi za klimu.png',
+    img: 'images/Hlađenje/OPREMA ZA KLIME/ISOCLIMA/Cijevi za klimu.webp',
     variants: [
         { label: 'ø6'  },
         { label: 'ø10' },
@@ -1163,13 +1163,13 @@ const PRODUCTS = [
     name:  'ALAT ZA SAVIJANJE CIJEVI',
     desc:  'Ovaj je alat namijenjen isključivo za precizno, hladno savijanje mekanih bakrenih cijevi za klima uređaje, bez oštećenja ili deformacija. Omogućuje savijanje cijevi do maksimalnog kuta od 90°. Minimalni radijus zakrivljenosti iznosi 2,5 puta promjer cijevi (2,5 x Ø), što sprječava spljoštavanje, gužvanje ili pucanje stijenki cijevi prilikom rada.',
     code:  'ALAT-ZA-SAVIJANJE-CIJEVI',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 1.jpg',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 2.jpg',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 3.jpg',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 4.jpg',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 5.jpg',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 6.jpg',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 7.jpg',
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 1.webp',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 2.webp',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 3.webp',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 4.webp',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 5.webp',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 6.webp',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 7.webp',
     ],
   },
   {
@@ -1218,9 +1218,9 @@ const PRODUCTS = [
     name:  'MANOMETRI ZA KLIMA UREĐAJE',
     desc:  'Profesionalni manometarski set namijenjen punjenju, pražnjenju i testiranju klimatizacijskih i rashladnih sustava.',
     code:  'MANOMETAR-KLIMA',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - KUTIJA.jpg',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - MANOMETRI.jpg',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - CIJEVI.jpg',
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - KUTIJA.webp',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - MANOMETRI.webp',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - CIJEVI.webp',
     ],
   },
   {
@@ -1230,8 +1230,8 @@ const PRODUCTS = [
     name:  'SET ZA SAVIJANJE CU CIJEVI ZA KLIMA UREĐAJE',
     desc:  'Iznimno praktično i fleksibilno rješenje za hladno oblikovanje bakrenih cijevi, namijenjeno prvenstveno instalaterima klimatizacijskih i rashladnih sustava. Set se sastoji od 4 opruge za savijanje cijevi u rasponu od Ø 1/4",Ø 3/8", Ø 1/2", Ø 5/8" ',
     code:  'SET-SAVIJANJE',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -11.jpg',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -12.jpg',
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -11.webp',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -12.webp',
     ],
   },
   {
@@ -1241,10 +1241,10 @@ const PRODUCTS = [
     name:  'ALAT ZA PERTLANJE ',
     desc:  'FLA-TOP 45°, komplet s alatom za frikcijsko proširenje cijevi za kutove od 45°, rezačem cijevi i alatom za uklanjanje neravnina s cijevi. Komplet uključuje: steznu šipku i ekscentrični čelični konus za prirubnicu te vilicu s klinom za centriranje i indikatorom položaja. Okretni unutarnji-vanjski odstranjivač srha s cijevi, Ø 50 mm. Rezač cijevi, 5 do 28 mm. Isporučuje se u praktičnoj plastičnoj kutiji.',
     code:  'FLA-TOP-45',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/FLA TOP 45 ALAT.jpg',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/PERT ALAT.png', 
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/ČISTAČ.png',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/REZAČ.png',  
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/FLA TOP 45 ALAT.webp',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/PERT ALAT.webp', 
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/ČISTAČ.webp',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/REZAČ.webp',  
     ],
   },
   {
@@ -1286,7 +1286,7 @@ const PRODUCTS = [
     name:  'GEBERIT DELTA01 UGRADBENI VODOKOTLIĆ',
     desc:  'Geberit Delta 01 je pouzdani i dugotrajni ugradbeni vodokotlić koji pruža tiho ispiranje i elegantan dizajn uz jednostavnu montažu u suhomontažne ili zidane zidove.',
     code:  'DELTA-01',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/GEBERIT/DELTA01.jpg',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/GEBERIT/DELTA01.webp',
   },
   {
     group: 'sanitarije',
@@ -1295,7 +1295,7 @@ const PRODUCTS = [
     name:  'TECE UGRADBENI VODOKOTLIĆ',
     desc:  'TECE ugradbeni vodokotlić je izuzetno fleksibilan i tehnički napredan sustav koji se ističe velikim volumenom ispiranja, iznimno tihim radom te univerzalnim aktivacijskim mehanizmom koji vam omogućuje slobodan izbor i naknadnu promjenu bilo koje TECE tipke za ispiranje.',
     code:  'TECE',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/TECE/TECE VODOKOTLIĆ.jpg',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/TECE/TECE VODOKOTLIĆ.webp',
   },
   {
     group: 'sanitarije',
@@ -1304,7 +1304,7 @@ const PRODUCTS = [
     name:  'REHAU UGRADBENI VODOKOTLIĆ',
     desc:  'REHAU MEPA P31 je visokokvalitetni njemački ugradbeni vodokotlić visine osmišljen u suradnji s ekspertom za sanitarne tehnologije MEPA, koji se ističe iznimno robusnim, plastificiranim čeličnim okvirom, nogicama podesivim po visini do 240 mm s integriranim antikliznim sustavom te vrhunskom izolacijom protiv kondenzacije i podesivim dvokoličinskim ispiranjem.',
     code:  'REHAU',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/REHAU/REHAU.jpg',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/REHAU/REHAU.webp',
   },
   {
     group: 'sanitarije',
@@ -1361,7 +1361,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - TUBO DARK ELEGANCE',
     desc:  'Baterija za sudoperu MINOTTI TUBO DARK ELEGANCE.',
     code:  '6118 / 6118-3',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/61183B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/61183B.webp',
     variants: [
     { label: '6118',  code: '6118', desc: 'Slavina za sudeoper sa 2 cijevi', },
     { label: '6118-3',  code: '6118-3', desc: 'Slavina za sudeoper sa 3 cijevi', },
@@ -1374,7 +1374,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KADU - TUBO DARK ELEGANCE',
     desc:  'Slavina za kadu MINOTTI TUBO DARK ELEGANCE.',
     code:  '6111B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6111B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6111B.webp',
   },
    {
     group: 'sanitarije',
@@ -1383,7 +1383,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA TUŠ - TUBO DARK ELEGANCE',
     desc:  'Slavina za tuš MINOTTI TUBO DARK ELEGANCE.',
     code:  '6113B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6113B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6113B.webp',
   },
   {
     group: 'sanitarije',
@@ -1392,7 +1392,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA UMIVAONIK - TUBO DARK ELEGANCE',
     desc:  'Slavina za umivaonik MINOTTI TUBO DARK ELEGANCE.',
     code:  '6112B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6112B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6112B.webp',
   },
   {
     group: 'sanitarije',
@@ -1401,7 +1401,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - TUBO',
     desc:  'Slavina za kuhinju MINOTTI TUBO.',
     code:  '6128B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6128B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6128B.webp',
   },
   {
     group: 'sanitarije',
@@ -1410,7 +1410,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA SUDOPER SAVITLJIVA STELA',
     desc:  'Slavina za sudoper savitljiva MINOTTI STELA.',
     code:  '2120',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/2120.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/2120.webp',
   },
   {
     group: 'sanitarije',
@@ -1419,7 +1419,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - TUBO',
     desc:  'Slavina za kuhinju MINOTTI TUBO.',
     code:  '4501',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4501_4501-3.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4501_4501-3.webp',
     variants: [
     { label: '4501',  code: '4501', desc: 'Slavina za sudoper sa 2 cijevi', },
     { label: '4501-3',  code: '4501-3', desc: 'Slavina za sudoper sa 3 cijevi', },
@@ -1432,7 +1432,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - PRIMA',
     desc:  'Slavina za kuhinju - MINOTTI PRIMA',
     code:  '4114',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4114_4114-3.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4114_4114-3.webp',
     variants: [
     { label: '4114',  code: '4114', desc: 'Slavina za sudoper sa 2 cijevi', },
     { label: '4114-3',  code: '4114-3', desc: 'Slavina za sudoper sa 3 cijevi', },
@@ -1445,7 +1445,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - STANDARD',
     desc:  'Slavina za kuhinju MINOTTI STANDARD.',
     code:  '8884',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8884.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8884.webp',
   },
   {
     group: 'sanitarije',
@@ -1454,7 +1454,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - STANDARD',
     desc:  'Slavina za kuhinju MINOTTI STANDARD - 3 cijevi.',
     code:  '8888',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8888.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8888.webp',
   },
   {
     group: 'sanitarije',
@@ -1463,7 +1463,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - STANDARD',
     desc:  'Slavina za sudoper MINOTTI STANDARD.',
     code:  '6888',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6888.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6888.webp',
   },
   
   {
@@ -1473,7 +1473,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU - STANDARD',
     desc:  'Slavina za kuhinju MINOTTI STANDARD.',
     code:  '6884',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6884_6884-S.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6884_6884-S.webp',
     variants: [
     { label: '6884',  code: '6884', desc: 'Slavina za sudoper sa 2 cijevi', },
     { label: '6884-S',  code: '6884-S', desc: 'Slavina za sudoper sa 3 cijevi', },
@@ -1486,7 +1486,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA PROTČNI BOJLER -  STANDARD',
     desc:  'Slavina za protočni bojler MINOTTI STANDARD.',
     code:  '7833',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/7833.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/7833.webp',
   },
   {
     group: 'sanitarije',
@@ -1495,7 +1495,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA KUHINJU - MINOTTI',
     desc:  'Slavina za KUHINJU MINOTTI.',
     code:  'MH-9018-J',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/9018.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/9018.webp',
   },
   {
     group: 'sanitarije',
@@ -1504,7 +1504,7 @@ const PRODUCTS = [
     name:  'MINOTTI SLAVINA ZA KUHINJU ZIDNA ZA HLADNU VODU  - PRIMA',
     desc:  'Slavina za kuhinju zidna za hladnu vodu MINOTTI PRIMA',
     code:  '4007',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4007.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4007.webp',
   },
  {
     group: 'sanitarije',
@@ -1513,7 +1513,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA TUŠ - MINOTTI PRIMA',
     desc:  'Slavina za tuš MINOTTI PRIMA.',
     code:  '4113',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4113.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4113.webp',
   },
   {
     group: 'sanitarije',
@@ -1522,7 +1522,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA TUŠ - MINOTTI STANDARD',
     desc:  'Slavina za tuš MINOTTI STANDARD.',
     code:  '6883',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6883.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6883.webp',
   },
   {
     group: 'sanitarije',
@@ -1531,7 +1531,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA TUŠ - MINOTTI PRIMA',
     desc:  'Slavina za tuš MINOTTI PRIMA.',
     code:  '4111',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4111.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4111.webp',
   },
   {
     group: 'sanitarije',
@@ -1540,7 +1540,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA TUŠ OKRETNA - MINOTTI PRIMA',
     desc:  'Slavina za tuš okretna MINOTTI PRIMA.',
     code:  '4110',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4110.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4110.webp',
   },
   {
     group: 'sanitarije',
@@ -1549,7 +1549,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA  KADU - MINOTTI STANDARD',
     desc:  'Slavina za kadu MINOTTI STANDARD.',
     code:  '6881',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6881.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6881.webp',
   },
   {
     group: 'sanitarije',
@@ -1558,7 +1558,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA UMIVAONIK - MINOTTI PRIMA',
     desc:  'Slavina za umivaonik MINOTTI PRIMA.',
     code:  '4112',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/4112.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/4112.webp',
   },
   {
     group: 'sanitarije',
@@ -1567,7 +1567,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA UMIVAONIK - MINOTTI STANDARD',
     desc:  'Slavina za umivaonik MINOTTI STANDARD.',
     code:  '6885',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6885.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6885.webp',
   },
   {
     group: 'sanitarije',
@@ -1576,7 +1576,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA BIDE - MINOTTI PRIMA',
     desc:  'Slavina za bide MINOTTI PRIMA.',
     code:  '4116',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/4116.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/4116.webp',
   },
   {
     group: 'sanitarije',
@@ -1585,7 +1585,7 @@ const PRODUCTS = [
     name:  'SLAVINA ZA BIDE - MINOTTI STANDARD',
     desc:  'Slavina za bide MINOTTI STANDARD.',
     code:  '6889',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/6889.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/6889.webp',
   },
   {
     group: 'sanitarije',
@@ -1594,7 +1594,7 @@ const PRODUCTS = [
     name:  'TUŠ SET QUADRA NEW - MINOTTI DARK ELEGANCE',
     desc:  'Crna Minotti Quadra New baterija za tuš sa usponskim tušem i ružom nudi savršen spoj luksuza i funkcionalnosti za moderno kupatilo MINOTTI TUBO DARK ELEGANCE.',
     code:  'MUT-045B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-045B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-045B.webp',
   },
   {
     group: 'sanitarije',
@@ -1603,7 +1603,7 @@ const PRODUCTS = [
     name:  'TUŠ SET QUADRA - MINOTTI DARK ELEGANCE',
     desc:  'Baterija za tuš sa komplet usponskim tušem ruža MINOTTI TUBO DARK ELEGANCE.',
     code:  'MUT-065B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-065B.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-065B.webp',
   },
   {
     group: 'sanitarije',
@@ -1630,7 +1630,7 @@ const PRODUCTS = [
     name:  'VALVEX ARS BLACK TUŠ SET',
     desc:  'Ars Black ugradbeni tuš set VALVEX.',
     code:  '2420160',
-    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/UGRADBENI TUŠ SET/ARS BLACK.png',
+    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/UGRADBENI TUŠ SET/ARS BLACK.webp',
   },
   {
     group: 'sanitarije',
@@ -1639,7 +1639,7 @@ const PRODUCTS = [
     name:  'VALVEX ARS SLAVINA ZA UMIVAONIK - VISOKA',
     desc:  'Ars slavina za umivaonik - visoka VALVEX.',
     code:  '2420360',
-    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/SLAVINE/ARS VISOKA.png',
+    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/SLAVINE/ARS VISOKA.webp',
   },
   {
     group: 'sanitarije',
@@ -1648,7 +1648,7 @@ const PRODUCTS = [
     name:  'UNITAS - i90 INFINITY RUČICA ZA PODŽBUKNU SLAVINU',
     desc:  'Rozetna i ručica za podžbuknu bateriju s prebacivačem INFINITY (12250) UNITAS.',
     code:  '12250',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/UNITAS INFINITY i90 12250.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/UNITAS INFINITY i90 12250.webp',
   },
   {
     group: 'sanitarije',
@@ -1657,7 +1657,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA TUŠ INFINITY',
     desc:  'Baterija tuš jednoručna INFINITY UNITAS.',
     code:  '00401',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA TUŠ 00401 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA TUŠ 00401 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1666,7 +1666,7 @@ const PRODUCTS = [
     name:  'UNITAS - TUŠ SET KOMPLET INFINITY',
     desc:  'Šipka klizna, tuš ručica niklovana, crijevo za tuš 150 cm SET UNITAS INFINITY (12460).',
     code:  '12460',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SET ZA TUŠ KOMPLET 12460 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SET ZA TUŠ KOMPLET 12460 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1675,7 +1675,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA KUHINJU INFINITY',
     desc:  'Baterija usadna jednoručna za sudoper Infinity 00170 UNITAS.',
     code:  '00170',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00170 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00170 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1684,7 +1684,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA KUHINJU INFINITY',
     desc:  'Baterija usadna jednoručna za sudoper Infinity 00175 UNITAS.',
     code:  '00175',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00175 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00175 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1693,7 +1693,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA KUHINJU INFINITY',
     desc:  'Baterija usadna jednoručna za sudoper Infinity 00176 UNITAS.',
     code:  '00176',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00176 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00176 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1702,7 +1702,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA UMIVAONIK INFINITY',
     desc:  'Baterija usadna s 2 cijevi jednoručna za umivaonik 102x84 mm UNITAS INFINITY (00004).',
     code:  '00004',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00004 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00004 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1711,7 +1711,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA UMIVAONIK INFINITY',
     desc:  'Baterija usadna s 2 cijevi jednoručna za umivaonik 118x91 mm UNITAS INFINITY (00014).',
     code:  '00014',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00014 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00014 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1720,7 +1720,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA BIDE INFINITY',
     desc:  'Baterija za bide jednoručna UNITAS INFINITY (00503).',
     code:  '00503',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA BIDE 00503 INFINITY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA BIDE 00503 INFINITY.webp',
   },
   {
     group: 'sanitarije',
@@ -1729,7 +1729,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA UMIVAONIK ZIDNA CLASSIC',
     desc:  'Slavina pokretna 1/2" UNITAS 10351.',
     code:  '10351',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/CLASSIC/SLAVINA ZA UMIVAONIK ZIDNA 10351.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/CLASSIC/SLAVINA ZA UMIVAONIK ZIDNA 10351.webp',
   },
   {
     group: 'sanitarije',
@@ -1738,7 +1738,7 @@ const PRODUCTS = [
     name:  'UNITAS - ZA KUHINJU PREGIBNA FRESH',
     desc:  'Baterija usadna jednoručna za kuhinju pregibna UNITAS FRESH (00135).',
     code:  '00135',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/FRESH/SLAVINA ZA SUDOPER PREGIBNA 00135 FRESH.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/FRESH/SLAVINA ZA SUDOPER PREGIBNA 00135 FRESH.webp',
   },
   {
     group: 'sanitarije',
@@ -1747,7 +1747,7 @@ const PRODUCTS = [
     name:  'UNITAS - PODŽBUKNI MJEŠAČ ZA TUŠ ',
     desc:  'SlMješač podžbukni za tuš bateriju s prebacivačem FRESH,PROJECT, INFINITY (00368) UNITAS.',
     code:  '00368',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA MJEŠALICA 00368 BLACK.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA MJEŠALICA 00368 BLACK.webp',
   },
   {
     group: 'sanitarije',
@@ -1756,7 +1756,7 @@ const PRODUCTS = [
     name:  'UNITAS - PODŽBUKNA SLAVINA ZA TUŠ',
     desc:  'Podžbukna baterija set SQ s prebacivačem UNITAS (mješač i nadžbukna rozetna) (00362).',
     code:  '00362',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA SLAVINA 00362 SQ.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA SLAVINA 00362 SQ.webp',
   },
   {
     group: 'sanitarije',
@@ -1765,7 +1765,7 @@ const PRODUCTS = [
     name:  'UNITAS - PODŽBUKNI SET CRNI ZA TUŠ SQ BLACK',
     desc:  'Podžbukna baterija set SQ s prebacivačem UNITAS (mješač i nadžbukna rozetna) (00364).',
     code:  '00364',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00364 SQ BLACKjpg.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00364 SQ BLACKjpg.webp',
   },
   {
     group: 'sanitarije',
@@ -1774,7 +1774,7 @@ const PRODUCTS = [
     name:  'UNITAS - PODŽBUKNI SET CRNI ZA TUŠ ELITE BLACK',
     desc:  'Podžbukni set ELITE CRNI (mješač,rozetna,zidni priključak,držač tuša,tuš mlaznica,ručica,crijevo,držač zidni) UNITAS BLACK (00364).',
     code:  '00364',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00377 ELITE BLACK.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00377 ELITE BLACK.webp',
   },
   {
     group: 'sanitarije',
@@ -1783,7 +1783,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA BIDE PROJECT',
     desc:  'Baterija za bide jednoručna UNITAS PROJECT (00518).',
     code:  '00518',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA BIDE 00518 PROJECT.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA BIDE 00518 PROJECT.webp',
   },
   {
     group: 'sanitarije',
@@ -1792,7 +1792,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA KUHINJU  PROJECT',
     desc:  'Baterija usadna s 3 cijevi jednoručna za sudoper UNITAS PROJECT (01185).',
     code:  '01185',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA KUHINJU 01185 PROJECT.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA KUHINJU 01185 PROJECT.webp',
   },
   {
     group: 'sanitarije',
@@ -1801,7 +1801,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA TUŠ PROJECT',
     desc:  'Baterija tuš jednoručna bez izljeva PROJECT UNITAS (00425).',
     code:  '00425',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA TUŠ 00425 PROJECT.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA TUŠ 00425 PROJECT.webp',
   },
   {
     group: 'sanitarije',
@@ -1810,7 +1810,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA UMIVAONIK PROJECT',
     desc:  'Baterija usadna s 2 cijevi jednoručna za umivaonik UNITAS PROJECT (00026).',
     code:  '00026',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA UMIVAONIK 00026 PROJECT.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA UMIVAONIK 00026 PROJECT.webp',
   },
   {
     group: 'sanitarije',
@@ -1819,7 +1819,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA KADU SIMPATY',
     desc:  'Baterija tuš jednoručna pokretni izljev UNITAS SIMPATY (00389).',
     code:  '00389',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KADU 00389 SIMPATY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KADU 00389 SIMPATY.webp',
   },
   {
     group: 'sanitarije',
@@ -1828,7 +1828,7 @@ const PRODUCTS = [
     name:  'UNITAS - SLAVINA ZA PROTOČNI BOJLER PROJECT',
     desc:  'Baterija za protočni bojler jednoručna UNITAS SIMPATY (01281).',
     code:  '01281',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KUHINJU - ZIDNA 01281 SIMPATY.jpg',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KUHINJU - ZIDNA 01281 SIMPATY.webp',
   },
 
 
@@ -1840,10 +1840,10 @@ const PRODUCTS = [
     desc:  'Kabina tuš WALK IN h-200 (8mm sivo (zatamnjeno) staklo, crni mat profili, crna mat teleskopska šipka 70-120 cm) ROCCO ECO.',
     code:  '31168',
     imgs: [
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO.jpg',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 1.jpg',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 2.jpg',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 3.jpg'
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO.webp',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 1.webp',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 2.webp',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 3.webp'
     ]
   },
   {
@@ -1854,10 +1854,10 @@ const PRODUCTS = [
     desc:  'Kabina tuš WALK IN h-200 WALK IN (8mm prozirno staklo, teleskopska šipka 70-120 cm) ROCCO ECO.',
     code:  '31206',
     imgs: [
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO.jpg',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 2.jpg',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 3.jpg',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 4.jpg'
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO.webp',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 2.webp',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 3.webp',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 4.webp'
     ]
   },
 
@@ -1869,7 +1869,7 @@ const PRODUCTS = [
     name:  'TESY BASE LINE ',
     desc:  'TESY BiLight Base Line označava seriju pouzdanih, energetski učinkovitih električnih i kombiniranih bojlera europskog proizvođača TESY.',
     code:  'TESY-BASE-LINE',
-    img: 'images/VODOMATERIJAL/Bojleri/Tesy/Base line.jpg',
+    img: 'images/VODOMATERIJAL/Bojleri/Tesy/Base line.webp',
     variants: [
     { label: 'TESY Base Line 50L',  code: 'TESY-BASE-50',  },
     { label: 'TESY Base Line 80L',  code: 'TESY-BASE-80',  },
@@ -1899,7 +1899,7 @@ const PRODUCTS = [
     name:  "ATLANTIC O'PRO",
     desc:  "Atlantic O'Pro+ 2K predstavlja seriju visokoučinkovitih klasičnih električnih bojlera francuskog proizvođača Atlantic, prepoznatljivih po ugrađenom snažnom bakrenom grijaču od 2000 W (2K). Glavna prednost ove serije je ekskluzivna, patentirana O'Pro tehnologija koja pruža vrhunsku zaštitu od korozije i produljuje životni vijek uređaja do 50%.",
     code:  'ATLANTIC-O-PRO',
-    img: 'images/VODOMATERIJAL/Bojleri/Atlantic/OPRO 2K.jpg',
+    img: 'images/VODOMATERIJAL/Bojleri/Atlantic/OPRO 2K.webp',
     variants: [
     { label: "ATLANTIC O'PRO 50L",  code: 'ATLANTIC-O-PRO-50',  },
     { label: "ATLANTIC O'PRO 80L",  code: 'ATLANTIC-O-PRO-80',  },
@@ -1912,7 +1912,7 @@ const PRODUCTS = [
     name:  "ATLANTIC O'PRO SLIM",
     desc:  "Atlantic O'Pro Slim 2,0 K je serija visokokvalitetnih kompaktnih električnih bojlera s uskim kućištem, opremljenih snažnim bakrenim grijačem od 2000 W (2,0 K). Zahvaljujući malom promjeru vanjskog plašta, ovi su modeli idealni za ugradnju u uske prostore, niše ili kupaonice s ograničenim zidnim prostorom.",
     code:  'ATLANTIC-O-PRO-SLIM',
-    img: 'images/VODOMATERIJAL/Bojleri/Atlantic/OPRO SLIM.jpg',
+    img: 'images/VODOMATERIJAL/Bojleri/Atlantic/OPRO SLIM.webp',
     variants: [
     { label: "ATLANTIC O'PRO SLIM 30L",  code: 'ATLANTIC-OPRO-SLIM-30',  },
     ],
@@ -1925,7 +1925,7 @@ const PRODUCTS = [
     name:  'ALKATEN CIJEVI ZA VODU 10bar',
     desc:  'Naziv PEHD odnosi se na visokokvalitetne cijevi i pripadajući instalacijski sustav od polietilena visoke gustoće (PE-HD). Ove se cijevi na tržištu najčešće nazivaju alkaten cijevi i primarno se koriste za siguran i dugotrajan transport pitke vode, sustave navodnjavanja te izgradnju uličnih i kućnih vodovodnih priključaka.',
     code:  'Alkaten-PEHD',
-    img: 'images/VODOMATERIJAL/CIJEVI/ALKATEN PEHD/PEHD CIJEV.jpg',
+    img: 'images/VODOMATERIJAL/CIJEVI/ALKATEN PEHD/PEHD CIJEV.webp',
     variants: [
     { label: 'Alkaten PEHD 20 mm',  code: 'ALKATEN-PEHD-20',  },
     { label: 'Alkaten PEHD 25 mm',  code: 'ALKATEN-PEHD-25',  },
@@ -1941,7 +1941,7 @@ const PRODUCTS = [
     name:  'ALKATEN CIJEVI ZA NAVODNJAVANJE 6bar',
     desc:  'Idealne su za poljoprivredu, sustave "kap po kap", staklenike i vrtove gdje radni tlakovi rijetko prelaze 3–4 bara.',
     code:  'Alkaten-PEHD-6',
-    img: 'images/VODOMATERIJAL/CIJEVI/ALKATEN PEHD/PEHD CIJEV.jpg',
+    img: 'images/VODOMATERIJAL/CIJEVI/ALKATEN PEHD/PEHD CIJEV.webp',
     variants: [
     { label: 'Alkaten PEHD 20 mm',  code: 'ALKATEN-PEHD-20',  },
     { label: 'Alkaten PEHD 25 mm',  code: 'ALKATEN-PEHD-25',  },
@@ -2016,7 +2016,7 @@ const PRODUCTS = [
     name:  'PRESS KOLJENO' ,
     desc:  '',
     code:  'PEX-KOLJ',
-    img: 'images/PEX/PEX KOLJENO 16, 20.jpg',
+    img: 'images/PEX/PEX KOLJENO 16, 20.webp',
     variants: [
       { label: '16',  code: 'PEX-KOLJ-16',  },
       { label: '20',  code: 'PEX-KOLJ-20',  },
@@ -2031,7 +2031,7 @@ const PRODUCTS = [
     name:  'PRESS ZIDNO KOLJENO 16 - 1/2"',
     desc:  '',
     code:  'PEX-KOLJ-ZIDNO-16',
-    img: 'images/PEX/PEX KOLJENO SA NOSAČOM 16 - 1_2 Ž. NAVOJ.jpg',
+    img: 'images/PEX/PEX KOLJENO SA NOSAČOM 16 - 1_2 Ž. NAVOJ.webp',
   },
   {
     group: 'vodomaterijal',
@@ -2040,7 +2040,7 @@ const PRODUCTS = [
     name:  'PRESS KOLJENO 16 - 1/2"',
     desc:  '',
     code:  'PEX-KOLJ-NAVOJ-16',
-    img: 'images/PEX/PEX KOLJENO 16 - 1_2 Ž NAVOJ.jpg',
+    img: 'images/PEX/PEX KOLJENO 16 - 1_2 Ž NAVOJ.webp',
     variants: [
       { label: '16 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-KOLJ-U.N.-16',  },
       { label: '20 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-KOLJ-U.N.-20',  },
@@ -2055,7 +2055,7 @@ const PRODUCTS = [
     name:  'PRESS VENTIL PODŽBUKNI',
     desc:  '',
     code:  'PEX-VENTIL',
-    img: 'images/PEX/PODŽBUKNI VENTIL.jpg',
+    img: 'images/PEX/PODŽBUKNI VENTIL.webp',
     variants: [
       { label: '16',  code: 'PEX-VENTIL-16',  },
       { label: '20',  code: 'PEX-VENTIL-20',  },
@@ -2068,7 +2068,7 @@ const PRODUCTS = [
     name:  'PRESS PRELAZ RAVNI',
     desc:  '',
     code:  'PEX-PRELAZ',
-    img: 'images/PEX/PEX PRELAZ 16 - 1_2.jpg',
+    img: 'images/PEX/PEX PRELAZ 16 - 1_2.webp',
     variants: [
       { label: '16 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-PRELAZ-U.N.-16',  },
       { label: '20 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-PREALZ-U.N.-20',  },
@@ -2085,7 +2085,7 @@ const PRODUCTS = [
     name:  'PRESS T KOMAD',
     desc:  '',
     code:  'PEX-T',
-    img: 'images/PEX/T KOMAD.jpg',
+    img: 'images/PEX/T KOMAD.webp',
     variants: [
       { label: '16 x 16 x 16',  code: 'PEX-T-16',  },
       { label: '20 x 20 x 20',  code: 'PEX-T-20',  },
@@ -2105,7 +2105,7 @@ const PRODUCTS = [
     name:  'PRESS REDUKCIJA',
     desc:  '',
     code:  'PEX-REDUKCIJA',
-    img: 'images/PEX/REDUKCIJA.jpg',
+    img: 'images/PEX/REDUKCIJA.webp',
     variants: [
       { label: '20 - 16',  code: 'PEX-RED-2016',  },
       { label: '26 - 16',  code: 'PEX-RED-2616',  },
@@ -2119,7 +2119,7 @@ const PRODUCTS = [
     name:  'PRESS SPOJNICA',
     desc:  '',
     code:  'PEX-SPOJNICA',
-    img: 'images/PEX/SPOJNICA.jpg',
+    img: 'images/PEX/SPOJNICA.webp',
     variants: [
       { label: '16',  code: 'PEX-SPOJ-16',  },
       { label: '20',  code: 'PEX-SPOJ-20',  },
@@ -2133,7 +2133,7 @@ const PRODUCTS = [
     name:  'PRESS POLUSPOJNICA ZA CIJEV 16',
     desc:  '',
     code:  'PEX-POLUSP',
-    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ.jpg',
+    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ.webp',
     variants: [
       { label: '16',  code: 'PEX-POLUSPOJ-16',  },
       ]
@@ -2145,7 +2145,7 @@ const PRODUCTS = [
     name:  'PRESS POLUSPOJNICA ZA CIJEV EUROKONUS',
     desc:  '',
     code:  'PEX-POLUSP-EK',
-    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ EUROKONUS.jpg',
+    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ EUROKONUS.webp',
     variants: [
       { label: '16 - 3/4"',  code: 'PEX-POLUSPOJ-16-3/4',  },
       { label: '20 - 3/4"',  code: 'PEX-POLUSPOJ-20-3/4',  },
@@ -2158,7 +2158,7 @@ const PRODUCTS = [
     name:  'RAZDJELNIK MODULARNI 16 - 3/4 - S KOSIM VENTILIMA',
     desc:  '',
     code:  'RAZDJELNIK-MODULARNI',
-    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
+    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.webp',
     variants: [
       { label: '3 IZLAZA',  code: 'RAZD-MODUL-3-IZL',  },
       { label: '4 IZLAZA"', code: 'RAZD-MODUL-4-IZL',  },
@@ -2172,7 +2172,7 @@ const PRODUCTS = [
     name:  'KUGL VENTIL 3/4" ZA RAZDJELNIK',
     desc:  '',
     code:  'VENTIL-RAZDJELNIK',
-    img: 'images/PEX/KUGL VENTIL 3_4 ZA RAZDJELNIK - PLAVA-CRVENA RUČKA.jpg',
+    img: 'images/PEX/KUGL VENTIL 3_4 ZA RAZDJELNIK - PLAVA-CRVENA RUČKA.webp',
     variants: [
       { label: 'PLAVA RUČKA',  code: 'PLAVI',  },
       { label: 'CRVENA RUČKA"', code: 'CRVENI',  },
@@ -2185,7 +2185,7 @@ const PRODUCTS = [
     name:  'ORMAR ZA MODULARNE RAZDJELNIKE',
     desc:  '',
     code:  'ORMAR-RAZDJELNIK',
-    img: 'images/PEX/ORMAR ZA MODULARNE RAZDJELNIKE.jpg',
+    img: 'images/PEX/ORMAR ZA MODULARNE RAZDJELNIKE.webp',
     variants: [
       { label: '240 x 400 x 80 mm',  code: 'ORM-RAZDJ',  },
       ]
@@ -2198,7 +2198,7 @@ const PRODUCTS = [
     name:  'PP NISKOŠUMNA CIJEV',
     desc:  'Vargokal Plus je inovativni, niskošumni troslojni kanalizacijski sustav za unutarnju odvodnju otpadnih voda u stambenim, poslovnim i industrijskim objektima. Proizvodi ga tvrtka Vargon (članica Wienerberger grupe), a razvijen je s primarnim ciljem maksimalnog smanjenja buke nastale protokom vode kroz instalacije.',
     code:  'PP-NISKOŠUMNA',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL PLUS.jpg',
+    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL PLUS.webp',
     // Old per-diameter codes, so existing links still open this product
     codeAliases: ['PP-NISKOŠUMNA-50','PP-NISKOŠUMNA-110'],
     // The old codes did NOT include the diameter, so Ø50 and Ø110 both
@@ -2227,7 +2227,7 @@ const PRODUCTS = [
     desc:  'Vargokal kanalizacijske cijevi i spojevi (proizvođača Vargon) vrhunski su sustavi za kućnu kanalizaciju izrađeni od polipropilena (PP) prema standardu EN 1451-1. Koriste se za unutarnju odvodnju otpadnih i oborinskih voda unutar objekata te za ventilaciju odvodnih sustava.',
     desc_it: 'I tubi e raccordi per fognatura Vargokal (produttore Vargon) sono sistemi di alta qualità per la fognatura domestica, realizzati in polipropilene (PP) secondo la norma EN 1451-1. Vengono utilizzati per lo scarico interno delle acque reflue e meteoriche negli edifici e per la ventilazione degli impianti di scarico.',
     code:  'PP-CIJEV',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.jpg',
+    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/VARGOKAL.webp',
     // Old per-diameter codes, so existing links still open this product
     codeAliases: ['PP-CIJEV-32','PP-CIJEV-40','PP-CIJEV-75',
                   'PP-CIJEV-110','PP-CIJEV-125','PP-CIJEV-160'],
@@ -2289,7 +2289,7 @@ const PRODUCTS = [
     name:  'PP KOLJENO',
    desc:  'Vargokal koljeno od polipropilena (PP) za promjenu smjera unutarnje kanalizacije prema standardu EN 1451-1. Spaja se brtvenim prstenom, bez ljepila i bez alata.',
     code:  'PP-KOLJENO',
-    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP KOLJENO.jpg',
+    img: 'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP KOLJENO.webp',
     variants: [
       { label: '32/45°',  code: 'PP-KOLJENO-32-45',  },
       { label: '32/90°',  code: 'PP-KOLJENO-32-90',  },
@@ -2318,8 +2318,8 @@ const PRODUCTS = [
     name:  'PP RAČVA',
    desc:  'Vargokal račva od polipropilena (PP) za spajanje ogranka na glavni vod unutarnje kanalizacije prema standardu EN 1451-1. Spaja se brtvenim prstenom, bez ljepila i bez alata.',
     code:  'PP-RAČVA',
-    imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP RAČVA.jpg',
-      'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP RAČVA REDUCIRANA.jpg',
+    imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP RAČVA.webp',
+      'images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/PP RAČVA REDUCIRANA.webp',
     ],
     variants: [
       { label: '32/45°',  code: 'PP-RAČVA-32-45',  },
@@ -2353,7 +2353,7 @@ const PRODUCTS = [
     name:  'UKC KOLJENO',
     desc:  'Peštan UKC su troslojne narančaste PVC cijevi vrhunske čvrstoće namijenjene za siguran i dugotrajan odvod otpadnih te oborinskih voda u vanjskim, podzemnim kanalizacijskim sustavima.',
     code:  'UKC-KOLJENO',
-    imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/UKC KOLJENO.jpg'
+    imgs: ['images/VODOMATERIJAL/CIJEVI/CIJEVI ZA KANALIZACIJU/UKC KOLJENO.webp'
     ],
     variants: [
       { label: '110/45°', code: 'UKC-KOLJENO-110-45', },
@@ -2397,7 +2397,7 @@ const PRODUCTS = [
     name:  'PLIN REGULATOR 2. STUPANJ 10kg/h',
     desc:  'Ovi regulatori se koriste u instalacijama s dvostupanjskom regulacijom, moraju se montirati kao drugi stupanj, nizvodno od regulatora prvog stupnja.',
     code:  'PLIN-REG-2ST',
-    img: 'images/PLIN/REGULATORI/PLIN REG 2. STUP.jpg',
+    img: 'images/PLIN/REGULATORI/PLIN REG 2. STUP.webp',
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Maksimalni tlak', 'Izlazni tlak', 'Vrsta i promjer navoja', 'Kapacitet protoka'],
@@ -2413,7 +2413,7 @@ const PRODUCTS = [
     name:  'PLIN REGULATOR 1. STUPANJ 20 - 40kg/h',
     desc:  'Regulatori visokog tlaka obično smanjuju tlak u spremniku na srednji tlak koji koristi drugi regulator.',
     code:  'PLIN-REG-1ST',
-    img: 'images/PLIN/REGULATORI/PLIN REG 1. STUP.jpg',
+    img: 'images/PLIN/REGULATORI/PLIN REG 1. STUP.webp',
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Maksimalni tlak', 'Izlazni tlak', 'Kapacitet protoka'],
@@ -2440,7 +2440,7 @@ const PRODUCTS = [
     name:  'PLIN PEX-AL-PEX CIJEV',
     desc:  'Plinske cijevi Pex-Al-Pex predstavljaju visokosiguran, višeslojni kompozitni sustav s aluminijskom jezgrom koji zahvaljujući izvrsnoj fleksibilnosti, nepropusnosti za kisik i otpornosti na koroziju omogućuje brzu i dugotrajnu ugradnju u kućne plinske instalacije.',
     code:  'PLIN-PEX-AL-PEX',
-    img: 'images/PLIN/PEX CIJEV/CIJEV.jpg',
+    img: 'images/PLIN/PEX CIJEV/CIJEV.webp',
     variants: [
     { label: 'ø16mm',  code: '',  },
     { label: 'ø20mm',  code: '',  },
@@ -2531,7 +2531,7 @@ const PRODUCTS = [
     desc:  'Jednoslojne polipropilenske (PP-R) cijevi visoke otpornosti na pritisak, temperaturu i agresivne kemikalije. Primarno se koriste za pouzdan transport tople i hladne vode, stlačenog zraka te tekućina u stambenim i industrijskim sustavima.',
     code:  'PPR-FUSIO-SDR6',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/SDR6.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/SDR6.webp',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-FUSIO-SDR6-20' },
       { label: 'Ø 25 mm', code: 'PPR-FUSIO-SDR6-25' },
@@ -2550,7 +2550,7 @@ const PRODUCTS = [
     desc:  'Troslojne polipropilenske cijevi ojačane staklenim vlaknima koje smanjuju linearno toplinsko istezanje za čak 70% u odnosu na klasične cijevi. Namijenjene su za sustave sanitarne tople i hladne vode te grijanje pri visokim radnim pritiscima.',
     code:  'PPR-FASER-FIBER-T',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/FUSIO-TECHNIK-faser-FIBER-T-SDR-74.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/FUSIO-TECHNIK-faser-FIBER-T-SDR-74.webp',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-FASER-FIBER-T-20' },
       { label: 'Ø 25 mm', code: 'PPR-FASER-FIBER-T-25' },
@@ -2569,7 +2569,7 @@ const PRODUCTS = [
     desc:  'Vlaknima ojačane višeslojne cijevi projektirane za klimatizaciju, hlađenje, grijanje i industrijske mehaničke sustave. Zahvaljujući tanjoj stijenci i smanjenom širenju na temperaturi, omogućuju veći protok i ekonomičniju instalaciju.',
     code:  'PPR-FASER-FIBER-COND',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/FIBER-COND.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/FIBER-COND.webp',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-FASER-FIBER-COND-20' },
       { label: 'Ø 25 mm', code: 'PPR-FASER-FIBER-COND-25' },
@@ -2587,7 +2587,7 @@ const PRODUCTS = [
     desc:  'Specijalizirane polipropilenske cijevi prepoznatljive ljubičaste boje, namijenjene isključivo za transport reciklirane i kišnice (nisu za pitku vodu). Proizvedene su s aditivima otpornim na fluktuacije pH vrijednosti i kemikalije, idealne za navodnjavanje, ispiranje toaleta i tehničku upotrebu.',
     code:  'PPR-RAINWATER',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/rain-water.jpg',
+    img: 'images/VODOMATERIJAL/AQUATECHNIK/CIJEVI/rain-water.webp',
     variants: [
       { label: 'Ø 20 mm', code: 'PPR-RAINWATER-20' },
       { label: 'Ø 25 mm', code: 'PPR-RAINWATER-25' },
@@ -2959,7 +2959,7 @@ const PRODUCTS = [
     desc:  'Izolacijska ploča za oblaganje spremnika, kanala, armatura i svih površina na koje se cijevna izolacija ne može postaviti.',
     code:  'IZO-PLOCA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/Izolacija/Kaimann ST ploca.png',
+    img: 'images/Grijanje/Izolacija/Kaimann ST ploca.webp',
     variants: [
       { label: '6 mm', code: 'IZO-PLOCA-6' },
       { label: '10 mm', code: 'IZO-PLOCA-10' },
@@ -2975,7 +2975,7 @@ const PRODUCTS = [
     desc:  'Izolacijska ploča s ljepljivim slojem na poleđini — postavlja se bez dodatnog ljepila, skidanjem zaštitne folije.',
     code:  'IZO-PLOCA-SL',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/Izolacija/Kaimann ST ploca.png',
+    img: 'images/Grijanje/Izolacija/Kaimann ST ploca.webp',
     variants: [
       { label: '6 mm', code: 'IZO-PLOCA-SL-6' },
       { label: '10 mm', code: 'IZO-PLOCA-SL-10' },
@@ -3008,7 +3008,7 @@ const PRODUCTS = [
     desc:  'Tanka cijevna izolacija debljine stijenke 4 mm za vodovodne instalacije, namijenjena razvodima u zidu i u estrihu.',
     code:  'IZO-4',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/Izolacija/Izolacija 4mm.jpg',
+    img: 'images/Grijanje/Izolacija/Izolacija 4mm.webp',
     variants: [
       { label: '4 × Ø15 mm', code: 'IZO-4-15' },
       { label: '4 × Ø18 mm', code: 'IZO-4-18' },

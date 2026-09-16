@@ -19,6 +19,7 @@ const PAGES = [
   { loc: '/proizvodi', changefreq: 'weekly',  priority: '0.9' },
   { loc: '/o-nama',    changefreq: 'monthly', priority: '0.6' },
   { loc: '/kontakt',   changefreq: 'monthly', priority: '0.7' },
+  { loc: '/privatnost',changefreq: 'yearly',  priority: '0.2' },
 ];
 
 // products.js deklarira `const PRODUCTS = [...]` — učitamo ga kao tekst i

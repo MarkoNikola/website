@@ -167,6 +167,8 @@ nav{position:fixed;top:36px;left:0;right:0;z-index:1000;background:rgba(13,22,32
 
 footer{background:var(--dark);color:rgba(255,255,255,.5);padding:48px 6% 24px;margin-top:80px}
 .f-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12.5px;flex-wrap:wrap;gap:10px;border-top:1px solid rgba(255,255,255,.07);padding-top:20px}
+.f-bottom a{color:rgba(255,255,255,.5);text-decoration:none;transition:color .2s}
+.f-bottom a:hover{color:var(--blue)}
 
 @media(max-width:900px){.product-wrap{grid-template-columns:1fr;gap:28px;padding:22px 5%}}
 @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
@@ -395,8 +397,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:48px 6% 24px;ma
 
 <footer>
   <div class="f-bottom">
-    <span>© 2025 ITALTERM d.o.o. Sva prava pridržana.</span>
-    <span>Grijanje · Hlađenje · Vodomaterijal · Plin</span>
+    <span data-i18n="footer.copyright">© 2026 ITALTERM d.o.o. Sva prava pridržana.</span>
+    <a href="privatnost" data-i18n="footer.privacy">Pravila privatnosti</a>
   </div>
 </footer>
 
@@ -807,18 +809,46 @@ function applySeo(product) {
     ? product.imgs
     : (product.img ? [product.img] : []);
 
+  /* Ako fotografija nije uploadana, preglednik bi nacrtao ikonu slomljene
+     slike. Umjesto toga vraćamo natpis "Slika proizvoda", a neispravnu
+     sličicu iz galerije jednostavno maknemo.
+     Rukovatelji se postavljaju preko DOM-a, ne kao onerror="…" atribut —
+     natpis sadrži dvostruke navodnike koji bi atribut prekinuli. */
+  function setMainImg(box, src, alt) {
+    box.innerHTML = '';
+    var img = document.createElement('img');
+    img.alt = alt;
+    img.decoding = 'async';
+    img.onerror = function () {
+      box.innerHTML = '';
+      var ph = document.createElement('span');
+      ph.className = 'product-img-placeholder';
+      ph.textContent = (typeof getLang === 'function' && getLang() === 'it')
+        ? 'Immagine del prodotto' : 'Slika proizvoda';
+      box.appendChild(ph);
+    };
+    img.src = src;
+    box.appendChild(img);
+  }
+
   if (images.length > 0) {
     var mainImg = document.getElementById('productImg');
-    mainImg.innerHTML = '<img src="' + images[0] + '" alt="' + product.name + '">';
+    setMainImg(mainImg, images[0], product.name);
 
     if (images.length > 1) {
       var thumbs = document.getElementById('productThumbs');
       images.forEach(function(src, i) {
         var t = document.createElement('div');
         t.className = 'product-thumb' + (i === 0 ? ' active' : '');
-        t.innerHTML = '<img src="' + src + '" alt="' + product.name + ' ' + (i + 1) + '">';
+        var ti = document.createElement('img');
+        ti.alt = product.name + ' ' + (i + 1);
+        ti.loading = 'lazy';
+        ti.decoding = 'async';
+        ti.onerror = function () { t.remove(); };
+        ti.src = src;
+        t.appendChild(ti);
         t.onclick = function() {
-          mainImg.innerHTML = '<img src="' + src + '" alt="' + product.name + '">';
+          setMainImg(mainImg, src, product.name);
           document.querySelectorAll('.product-thumb').forEach(function(x) {
             x.classList.remove('active');
           });
@@ -851,6 +881,7 @@ function updateProductDesc() {
     (typeof getLang==='function'&&getLang()==='it'&&currentProduct.desc_it)||currentProduct.desc||'';
 }
 </script>
-  <script src="lang.js?v=11"></script>
+  <script src="analytics.js?v=1"></script>
+  <script src="lang.js?v=12"></script>
 </body>
 </html>

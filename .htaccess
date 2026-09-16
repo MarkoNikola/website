@@ -33,6 +33,19 @@ RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # ═══════════════════════════════════════════════════════════
+#  STRANICA KOJA NE POSTOJI (404)
+#
+#  Bez ovoga posjetitelj dobije goli Apache ispis bez izbornika
+#  i bez puta natrag. Stare adrese proizvoda (prije spajanja
+#  artikala) i dalje kruže Googleom, pa se to stvarno događa.
+#
+#  404.html koristi apsolutne putanje (/lang.js, /images/…) jer
+#  ga Apache poslužuje na adresi koja je pala — relativne bi se
+#  računale od te adrese i ne bi se učitale.
+# ═══════════════════════════════════════════════════════════
+ErrorDocument 404 /404.html
+
+# ═══════════════════════════════════════════════════════════
 #  CLEAN URLs
 # ═══════════════════════════════════════════════════════════
 
