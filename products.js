@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=21"></script>
+//      <script src="products.js?v=22"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -772,6 +772,44 @@ const PRODUCTS = [
       { label: 'Ø 18 mm', code: 'CU-ZAOBILAZ-18' },
       { label: 'Ø 22 mm', code: 'CU-ZAOBILAZ-22' },
       { label: 'Ø 28 mm', code: 'CU-ZAOBILAZ-28' },
+    ],
+  },
+  {
+    group: 'grijanje',
+    cat:   'bakar',
+    name:  'MS PRELAZ',
+    desc:  'Mesingani prelaz spaja bakrenu cijev na navojni priključak. Na jednoj je strani nastavak za bakrenu cijev, a na drugoj vanjski (muški) ili unutarnji (ženski) navoj. Prva brojka označava promjer bakrene cijevi u milimetrima, a druga veličinu navoja u colima.',
+    code:  'MS-PRELAZ',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/CU CIJEVI/MS PRELAZ.jpg',
+    // Varijante su podijeljene po vrsti navoja — kupac zna treba li mu
+    // muški ili ženski, pa unutar svake skupine samo bira dimenziju.
+    variants: [
+      { label: 'Ø 15 × 1/2"', code: 'MS-PRELAZ-15-12-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 18 × 1/2"', code: 'MS-PRELAZ-18-12-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 18 × 3/4"', code: 'MS-PRELAZ-18-34-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 22 × 1/2"', code: 'MS-PRELAZ-22-12-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 22 × 3/4"', code: 'MS-PRELAZ-22-34-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 22 × 1"',   code: 'MS-PRELAZ-22-1-M',  group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 28 × 3/4"', code: 'MS-PRELAZ-28-34-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 28 × 1"',   code: 'MS-PRELAZ-28-1-M',  group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 28 × 5/4"', code: 'MS-PRELAZ-28-54-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 35 × 1"',   code: 'MS-PRELAZ-35-1-M',  group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 35 × 5/4"', code: 'MS-PRELAZ-35-54-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 42 × 5/4"', code: 'MS-PRELAZ-42-54-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+      { label: 'Ø 42 × 6/4"', code: 'MS-PRELAZ-42-64-M', group: 'Muški (vanjski) navoj', group_it: 'Filetto maschio' },
+
+      { label: 'Ø 15 × 1/2"', code: 'MS-PRELAZ-15-12-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 18 × 1/2"', code: 'MS-PRELAZ-18-12-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 18 × 3/4"', code: 'MS-PRELAZ-18-34-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 22 × 1/2"', code: 'MS-PRELAZ-22-12-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 22 × 3/4"', code: 'MS-PRELAZ-22-34-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 22 × 1"',   code: 'MS-PRELAZ-22-1-Z',  group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 28 × 3/4"', code: 'MS-PRELAZ-28-34-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 28 × 1"',   code: 'MS-PRELAZ-28-1-Z',  group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 28 × 5/4"', code: 'MS-PRELAZ-28-54-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 35 × 1"',   code: 'MS-PRELAZ-35-1-Z',  group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
+      { label: 'Ø 35 × 5/4"', code: 'MS-PRELAZ-35-54-Z', group: 'Ženski (unutarnji) navoj', group_it: 'Filetto femmina' },
     ],
   },
 
