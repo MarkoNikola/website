@@ -326,6 +326,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
             <li><a href="proizvodi?group=vodomaterijal&cat=navodnjavanje" data-i18n="nav.mm.irrigation">Navodnjavanje</a></li>
             <li><a href="proizvodi?group=vodomaterijal&cat=razdjelnici" data-i18n="nav.mm.manifolds">Razdjelnici i ormari</a></li>
             <li><a href="proizvodi?group=vodomaterijal&cat=ventili" data-i18n="nav.mm.valves">Ventili</a></li>
+            <li><a href="proizvodi?group=vodomaterijal&cat=ekspanzione-posude" data-i18n="nav.mm.vessels">Ekspanzione posude</a></li>
             <li><a href="proizvodi?group=vodomaterijal&cat=kanalizacija" data-i18n="nav.mm.drainage">Cijevi za kanalizaciju</a></li>
           </ul>
         </div>
@@ -603,6 +604,11 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
           <span class="sf-item-count" id="sfc-ventili">0</span>
         </label>
         <label class="sf-item">
+          <input type="checkbox" class="sf-cb" data-group="vodomaterijal" data-cat="ekspanzione-posude" onchange="resetPageAndFilter()">
+          <span class="sf-item-label">Ekspanzione posude</span>
+          <span class="sf-item-count" id="sfc-ekspanzione-posude">0</span>
+        </label>
+        <label class="sf-item">
           <input type="checkbox" class="sf-cb" data-group="vodomaterijal" data-cat="kanalizacija" onchange="resetPageAndFilter()">
           <span class="sf-item-label">Cijevi za kanalizaciju</span>
           <span class="sf-item-count" id="sfc-kanalizacija">0</span>
@@ -719,7 +725,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
   </div>
 </footer>
 
-<script src="products.js?v=19"></script>
+<script src="products.js?v=20"></script>
 <script>
 const CAT_LABELS = {
   // Grijanje
@@ -763,6 +769,7 @@ const CAT_LABELS = {
   'cijevi-plin':'Cijevi za plin',
   'fitinzi':'Press fitinzi',
   'ppr-fitinzi':'PPR fitinzi',
+  'ekspanzione-posude':'Ekspanzione posude',
   'kanalizacija':'Cijevi za kanalizaciju',
   // Plin
   'regulatori':'Regulatori',
@@ -1190,6 +1197,6 @@ document.querySelectorAll('.mob-menu a').forEach(a =>
   setTimeout(update, 50);
 })();
 </script>
-  <script src="lang.js?v=10"></script>
+  <script src="lang.js?v=11"></script>
 </body>
 </html>

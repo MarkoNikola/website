@@ -5,9 +5,9 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=19"></script>
+//      <script src="products.js?v=20"></script>
 //
-//  Nakon svake izmjene POVEĆAJTE taj broj (v=19 → v=20) u OBJE datoteke:
+//  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
 //  pa uploadajte sve tri zajedno. Time svi posjetitelji odmah dobiju novu
 //  verziju. Isto vrijedi i za lang.js.
@@ -3236,6 +3236,69 @@ const PRODUCTS = [
     code:  '218 1 160',
     // SLIKA: dodajte kad bude dostupna, npr.
     // img: 'images/Grijanje/OVJESNI PRIBOR/tangit-unilock.jpg',
+  },
+
+
+  // ── VODOMATERIJAL › EKSPANZIONE POSUDE ────────────────────────
+  {
+    group: 'vodomaterijal',
+    cat:   'ekspanzione-posude',
+    name:  'EKSPANZIONA POSUDA – PLOSNATA',
+    desc:  'Plosnata ekspanziona posuda za zatvorene sustave grijanja. Ravna izvedba zauzima malo prostora pa se ugrađuje uz kotao ili na zid.',
+    code:  'ESP-PLOSNATA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-plosnata.jpg',
+    variants: [
+      { label: '6 litara', code: 'ZI6GD0GZA3265' },
+      { label: '10 litara', code: 'ZI0GD0GZA3255' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ekspanzione-posude',
+    name:  'EKSPANZIONA POSUDA VRV',
+    desc:  'Ekspanziona posuda VRV za zatvorene sustave grijanja. Preuzima širenje vode pri zagrijavanju i održava tlak u sustavu unutar radnog područja.',
+    code:  'ESP-VRV',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-vrv.jpg',
+    variants: [
+      { label: '35 litara', code: 'IIJRE01R01DA0' },
+      { label: '50 litara', code: 'IIKRE01R01DA0' },
+      { label: '80 litara', code: 'IIMRE01R01EA0' },
+      { label: '100 litara', code: 'IINRE01R01EA1' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ekspanzione-posude',
+    name:  'EKSPANZIONA POSUDA ZA SOLARNE SUSTAVE',
+    desc:  'Ekspanziona posuda za solarne sustave. Membrana je otporna na više radne temperature i na mješavinu vode i glikola koja kruži solarnim krugom.',
+    code:  'ESP-SOLAR',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-solar.jpg',
+    variants: [
+      { label: '18 litara', code: 'IIGPL00W01DA1' },
+      { label: '24 litara', code: 'IIIPL00W01DA1' },
+      { label: '35 litara', code: 'IIJPL01W01DA0' },
+      { label: '80 litara', code: 'IIMPL01W01EA0' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ekspanzione-posude',
+    name:  'EKSPANZIONA POSUDA ZA SANITARNU VODU',
+    desc:  'Ekspanziona posuda za sustave sanitarne (pitke) vode i hidrofore. Membrana je izvedena za dodir s pitkom vodom. Dostupna u vertikalnoj i horizontalnoj izvedbi.',
+    code:  'ESP-SAN-VODA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-san-voda.jpg',
+    variants: [
+      { label: '50 litara', code: 'IIKVE01B01EA0', group: 'Vertikalna', group_it: 'Verticale' },
+      { label: '80 litara', code: 'IIMVE01B01EA0', group: 'Vertikalna', group_it: 'Verticale' },
+      { label: '100 litara', code: 'IINVE01B51EA0', group: 'Vertikalna', group_it: 'Verticale' },
+      { label: '24 litara', code: 'IIIOE11B01EA0', group: 'Horizontalna', group_it: 'Orizzontale' },
+      { label: '35 litara', code: 'AAJOE11B01EA1', group: 'Horizontalna', group_it: 'Orizzontale' },
+      { label: '50 litara', code: 'IIKOE11B01EA0', group: 'Horizontalna', group_it: 'Orizzontale' },
+    ],
   },
 
 ];
