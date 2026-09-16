@@ -542,7 +542,8 @@ document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
         hidden.id   = 'fProductLink';
         document.querySelector('.form-col form').appendChild(hidden);
       }
-      hidden.value = window.location.origin + '/proizvod.html?id=' + encodeURIComponent(productCode);
+      // Bez .html — .htaccess ionako preusmjerava na čistu adresu.
+      hidden.value = window.location.origin + '/proizvod?id=' + encodeURIComponent(productCode);
     }
 
     // Scroll the form into view smoothly after a short delay
