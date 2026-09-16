@@ -39,11 +39,26 @@ const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
 const prodCats   = p => p.cats   || (p.cat   ? [p.cat]   : []);
 const prodGroups = p => p.groups || (p.group ? [p.group] : []);
 
+// Kojoj grupi kategorija pripada — čitamo iz sidebara na proizvodi.html,
+// jer je on jedini izvor te veze. Bez ovoga bi proizvod koji je u dvije
+// grupe i dvije kategorije dao sve kombinacije, pa i one koje nigdje ne
+// postoje kao izbornik (npr. group=grijanje&cat=ekspanzione-posude).
+// Takve stranice se otvore, ali su duplikat postojećih — ne šaljemo ih
+// Googleu.
+const sidebar = fs.readFileSync('proizvodi.html', 'utf8');
+const catGroups = new Map();
+for (const m of sidebar.matchAll(/data-group="([^"]+)"\s+data-cat="([^"]+)"/g)) {
+  if (!catGroups.has(m[2])) catGroups.set(m[2], new Set());
+  catGroups.get(m[2]).add(m[1]);
+}
+
 const seen = new Map();
 for (const p of PRODUCTS) {
   for (const g of prodGroups(p)) {
     seen.set('group=' + g, (seen.get('group=' + g) || 0) + 1);
     for (const c of prodCats(p)) {
+      // Kategorija koje nema u sidebaru propuštamo (nova, još nespojena).
+      if (catGroups.has(c) && !catGroups.get(c).has(g)) continue;
       const k = 'group=' + g + '&cat=' + c;
       seen.set(k, (seen.get(k) || 0) + 1);
     }

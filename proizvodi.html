@@ -284,6 +284,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
             <li><a href="proizvodi?group=grijanje&cat=izolacija" data-i18n="nav.mm.insulation">Izolacija</a></li>
             <li><a href="proizvodi?group=grijanje&cat=pex-al-pex" data-i18n="nav.mm.pexalpex">PEX-AL-PEX</a></li>
             <li><a href="proizvodi?group=grijanje&cat=ovjesni-pribor" data-i18n="nav.mm.brackets">Ovjesni pribor</a></li>
+            <li><a href="proizvodi?group=grijanje&cat=ekspanzione-posude-grijanje" data-i18n="nav.mm.vessels">Ekspanzione posude</a></li>
             <li><a href="proizvodi?group=grijanje" data-i18n="nav.mm.all.heating">Sve iz grijanja →</a></li>
           </ul>
         </div>
@@ -474,6 +475,11 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
           <input type="checkbox" class="sf-cb" data-group="grijanje" data-cat="ovjesni-pribor" onchange="resetPageAndFilter()">
           <span class="sf-item-label">Ovjesni pribor</span>
           <span class="sf-item-count" id="sfc-ovjesni-pribor">0</span>
+        </label>
+        <label class="sf-item">
+          <input type="checkbox" class="sf-cb" data-group="grijanje" data-cat="ekspanzione-posude-grijanje" onchange="resetPageAndFilter()">
+          <span class="sf-item-label">Ekspanzione posude</span>
+          <span class="sf-item-count" id="sfc-ekspanzione-posude-grijanje">0</span>
         </label>
       </div>
     </div>
@@ -725,7 +731,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
   </div>
 </footer>
 
-<script src="products.js?v=20"></script>
+<script src="products.js?v=21"></script>
 <script>
 const CAT_LABELS = {
   // Grijanje
@@ -743,6 +749,7 @@ const CAT_LABELS = {
   'izolacija-vodo':'Izolacija',
   'podno-grijanje':'Podno grijanje',
   'ovjesni-pribor':'Ovjesni pribor',
+  'ekspanzione-posude-grijanje':'Ekspanzione posude',
   // Hlađenje
   'klima-uredaji':'Klima uređaji',
   'prateci-materijal':'Prateći materijal',
@@ -941,9 +948,9 @@ function filterCards() {
         </svg>`}
       </div>
       <div class="card-body">
-        <div class="card-brand">${p.brand}</div>
+        ${p.brand ? `<div class="card-brand">${p.brand}</div>` : ''}
         <div class="card-name">${p.name}</div>
-        <div class="card-desc">${(typeof getLang==='function'&&getLang()==='it'&&p.desc_it)||p.desc}</div>
+        <div class="card-desc">${(typeof getLang==='function'&&getLang()==='it'&&p.desc_it)||p.desc||''}</div>
       </div>
       <div class="card-ft">
         <span class="card-link">Pogledaj detalje</span>

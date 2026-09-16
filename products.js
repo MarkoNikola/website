@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=20"></script>
+//      <script src="products.js?v=21"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -3243,6 +3243,11 @@ const PRODUCTS = [
   {
     group: 'vodomaterijal',
     cat:   'ekspanzione-posude',
+    // Posuda za grijanje — kupac je traži i pod Vodomaterijalom i pod
+    // Grijanjem, pa se prikazuje pod oba filtra. `group`/`cat` ostaju
+    // glavni (koriste se u breadcrumbu).
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['ekspanzione-posude', 'ekspanzione-posude-grijanje'],
     name:  'EKSPANZIONA POSUDA – PLOSNATA',
     desc:  'Plosnata ekspanziona posuda za zatvorene sustave grijanja. Ravna izvedba zauzima malo prostora pa se ugrađuje uz kotao ili na zid.',
     code:  'ESP-PLOSNATA',
@@ -3256,6 +3261,8 @@ const PRODUCTS = [
   {
     group: 'vodomaterijal',
     cat:   'ekspanzione-posude',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['ekspanzione-posude', 'ekspanzione-posude-grijanje'],
     name:  'EKSPANZIONA POSUDA VRV',
     desc:  'Ekspanziona posuda VRV za zatvorene sustave grijanja. Preuzima širenje vode pri zagrijavanju i održava tlak u sustavu unutar radnog područja.',
     code:  'ESP-VRV',
@@ -3271,6 +3278,8 @@ const PRODUCTS = [
   {
     group: 'vodomaterijal',
     cat:   'ekspanzione-posude',
+    groups: ['vodomaterijal', 'grijanje'],
+    cats:   ['ekspanzione-posude', 'ekspanzione-posude-grijanje'],
     name:  'EKSPANZIONA POSUDA ZA SOLARNE SUSTAVE',
     desc:  'Ekspanziona posuda za solarne sustave. Membrana je otporna na više radne temperature i na mješavinu vode i glikola koja kruži solarnim krugom.',
     code:  'ESP-SOLAR',
