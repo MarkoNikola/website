@@ -360,17 +360,21 @@ footer ul li a:hover{color:var(--blue)}
   Ne koristimo ga za slanje reklamnih poruka i ne prosljeđujemo ga nikome
   osim kad je to nužno za isporuku vaše narudžbe.</p>
 
-  <h2>Kolačići</h2>
-  <p>Kolačić je mala datoteka koju stranica sprema u vaš preglednik.
-  Koristimo ih što je manje moguće:</p>
+  <h2>Kolačići i pohrana u pregledniku</h2>
+  <p>Kolačić je mala datoteka koju stranica sprema u vaš preglednik. Mi ih
+  koristimo što je manje moguće — većina onoga što pamtimo zapravo nisu
+  kolačići nego zapis u memoriji vašeg preglednika, koji nikada ne napušta
+  vaš uređaj i ne šalje se nama:</p>
   <div class="legal-scroll"><table>
-    <tr><th>Naziv</th><th>Čemu služi</th><th>Traje</th></tr>
-    <tr><td><code>it_lang</code></td><td>Pamti jeste li odabrali hrvatski ili talijanski</td><td>Do brisanja</td></tr>
-    <tr><td><code>it_consent</code></td><td>Pamti vaš odgovor na pitanje o kolačićima</td><td>Do brisanja</td></tr>
-    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Google Analytics — <strong>samo ako pristanete</strong></td><td>Do 2 godine</td></tr>
+    <tr><th>Naziv</th><th>Vrsta</th><th>Čemu služi</th><th>Traje</th></tr>
+    <tr><td><code>it_lang</code></td><td>Pohrana u pregledniku</td><td>Pamti jeste li odabrali hrvatski ili talijanski</td><td>Do brisanja</td></tr>
+    <tr><td><code>it_consent</code></td><td>Pohrana u pregledniku</td><td>Pamti vaš odgovor na pitanje o kolačićima</td><td>Do brisanja</td></tr>
+    <tr><td><code>ann_dismissed</code></td><td>Pohrana u pregledniku</td><td>Pamti da ste zatvorili obavijest na vrhu stranice</td><td>Do zatvaranja preglednika</td></tr>
+    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Kolačić</td><td>Google Analytics — <strong>samo ako pristanete</strong></td><td>Do 2 godine</td></tr>
   </table></div>
-  <p>Prva dva nisu reklamni kolačići — bez njih stranica ne bi pamtila vaš
-  jezik ni vaš odgovor, pa se za njih privola ne traži.</p>
+  <p>Prva tri nisu reklamna — bez njih stranica ne bi pamtila vaš jezik, vaš
+  odgovor ni zatvorenu obavijest, pa se za njih privola ne traži. Jedini
+  pravi kolačići su Googleovi i njih nema dok ne pristanete.</p>
 
   <h2>Statistika posjeta</h2>
   <p>Ako pristanete, koristimo <strong>Google Analytics</strong> da vidimo koliko
@@ -443,18 +447,22 @@ footer ul li a:hover{color:var(--blue)}
   documentazione commerciale. Non la usiamo per inviare pubblicità e non la
   cediamo a nessuno, salvo quando serve per consegnarvi la merce.</p>
 
-  <h2>Cookie</h2>
+  <h2>Cookie e memoria del browser</h2>
   <p>Un cookie è un piccolo file che il sito salva nel vostro browser. Ne
-  usiamo il meno possibile:</p>
+  usiamo il meno possibile — la maggior parte di ciò che ricordiamo non sono
+  in realtà cookie ma voci nella memoria del vostro browser, che non lasciano
+  mai il vostro dispositivo e non ci vengono inviate:</p>
   <div class="legal-scroll"><table>
-    <tr><th>Nome</th><th>A cosa serve</th><th>Durata</th></tr>
-    <tr><td><code>it_lang</code></td><td>Ricorda se avete scelto croato o italiano</td><td>Fino alla cancellazione</td></tr>
-    <tr><td><code>it_consent</code></td><td>Ricorda la vostra risposta sui cookie</td><td>Fino alla cancellazione</td></tr>
-    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Google Analytics — <strong>solo se acconsentite</strong></td><td>Fino a 2 anni</td></tr>
+    <tr><th>Nome</th><th>Tipo</th><th>A cosa serve</th><th>Durata</th></tr>
+    <tr><td><code>it_lang</code></td><td>Memoria del browser</td><td>Ricorda se avete scelto croato o italiano</td><td>Fino alla cancellazione</td></tr>
+    <tr><td><code>it_consent</code></td><td>Memoria del browser</td><td>Ricorda la vostra risposta sui cookie</td><td>Fino alla cancellazione</td></tr>
+    <tr><td><code>ann_dismissed</code></td><td>Memoria del browser</td><td>Ricorda che avete chiuso l'avviso in cima al sito</td><td>Fino alla chiusura del browser</td></tr>
+    <tr><td><code>_ga</code>, <code>_ga_*</code></td><td>Cookie</td><td>Google Analytics — <strong>solo se acconsentite</strong></td><td>Fino a 2 anni</td></tr>
   </table></div>
-  <p>I primi due non sono cookie pubblicitari: senza di essi il sito non
-  ricorderebbe la vostra lingua né la vostra risposta, quindi non richiedono
-  consenso.</p>
+  <p>I primi tre non sono pubblicitari: senza di essi il sito non ricorderebbe
+  la vostra lingua, la vostra risposta né l'avviso chiuso, quindi non
+  richiedono consenso. Gli unici cookie veri e propri sono quelli di Google e
+  non esistono finché non acconsentite.</p>
 
   <h2>Statistiche di visita</h2>
   <p>Se acconsentite, usiamo <strong>Google Analytics</strong> per vedere quante
