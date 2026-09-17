@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=35"></script>
+//      <script src="products.js?v=36"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -130,15 +130,15 @@ const PRODUCTS = [
     code:  'K-22',
     img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.webp',
      variants: [
-    { label: '600 X 400',  code: 'K-22-600-400',  notes: '...'  },
-    { label: '600 X 600',  code: 'K-22-600-600',  notes: '...'  },
-    { label: '600 X 800',  code: 'K-22-600-800',  notes: '...'  }, 
-    { label: '600 X 1000', code: 'K-22-600-1000',  notes: '...'  },
-    { label: '600 X 1200', code: 'K-22-600-1200',  notes: '...'  },
-    { label: '600 X 1400', code: 'K-22-600-1400',  notes: '...'  },
-    { label: '600 X 1600', code: 'K-22-600-1600',  notes: '...'  },
-    { label: '600 X 1800', code: 'K-22-600-1800',  notes: '...'  },
-    { label: '600 X 2000', code: 'K-22-600-2000',  notes: '...'  },
+    { label: '600 X 400',  code: 'K-22-600-400'  },
+    { label: '600 X 600',  code: 'K-22-600-600'  },
+    { label: '600 X 800',  code: 'K-22-600-800'  }, 
+    { label: '600 X 1000', code: 'K-22-600-1000'  },
+    { label: '600 X 1200', code: 'K-22-600-1200'  },
+    { label: '600 X 1400', code: 'K-22-600-1400'  },
+    { label: '600 X 1600', code: 'K-22-600-1600'  },
+    { label: '600 X 1800', code: 'K-22-600-1800'  },
+    { label: '600 X 2000', code: 'K-22-600-2000'  },
     ], 
   }, 
   {
@@ -152,12 +152,12 @@ const PRODUCTS = [
     code:  'VK-K-22',
     img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.webp',
     variants: [
-    { label: '600 X 400',  code: 'VK-K-22-600-400',  notes: '...'  },
-    { label: '600 X 600',  code: 'VK-K-22-600-600',  notes: '...'  },
-    { label: '600 X 800',  code: 'VK-K-22-600-800',  notes: '...'  }, 
-    { label: '600 X 1000', code: 'VK-K-22-600-1000',  notes: '...'  },
-    { label: '600 X 1200', code: 'VK-K-22-600-1200',  notes: '...'  },
-    { label: '600 X 1400', code: 'VK-K-22-600-1400',  notes: '...'  },
+    { label: '600 X 400',  code: 'VK-K-22-600-400'  },
+    { label: '600 X 600',  code: 'VK-K-22-600-600'  },
+    { label: '600 X 800',  code: 'VK-K-22-600-800'  }, 
+    { label: '600 X 1000', code: 'VK-K-22-600-1000'  },
+    { label: '600 X 1200', code: 'VK-K-22-600-1200'  },
+    { label: '600 X 1400', code: 'VK-K-22-600-1400'  },
     ], 
   },
    
@@ -208,9 +208,9 @@ const PRODUCTS = [
     code:  'OHI-PRO',
     img: 'images/Grijanje/Cirk. pumpe/IBO OHI PRO.webp',
     variants: [
-    { label: '25-60/180',  code: 'OHI-PRO-25-60-180',  notes: '...'  },
-    { label: '25-80/180',  code: 'OHI-PRO-25-80-180',  notes: '...'  },
-    { label: '32-60/180',  code: 'OHI-PRO-32-60-180',  notes: '...'  },
+    { label: '25-60/180',  code: 'OHI-PRO-25-60-180'  },
+    { label: '25-80/180',  code: 'OHI-PRO-25-80-180'  },
+    { label: '32-60/180',  code: 'OHI-PRO-32-60-180'  },
   ],
   },
   {
@@ -224,9 +224,9 @@ const PRODUCTS = [
     code:  'MAGI-2',
     img: 'images/Grijanje/Cirk. pumpe/IBO MAGI 2.webp',
     variants: [
-    { label: '25-60/180',  code: 'MAGI-2-25-60-180',  notes: '...' },
-    { label: '25-80/180',  code: 'MAGI-2-25-80-180',  notes: '...'  },
-    { label: '32-60/180',  code: 'MAGI-2-32-60-180',  notes: '...'  },
+    { label: '25-60/180',  code: 'MAGI-2-25-60-180' },
+    { label: '25-80/180',  code: 'MAGI-2-25-80-180'  },
+    { label: '32-60/180',  code: 'MAGI-2-32-60-180'  },
   ],
 
   },
@@ -242,8 +242,8 @@ const PRODUCTS = [
     code:  'MAGI-H',
     img: 'images/Grijanje/Cirk. pumpe/IBO MAGI H.webp',
     variants: [
-    {label: "25-120/180", code: "MAGI-H-25-120-180", notes: "..."    },
-    {label: "32-120/180", code: "MAGI-H-32-120-180", notes: "..."},
+    {label: "25-120/180", code: "MAGI-H-25-120-180"},
+    {label: "32-120/180", code: "MAGI-H-32-120-180"},
     ],
   },
   
@@ -277,8 +277,8 @@ const PRODUCTS = [
     code:  'OHI-BR',
     img: 'images/Grijanje/Cirk. pumpe/OHI BR.webp',
     variants: [
-    { label: '15-60/130',  code: 'OHI-BR-15-60-130',  notes: '...'  },
-    { label: '25-60/130',  code: 'OHI-BR-25-60-130',  notes: '...'  },
+    { label: '15-60/130',  code: 'OHI-BR-15-60-130'  },
+    { label: '25-60/130',  code: 'OHI-BR-25-60-130'  },
   ],
   },
   {
@@ -316,9 +316,9 @@ const PRODUCTS = [
     code:  'AE-ERMR',
     img: 'images/Grijanje/SPREMNICI/AE ERMR.webp',
     variants: [ 
-    { label: '200 L',  code: 'AE-ERMR-200',  notes: '...'  },
-    { label: '300 L',  code: 'AE-ERMR-300',  notes: '...'  },
-    { label: '500 L',  code: 'AE-ERMR-500',  notes: '...'  },
+    { label: '200 L',  code: 'AE-ERMR-200'  },
+    { label: '300 L',  code: 'AE-ERMR-300'  },
+    { label: '500 L',  code: 'AE-ERMR-500'  },
   ],
  },
  {
@@ -332,9 +332,9 @@ const PRODUCTS = [
     code:  'AE-TSA-02',
     img: 'images/Grijanje/SPREMNICI/ae tsa 2.webp',
     variants: [
-    { label: '200 L',  code: 'AE-TSA-202',  notes: '...'  },
-    { label: '300 L',  code: 'AE-TSA-302',  notes: '...'  },
-    { label: '500 L',  code: 'AE-TSA-502',  notes: '...'  },
+    { label: '200 L',  code: 'AE-TSA-202'  },
+    { label: '300 L',  code: 'AE-TSA-302'  },
+    { label: '500 L',  code: 'AE-TSA-502'  },
   ],
  },
  {
@@ -348,7 +348,7 @@ const PRODUCTS = [
     code:  'TESY-EV7',
     img: 'images/Grijanje/SPREMNICI/TESY EV7.webp',
     variants: [
-    { label: '200 L',  code: 'TESY-EV7-200',  notes: '...'  },
+    { label: '200 L',  code: 'TESY-EV7-200'  },
     ],
  },
 {
@@ -362,9 +362,9 @@ const PRODUCTS = [
     code:  'AE-TSA-HP',
     img: 'images/Grijanje/SPREMNICI/AE TSA.webp',
     variants: [
-    { label: '200 L',  code: 'AE-TSA-HP-201',  notes: '...'  },
-    { label: '300 L',  code: 'AE-TSA-HP-301',  notes: '...'  },
-    { label: '500 L',  code: 'AE-TSA-HP-501',  notes: '...'  },
+    { label: '200 L',  code: 'AE-TSA-HP-201'  },
+    { label: '300 L',  code: 'AE-TSA-HP-301'  },
+    { label: '500 L',  code: 'AE-TSA-HP-501'  },
   ],
  },
  {
@@ -378,9 +378,9 @@ const PRODUCTS = [
     code:  'AE-TSA-151',
     img: 'images/Grijanje/SPREMNICI/ae tsa 2.webp',
     variants: [
-    //{ label: '200 L',  code: 'AE-TSA-151-200',  notes: '...'  },
-    //{ label: '300 L',  code: 'AE-TSA-151-300',  notes: '...'  },
-    { label: '500 L',  code: 'AE-TSA-151-500',  notes: '...'  },
+    //{ label: '200 L',  code: 'AE-TSA-151-200'  },
+    //{ label: '300 L',  code: 'AE-TSA-151-300'  },
+    { label: '500 L',  code: 'AE-TSA-151-500'  },
   ],
  },
  {
@@ -407,16 +407,16 @@ const PRODUCTS = [
     featured: true,
     img: 'images/Grijanje/Dizalice topline/LG THERMA V/LG THERMA V.webp',
     variants: [
-    { label: '5.5 kW ',   code: 'LG-THERMA-V-5K-1Ø',  notes: 'MONOFAZA'  },
-    { label: '7.0 kW ',   code: 'LG-THERMA-V-7K-1Ø',  notes: 'MONOFAZA'  },
-    { label: '9.0 kW ',   code: 'LG-THERMA-V-9K-1Ø', notes: 'MONOFAZA'  },
-    { label: '12.0 kW ',  code: 'LG-THERMA-V-12K-1Ø',  notes: 'MONOFAZA'  },
-    { label: '14.0 kW ',  code: 'LG-THERMA-V-14K-1Ø',  notes: 'MONOFAZA'  },
-    { label: '16.0 kW ',  code: 'LG-THERMA-V-16K-1Ø', notes: 'MONOFAZA'  },
+    { label: '5.5 kW ',   code: 'LG-THERMA-V-5K-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '7.0 kW ',   code: 'LG-THERMA-V-7K-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '9.0 kW ',   code: 'LG-THERMA-V-9K-1Ø', notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '12.0 kW ',  code: 'LG-THERMA-V-12K-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '14.0 kW ',  code: 'LG-THERMA-V-14K-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '16.0 kW ',  code: 'LG-THERMA-V-16K-1Ø', notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
 
-      { label: '12.0 kW ',   code: 'LG-THERMA-V-12K-3Ø',  notes: 'TROFAZA'  },
-      { label: '14.0 kW ',   code: 'LG-THERMA-V-14K-3Ø',  notes: 'TROFAZA'  },
-      { label: '16.0 kW ',   code: 'LG-THERMA-V-16K-3Ø', notes: 'TROFAZA'  },
+      { label: '12.0 kW ',   code: 'LG-THERMA-V-12K-3Ø',  notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '14.0 kW ',   code: 'LG-THERMA-V-14K-3Ø',  notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '16.0 kW ',   code: 'LG-THERMA-V-16K-3Ø', notes: 'TROFAZA', notes_it: 'TRIFASE'  },
   ],
   },
   {
@@ -431,16 +431,16 @@ const PRODUCTS = [
     featured: true,
     img: 'images/Grijanje/Dizalice topline/THERMOFLUX/MONOBLOK R410A.webp',
     variants: [
-    { label: '10.0 kW ',   code: 'TF-MONOBLOK-R410A-10DC-1Ø',  notes: 'MONOFAZA'  },
-    { label: '13.0 kW ',   code: 'TF-MONOBLOK-R410A-13DC-1Ø',  notes: 'MONOFAZA'  },
-    { label: '17.0 kW ',   code: 'TF-MONOBLOK-R410A-17DC-1Ø', notes: 'MONOFAZA'  },
-    { label: '19.0 kW ',   code: 'TF-MONOBLOK-R410A-19DC-1Ø',  notes: 'MONOFAZA'  },
+    { label: '10.0 kW ',   code: 'TF-MONOBLOK-R410A-10DC-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '13.0 kW ',   code: 'TF-MONOBLOK-R410A-13DC-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '17.0 kW ',   code: 'TF-MONOBLOK-R410A-17DC-1Ø', notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '19.0 kW ',   code: 'TF-MONOBLOK-R410A-19DC-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
     
     
-      { label: '17.0 kW ',   code: 'LG-THERMA-V-17DC-3Ø',  notes: 'TROFAZA'  },
-      { label: '19.0 kW ',   code: 'LG-THERMA-V-19DC-3Ø',  notes: 'TROFAZA'  },
-      { label: '26.0 kW ',   code: 'LG-THERMA-V-26DC-3Ø', notes: 'TROFAZA'  },
-      { label: '32.0 kW ',   code: 'LG-THERMA-V-32DC-3Ø', notes: 'TROFAZA'  },
+      { label: '17.0 kW ',   code: 'LG-THERMA-V-17DC-3Ø',  notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '19.0 kW ',   code: 'LG-THERMA-V-19DC-3Ø',  notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '26.0 kW ',   code: 'LG-THERMA-V-26DC-3Ø', notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '32.0 kW ',   code: 'LG-THERMA-V-32DC-3Ø', notes: 'TROFAZA', notes_it: 'TRIFASE'  },
   ],
   },
   {
@@ -455,15 +455,15 @@ const PRODUCTS = [
     featured: true,
     img: 'images/Grijanje/Dizalice topline/THERMOFLUX/MONOBLOK R32.webp',
     variants: [
-    { label: '6.0 kW ',   code: 'TF-MONOBLOK-R32-06EVI-1Ø',  notes: 'MONOFAZA'  },
-    { label: '10.0 kW ',   code: 'TF-MONOBLOK-R32-10EVI-1Ø',  notes: 'MONOFAZA'  },
-    { label: '12.0 kW ',   code: 'TF-MONOBLOK-R32-12EVI-1Ø', notes: 'MONOFAZA'  },
-    { label: '16.0 kW ',   code: 'TF-MONOBLOK-R32-16EVI-1Ø',  notes: 'MONOFAZA'  },
+    { label: '6.0 kW ',   code: 'TF-MONOBLOK-R32-06EVI-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '10.0 kW ',   code: 'TF-MONOBLOK-R32-10EVI-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '12.0 kW ',   code: 'TF-MONOBLOK-R32-12EVI-1Ø', notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
+    { label: '16.0 kW ',   code: 'TF-MONOBLOK-R32-16EVI-1Ø',  notes: 'MONOFAZA', notes_it: 'MONOFASE'  },
     
     
-      { label: '16.0 kW ',   code: 'LG-THERMA-V-16EVI-3Ø',  notes: 'TROFAZA'  },
-      { label: '20.0 kW ',   code: 'LG-THERMA-V-20EVI-3Ø',  notes: 'TROFAZA'  },
-      { label: '22.0 kW ',   code: 'LG-THERMA-V-22EVI-3Ø', notes: 'TROFAZA'  },
+      { label: '16.0 kW ',   code: 'LG-THERMA-V-16EVI-3Ø',  notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '20.0 kW ',   code: 'LG-THERMA-V-20EVI-3Ø',  notes: 'TROFAZA', notes_it: 'TRIFASE'  },
+      { label: '22.0 kW ',   code: 'LG-THERMA-V-22EVI-3Ø', notes: 'TROFAZA', notes_it: 'TRIFASE'  },
       
   ],
   },
@@ -487,6 +487,10 @@ const PRODUCTS = [
     { label: 'AirLeaf SL 800',  code: 'AirLeaf-SL-800',  },
     { label: 'AirLeaf SL 1000', code: 'AirLeaf-SL-1000', },
   ],
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Potenza in raffreddamento', 'Potenza in riscaldamento', 'Dimensioni (L × A × P mm)'],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Učinak hlađenja', 'Učinak grijanja', 'Dimenzije (Š x V x D mm)'],
@@ -519,6 +523,10 @@ const PRODUCTS = [
     { label: 'Aura CFFAC 10',  code: 'Aura-CFFAC-10',  },
     { label: 'Aura CFFAC 12',  code: 'Aura-CFFAC-12',  },
   ],
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Potenza in raffreddamento', 'Potenza in riscaldamento', 'Dimensioni (L × A × P mm)'],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Učinak hlađenja', 'Učinak grijanja', 'Dimenzije (Š x V x D mm)'],
@@ -551,6 +559,10 @@ const PRODUCTS = [
     { label: 'FC 72 - VM1',  code: 'BPS-FC-72-VM1',  },
     { label: 'FC 92 - VM1',  code: 'BPS-FC-92-VM1',  },
   ],
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Potenza in raffreddamento', 'Potenza in riscaldamento', 'Dimensioni (L × A × P mm)'],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Učinak hlađenja', 'Učinak grijanja', 'Dimenzije (Š x V x D mm)'],
@@ -1197,6 +1209,16 @@ const PRODUCTS = [
     { label: 'NATIV 53M',  code: 'NATIV 53M',  },
     { label: 'NATIV 70M',  code: 'NATIV 70M',  },
   ],
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Potenza in raffreddamento', 'Potenza in riscaldamento', 'Classe energetica (H/G)', 'Applicazione consigliata'],
+      rows: [
+        ['Nativ 27M', '2,75 kW', '2,90 kW', 'A++ / A+', 'Consigliato per ambienti piccoli (fino a 25 m²)'],
+        ['Nativ 35M', '3,52 kW', '3,81 kW', 'A++ / A+', 'Il modello più diffuso per soggiorni e appartamenti standard (da 25 a 40 m²)'],
+        ['Nativ 53M', '5,30 kW', '5,60 kW', 'A++ / A+', 'Modello più potente per ambienti ampi, zone giorno collegate e open space (da 40 a 60 m²)'],
+        ['Nativ 70M', '7,03 kW', '7,33 kW', 'A++ / A+', 'Per ambienti residenziali o commerciali molto grandi (oltre 60 m²)'],
+      ],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Učinak hlađenja', 'Učinak grijanja', 'Energetska klasa (H/G)', 'Preporučena primjena'],
@@ -1227,6 +1249,16 @@ const PRODUCTS = [
     { label: 'EZCOOL 53M',  code: 'EZCOOL 53M',  },
     { label: 'EZCOOL 70M',  code: 'EZCOOL 70M',  },
   ],
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Potenza in raffreddamento', 'Potenza in riscaldamento', 'Classe energetica (H/G)', 'Applicazione consigliata'],
+      rows: [
+        ['EZCOOL 27M', '2,75 kW', '2,90 kW', 'A++ / A+', 'Consigliato per ambienti piccoli (fino a 25 m²)'],
+        ['EZCOOL 35M', '3,52 kW', '3,81 kW', 'A++ / A+', 'Il modello più diffuso per soggiorni e appartamenti standard (da 25 a 40 m²)'],
+        ['EZCOOL 53M', '5,30 kW', '5,60 kW', 'A++ / A+', 'Modello più potente per ambienti ampi, zone giorno collegate e open space (da 40 a 60 m²)'],
+        ['EZCOOL 70M', '7,03 kW', '7,33 kW', 'A++ / A+', 'Per ambienti residenziali o commerciali molto grandi (oltre 60 m²)'],
+      ],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Učinak hlađenja', 'Učinak grijanja', 'Energetska klasa (H/G)', 'Preporučena primjena'],
@@ -2776,6 +2808,13 @@ const PRODUCTS = [
     desc_it: 'Questi regolatori si utilizzano negli impianti a regolazione a due stadi e devono essere montati come secondo stadio, a valle del regolatore di primo stadio.',
     code:  'PLIN-REG-2ST',
     img: 'images/PLIN/REGULATORI/PLIN REG 2. STUP.webp',
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Pressione massima', 'Pressione in uscita', 'Tipo e diametro della filettatura', 'Portata'],
+      rows: [
+        ['Regolatore per propano EN16129', '1,95 bar', '30-35 mBar', '1/2″ F x 1/2″ F', '10 kg/h'],
+      ],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Maksimalni tlak', 'Izlazni tlak', 'Vrsta i promjer navoja', 'Kapacitet protoka'],
@@ -2794,6 +2833,13 @@ const PRODUCTS = [
     desc_it: 'I regolatori di alta pressione riducono di norma la pressione del serbatoio alla media pressione utilizzata dal secondo regolatore.',
     code:  'PLIN-REG-1ST',
     img: 'images/PLIN/REGULATORI/PLIN REG 1. STUP.webp',
+    specs_it: {
+      title:   'Dati tecnici',
+      headers: ['Modello', 'Pressione massima', 'Pressione in uscita', 'Portata'],
+      rows: [
+        ['Regolatore per propano EN16129', '16 bar', '0,5 - 3 bar', '20-40 kg/h'],
+      ],
+    },
     specs: {
       title:   'Tehnički podaci',
       headers: ['Model', 'Maksimalni tlak', 'Izlazni tlak', 'Kapacitet protoka'],
