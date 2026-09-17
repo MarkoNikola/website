@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=27"></script>
+//      <script src="products.js?v=28"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -2009,6 +2009,45 @@ const PRODUCTS = [
     imgs: [ 'images/VODOMATERIJAL/NAVODNJAVANJE/CENTRALE/SENZOR ZA KIŠU 1.webp',
       'images/VODOMATERIJAL/NAVODNJAVANJE/CENTRALE/SENZOR ZA KIŠU 2.webp',
     ]
+  },
+
+  // ── NAVODNJAVANJE › PRSKALICE ─────────────────────────────────
+  // Šifre varijanti su RAIN-ovi kataloški brojevi (280.xxxxxxx), pa se
+  // upit i narudžba slažu bez prevođenja.
+  {
+    group: 'vodomaterijal',
+    cat:   'navodnjavanje',
+    brand: 'Rain',
+    name:    'RAIN PRSKALICA DINAMIČNA',
+    name_it: 'IRRIGATORE DINAMICO RAIN',
+    desc:    'Rotirajuća (dinamična) prskalica — mlaz kruži i zalijeva u krugu, pa jedna prskalica pokriva bitno veću površinu nego statična. Za travnjake i veće zelene površine.',
+    desc_it: 'Irrigatore dinamico a rotazione — il getto ruota e irriga in cerchio, quindi un solo irrigatore copre una superficie molto più ampia rispetto a uno statico. Per prati e superfici verdi estese.',
+    code:  'RAIN-PRSKALICA-DIN',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/NAVODNJAVANJE/PRSKALICE/S050.webp',
+    variants: [
+      { label: 'S050 S', code: '280.1290102' },
+      { label: 'S050 D', code: '280.1160100' },
+      { label: 'S075 S', code: '280.1150100' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'navodnjavanje',
+    brand: 'Rain',
+    name:    'RAIN PRSKALICA STATIČNA',
+    name_it: 'IRRIGATORE STATICO RAIN',
+    desc:    'Statična (pop-up) prskalica serije S020-4 — nepomičan lepezasti mlaz, izranja pod tlakom vode i uvlači se natrag kad navodnjavanje stane. Za manje i pravilne površine, gredice i rubne zone. Oznaka 10A–17A označava ugrađenu mlaznicu, tj. domet mlaza.',
+    desc_it: 'Irrigatore statico a scomparsa serie S020-4 — getto a ventaglio fisso, esce sotto la pressione dell\'acqua e rientra quando l\'irrigazione si ferma. Per superfici piccole e regolari, aiuole e bordure. La sigla 10A–17A indica l\'ugello montato, cioè la gittata.',
+    code:  'RAIN-PRSKALICA-STAT',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/NAVODNJAVANJE/PRSKALICE/S020-4.webp',
+    variants: [
+      { label: 'S020-4 10A', code: '280.1300410' },
+      { label: 'S020-4 12A', code: '280.1300412' },
+      { label: 'S020-4 15A', code: '280.1300415' },
+      { label: 'S020-4 17A', code: '280.1300417' },
+    ],
   },
 
   // ── VODOMATERIJAL › VENTILI ───────────────────────────────────
