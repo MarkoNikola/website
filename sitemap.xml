@@ -40,7 +40,7 @@
     <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=radijatori</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.italterm.net/proizvodi?group=grijanje&amp;cat=cirkulacijske-pumpe</loc>
@@ -202,7 +202,7 @@
     <loc>https://www.italterm.net/proizvodi?group=vodomaterijal&amp;cat=ventili</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.italterm.net/proizvodi?group=vodomaterijal&amp;cat=kanalizacija</loc>
@@ -332,6 +332,24 @@
   </url>
   <url>
     <loc>https://www.italterm.net/proizvod?id=VK-K-22</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=TT3015-ECO</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=TT3015</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=TE008L</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1267,6 +1285,12 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://www.italterm.net/proizvod?id=PLIN-KUGL</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.italterm.net/proizvod?id=PLIN-PEX-AL-PEX</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -1400,6 +1424,36 @@
   </url>
   <url>
     <loc>https://www.italterm.net/proizvod?id=PPR-HOLENDER-NZ</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=KUGL-VENTIL</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=KUGL-VENTIL-LR</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=MINI-KUGL</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=KUGL-VENTIL-LR-HOL</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=KUGL-VENTIL-KUTNI-LR-HOL</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

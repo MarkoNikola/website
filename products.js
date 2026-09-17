@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=31"></script>
+//      <script src="products.js?v=32"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -159,6 +159,41 @@ const PRODUCTS = [
     ], 
   },
    
+  // ── GRIJANJE › TERMOSTATSKE GLAVE ─────────────────────────────
+  {
+    group: 'grijanje',
+    cat:   'radijatori',
+    name:    'TERMOSTATSKA GLAVA ECO M30 × 1,5',
+    name_it: 'TESTA TERMOSTATICA ECO M30 × 1,5',
+    desc:    'Termostatska glava s priključkom M30 × 1,5 za radijatorski ventil. Sama drži zadanu temperaturu prostorije — kad se soba zagrije, prigušuje protok kroz radijator. ECO izvedba.',
+    desc_it: 'Testa termostatica con attacco M30 × 1,5 per valvola del radiatore. Mantiene da sola la temperatura impostata: quando la stanza si scalda, riduce il flusso attraverso il radiatore. Versione ECO.',
+    code:  'TT3015-ECO',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/TERMOSTATSKE GLAVE/TT3015-ECO.webp',
+  },
+  {
+    group: 'grijanje',
+    cat:   'radijatori',
+    name:    'TERMOSTATSKA GLAVA M30 × 1,5',
+    name_it: 'TESTA TERMOSTATICA M30 × 1,5',
+    desc:    'Termostatska glava s priključkom M30 × 1,5 za radijatorski ventil. Sama drži zadanu temperaturu prostorije — kad se soba zagrije, prigušuje protok kroz radijator.',
+    desc_it: 'Testa termostatica con attacco M30 × 1,5 per valvola del radiatore. Mantiene da sola la temperatura impostata: quando la stanza si scalda, riduce il flusso attraverso il radiatore.',
+    code:  'TT3015',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/TERMOSTATSKE GLAVE/TT3015.webp',
+  },
+  {
+    group: 'grijanje',
+    cat:   'radijatori',
+    name:    'TERMOSTATSKA GLAVA M30 × 1,5 — TE008L',
+    name_it: 'TESTA TERMOSTATICA M30 × 1,5 — TE008L',
+    desc:    'Termostatska glava TE008L s priključkom M30 × 1,5 za radijatorski ventil. Sama drži zadanu temperaturu prostorije — kad se soba zagrije, prigušuje protok kroz radijator.',
+    desc_it: 'Testa termostatica TE008L con attacco M30 × 1,5 per valvola del radiatore. Mantiene da sola la temperatura impostata: quando la stanza si scalda, riduce il flusso attraverso il radiatore.',
+    code:  'TE008L',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/TERMOSTATSKE GLAVE/TE008L.webp',
+  },
+
   // ── GRIJANJE › CIRKULACIJSKE PUMPE ────────────────────────────
    {
     group: 'grijanje',
@@ -2557,6 +2592,32 @@ const PRODUCTS = [
     ],
   },
 
+  {
+    group: 'plin',
+    cat:   'plinski-materijal',
+    name:    'PLIN KUGL VENTIL',
+    name_it: 'VALVOLA A SFERA PER GAS',
+    desc:    'Kuglasti zaporni ventil izrađen i certificiran za plin. Zatvara dovod četvrtinom okreta. Dostupan s unutarnjim navojem na obje strane (Ž/Ž) i u muško-ženskoj izvedbi (MŽ). Za plinsku instalaciju smiju se ugrađivati isključivo ventili s oznakom za plin.',
+    desc_it: 'Valvola a sfera di intercettazione realizzata e certificata per il gas. Chiude l\'alimentazione con un quarto di giro. Disponibile con filetto femmina su entrambi i lati (F/F) e nella versione maschio–femmina (M/F). Nell\'impianto a gas si possono installare esclusivamente valvole marcate per il gas.',
+    code:  'PLIN-KUGL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/PLIN/VENTILI/PLIN-KUGL.webp',
+    variants: [
+      { label: '1/2"', code: 'PLIN-KUGL-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '3/4"', code: 'PLIN-KUGL-34', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '1"', code: 'PLIN-KUGL-1', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '5/4"', code: 'PLIN-KUGL-54', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '6/4"', code: 'PLIN-KUGL-64', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '2"', code: 'PLIN-KUGL-2', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '1/2"', code: 'PLIN-KUGL-12-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '3/4"', code: 'PLIN-KUGL-34-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '1"', code: 'PLIN-KUGL-1-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '5/4"', code: 'PLIN-KUGL-54-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '6/4"', code: 'PLIN-KUGL-64-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '2"', code: 'PLIN-KUGL-2-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+    ],
+  },
+
   // ── PLIN › PLIN PEX-AL-PEX ────────────────────────────────────
  /*  {
     group: 'plin',
@@ -2990,6 +3051,102 @@ const PRODUCTS = [
       { label: 'Ø 20 mm × 1/2" Ž', code: '69282' },
       { label: 'Ø 25 mm × 3/4" Ž', code: '69284' },
       { label: 'Ø 32 mm × 1" Ž', code: '69286' },
+    ],
+  },
+
+  // ── VODOMATERIJAL › KUGLASTI VENTILI ──────────────────────────
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    name:    'KUGL VENTIL',
+    name_it: 'VALVOLA A SFERA',
+    desc:    'Kuglasti zaporni ventil s ručicom. Zatvara protok četvrtinom okreta, a puni promjer prolaza znači zanemariv pad tlaka dok je otvoren. Dostupan s unutarnjim navojem na obje strane (Ž/Ž) i u muško-ženskoj izvedbi (MŽ).',
+    desc_it: 'Valvola a sfera di intercettazione con leva. Chiude il flusso con un quarto di giro e il passaggio totale comporta una perdita di carico trascurabile da aperta. Disponibile con filetto femmina su entrambi i lati (F/F) e nella versione maschio–femmina (M/F).',
+    code:  'KUGL-VENTIL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VENTILI/KUGL-VENTIL.webp',
+    variants: [
+      { label: '1/2"', code: 'KUGL-VENTIL-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '3/4"', code: 'KUGL-VENTIL-34', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '1"', code: 'KUGL-VENTIL-1', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '5/4"', code: 'KUGL-VENTIL-54', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '6/4"', code: 'KUGL-VENTIL-64', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '2"', code: 'KUGL-VENTIL-2', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '1/2"', code: 'KUGL-VENTIL-12-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '3/4"', code: 'KUGL-VENTIL-34-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '1"', code: 'KUGL-VENTIL-1-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '5/4"', code: 'KUGL-VENTIL-54-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '6/4"', code: 'KUGL-VENTIL-64-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '2"', code: 'KUGL-VENTIL-2-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    name:    'KUGL VENTIL L.R.',
+    name_it: 'VALVOLA A SFERA CON MANIGLIA A FARFALLA',
+    desc:    'Kuglasti zaporni ventil s leptir ručicom umjesto poluge. Ista funkcija kao standardni kugl ventil, ali ručica zauzima manje mjesta pa se lakše ugrađuje u skučenom prostoru — u šahtu, iza maske ili uz zid.',
+    desc_it: 'Valvola a sfera di intercettazione con maniglia a farfalla anziché a leva. Stessa funzione della valvola a sfera standard, ma la maniglia occupa meno spazio e si monta più facilmente in posizioni anguste: pozzetti, dietro pannelli o a ridosso del muro.',
+    code:  'KUGL-VENTIL-LR',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VENTILI/KUGL-VENTIL-LR.webp',
+    variants: [
+      { label: '1/2"', code: 'KUGL-VENTIL-LR-12' },
+      { label: '3/4"', code: 'KUGL-VENTIL-LR-34' },
+      { label: '1"', code: 'KUGL-VENTIL-LR-1' },
+      { label: '5/4"', code: 'KUGL-VENTIL-LR-54' },
+      { label: '6/4"', code: 'KUGL-VENTIL-LR-64' },
+      { label: '2"', code: 'KUGL-VENTIL-LR-2' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    name:    'MINI KUGL VENTIL',
+    name_it: 'MINI VALVOLA A SFERA',
+    desc:    'Kuglasti ventil u smanjenoj izvedbi, od 1/4" do 1/2". Za priključke na manometre, odzračne vodove i male potrošače gdje standardni ventil ne stane.',
+    desc_it: 'Valvola a sfera in versione ridotta, da 1/4" a 1/2". Per attacchi a manometri, linee di sfiato e piccole utenze dove la valvola standard non entra.',
+    code:  'MINI-KUGL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VENTILI/MINI-KUGL.webp',
+    variants: [
+      { label: '1/4"', code: 'MINI-KUGL-14', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '3/8"', code: 'MINI-KUGL-38', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '1/2"', code: 'MINI-KUGL-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
+      { label: '1/4"', code: 'MINI-KUGL-14-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '3/8"', code: 'MINI-KUGL-38-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+      { label: '1/2"', code: 'MINI-KUGL-12-MZ', group: 'Muško-ženski (MŽ)', group_it: 'Maschio–femmina' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    name:    'KUGL VENTIL L.R. SA HOLENDEROM',
+    name_it: 'VALVOLA A SFERA CON BOCCHETTONE',
+    desc:    'Kuglasti ventil s leptir ručicom i ugrađenim holenderom. Holender omogućuje da se ventil i sve iza njega rastavi bez rezanja cijevi — tipično ispred pumpe, bojlera ili vodomjera.',
+    desc_it: 'Valvola a sfera con maniglia a farfalla e bocchettone integrato. Il bocchettone permette di smontare la valvola e tutto ciò che sta a valle senza tagliare il tubo — tipicamente a monte di pompa, boiler o contatore.',
+    code:  'KUGL-VENTIL-LR-HOL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VENTILI/KUGL-VENTIL-LR-HOL.webp',
+    variants: [
+      { label: '1/2"', code: 'KUGL-VENTIL-LR-HOL-12' },
+      { label: '3/4"', code: 'KUGL-VENTIL-LR-HOL-34' },
+      { label: '1"', code: 'KUGL-VENTIL-LR-HOL-1' },
+      { label: '5/4"', code: 'KUGL-VENTIL-LR-HOL-54' },
+    ],
+  },
+  {
+    group: 'vodomaterijal',
+    cat:   'ventili',
+    name:    'KUGL VENTIL KUTNI L.R. SA HOLENDEROM',
+    name_it: 'VALVOLA A SFERA AD ANGOLO CON BOCCHETTONE',
+    desc:    'Kutni kuglasti ventil s leptir ručicom i holenderom — spaja i zatvara u istom komadu, uz skretanje voda za 90°. Štedi jedno koljeno na spoju uza zid.',
+    desc_it: 'Valvola a sfera ad angolo con maniglia a farfalla e bocchettone — collega e intercetta in un solo pezzo, deviando la linea di 90°. Fa risparmiare un gomito nel collegamento a parete.',
+    code:  'KUGL-VENTIL-KUTNI-LR-HOL',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VENTILI/KUGL-VENTIL-KUTNI-LR-HOL.webp',
+    variants: [
+      { label: '1"', code: 'KUGL-VENTIL-KUTNI-LR-HOL-1' },
     ],
   },
 
