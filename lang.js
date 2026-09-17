@@ -19,7 +19,7 @@ const LANG = {
     'nav.mm.shower.faucets':'Tuš slavine','nav.mm.sink.faucets':'Umivaonik slavine',
     'nav.mm.baths':'Tuš kabine','nav.mm.boilers':'Bojleri',
     'nav.mm.all.sanitary':'Sve sanitarije →','nav.mm.water.tanks':'Spremnici',
-    'nav.mm.pipes':'Cijevi','nav.mm.fittings':'Press fitinzi','nav.mm.pprfittings':'PPR fitinzi','nav.mm.insulation':'Izolacija','nav.mm.bidet.faucets':'Bide slavine','nav.mm.cisterns':'Vodokotlići','nav.mm.alkaten':'Alkaten cijevi','nav.mm.irrigation':'Navodnjavanje','nav.mm.manifolds':'Razdjelnici i ormari','nav.mm.pexalpex':'PEX-AL-PEX','nav.mm.brackets':'Ovjesni pribor','nav.mm.valves':'Ventili','nav.mm.vessels':'Ekspanzione posude','nav.mm.brass':'Mesingani fitinzi','nav.mm.galv':'Pocinčani fitinzi','nav.mm.drainage':'Cijevi za kanalizaciju',
+    'nav.mm.pipes':'Cijevi','nav.mm.fittings':'Press fitinzi','nav.mm.pprfittings':'PPR fitinzi','nav.mm.insulation':'Izolacija','nav.mm.bidet.faucets':'Bide slavine','nav.mm.cisterns':'Vodokotlići','nav.mm.alkaten':'Alkaten cijevi','nav.mm.irrigation':'Navodnjavanje','nav.mm.manifolds':'Razdjelnici i ormari','nav.mm.pexalpex':'PEX-AL-PEX','nav.mm.brackets':'Ovjesni pribor','nav.mm.valves':'Ventili','nav.mm.vessels':'Ekspanzione posude','nav.mm.brass':'Mesingani fitinzi','nav.mm.inox':'Inox fitinzi','nav.mm.galv':'Pocinčani fitinzi','nav.mm.drainage':'Cijevi za kanalizaciju',
     'util.hours':'Pon – Pet: 08:00 – 17:00',
     'util.whatsapp':'WhatsApp','util.viber':'Viber',
 
@@ -251,7 +251,7 @@ const LANG = {
     'nav.mm.shower.faucets':'Rubinetti doccia','nav.mm.sink.faucets':'Rubinetti lavabo',
     'nav.mm.baths':'Cabine doccia','nav.mm.boilers':'Boiler',
     'nav.mm.all.sanitary':'Tutti i sanitari →','nav.mm.water.tanks':'Serbatoi',
-    'nav.mm.pipes':'Tubi','nav.mm.fittings':'Raccordi Press','nav.mm.pprfittings':'Raccordi PPR','nav.mm.insulation':'Isolamento','nav.mm.bidet.faucets':'Rubinetti per bidet','nav.mm.cisterns':'Cassette di risciacquo','nav.mm.alkaten':'Tubi Alkaten','nav.mm.irrigation':'Irrigazione','nav.mm.manifolds':'Collettori e cassette','nav.mm.pexalpex':'PEX-AL-PEX','nav.mm.brackets':'Staffaggio','nav.mm.valves':'Valvole','nav.mm.vessels':'Vasi di espansione','nav.mm.brass':'Raccordi in ottone','nav.mm.galv':'Raccordi zincati','nav.mm.drainage':'Tubi di scarico',
+    'nav.mm.pipes':'Tubi','nav.mm.fittings':'Raccordi Press','nav.mm.pprfittings':'Raccordi PPR','nav.mm.insulation':'Isolamento','nav.mm.bidet.faucets':'Rubinetti per bidet','nav.mm.cisterns':'Cassette di risciacquo','nav.mm.alkaten':'Tubi Alkaten','nav.mm.irrigation':'Irrigazione','nav.mm.manifolds':'Collettori e cassette','nav.mm.pexalpex':'PEX-AL-PEX','nav.mm.brackets':'Staffaggio','nav.mm.valves':'Valvole','nav.mm.vessels':'Vasi di espansione','nav.mm.brass':'Raccordi in ottone','nav.mm.inox':'Raccordi inox','nav.mm.galv':'Raccordi zincati','nav.mm.drainage':'Tubi di scarico',
     'util.hours':'Lun – Ven: 08:00 – 17:00',
     'util.whatsapp':'WhatsApp','util.viber':'Viber',
 
