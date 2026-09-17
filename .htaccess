@@ -46,6 +46,27 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 ErrorDocument 404 /404.html
 
 # ═══════════════════════════════════════════════════════════
+#  STARE ADRESE SA STAROG (JOOMLA) SAJTA
+#
+#  Google ih još drži u indeksu i javlja kao "Not found (404)"
+#  (vidljivo u Search Consoleu). Umjesto da ih pusti da umru,
+#  svaka se preusmjerava na stranicu koja odgovara njezinom
+#  sadržaju — tako posjetitelj sa starog linka dođe gdje je
+#  krenuo, a Google prenese bodove na novu adresu.
+#
+#  Dodajete novu? Prekopirajte jedan redak. Putanja se piše BEZ
+#  početne kose crte, a bez ?upit (RewriteRule gleda samo putanju).
+# ═══════════════════════════════════════════════════════════
+RewriteRule ^index\.php/hladenje/klime/?$                          /proizvodi?group=hladenje&cat=klima-uredaji [R=301,L]
+RewriteRule ^index\.php/component/content/article/cirk-pumpe/?$    /proizvodi?group=grijanje&cat=cirkulacijske-pumpe [R=301,L]
+RewriteRule ^index\.php(/.*)?$                                     / [R=301,L]
+
+# Naslovnica ima jednu adresu: https://www.italterm.net/
+# Bez ovoga /index.html i /index poslužuju isti sadržaj kao /,
+# pa Google ima tri adrese za istu stranicu.
+RewriteRule ^index(\.html)?$                                       / [R=301,L]
+
+# ═══════════════════════════════════════════════════════════
 #  CLEAN URLs
 # ═══════════════════════════════════════════════════════════
 
