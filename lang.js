@@ -210,7 +210,7 @@ const LANG = {
     'product.name.placeholder':'Naziv proizvoda','product.desc.placeholder':'Opis proizvoda...',
     // ALIASES (back-compat for older data-i18n tags)
     'meta.title.index':'ITALTERM – Sve što vam treba za vaš savršen dom',
-    'meta.title.about':'ITALTERM – O nama','meta.title.contact':'ITALTERM – Kontakt',
+    'meta.title.about':'ITALTERM – O nama','meta.title.privacy':'ITALTERM – Pravila privatnosti','meta.title.nf':'ITALTERM – Stranica nije pronađena','meta.title.contact':'ITALTERM – Kontakt',
     'about.hero.title':'O nama','about.hero.sub':'Vaš pouzdani partner za grijanje, klimatizaciju i vodoinstalacije od 1996.',
     'about.timeline.title':'Naša povijest','about.distributors.title':'Ovlašteni distributer',
     'adv.delivery.title':'Brza isporuka','adv.rate':'Kupovina na rate',
@@ -441,7 +441,7 @@ const LANG = {
     'product.specs.title':'Dati tecnici','product.variants':'Seleziona variante',
     'product.name.placeholder':'Nome prodotto','product.desc.placeholder':'Descrizione prodotto...',
     // ALIASES (back-compat for older data-i18n tags)
-    'meta.title.index':'ITALTERM – Tutto ciò di cui avete bisogno per la vostra casa perfetta','meta.title.about':'ITALTERM – Chi siamo','meta.title.contact':'ITALTERM – Contatti',
+    'meta.title.index':'ITALTERM – Tutto ciò di cui avete bisogno per la vostra casa perfetta','meta.title.about':'ITALTERM – Chi siamo','meta.title.privacy':'ITALTERM – Informativa sulla privacy','meta.title.nf':'ITALTERM – Pagina non trovata','meta.title.contact':'ITALTERM – Contatti',
     'about.hero.title':'Chi siamo','about.hero.sub':'Il vostro partner affidabile per riscaldamento, climatizzazione e idraulica dal 1996.',
     'about.timeline.title':'La nostra storia','about.distributors.title':'Distributore autorizzato',
     'adv.delivery.title':'Consegna rapida','adv.rate':'Acquisto rateale',
