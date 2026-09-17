@@ -64,6 +64,12 @@ RewriteRule ^index\.php(/.*)?$                                     / [R=301,L]
 # Naslovnica ima jednu adresu: https://www.italterm.net/
 # Bez ovoga /index.html i /index poslužuju isti sadržaj kao /,
 # pa Google ima tri adrese za istu stranicu.
+#
+# Uvjet s THE_REQUEST je OBAVEZAN: on gleda izvornu liniju zahtjeva, pa
+# pravilo okida samo kad je posjetitelj stvarno tražio /index.html.
+# Bez njega bi pravilo uhvatilo i Apacheov interni poziv kojim se za "/"
+# poslužuje index.html — i stranica bi ušla u beskonačnu petlju.
+RewriteCond %{THE_REQUEST} \s/index(\.html)?[?\s] [NC]
 RewriteRule ^index(\.html)?$                                       / [R=301,L]
 
 # ═══════════════════════════════════════════════════════════
