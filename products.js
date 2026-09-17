@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=30"></script>
+//      <script src="products.js?v=31"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -2509,8 +2509,8 @@ const PRODUCTS = [
     cat:   'plinski-materijal',
     name:    'PLIN FLEX CRIJEVO',
     name_it: 'TUBO FLESSIBILE GAS',
-    desc:    'Savitljivo crijevo za priključak plinskog trošila (štednjak, bojler, peć) na instalaciju. Presjek 8×13 mm, muško-ženski navojni priključak, u dužinama od 40 do 300 cm. Za plin se smiju koristiti isključivo crijeva certificirana za plin i unutar roka trajanja otisnutog na crijevu.',
-    desc_it: 'Tubo flessibile per il collegamento dell\'apparecchio a gas (cucina, caldaia, stufa) all\'impianto. Sezione 8×13 mm, attacco filettato maschio–femmina, in lunghezze da 40 a 300 cm. Per il gas si possono usare esclusivamente tubi certificati e entro la data di scadenza stampata sul tubo.',
+    desc:    'Savitljivo crijevo za priključak plinskog trošila (štednjak, bojler, peć) na instalaciju. Presjek 8×13 mm, muško-ženski navojni priključak, u dužinama od 40 do 300 cm.',
+    desc_it: 'Tubo flessibile per il collegamento dell\'apparecchio a gas (cucina, caldaia, stufa) all\'impianto. Sezione 8×13 mm, attacco filettato maschio–femmina, in lunghezze da 40 a 300 cm.',
     code:  'PLIN-FLEX',
     // SLIKA: dodajte kad bude dostupna, npr.
     // img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX.webp',
@@ -2542,8 +2542,8 @@ const PRODUCTS = [
     brand: 'Tecnogas',
     name:    'PLIN FLEX CRIJEVO INOX',
     name_it: 'TUBO FLESSIBILE GAS INOX',
-    desc:    'Tecnogas rastezljivo crijevo od nehrđajućeg čelika za priključak plinskog trošila. Za razliku od gumenog crijeva ne stari i nema rok trajanja, a rastezljiva izvedba pokriva raspon dužine (npr. 20–40 cm) pa se prilagođava stvarnom razmaku do trošila.',
-    desc_it: 'Tubo flessibile estensibile in acciaio inox Tecnogas per il collegamento dell\'apparecchio a gas. A differenza del tubo in gomma non invecchia e non ha scadenza, e la versione estensibile copre un intervallo di lunghezza (per es. 20–40 cm) adattandosi alla distanza reale dall\'apparecchio.',
+    desc:    'Tecnogas rastezljivo crijevo od nehrđajućeg čelika za priključak plinskog trošila. Rastezljiva izvedba pokriva raspon dužine (npr. 20–40 cm) pa se prilagođava stvarnom razmaku do trošila, bez savijanja i zatezanja.',
+    desc_it: 'Tubo flessibile estensibile in acciaio inox Tecnogas per il collegamento dell\'apparecchio a gas. La versione estensibile copre un intervallo di lunghezza (per es. 20–40 cm) e si adatta alla distanza reale dall\'apparecchio, senza piegature né tensioni.',
     code:  'PLIN-FLEX-INOX',
     // SLIKA: dodajte kad bude dostupna, npr.
     // img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX INOX.webp',
