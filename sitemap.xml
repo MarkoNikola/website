@@ -223,6 +223,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.italterm.net/proizvodi?group=plin&amp;cat=plinski-materijal</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.italterm.net/proizvodi?group=plin&amp;cat=cijevi-plin</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>weekly</changefreq>
@@ -710,6 +716,12 @@
   </url>
   <url>
     <loc>https://www.italterm.net/proizvod?id=LIV-LAGUNA</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=FLEX-VODOKOTLIC</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1238,6 +1250,18 @@
   </url>
   <url>
     <loc>https://www.italterm.net/proizvod?id=PLIN-REG-1ST</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=PLIN-FLEX</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.italterm.net/proizvod?id=PLIN-FLEX-INOX</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

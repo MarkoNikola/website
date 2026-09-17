@@ -5,7 +5,7 @@
 //  se izmjene znaju "ne vidjeti" ni nakon uploada. Zato se datoteka
 //  učitava s brojem verzije:
 //
-//      <script src="products.js?v=29"></script>
+//      <script src="products.js?v=30"></script>
 //
 //  Nakon svake izmjene POVEĆAJTE taj broj (v=20 → v=21) u OBJE datoteke:
 //      proizvodi.html   i   proizvod.html
@@ -1342,6 +1342,43 @@ const PRODUCTS = [
     code:  'LIV-LAGUNA',
     img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/LIV/LAGUNA.webp',
   },
+  {
+    group: 'sanitarije',
+    cat:   'vodokotlici',
+    name:    'FLEX CRIJEVO ZA VODOKOTLIĆ',
+    name_it: 'FLESSIBILE PER CASSETTA',
+    desc:    'Savitljivo priključno crijevo u opletu, za spoj vodokotlića ili slavine na kutni ventil. Dostupno u dužinama od 10 do 100 cm, uključujući izvedbu s dužom glavom za teže dostupne priključke.',
+    desc_it: 'Flessibile di collegamento rivestito in treccia, per collegare la cassetta o il rubinetto alla valvola a squadra. Disponibile in lunghezze da 10 a 100 cm, compresa la versione con attacco lungo per raccordi difficili da raggiungere.',
+    code:  'FLEX-VODOKOTLIC',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/VODOKOTLIĆI/FLEX CRIJEVO.webp',
+    variants: [
+      { label: '10 cm', code: 'FLEX-VK-38-10', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '20 cm', code: 'FLEX-VK-38-20', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '25 cm', code: 'FLEX-VK-38-25', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '30 cm', code: 'FLEX-VK-38-30', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '35 cm', code: 'FLEX-VK-38-35', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '40 cm', code: 'FLEX-VK-38-40', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '45 cm', code: 'FLEX-VK-38-45', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '50 cm', code: 'FLEX-VK-38-50', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '60 cm', code: 'FLEX-VK-38-60', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '70 cm', code: 'FLEX-VK-38-70', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
+      { label: '20 cm', code: 'FLEX-VK-12-20', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '30 cm', code: 'FLEX-VK-12-30', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '40 cm', code: 'FLEX-VK-12-40', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '45 cm', code: 'FLEX-VK-12-45', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '50 cm', code: 'FLEX-VK-12-50', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '60 cm', code: 'FLEX-VK-12-60', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '70 cm', code: 'FLEX-VK-12-70', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '80 cm', code: 'FLEX-VK-12-80', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '100 cm', code: 'FLEX-VK-12-100', group: '1/2" ŽŽ/MŽ', group_it: '1/2" FF/MF' },
+      { label: '20 cm', code: 'FLEX-VK-12-DG-20', group: '1/2" duža glava', group_it: '1/2" attacco lungo' },
+      { label: '25 cm', code: 'FLEX-VK-12-DG-25', group: '1/2" duža glava', group_it: '1/2" attacco lungo' },
+      { label: '40 cm', code: 'FLEX-VK-12-DG-40', group: '1/2" duža glava', group_it: '1/2" attacco lungo' },
+      { label: '50 cm', code: 'FLEX-VK-12-DG-50', group: '1/2" duža glava', group_it: '1/2" attacco lungo' },
+      { label: '60 cm', code: 'FLEX-VK-12-DG-60', group: '1/2" duža glava', group_it: '1/2" attacco lungo' },
+    ],
+  },
   // ── VODOMATERIJAL › WC DASKE ──────────────────────────────────
  /* {
     group: 'vodomaterijal',
@@ -2464,6 +2501,60 @@ const PRODUCTS = [
         ['Regulator propana EN16129',  '16 bar', '0,5 - 3 bar', '20-40 kg/h'],
       ],
   },
+  },
+
+  // ── PLIN › PLINSKI MATERIJAL ──────────────────────────────────
+  {
+    group: 'plin',
+    cat:   'plinski-materijal',
+    name:    'PLIN FLEX CRIJEVO',
+    name_it: 'TUBO FLESSIBILE GAS',
+    desc:    'Savitljivo crijevo za priključak plinskog trošila (štednjak, bojler, peć) na instalaciju. Presjek 8×13 mm, muško-ženski navojni priključak, u dužinama od 40 do 300 cm. Za plin se smiju koristiti isključivo crijeva certificirana za plin i unutar roka trajanja otisnutog na crijevu.',
+    desc_it: 'Tubo flessibile per il collegamento dell\'apparecchio a gas (cucina, caldaia, stufa) all\'impianto. Sezione 8×13 mm, attacco filettato maschio–femmina, in lunghezze da 40 a 300 cm. Per il gas si possono usare esclusivamente tubi certificati e entro la data di scadenza stampata sul tubo.',
+    code:  'PLIN-FLEX',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX.webp',
+    variants: [
+      { label: '40 cm', code: 'PLIN-FLEX-12-40', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '50 cm', code: 'PLIN-FLEX-12-50', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '60 cm', code: 'PLIN-FLEX-12-60', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '80 cm', code: 'PLIN-FLEX-12-80', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '100 cm', code: 'PLIN-FLEX-12-100', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '120 cm', code: 'PLIN-FLEX-12-120', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '150 cm', code: 'PLIN-FLEX-12-150', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '200 cm', code: 'PLIN-FLEX-12-200', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '300 cm', code: 'PLIN-FLEX-12-300', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
+      { label: '40 cm', code: 'PLIN-FLEX-34-40', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '50 cm', code: 'PLIN-FLEX-34-50', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '60 cm', code: 'PLIN-FLEX-34-60', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '80 cm', code: 'PLIN-FLEX-34-80', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '100 cm', code: 'PLIN-FLEX-34-100', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '120 cm', code: 'PLIN-FLEX-34-120', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '150 cm', code: 'PLIN-FLEX-34-150', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '200 cm', code: 'PLIN-FLEX-34-200', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '250 cm', code: 'PLIN-FLEX-34-250', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+      { label: '300 cm', code: 'PLIN-FLEX-34-300', group: '3/4" MŽ  8×13', group_it: '3/4" MF  8×13' },
+    ],
+  },
+  {
+    group: 'plin',
+    cat:   'plinski-materijal',
+    brand: 'Tecnogas',
+    name:    'PLIN FLEX CRIJEVO INOX',
+    name_it: 'TUBO FLESSIBILE GAS INOX',
+    desc:    'Tecnogas rastezljivo crijevo od nehrđajućeg čelika za priključak plinskog trošila. Za razliku od gumenog crijeva ne stari i nema rok trajanja, a rastezljiva izvedba pokriva raspon dužine (npr. 20–40 cm) pa se prilagođava stvarnom razmaku do trošila.',
+    desc_it: 'Tubo flessibile estensibile in acciaio inox Tecnogas per il collegamento dell\'apparecchio a gas. A differenza del tubo in gomma non invecchia e non ha scadenza, e la versione estensibile copre un intervallo di lunghezza (per es. 20–40 cm) adattandosi alla distanza reale dall\'apparecchio.',
+    code:  'PLIN-FLEX-INOX',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX INOX.webp',
+    variants: [
+      { label: '1/2" · 20–40 cm', code: 'PLIN-FLEX-INOX-12-2040' },
+      { label: '1/2" · 30–60 cm', code: 'PLIN-FLEX-INOX-12-3060' },
+      { label: '3/4" · 20–40 cm', code: 'PLIN-FLEX-INOX-34-2040' },
+      { label: '3/4" · 30–60 cm', code: 'PLIN-FLEX-INOX-34-3060' },
+      { label: '1" · 20–40 cm', code: 'PLIN-FLEX-INOX-1-2040' },
+      { label: '1" · 30–60 cm', code: 'PLIN-FLEX-INOX-1-3060' },
+    ],
   },
 
   // ── PLIN › PLIN PEX-AL-PEX ────────────────────────────────────
