@@ -343,7 +343,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:48px 6% 24px;ma
 <div class="product-wrap">
   <div class="product-gallery">
     <div class="product-img" id="productImg">
-      <span class="product-img-placeholder">Slika proizvoda</span>
+      <span class="product-img-placeholder" data-i18n="prod.img.placeholder">Slika proizvoda</span>
     </div>
     <div class="product-thumbs" id="productThumbs"></div>
   </div>
@@ -408,7 +408,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:48px 6% 24px;ma
   </div>
 </footer>
 
-<script src="products.js?v=32"></script>
+<script src="products.js?v=33"></script>
 <script>
 const CAT_LABELS = {
   // Grijanje
@@ -435,6 +435,51 @@ const GROUP_LABELS = {
   'grijanje':'Grijanje','hladenje':'Hlađenje','sanitarije':'Sanitarije',
   'vodomaterijal':'Vodomaterijal','plin':'Plin',
 };
+
+/* ═══ TALIJANSKI NAZIVI KATEGORIJA I GRUPA ═════════════════════════
+   Vide se u breadcrumbu, uz "Kategorija:" i uz "Grupa". Isti popis kao
+   u proizvodi.html — dodajete li kategoriju, upišite je na oba mjesta.
+   Ako talijanski naziv izostane, catName() vraća hrvatski.
+   ═══════════════════════════════════════════════════════════════════ */
+const CAT_LABELS_IT = {
+  // Riscaldamento
+  'radijatori':'Radiatori','cirkulacijske-pumpe':'Pompe di circolazione',
+  'dimovodne-cijevi':'Canne fumarie','spremnici':'Serbatoi / Puffer',
+  'dizalice-topline':'Pompe di calore','fancoil':'Fancoil',
+  'pex-al-pex':'PEX-AL-PEX','cijevi-grijanje':'Tubi','izolacija':'Isolamento','izolacija-vodo':'Isolamento',
+  'steelpres':'SteelPRES press-fitting','bakar':'Rame (Cu)',
+  'podno-grijanje':'Riscaldamento a pavimento','ovjesni-pribor':'Staffaggio',
+  // Raffreddamento
+  'klima-uredaji':'Condizionatori','prateci-materijal':'Materiale accessorio','cijevi-klima':'Tubi per climatizzatori',
+  // Sanitari
+  'slavine-kuhinjske':'Rubinetti cucina','slavine-umivaonik':'Rubinetti lavabo',
+  'slavine-tus':'Rubinetti doccia','slavine-bide':'Rubinetti per bidet',
+  'kade':'Vasche da bagno','kabine':'Cabine doccia','bojleri':'Boiler','vodokotlici':'Cassette di risciacquo',
+  'namjestaj':'Mobili da bagno','tus-kanalice':'Canaline doccia','wc-daske':'Sedili WC',
+  // Idraulica
+  'spremnici-vodo':'Serbatoi','cijevi':'Tubi','alkaten':'Alkaten','navodnjavanje':'Irrigazione','ventili':'Valvole','kanalizacija':'Tubi di scarico',
+  'fitinzi':'Raccordi Press','ppr-fitinzi':'Raccordi PPR','ekspanzione-posude':'Vasi di espansione','ekspanzione-posude-grijanje':'Vasi di espansione',
+  'mesing-fitinzi':'Raccordi in ottone','mesing-fitinzi-grijanje':'Raccordi in ottone',
+  'inox-fitinzi':'Raccordi inox','inox-fitinzi-grijanje':'Raccordi inox',
+  'pocincano-fitinzi':'Raccordi zincati','pocincano-fitinzi-grijanje':'Raccordi zincati',
+  'cijevi-plin':'Tubi per gas','razdjelnici':'Collettori e cassette',
+  // Gas
+  'regulatori':'Regolatori','plinski-materijal':'Materiale per gas','plin-pex':'Raccordi per gas',
+};
+const GROUP_LABELS_IT = {
+  'grijanje':'Riscaldamento','hladenje':'Raffreddamento','sanitarije':'Sanitari',
+  'vodomaterijal':'Idraulica','plin':'Gas',
+};
+
+// lang.js se učitava poslije ovog scripta — otuda rezervni localStorage.
+function isIt() {
+  try {
+    return ((typeof getLang === 'function' ? getLang()
+                                           : localStorage.getItem('it_lang')) || 'hr') === 'it';
+  } catch (e) { return false; }
+}
+function catName(c)   { return (isIt() && CAT_LABELS_IT[c])   || CAT_LABELS[c]   || c; }
+function groupName(g) { return (isIt() && GROUP_LABELS_IT[g]) || GROUP_LABELS[g] || g; }
 
 let currentProduct = null;
 let selectedVariant = null;
@@ -685,7 +730,7 @@ function applySeo(product) {
     sku: product.code,
     description: desc,
     url: url,
-    category: (typeof CAT_LABELS !== 'undefined' && CAT_LABELS[product.cat]) || product.cat,
+    category: catName(product.cat),
     brand: { '@type': 'Brand', name: product.brand || 'ITALTERM' },
     seller: { '@type': 'Organization', '@id': SITE + '/#organizacija', name: 'ITALTERM d.o.o.' }
   };
@@ -725,19 +770,19 @@ function applySeo(product) {
 
   // Basic info
   // Build breadcrumb hierarchy
-  const groupLabel = GROUP_LABELS[product.group] || product.group;
-  const catLabel   = CAT_LABELS[product.cat]    || product.cat;
+  const groupLabel = groupName(product.group);
+  const catLabel   = catName(product.cat);
   document.getElementById('crumbs').innerHTML =
     '<a href="index" data-i18n="nav.home">Početna</a>' +
     '<span class="sep">/</span>' +
     '<a href="proizvodi" data-i18n="nav.products">Proizvodi</a>' +
     '<span class="sep">/</span>' +
-    '<a href="proizvodi?group=' + product.group + '">' + groupLabel + '</a>' +
+    '<a href="proizvodi?group=' + product.group + '" data-crumb="group">' + groupLabel + '</a>' +
     '<span class="sep">/</span>' +
-    '<a href="proizvodi?cat=' + product.cat + '">' + catLabel + '</a>' +
+    '<a href="proizvodi?cat=' + product.cat + '" data-crumb="cat">' + catLabel + '</a>' +
     '<span class="sep">/</span>' +
     '<span class="current">' + prodName(product) + '</span>';
-  document.getElementById('productCat').textContent = CAT_LABELS[product.cat] || product.cat;
+  document.getElementById('productCat').textContent = catName(product.cat);
   document.getElementById('productBrand').textContent = product.brand || '';
   document.getElementById('productName').textContent = prodName(product);
   document.getElementById('productDesc').textContent = (typeof getLang==='function'&&getLang()==='it'&&product.desc_it)||product.desc||'';
@@ -823,7 +868,7 @@ function applySeo(product) {
     html += '</tbody></table></div>';
     specBox.innerHTML = html;
   }
-  document.getElementById('productGroup').textContent = GROUP_LABELS[product.group] || product.group;
+  document.getElementById('productGroup').textContent = groupName(product.group);
   document.title = prodName(product) + ' – ITALTERM';
   applySeo(product);
 
@@ -914,9 +959,21 @@ function updateProductDesc() {
   document.title = nm + ' – ITALTERM';
   var cur = document.querySelector('.crumbs .current');
   if (cur) cur.textContent = nm;
+
+  // Kategorija i grupa imaju svoje talijanske nazive (catName/groupName),
+  // pa se i one moraju prepisati — inače bi nakon povratka na hrvatski
+  // ostale na talijanskom.
+  var catEl = document.getElementById('productCat');
+  if (catEl) catEl.textContent = catName(currentProduct.cat);
+  var grpEl = document.getElementById('productGroup');
+  if (grpEl) grpEl.textContent = groupName(currentProduct.group);
+  var crumbCat = document.querySelector('.crumbs a[data-crumb="cat"]');
+  if (crumbCat) crumbCat.textContent = catName(currentProduct.cat);
+  var crumbGrp = document.querySelector('.crumbs a[data-crumb="group"]');
+  if (crumbGrp) crumbGrp.textContent = groupName(currentProduct.group);
 }
 </script>
   <script src="analytics.js?v=2"></script>
-  <script src="lang.js?v=16"></script>
+  <script src="lang.js?v=17"></script>
 </body>
 </html>
