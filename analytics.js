@@ -13,7 +13,7 @@
 //  Slobodno je uploadajte i prije nego što otvorite Analytics račun.
 // ═══════════════════════════════════════════════════════════════
 
-var GA_ID = '';   // ← npr. 'G-ABC1234XYZ'
+var GA_ID = 'G-PNCL51FXKX';   // ← npr. 'G-ABC1234XYZ'
 
 // ═══════════════════════════════════════════════════════════════
 //  Ispod ovoga ništa ne treba mijenjati.
