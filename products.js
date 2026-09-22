@@ -128,7 +128,7 @@ const PRODUCTS = [
     desc:  'Pločasti radijator Termopan tip 22 (dvije ploče, dva reda konvektora) s bočnim priključcima — klasična kompaktna izvedba, pogodna za zamjenu postojećeg radijatora na već izvedenoj instalaciji. Visina 600 mm, duljine od 400 do 2000 mm.',
     desc_it: 'I radiatori a pannello Termopan offrono una combinazione di qualità superiore, prestazioni e design, grazie alla tecnologia più moderna e avanzata. Il design garantisce la massima flessibilità di installazione.',
     code:  'K-22',
-    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.webp',
+    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.jpg',
      variants: [
     { label: '600 X 400',  code: 'K-22-600-400'  },
     { label: '600 X 600',  code: 'K-22-600-600'  },
@@ -150,7 +150,7 @@ const PRODUCTS = [
     desc:  'Pločasti radijator Termopan tip 22 u ventilskoj izvedbi — s ugrađenim ventilskim umetkom i priključkom odozdo, za instalacije kod kojih cijevi izlaze iz poda ili zida ispod radijatora. Termostatska glava navrće se izravno na radijator. Visina 600 mm.',
     desc_it: 'I radiatori a pannello Termopan offrono una combinazione di qualità superiore, prestazioni e design, grazie alla tecnologia più moderna e avanzata. Il design garantisce la massima flessibilità di installazione.',
     code:  'VK-K-22',
-    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.webp',
+    img:   'images/Grijanje/Radijatori/Pločasti radijatori/termopan-vk-22.jpg',
     variants: [
     { label: '600 X 400',  code: 'VK-K-22-600-400'  },
     { label: '600 X 600',  code: 'VK-K-22-600-600'  },
@@ -171,7 +171,7 @@ const PRODUCTS = [
     desc_it: 'Testa termostatica con attacco M30 × 1,5 per valvola del radiatore. Mantiene da sola la temperatura impostata: quando la stanza si scalda, riduce il flusso attraverso il radiatore. Versione ECO.',
     code:  'TT3015-ECO',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/TERMOSTATSKE GLAVE/TT3015-ECO.webp',
+    img: 'images/Grijanje/Radijatori/Termo glave/tt3015-eco.jpg',
   },
   {
     group: 'grijanje',
@@ -182,7 +182,7 @@ const PRODUCTS = [
     desc_it: 'Testa termostatica con attacco M30 × 1,5 per valvola del radiatore. Mantiene da sola la temperatura impostata: quando la stanza si scalda, riduce il flusso attraverso il radiatore.',
     code:  'TT3015',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/TERMOSTATSKE GLAVE/TT3015.webp',
+    img: 'images/Grijanje/Radijatori/Termo glave/TT3015.jpg',
   },
   {
     group: 'grijanje',
@@ -193,7 +193,7 @@ const PRODUCTS = [
     desc_it: 'Testa termostatica TE008L con attacco M30 × 1,5 per valvola del radiatore. Mantiene da sola la temperatura impostata: quando la stanza si scalda, riduce il flusso attraverso il radiatore.',
     code:  'TE008L',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/TERMOSTATSKE GLAVE/TE008L.webp',
+    img: 'images/Grijanje/Radijatori/Termo glave/TE008L.png',
   },
 
   // ── GRIJANJE › CIRKULACIJSKE PUMPE ────────────────────────────
@@ -303,7 +303,7 @@ const PRODUCTS = [
     desc_it: 'Tubo per lo scarico dei fumi dall\'apparecchio alla canna fumaria. Disponibile nei diametri Ø80, Ø120 e Ø180 mm e in più lunghezze, così il percorso si compone di pezzi pronti senza tagli in cantiere.',
     code:  'DIMOVODNA-CIJEV',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/DIMOVODNE CIJEVI/DIMOVODNA-CIJEV.webp',
+    img: 'images/Grijanje/DIMOVODNE CIJEVI/DIMOVODNA CIJEV.png',
     variants: [
       { label: '250 mm',  code: 'DIM-80-250',   group: 'Ø80 mm',  group_it: 'Ø80 mm'  },
       { label: '500 mm',  code: 'DIM-80-500',   group: 'Ø80 mm',  group_it: 'Ø80 mm'  },
@@ -654,7 +654,7 @@ const PRODUCTS = [
     desc:  'Pex-Al-Pex cijev je vrhunska višeslojna kompozitna cijev s tvorničkom bijelom izolacijom, koja zahvaljujući aluminijskoj barijeri i toplinskoj zaštiti pruža maksimalnu energetsku učinkovitost, sprječava kondenzaciju i osigurava dugotrajan rad u sustavima grijanja i hlađenja.',
     desc_it: 'Il tubo Pex-Al-Pex è un tubo composito multistrato di qualità superiore con isolamento bianco di fabbrica, che grazie alla barriera in alluminio e alla protezione termica garantisce la massima efficienza energetica, previene la condensazione e assicura un funzionamento duraturo nei sistemi di riscaldamento e raffreddamento.',
     code:  'PEX-AL-PEX-GRIJANJE-HLADENJE',
-    img: 'images/Grijanje/PEX-AL-PEX/PEX-AL-PEX GRIJANJE-HLAĐENJE.webp',
+    img: 'images/Grijanje/PEX-AL-PEX/PEX-AL-PEX GRIJANJE-HLAĐENJE.jpg',
     variants: [
     { label: 'ø16mm',  code: 'PEX-AL-PEX-GH-16',  },
     { label: 'ø20mm',  code: 'PEX-AL-PEX-GH-20',  },
@@ -873,7 +873,10 @@ const PRODUCTS = [
     desc_it: 'Il raccordo di passaggio in ottone collega il tubo in rame a un attacco filettato. Su un lato ha il codolo per il tubo in rame, sull\'altro il filetto esterno (maschio) o interno (femmina). Il primo numero indica il diametro del tubo in rame in millimetri, il secondo la misura del filetto in pollici.',
     code:  'MS-PRELAZ',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/Grijanje/CU CIJEVI/MS PRELAZ.jpg',
+    imgs: [
+      'images/Grijanje/CU CIJEVI/MS PRELAZ.jpg',
+      'images/Grijanje/CU CIJEVI/MS PRELAZ Ž.jpg'
+    ],
     // Varijante su podijeljene po vrsti navoja — kupac zna treba li mu
     // muški ili ženski, pa unutar svake skupine samo bira dimenziju.
     variants: [
@@ -1211,8 +1214,8 @@ const PRODUCTS = [
     desc_it: 'Clivet Nativ è un climatizzatore inverter del rinomato marchio italiano Clivet. Si distingue per l\'ottima qualità e offre un raffreddamento (A++) e un riscaldamento (A+) efficienti dal punto di vista energetico, con elevata affidabilità.',
     code:  'Clivet Nativ',
     featured: true,
-    imgs: ['images/Hlađenje/Klima uređaji/Clivet Nativ AC.webp',
-            'images/Hlađenje/Klima uređaji/Clivet Nativ klima uređaj.webp'
+    imgs: ['images/Hlađenje/Klima uređaji/Clivet Nativ AC.jpg',
+            'images/Hlađenje/Klima uređaji/Clivet Nativ klima uređaj.jpg'
     ],
     variants: [
     { label: 'NATIV 27M',  code: 'NATIV 27M',  },
@@ -1251,8 +1254,8 @@ const PRODUCTS = [
     desc_it: 'Clivet EZCOOL è un moderno climatizzatore inverter del marchio italiano Clivet che mette in primo piano la praticità e la semplicità di manutenzione (concetto Easy Clean con filtri magnetici superiori che si rimuovono in pochi secondi). Offre raffreddamento (A++) e riscaldamento (A+) efficienti, design moderno, funzionamento silenzioso e predisposizione integrata per il controllo Wi-Fi e per funzioni avanzate come "Follow Me" e "Active Clean".',
     code:  'Clivet EZCOOL',
     featured: true,
-    imgs: ['images/Hlađenje/Klima uređaji/EZCOOL.webp',
-            'images/Hlađenje/Klima uređaji/EZCOOL klima.webp'
+    imgs: ['images/Hlađenje/Klima uređaji/EZCOOL.jpg',
+            'images/Hlađenje/Klima uređaji/EZCOOL klima.jpg'
     ],
     variants: [
     { label: 'EZCOOL 27M',  code: 'EZCOOL 27M',  },
@@ -1290,7 +1293,7 @@ const PRODUCTS = [
     desc:  'Predizolirana bakrena cijev namijenjena za klimatizacijske i split sustave, koja zahvaljujući specijalnom polimernom omotaču pruža iznimnu otpornost na UV zrake, mehanička oštećenja i stvaranje kondenzacije.',
     desc_it: 'Tubo in rame preisolato destinato agli impianti di climatizzazione e ai sistemi split che, grazie allo speciale rivestimento polimerico, offre un\'eccezionale resistenza ai raggi UV, ai danni meccanici e alla formazione di condensa.',
     code:  'cijevi-klima',
-    img: 'images/Hlađenje/OPREMA ZA KLIME/ISOCLIMA/Cijevi za klimu.webp',
+    img: 'images/Hlađenje/OPREMA ZA KLIME/ISOCLIMA/Cijevi za klimu.png',
     variants: [
         { label: 'ø6', code: 'CIJEVI-KLIMA-6'  },
         { label: 'ø10', code: 'CIJEVI-KLIMA-10' },
@@ -1307,13 +1310,13 @@ const PRODUCTS = [
     desc:  'Ovaj je alat namijenjen isključivo za precizno, hladno savijanje mekanih bakrenih cijevi za klima uređaje, bez oštećenja ili deformacija. Omogućuje savijanje cijevi do maksimalnog kuta od 90°. Minimalni radijus zakrivljenosti iznosi 2,5 puta promjer cijevi (2,5 x Ø), što sprječava spljoštavanje, gužvanje ili pucanje stijenki cijevi prilikom rada.',
     desc_it: 'Utensile destinato esclusivamente alla curvatura a freddo, precisa, dei tubi in rame ricotto per climatizzatori, senza danni né deformazioni. Consente di curvare il tubo fino a un angolo massimo di 90°. Il raggio minimo di curvatura è pari a 2,5 volte il diametro del tubo (2,5 × Ø), il che impedisce lo schiacciamento, la piegatura o la rottura delle pareti del tubo durante il lavoro.',
     code:  'ALAT-ZA-SAVIJANJE-CIJEVI',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 1.webp',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 2.webp',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 3.webp',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 4.webp',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 5.webp',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 6.webp',
-            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 7.webp',
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 1.jpg',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 2.jpg',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 3.jpg',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 4.jpg',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 5.jpg',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 6.jpg',
+            'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11535 7.jpg',
     ],
   },
   {
@@ -1372,9 +1375,9 @@ const PRODUCTS = [
     desc:  'Profesionalni manometarski set namijenjen punjenju, pražnjenju i testiranju klimatizacijskih i rashladnih sustava.',
     desc_it: 'Gruppo manometrico professionale destinato alla carica, allo svuotamento e al collaudo degli impianti di climatizzazione e refrigerazione.',
     code:  'MANOMETAR-KLIMA',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - KUTIJA.webp',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - MANOMETRI.webp',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - CIJEVI.webp',
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - KUTIJA.jpg',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - MANOMETRI.jpg',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/MANOMETRI/MANOMETRI SET - CIJEVI.jpg',
     ],
   },
   {
@@ -1386,8 +1389,8 @@ const PRODUCTS = [
     desc:  'Iznimno praktično i fleksibilno rješenje za hladno oblikovanje bakrenih cijevi, namijenjeno prvenstveno instalaterima klimatizacijskih i rashladnih sustava. Set se sastoji od 4 opruge za savijanje cijevi u rasponu od Ø 1/4",Ø 3/8", Ø 1/2", Ø 5/8" ',
     desc_it: 'Soluzione estremamente pratica e flessibile per la formatura a freddo dei tubi in rame, destinata soprattutto agli installatori di impianti di climatizzazione e refrigerazione. Il set è composto da 4 molle per curvare tubi nelle misure Ø 1/4", Ø 3/8", Ø 1/2" e Ø 5/8".',
     code:  'SET-SAVIJANJE',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -11.webp',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -12.webp',
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -11.jpg',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/alat za savijanje cijevi/11543 -12.jpg',
     ],
   },
   {
@@ -1399,10 +1402,10 @@ const PRODUCTS = [
     desc:  'FLA-TOP 45°, komplet s alatom za frikcijsko proširenje cijevi za kutove od 45°, rezačem cijevi i alatom za uklanjanje neravnina s cijevi. Komplet uključuje: steznu šipku i ekscentrični čelični konus za prirubnicu te vilicu s klinom za centriranje i indikatorom položaja. Okretni unutarnji-vanjski odstranjivač srha s cijevi, Ø 50 mm. Rezač cijevi, 5 do 28 mm. Isporučuje se u praktičnoj plastičnoj kutiji.',
     desc_it: 'FLA-TOP 45°, kit con utensile per la cartellatura a frizione dei tubi ad angolo di 45°, tagliatubi e sbavatore. Il kit comprende: barra di bloccaggio e cono eccentrico in acciaio per la cartella, forcella con spina di centraggio e indicatore di posizione. Sbavatore girevole interno-esterno per tubi, Ø 50 mm. Tagliatubi da 5 a 28 mm. Fornito in una pratica valigetta in plastica.',
     code:  'FLA-TOP-45',
-    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/FLA TOP 45 ALAT.webp',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/PERT ALAT.webp', 
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/ČISTAČ.webp',
-           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/REZAČ.webp',  
+    imgs: ['images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/FLA TOP 45 ALAT.jpg',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/PERT ALAT.png', 
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/ČISTAČ.png',
+           'images/Hlađenje/OPREMA ZA KLIME/TECNOGAS/ALAT ZA PERTLANJE/REZAČ.png',  
     ],
   },
   {
@@ -1450,7 +1453,7 @@ const PRODUCTS = [
     desc:  'Geberit Delta 01 je pouzdani i dugotrajni ugradbeni vodokotlić koji pruža tiho ispiranje i elegantan dizajn uz jednostavnu montažu u suhomontažne ili zidane zidove.',
     desc_it: 'Geberit Delta 01 è una cassetta a incasso affidabile e duratura che offre uno scarico silenzioso e un design elegante, con montaggio semplice in pareti a secco o in muratura.',
     code:  'DELTA-01',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/GEBERIT/DELTA01.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/GEBERIT/DELTA01.jpg',
   },
   {
     group: 'sanitarije',
@@ -1461,7 +1464,7 @@ const PRODUCTS = [
     desc:  'TECE ugradbeni vodokotlić je izuzetno fleksibilan i tehnički napredan sustav koji se ističe velikim volumenom ispiranja, iznimno tihim radom te univerzalnim aktivacijskim mehanizmom koji vam omogućuje slobodan izbor i naknadnu promjenu bilo koje TECE tipke za ispiranje.',
     desc_it: 'La cassetta a incasso TECE è un sistema estremamente flessibile e tecnicamente avanzato che si distingue per il grande volume di scarico, il funzionamento particolarmente silenzioso e il meccanismo di azionamento universale, che permette di scegliere liberamente — e di sostituire in seguito — qualsiasi placca di comando TECE.',
     code:  'TECE',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/TECE/TECE VODOKOTLIĆ.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/TECE/TECE VODOKOTLIĆ.jpg',
   },
   {
     group: 'sanitarije',
@@ -1472,7 +1475,7 @@ const PRODUCTS = [
     desc:  'REHAU MEPA P31 je visokokvalitetni njemački ugradbeni vodokotlić visine osmišljen u suradnji s ekspertom za sanitarne tehnologije MEPA, koji se ističe iznimno robusnim, plastificiranim čeličnim okvirom, nogicama podesivim po visini do 240 mm s integriranim antikliznim sustavom te vrhunskom izolacijom protiv kondenzacije i podesivim dvokoličinskim ispiranjem.',
     desc_it: 'REHAU MEPA P31 è una cassetta a incasso tedesca di alta qualità, sviluppata in collaborazione con MEPA, esperta in tecnologie sanitarie. Si distingue per il telaio in acciaio plastificato particolarmente robusto, i piedini regolabili in altezza fino a 240 mm con sistema antiscivolo integrato, l\'ottimo isolamento anticondensa e lo scarico a doppia quantità regolabile.',
     code:  'REHAU',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/REHAU/REHAU.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/UGRADBENI VODOKOTLIĆI/REHAU/REHAU.jpg',
   },
   {
     group: 'sanitarije',
@@ -1483,7 +1486,7 @@ const PRODUCTS = [
     desc:  'Geberit AP110 (poznat i kao "Rio") je klasični nadžbukni vodokotlić za nisku montažu, izrađen od ASA plastike otporne na UV zrake, koji nudi praktično dvokoličinsko ispiranje (3/4 ili 6/9 litara) i potpunu izolaciju protiv kondenzacije.',
     desc_it: 'Geberit AP110 (noto anche come "Rio") è la classica cassetta esterna per montaggio basso, realizzata in plastica ASA resistente ai raggi UV, che offre un pratico scarico a doppia quantità (3/4 o 6/9 litri) e un isolamento anticondensa completo.',
     code:  'AP110-RIO',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/GEBERIT/AP110.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/GEBERIT/AP110.jpg',
   },
   {
     group: 'sanitarije',
@@ -1494,7 +1497,7 @@ const PRODUCTS = [
     desc:  'Geberit AP112 je iznimno svestran nadžbukni vodokotlić prilagođen za nisku, srednju ili visoku montažu, opremljen start/stop tipkom za uštedu vode, potpunom izolacijom protiv orošavanja te mogućnošću trostranog priključka vode.',
     desc_it: 'Geberit AP112 è una cassetta esterna estremamente versatile, adatta al montaggio basso, medio o alto, dotata di pulsante start/stop per il risparmio idrico, isolamento anticondensa completo e possibilità di allacciamento idrico su tre lati.',
     code:  'AP112',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/GEBERIT/AP112.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/GEBERIT/AP112.jpg',
   },
    {
     group: 'sanitarije',
@@ -1505,7 +1508,7 @@ const PRODUCTS = [
     desc:  'Geberit AP116 je moderan nadžbukni vodokotlić za nisku montažu koji se odlikuje elegantnim, tankim linijama i dizajnom s dvije odvojene tipke za dvokoličinsko ispiranje (3/4,5 l i 6/7,5 l), čime pruža maksimalnu uštedu vode i suvremeniji izgled u kupaonici.',
     desc_it: 'Geberit AP116 è una moderna cassetta esterna per montaggio basso che si distingue per le linee eleganti e sottili e per il design con due pulsanti separati per lo scarico a doppia quantità (3/4,5 l e 6/7,5 l), offrendo il massimo risparmio idrico e un aspetto più attuale in bagno.',
     code:  'AP116',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/GEBERIT/AP116.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/GEBERIT/AP116.jpg',
   },
   {
     group: 'sanitarije',
@@ -1516,7 +1519,7 @@ const PRODUCTS = [
     desc:  'LIV Laguna je iznimno popularan i cjenovno pristupačan nadžbukni vodokotlić za nisku montažu (s mogućnošću visoke), napravljen od kvalitetnog ABS materijala s ugrađenom izolacijom protiv kondenzacije i velikom start/stop tipkom koja omogućuje jednostavnu kontrolu i uštedu potrošnje vode.',
     desc_it: 'LIV Laguna è una cassetta esterna molto diffusa e conveniente per montaggio basso (con possibilità di montaggio alto), realizzata in ABS di qualità con isolamento anticondensa integrato e un ampio pulsante start/stop che permette un controllo semplice e il risparmio d\'acqua.',
     code:  'LIV-LAGUNA',
-    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/LIV/LAGUNA.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/VODOKOTLIĆI/LIV/LAGUNA.jpg',
   },
   {
     group: 'sanitarije',
@@ -1527,7 +1530,7 @@ const PRODUCTS = [
     desc_it: 'Flessibile di collegamento rivestito in treccia, per collegare la cassetta o il rubinetto alla valvola a squadra. Disponibile in lunghezze da 10 a 100 cm, compresa la versione con attacco lungo per raccordi difficili da raggiungere.',
     code:  'FLEX-VODOKOTLIC',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/VODOKOTLIĆI/FLEX CRIJEVO.webp',
+    img: 'images/VODOMATERIJAL/VODOKOTLIĆI/CRIJEVO ZA VODOKOTLIĆ.jpg',
     variants: [
       { label: '10 cm', code: 'FLEX-VK-38-10', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
       { label: '20 cm', code: 'FLEX-VK-38-20', group: '3/8" ŽŽ/MŽ', group_it: '3/8" FF/MF' },
@@ -1563,10 +1566,13 @@ const PRODUCTS = [
     name_it: 'SEDILE WC ARIZONA',
     desc:    'WC daska ARIZONA s poklopcem i pripadajućim priborom za montažu.',
     desc_it: 'Sedile WC ARIZONA con coperchio e relativa minuteria di fissaggio.',
-    // ŠIFRA: privremena — zamijenite pravim artiklom kad bude poznat.
     code:  'WC-DASKA-ARIZONA',
-    // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/WC DASKE/ARIZONA.webp',
+     imgs:[
+      'images/VODOMATERIJAL/WC DASKE/ARIZONA/ARIZONA 1.webp',
+      'images/VODOMATERIJAL/WC DASKE/ARIZONA/ARIZONA 2.webp',
+      'images/VODOMATERIJAL/WC DASKE/ARIZONA/ARIZONA 3.webp',
+      'images/VODOMATERIJAL/WC DASKE/ARIZONA/ARIZONA 4.webp'
+    ],
   },
   {
     group: 'sanitarije',
@@ -1577,7 +1583,7 @@ const PRODUCTS = [
     desc_it: 'Sedile WC CHAMONIX con coperchio e relativa minuteria di fissaggio.',
     // ŠIFRA: privremena — zamijenite pravim artiklom kad bude poznat.
     code:  'WC-DASKA-CHAMONIX',
-    // img: 'images/VODOMATERIJAL/WC DASKE/CHAMONIX.webp',
+    img: 'images/VODOMATERIJAL/WC DASKE/CHAMONIX/CHAMONIX.jpg',
   },
   {
     group: 'sanitarije',
@@ -1587,7 +1593,7 @@ const PRODUCTS = [
     desc:    'WC daska PRESTIGE s poklopcem i pripadajućim priborom za montažu.',
     desc_it: 'Sedile WC PRESTIGE con coperchio e relativa minuteria di fissaggio.',
     code:  '38348',
-    // img: 'images/VODOMATERIJAL/WC DASKE/PRESTIGE.webp',
+    img: 'images/VODOMATERIJAL/WC DASKE/PRESTIGE/PRESTIGE.jpg',
   },
   {
     group: 'sanitarije',
@@ -1598,7 +1604,7 @@ const PRODUCTS = [
     desc_it: 'Sedile WC TANGO con coperchio e relativa minuteria di fissaggio.',
     // ŠIFRA: privremena — zamijenite pravim artiklom kad bude poznat.
     code:  'WC-DASKA-TANGO',
-    // img: 'images/VODOMATERIJAL/WC DASKE/TANGO.webp',
+    img: 'images/VODOMATERIJAL/WC DASKE/PRESTIGE/PRESTIGE.jpg',
   },
 
   // ── VODOMATERIJAL › BATERIJE ──────────────────────────────────
@@ -1611,7 +1617,7 @@ const PRODUCTS = [
     desc:  'Baterija za sudoperu MINOTTI TUBO DARK ELEGANCE.',
     desc_it: 'Miscelatore per lavello MINOTTI TUBO DARK ELEGANCE.',
     code:  '6118 / 6118-3',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/61183B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/61183B.jpg',
     variants: [
     { label: '6118',  code: '6118', desc: 'Slavina za sudeoper sa 2 cijevi', },
     { label: '6118-3',  code: '6118-3', desc: 'Slavina za sudeoper sa 3 cijevi', },
@@ -1626,7 +1632,7 @@ const PRODUCTS = [
     desc:  'Slavina za kadu MINOTTI TUBO DARK ELEGANCE.',
     desc_it: 'Rubinetto per vasca MINOTTI TUBO DARK ELEGANCE.',
     code:  '6111B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6111B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6111B.jpg',
   },
    {
     group: 'sanitarije',
@@ -1637,7 +1643,7 @@ const PRODUCTS = [
     desc:  'Slavina za tuš MINOTTI TUBO DARK ELEGANCE.',
     desc_it: 'Rubinetto per doccia MINOTTI TUBO DARK ELEGANCE.',
     code:  '6113B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6113B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6113B.jpg',
   },
   {
     group: 'sanitarije',
@@ -1648,7 +1654,7 @@ const PRODUCTS = [
     desc:  'Slavina za umivaonik MINOTTI TUBO DARK ELEGANCE.',
     desc_it: 'Rubinetto per lavabo MINOTTI TUBO DARK ELEGANCE.',
     code:  '6112B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6112B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6112B.jpg',
   },
   {
     group: 'sanitarije',
@@ -1659,7 +1665,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju MINOTTI TUBO.',
     desc_it: 'Rubinetto per cucina MINOTTI TUBO.',
     code:  '6128B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6128B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6128B.jpg',
   },
   {
     group: 'sanitarije',
@@ -1670,7 +1676,7 @@ const PRODUCTS = [
     desc:  'Slavina za sudoper savitljiva MINOTTI STELA.',
     desc_it: 'Rubinetto per lavello con canna flessibile MINOTTI STELA.',
     code:  '2120',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/2120.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/2120.jpg',
   },
   {
     group: 'sanitarije',
@@ -1681,7 +1687,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju MINOTTI TUBO.',
     desc_it: 'Rubinetto per cucina MINOTTI TUBO.',
     code:  '4501',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4501_4501-3.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4501_4501-3.jpg',
     variants: [
     { label: '4501',  code: '4501', desc: 'Slavina za sudoper sa 2 cijevi', },
     { label: '4501-3',  code: '4501-3', desc: 'Slavina za sudoper sa 3 cijevi', },
@@ -1696,7 +1702,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju - MINOTTI PRIMA',
     desc_it: 'Rubinetto per cucina – MINOTTI PRIMA.',
     code:  '4114',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4114_4114-3.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4114_4114-3.jpg',
     variants: [
     { label: '4114',  code: '4114', desc: 'Slavina za sudoper sa 2 cijevi', },
     { label: '4114-3',  code: '4114-3', desc: 'Slavina za sudoper sa 3 cijevi', },
@@ -1711,7 +1717,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju MINOTTI STANDARD.',
     desc_it: 'Rubinetto per cucina MINOTTI STANDARD.',
     code:  '8884',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8884.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8884.jpg',
   },
   {
     group: 'sanitarije',
@@ -1722,7 +1728,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju MINOTTI STANDARD - 3 cijevi.',
     desc_it: 'Rubinetto per cucina MINOTTI STANDARD – 3 tubi.',
     code:  '8888',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8888.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/8888.jpg',
   },
   {
     group: 'sanitarije',
@@ -1733,7 +1739,7 @@ const PRODUCTS = [
     desc:  'Slavina za sudoper MINOTTI STANDARD.',
     desc_it: 'Rubinetto per lavello MINOTTI STANDARD.',
     code:  '6888',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6888.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6888.jpg',
   },
   
   {
@@ -1745,7 +1751,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju MINOTTI STANDARD.',
     desc_it: 'Rubinetto per cucina MINOTTI STANDARD.',
     code:  '6884',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6884_6884-S.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/6884_6884-S.jpg',
     variants: [
     { label: '6884',  code: '6884', desc: 'Slavina za sudoper sa 2 cijevi', },
     { label: '6884-S',  code: '6884-S', desc: 'Slavina za sudoper sa 3 cijevi', },
@@ -1760,7 +1766,7 @@ const PRODUCTS = [
     desc:  'Slavina za protočni bojler MINOTTI STANDARD.',
     desc_it: 'Rubinetto per scaldabagno istantaneo MINOTTI STANDARD.',
     code:  '7833',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/7833.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/7833.jpg',
   },
   {
     group: 'sanitarije',
@@ -1771,7 +1777,7 @@ const PRODUCTS = [
     desc:  'Slavina za KUHINJU MINOTTI.',
     desc_it: 'Rubinetto per cucina MINOTTI.',
     code:  'MH-9018-J',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/9018.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/9018.jpg',
   },
   {
     group: 'sanitarije',
@@ -1782,7 +1788,7 @@ const PRODUCTS = [
     desc:  'Slavina za kuhinju zidna za hladnu vodu MINOTTI PRIMA',
     desc_it: 'Rubinetto per cucina a parete per acqua fredda MINOTTI PRIMA.',
     code:  '4007',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4007.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/KUHINJSKE SLAVINE/4007.jpg',
   },
  {
     group: 'sanitarije',
@@ -1793,7 +1799,7 @@ const PRODUCTS = [
     desc:  'Slavina za tuš MINOTTI PRIMA.',
     desc_it: 'Rubinetto per doccia MINOTTI PRIMA.',
     code:  '4113',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4113.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4113.jpg',
   },
   {
     group: 'sanitarije',
@@ -1804,7 +1810,7 @@ const PRODUCTS = [
     desc:  'Slavina za tuš MINOTTI STANDARD.',
     desc_it: 'Rubinetto per doccia MINOTTI STANDARD.',
     code:  '6883',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6883.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6883.jpg',
   },
   {
     group: 'sanitarije',
@@ -1815,7 +1821,7 @@ const PRODUCTS = [
     desc:  'Slavina za tuš MINOTTI PRIMA.',
     desc_it: 'Rubinetto per doccia MINOTTI PRIMA.',
     code:  '4111',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4111.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4111.jpg',
   },
   {
     group: 'sanitarije',
@@ -1826,7 +1832,7 @@ const PRODUCTS = [
     desc:  'Slavina za tuš okretna MINOTTI PRIMA.',
     desc_it: 'Rubinetto per doccia con bocca girevole MINOTTI PRIMA.',
     code:  '4110',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4110.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/4110.jpg',
   },
   {
     group: 'sanitarije',
@@ -1837,7 +1843,7 @@ const PRODUCTS = [
     desc:  'Slavina za kadu MINOTTI STANDARD.',
     desc_it: 'Rubinetto per vasca MINOTTI STANDARD.',
     code:  '6881',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6881.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/6881.jpg',
   },
   {
     group: 'sanitarije',
@@ -1848,7 +1854,7 @@ const PRODUCTS = [
     desc:  'Slavina za umivaonik MINOTTI PRIMA.',
     desc_it: 'Rubinetto per lavabo MINOTTI PRIMA.',
     code:  '4112',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/4112.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/4112.jpg',
   },
   {
     group: 'sanitarije',
@@ -1859,7 +1865,7 @@ const PRODUCTS = [
     desc:  'Slavina za umivaonik MINOTTI STANDARD.',
     desc_it: 'Rubinetto per lavabo MINOTTI STANDARD.',
     code:  '6885',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6885.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA UMIVAONIK/6885.jpg',
   },
   {
     group: 'sanitarije',
@@ -1870,7 +1876,7 @@ const PRODUCTS = [
     desc:  'Slavina za bide MINOTTI PRIMA.',
     desc_it: 'Rubinetto per bidet MINOTTI PRIMA.',
     code:  '4116',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/4116.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/4116.jpg',
   },
   {
     group: 'sanitarije',
@@ -1881,7 +1887,7 @@ const PRODUCTS = [
     desc:  'Slavina za bide MINOTTI STANDARD.',
     desc_it: 'Rubinetto per bidet MINOTTI STANDARD.',
     code:  '6889',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/6889.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/SLAVINE ZA BIDE/6889.jpg',
   },
   {
     group: 'sanitarije',
@@ -1892,7 +1898,7 @@ const PRODUCTS = [
     desc:  'Crna Minotti Quadra New baterija za tuš sa usponskim tušem i ružom nudi savršen spoj luksuza i funkcionalnosti za moderno kupatilo MINOTTI TUBO DARK ELEGANCE.',
     desc_it: 'Il miscelatore doccia nero Minotti Quadra New, con colonna doccia e soffione, unisce lusso e funzionalità per il bagno moderno MINOTTI TUBO DARK ELEGANCE.',
     code:  'MUT-045B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-045B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-045B.jpg',
   },
   {
     group: 'sanitarije',
@@ -1903,7 +1909,7 @@ const PRODUCTS = [
     desc:  'Baterija za tuš sa komplet usponskim tušem ruža MINOTTI TUBO DARK ELEGANCE.',
     desc_it: 'Miscelatore doccia con colonna doccia completa e soffione MINOTTI TUBO DARK ELEGANCE.',
     code:  'MUT-065B',
-    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-065B.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/MINOTTI/TUŠ SLAVINE/MUT-065B.jpg',
   },
   {
     group: 'sanitarije',
@@ -1936,7 +1942,7 @@ const PRODUCTS = [
     desc:  'Ars Black ugradbeni tuš set VALVEX.',
     desc_it: 'Set doccia a incasso Ars Black VALVEX.',
     code:  '2420160',
-    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/UGRADBENI TUŠ SET/ARS BLACK.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/UGRADBENI TUŠ SET/ARS BLACK.png',
   },
   {
     group: 'sanitarije',
@@ -1947,7 +1953,7 @@ const PRODUCTS = [
     desc:  'Ars slavina za umivaonik - visoka VALVEX.',
     desc_it: 'Rubinetto per lavabo Ars – alto VALVEX.',
     code:  '2420360',
-    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/SLAVINE/ARS VISOKA.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/VALVEX/SLAVINE/ARS VISOKA.png',
   },
   {
     group: 'sanitarije',
@@ -1958,7 +1964,7 @@ const PRODUCTS = [
     desc:  'Rozetna i ručica za podžbuknu bateriju s prebacivačem INFINITY (12250) UNITAS.',
     desc_it: 'Rosone e maniglia per miscelatore a incasso con deviatore INFINITY (12250) UNITAS.',
     code:  '12250',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/UNITAS INFINITY i90 12250.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/UNITAS INFINITY i90 12250.jpg',
   },
   {
     group: 'sanitarije',
@@ -1969,7 +1975,7 @@ const PRODUCTS = [
     desc:  'Baterija tuš jednoručna INFINITY UNITAS.',
     desc_it: 'Miscelatore doccia monocomando INFINITY UNITAS.',
     code:  '00401',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA TUŠ 00401 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA TUŠ 00401 INFINITY.JPG',
   },
   {
     group: 'sanitarije',
@@ -1980,7 +1986,7 @@ const PRODUCTS = [
     desc:  'Šipka klizna, tuš ručica niklovana, crijevo za tuš 150 cm SET UNITAS INFINITY (12460).',
     desc_it: 'Asta scorrevole, doccetta nichelata, flessibile doccia 150 cm SET UNITAS INFINITY (12460).',
     code:  '12460',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SET ZA TUŠ KOMPLET 12460 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SET ZA TUŠ KOMPLET 12460 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -1991,7 +1997,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna jednoručna za sudoper Infinity 00170 UNITAS.',
     desc_it: 'Miscelatore monocomando da piano per lavello Infinity 00170 UNITAS.',
     code:  '00170',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00170 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00170 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2002,7 +2008,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna jednoručna za sudoper Infinity 00175 UNITAS.',
     desc_it: 'Miscelatore monocomando da piano per lavello Infinity 00175 UNITAS.',
     code:  '00175',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00175 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00175 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2013,7 +2019,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna jednoručna za sudoper Infinity 00176 UNITAS.',
     desc_it: 'Miscelatore monocomando da piano per lavello Infinity 00176 UNITAS.',
     code:  '00176',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00176 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA KUHINJU 00176 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2024,7 +2030,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna s 2 cijevi jednoručna za umivaonik 102x84 mm UNITAS INFINITY (00004).',
     desc_it: 'Miscelatore monocomando da piano con 2 flessibili per lavabo 102 × 84 mm UNITAS INFINITY (00004).',
     code:  '00004',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00004 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00004 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2035,7 +2041,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna s 2 cijevi jednoručna za umivaonik 118x91 mm UNITAS INFINITY (00014).',
     desc_it: 'Miscelatore monocomando da piano con 2 flessibili per lavabo 118 × 91 mm UNITAS INFINITY (00014).',
     code:  '00014',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00014 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA UMIVAONIK 00014 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2046,7 +2052,7 @@ const PRODUCTS = [
     desc:  'Baterija za bide jednoručna UNITAS INFINITY (00503).',
     desc_it: 'Miscelatore monocomando per bidet UNITAS INFINITY (00503).',
     code:  '00503',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA BIDE 00503 INFINITY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA BIDE 00503 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2057,7 +2063,7 @@ const PRODUCTS = [
     desc:  'Slavina pokretna 1/2" UNITAS 10351.',
     desc_it: 'Rubinetto con bocca girevole 1/2" UNITAS 10351.',
     code:  '10351',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/CLASSIC/SLAVINA ZA UMIVAONIK ZIDNA 10351.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/CLASSIC/SLAVINA ZA UMIVAONIK ZIDNA 10351.jpg',
   },
   {
     group: 'sanitarije',
@@ -2068,7 +2074,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna jednoručna za kuhinju pregibna UNITAS FRESH (00135).',
     desc_it: 'Miscelatore monocomando da piano per cucina con canna snodabile UNITAS FRESH (00135).',
     code:  '00135',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/FRESH/SLAVINA ZA SUDOPER PREGIBNA 00135 FRESH.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/FRESH/SLAVINA ZA SUDOPER PREGIBNA 00135 FRESH.jpg',
   },
   {
     group: 'sanitarije',
@@ -2079,7 +2085,7 @@ const PRODUCTS = [
     desc:  'SlMješač podžbukni za tuš bateriju s prebacivačem FRESH,PROJECT, INFINITY (00368) UNITAS.',
     desc_it: 'Miscelatore a incasso per doccia con deviatore FRESH, PROJECT, INFINITY (00368) UNITAS.',
     code:  '00368',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA MJEŠALICA 00368 BLACK.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA MJEŠALICA 00368 BLACK.jpg',
   },
   {
     group: 'sanitarije',
@@ -2090,7 +2096,7 @@ const PRODUCTS = [
     desc:  'Podžbukna baterija set SQ s prebacivačem UNITAS (mješač i nadžbukna rozetna) (00362).',
     desc_it: 'Set miscelatore a incasso SQ con deviatore UNITAS (miscelatore e rosone esterno) (00362).',
     code:  '00362',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA SLAVINA 00362 SQ.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNA SLAVINA 00362 SQ.jpg',
   },
   {
     group: 'sanitarije',
@@ -2101,7 +2107,7 @@ const PRODUCTS = [
     desc:  'Podžbukna baterija set SQ s prebacivačem UNITAS (mješač i nadžbukna rozetna) (00364).',
     desc_it: 'Set miscelatore a incasso SQ con deviatore UNITAS (miscelatore e rosone esterno) (00364).',
     code:  '00364',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00364 SQ BLACKjpg.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00364 SQ BLACKjpg.jpg',
   },
   {
     group: 'sanitarije',
@@ -2111,12 +2117,8 @@ const PRODUCTS = [
     name_it: 'UNITAS – SET DOCCIA A INCASSO NERO ELITE BLACK',
     desc:  'Podžbukni set ELITE CRNI (mješač,rozetna,zidni priključak,držač tuša,tuš mlaznica,ručica,crijevo,držač zidni) UNITAS BLACK (00364).',
     desc_it: 'Set a incasso ELITE NERO (miscelatore, rosone, presa a parete, supporto doccetta, soffione, doccetta, flessibile, supporto a parete) UNITAS BLACK.',
-    // ⚠ PRIVREMENA ŠIFRA — treba prava.
-    // Ovaj je artikl imao istu šifru (00364) kao SQ BLACK set iznad, pa je
-    // kupac koji je kliknuo na ELITE BLACK otvarao stranicu SQ BLACK-a i slao
-    // upit za krivi proizvod. Do ispravne šifre stoji 00364-ELITE.
     code:  '00364-ELITE',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00377 ELITE BLACK.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PODŽBUKNI/PODŽBUKNI TUŠ 00377 ELITE BLACK.jpg',
   },
   {
     group: 'sanitarije',
@@ -2127,7 +2129,7 @@ const PRODUCTS = [
     desc:  'Baterija za bide jednoručna UNITAS PROJECT (00518).',
     desc_it: 'Miscelatore monocomando per bidet UNITAS PROJECT (00518).',
     code:  '00518',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA BIDE 00518 PROJECT.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA BIDE 00518 PROJECT.jpg',
   },
   {
     group: 'sanitarije',
@@ -2138,7 +2140,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna s 3 cijevi jednoručna za sudoper UNITAS PROJECT (01185).',
     desc_it: 'Miscelatore monocomando da piano con 3 flessibili per lavello UNITAS PROJECT (01185).',
     code:  '01185',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA KUHINJU 01185 PROJECT.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA KUHINJU 01185 PROJECT.jpg',
   },
   {
     group: 'sanitarije',
@@ -2149,7 +2151,7 @@ const PRODUCTS = [
     desc:  'Baterija tuš jednoručna bez izljeva PROJECT UNITAS (00425).',
     desc_it: 'Miscelatore doccia monocomando senza bocca PROJECT UNITAS (00425).',
     code:  '00425',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA TUŠ 00425 PROJECT.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA TUŠ 00425 PROJECT.jpg',
   },
   {
     group: 'sanitarije',
@@ -2160,7 +2162,7 @@ const PRODUCTS = [
     desc:  'Baterija usadna s 2 cijevi jednoručna za umivaonik UNITAS PROJECT (00026).',
     desc_it: 'Miscelatore monocomando da piano con 2 flessibili per lavabo UNITAS PROJECT (00026).',
     code:  '00026',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA UMIVAONIK 00026 PROJECT.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/PROJECT/SLAVINA ZA UMIVAONIK 00026 PROJECT.jpg',
   },
   {
     group: 'sanitarije',
@@ -2171,7 +2173,7 @@ const PRODUCTS = [
     desc:  'Baterija tuš jednoručna pokretni izljev UNITAS SIMPATY (00389).',
     desc_it: 'Miscelatore monocomando doccia con bocca girevole UNITAS SIMPATY (00389).',
     code:  '00389',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KADU 00389 SIMPATY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KADU 00389 SIMPATY.jpg',
   },
   {
     group: 'sanitarije',
@@ -2182,7 +2184,7 @@ const PRODUCTS = [
     desc:  'Baterija za protočni bojler jednoručna UNITAS SIMPATY (01281).',
     desc_it: 'Miscelatore monocomando per scaldabagno istantaneo UNITAS SIMPATY (01281).',
     code:  '01281',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KUHINJU - ZIDNA 01281 SIMPATY.webp',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/SIMPATY/SLAVINA ZA KUHINJU - ZIDNA 01281 SIMPATY.jpg',
   },
 
 
@@ -2196,10 +2198,10 @@ const PRODUCTS = [
     desc_it: 'Cabina doccia WALK IN h-200 (vetro 8 mm grigio fumé, profili nero opaco, asta telescopica nero opaco 70-120 cm) ROCCO ECO.',
     code:  '31168',
     imgs: [
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO.webp',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 1.webp',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 2.webp',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 3.webp'
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO.jpg',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 1.jpg',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 2.jpg',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/CRNO STAKLO/ROCCO ECO - 80 X 200 CRNO STAKLO 3.jpg'
     ]
   },
   {
@@ -2212,10 +2214,10 @@ const PRODUCTS = [
     desc_it: 'Cabina doccia WALK IN h-200 (vetro trasparente 8 mm, asta telescopica 70-120 cm) ROCCO ECO.',
     code:  '31206',
     imgs: [
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO.webp',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 2.webp',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 3.webp',
-      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 4.webp'
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO.jpg',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 2.jpg',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 3.jpg',
+      'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 4.jpg'
     ]
   },
 
@@ -2228,7 +2230,13 @@ const PRODUCTS = [
     desc:    'Kabina tuš s kadom, kvadratna 90×90 cm, visina 200 cm, mat staklo. ROCCO ECO.',
     desc_it: 'Cabina doccia con piatto, quadrata 90×90 cm, altezza 200 cm, vetro satinato. ROCCO ECO.',
     code:  '31320',
-    // SLIKA: dodajte kad bude dostupna.
+    imgs: [
+      'images/VODOMATERIJAL/KABINE/31320/31320 1.jpg',
+      'images/VODOMATERIJAL/KABINE/31320/31320 2.jpg',
+      'images/VODOMATERIJAL/KABINE/31320/31320 3.jpg',
+      'images/VODOMATERIJAL/KABINE/31320/31320 4.jpg',
+      'images/VODOMATERIJAL/KABINE/31320/31320 5.jpg'
+    ]
   },
   {
     group: 'sanitarije',
@@ -2239,6 +2247,12 @@ const PRODUCTS = [
     desc:    'Kabina tuš s kadom, 100×80 cm, visina 196 cm, prozirno staklo. ROCCO.',
     desc_it: 'Cabina doccia con piatto, 100×80 cm, altezza 196 cm, vetro trasparente. ROCCO.',
     code:  '31434',
+    imgs: [
+     'images/VODOMATERIJAL/KABINE/31434/31434 1.jpg',
+     'images/VODOMATERIJAL/KABINE/31434/31434 2.jpg',
+     'images/VODOMATERIJAL/KABINE/31434/31434 3.jpg',
+     'images/VODOMATERIJAL/KABINE/31434/31434 4.jpg',
+    ] 
   },
   {
     group: 'sanitarije',
@@ -2246,16 +2260,25 @@ const PRODUCTS = [
     brand: 'ROCCO ECO',
     name:    'KABINA TUŠ KVADRATNA – KROM PROFILI h-195',
     name_it: 'CABINA DOCCIA QUADRATA – PROFILI CROMATI h-195',
-    desc:    'Kabina tuš kvadratna s krom profilima, visina 195 cm. ROCCO ECO. Dostupna 90×90 cm s mat staklom i 80×80 cm s prozirnim staklom.',
-    desc_it: 'Cabina doccia quadrata con profili cromati, altezza 195 cm. ROCCO ECO. Disponibile 90×90 cm con vetro satinato e 80×80 cm con vetro trasparente.',
+    desc:    'Kabina tuš kvadratna s krom profilima, visina 195 cm. ROCCO ECO. Dostupna 90×90 cm s mat staklom te 80×80 i 90×90 cm s prozirnim staklom.',
+    desc_it: 'Cabina doccia quadrata con profili cromati, altezza 195 cm. ROCCO ECO. Disponibile 90×90 cm con vetro satinato e 80×80 e 90×90 cm con vetro trasparente.',
     code:  '31218',
     variants: [
       { label: '90×90 cm – mat staklo',            label_it: '90×90 cm – vetro satinato',      code: '31218' },
       // NAPOMENA: u popisu su stigla DVA artikla s istim opisom (80×80,
       // prozirno) i različitim šiframa — zato su razlučeni brojem artikla.
-      { label: '80×80 cm – prozirno (art. 31224)', label_it: '80×80 cm – trasparente (art. 31224)', code: '31224' },
-      { label: '80×80 cm – prozirno (art. 31225)', label_it: '80×80 cm – trasparente (art. 31225)', code: '31225' },
+      { label: '80×80 cm – prozirno', label_it: '80×80 cm – trasparente', code: '31224' },
+      { label: '90×90 cm – prozirno', label_it: '90×90 cm – trasparente', code: '31225' },
     ],
+    imgs: [
+      'images/VODOMATERIJAL/KABINE/31224/31224 1.jpg',
+      'images/VODOMATERIJAL/KABINE/31224/31224 2.jpg',
+      'images/VODOMATERIJAL/KABINE/31224/31224 3.jpg',
+      'images/VODOMATERIJAL/KABINE/31224/31224 4.jpg',
+      'images/VODOMATERIJAL/KABINE/31224/31224 5.jpg',
+      'images/VODOMATERIJAL/KABINE/31224/31224 6.jpg'
+    ]
+
   },
   {
     group: 'sanitarije',
@@ -2266,18 +2289,32 @@ const PRODUCTS = [
     desc:    'Kabina tuš polukružna 80×80 cm, visina 180 cm, mat staklo. ROCCO ECO.',
     desc_it: 'Cabina doccia semicircolare 80×80 cm, altezza 180 cm, vetro satinato. ROCCO ECO.',
     code:  '31213',
+    imgs: [ 
+      'images/VODOMATERIJAL/KABINE/31213/31213 1.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 2.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 3.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 4.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 5.jpg'
+    ]
   },
   {
     group: 'sanitarije',
     cat:   'kabine',
     brand: 'ROCCO ECO',
-    name:    'KABINA TUŠ POLUKRUŽNA – MAT STAKLO h-180',
-    name_it: 'CABINA DOCCIA SEMICIRCOLARE – VETRO SATINATO h-180',
+    name:    'KABINA TUŠ POLUKRUŽNA 90×90 – MAT STAKLO h-180',
+    name_it: 'CABINA DOCCIA SEMICIRCOLARE 90×90 – VETRO SATINATO h-180',
     // NAPOMENA: za ovaj artikl dimenzija nije bila navedena u popisu —
     // dopunite je kad bude poznata (vjerojatno 90×90).
-    desc:    'Kabina tuš polukružna, visina 180 cm, mat staklo. ROCCO ECO.',
-    desc_it: 'Cabina doccia semicircolare, altezza 180 cm, vetro satinato. ROCCO ECO.',
+    desc:    'Kabina tuš polukružna 90x90 cm, visina 180 cm, mat staklo. ROCCO ECO.',
+    desc_it: 'Cabina doccia semicircolare 90×90 cm, altezza 180 cm, vetro satinato. ROCCO ECO.',
     code:  '31217',
+    imgs: [
+      'images/VODOMATERIJAL/KABINE/31213/31213 1.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 2.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 3.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 4.jpg',
+      'images/VODOMATERIJAL/KABINE/31213/31213 5.jpg'
+    ]
   },
   {
     group: 'sanitarije',
@@ -2294,6 +2331,12 @@ const PRODUCTS = [
       { label: 'R90×185 – prozirno staklo',    label_it: 'R90×185 – vetro trasparente', code: 'JA-5292',  group: 'R90 cm', group_it: 'R90 cm' },
       { label: 'R90×185 – s kvadratićima',     label_it: 'R90×185 – vetro a quadretti', code: 'JAK-5291', group: 'R90 cm', group_it: 'R90 cm' },
     ],
+    imgs: [
+      'images/VODOMATERIJAL/KABINE/AQUACASA/JA-5280.jpg',
+      'images/VODOMATERIJAL/KABINE/AQUACASA/JAK-5281.jpg',
+      'images/VODOMATERIJAL/KABINE/AQUACASA/JA-5292.jpg',
+      'images/VODOMATERIJAL/KABINE/AQUACASA/JAK-5291.jpg',
+    ]
   },
 
   // ── SANITARIJE › KADE ─────────────────────────────────────────
@@ -2310,6 +2353,8 @@ const PRODUCTS = [
       { label: '80×80 cm', code: '30718' },
       { label: '90×90 cm', code: '30747' },
     ],
+    img: 'images/VODOMATERIJAL/KADE/HIDRA STIL/30718.jpg',
+
   },
   {
     group: 'sanitarije',
@@ -2320,6 +2365,7 @@ const PRODUCTS = [
     desc:    'Polukružna tuš kada od akrila, bijela. AquaMax LIBRA.',
     desc_it: 'Piatto doccia semicircolare in acrilico, bianco. AquaMax LIBRA.',
     code:  '30686',
+    img: 'images/VODOMATERIJAL/KADE/HIDRA STIL/30686.jpg',
   },
 
   // ── SANITARIJE › TUŠ KANALICE ─────────────────────────────────
@@ -2334,11 +2380,11 @@ const PRODUCTS = [
     code:  'LIV-GALAXY',
     variants: [
       { label: '450 mm', code: '674718' },
-      // ŠIFRA: privremena — u popisu nije bila navedena.
-      { label: '650 mm', code: 'LIV-GALAXY-650' },
+      { label: '650 mm', code: '674724' },
       { label: '750 mm', code: '674730' },
       { label: '850 mm', code: '674736' },
     ],
+    img: 'images/VODOMATERIJAL/KANALICE/LIV/GALAXY/GALAXY.png'
   },
   {
     group: 'sanitarije',
@@ -2353,6 +2399,7 @@ const PRODUCTS = [
       { label: '750 mm', code: '674731' },
       { label: '850 mm', code: '674737' },
     ],
+    img: 'images/VODOMATERIJAL/KANALICE/LIV/GALAXY/ENERGY.webp'
   },
   {
     group: 'sanitarije',
@@ -2364,10 +2411,10 @@ const PRODUCTS = [
     desc_it: 'Canalina doccia lineare LIV in finitura nera, da incasso a pavimento. Disponibile nelle lunghezze 650 e 750 mm.',
     code:  'LIV-CRNA',
     variants: [
-      // ŠIFRA: privremena — u popisu nije bila navedena.
-      { label: '650 mm', code: 'LIV-CRNA-650' },
+      { label: '650 mm', code: '675024' },
       { label: '750 mm', code: '675025' },
     ],
+    img: 'images/VODOMATERIJAL/KANALICE/LIV/GALAXY/CRNA.jpg'
   },
 
   // ── VODOMATERIJAL › BOJLERI ───────────────────────────────────
@@ -2601,7 +2648,7 @@ const PRODUCTS = [
     desc:  'Zidno press koljeno 16 mm s unutarnjim navojem 1/2" i nosačem za pričvršćenje u zid. Nosač drži priključak nepomičnim pri navrtanju slavine, pa se cijev iza zida ne opterećuje.',
     desc_it: 'Gomito press a parete 16 mm con filetto interno 1/2" e staffa di fissaggio al muro. La staffa mantiene fermo l\'attacco durante l\'avvitamento del rubinetto, così il tubo dietro la parete non viene sollecitato.',
     code:  'PEX-KOLJ-ZIDNO-16',
-    img: 'images/PEX/PEX KOLJENO SA NOSAČOM 16 - 1_2 Ž. NAVOJ.webp',
+    img: 'images/PEX/PEX KOLJENO SA NOSAČOM 16 - 1_2 Ž. NAVOJ.jpg',
   },
   {
     group: 'vodomaterijal',
@@ -2612,7 +2659,7 @@ const PRODUCTS = [
     desc:  'Press koljeno 90° s navojnim priključkom na jednoj strani — spaja PEX-AL-PEX cijev na slavinu, ventil ili razdjelnik uz promjenu smjera. Dostupno s unutarnjim i s vanjskim navojem.',
     desc_it: 'Gomito press 90° con attacco filettato su un lato — collega il tubo PEX-AL-PEX a un rubinetto, a una valvola o a un collettore cambiando direzione. Disponibile con filetto interno ed esterno.',
     code:  'PEX-KOLJ-NAVOJ-16',
-    img: 'images/PEX/PEX KOLJENO 16 - 1_2 Ž NAVOJ.webp',
+    img: 'images/PEX/PEX KOLJENO 16 - 1_2 Ž NAVOJ.jpg',
     variants: [
       { label: '16 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-KOLJ-U.N.-16',  },
       { label: '20 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-KOLJ-U.N.-20',  },
@@ -2629,7 +2676,7 @@ const PRODUCTS = [
     desc:  'Podžbukni ventil s press priključkom za PEX-AL-PEX cijev. Ugrađuje se u zid i omogućuje zatvaranje pojedinog kraka instalacije bez prekida dovoda u ostatku objekta.',
     desc_it: 'Valvola a incasso con attacco press per tubo PEX-AL-PEX. Si monta a muro e permette di chiudere un singolo ramo dell\'impianto senza interrompere l\'alimentazione nel resto dell\'edificio.',
     code:  'PEX-VENTIL',
-    img: 'images/PEX/PODŽBUKNI VENTIL.webp',
+    img: 'images/PEX/PODŽBUKNI VENTIL.jpg',
     variants: [
       { label: '16',  code: 'PEX-VENTIL-16',  },
       { label: '20',  code: 'PEX-VENTIL-20',  },
@@ -2644,7 +2691,7 @@ const PRODUCTS = [
     desc:  'Ravni press prelaz — spaja PEX-AL-PEX cijev na navojni priključak bez promjene smjera. Dostupan s unutarnjim i s vanjskim navojem, u više kombinacija promjera i navoja.',
     desc_it: 'Passaggio press diritto — collega il tubo PEX-AL-PEX a un attacco filettato senza cambio di direzione. Disponibile con filetto interno ed esterno, in diverse combinazioni di diametro e filettatura.',
     code:  'PEX-PRELAZ',
-    img: 'images/PEX/PEX PRELAZ 16 - 1_2.webp',
+    img: 'images/PEX/PEX PRELAZ 16 - 1_2.jpg',
     variants: [
       { label: '16 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-PRELAZ-U.N.-16',  },
       { label: '20 - 1/2" UNUTARNJI NAVOJ',  code: 'PEX-PREALZ-U.N.-20',  },
@@ -2663,7 +2710,7 @@ const PRODUCTS = [
     desc:  'Press T-komad za odvajanje kraka instalacije. Dostupan u ravnoj izvedbi (sva tri priključka istog promjera) i u reduciranoj, gdje je srednji odvojak manjeg promjera od prolaznog voda.',
     desc_it: 'Raccordo a T press per derivare un ramo dell\'impianto. Disponibile nella versione diritta (tutti e tre gli attacchi dello stesso diametro) e ridotta, con la derivazione centrale di diametro minore rispetto alla linea passante.',
     code:  'PEX-T',
-    img: 'images/PEX/T KOMAD.webp',
+    img: 'images/PEX/T KOMAD.jpg',
     variants: [
       { label: '16 x 16 x 16',  code: 'PEX-T-16',  },
       { label: '20 x 20 x 20',  code: 'PEX-T-20',  },
@@ -2685,7 +2732,7 @@ const PRODUCTS = [
     desc:  'Press redukcija za prijelaz s većeg na manji promjer PEX-AL-PEX cijevi unutar istog voda.',
     desc_it: 'Riduzione press per il passaggio da un diametro maggiore a uno minore del tubo PEX-AL-PEX all\'interno della stessa linea.',
     code:  'PEX-REDUKCIJA',
-    img: 'images/PEX/REDUKCIJA.webp',
+    img: 'images/PEX/REDUKCIJA.jpg',
     variants: [
       { label: '20 - 16',  code: 'PEX-RED-2016',  },
       { label: '26 - 16',  code: 'PEX-RED-2616',  },
@@ -2701,7 +2748,7 @@ const PRODUCTS = [
     desc:  'Press spojnica za nastavljanje dviju PEX-AL-PEX cijevi istog promjera. Koristi se za produženje voda i za popravak oštećenog dijela cijevi.',
     desc_it: 'Manicotto press per unire due tubi PEX-AL-PEX dello stesso diametro. Si usa per prolungare la linea e per riparare un tratto di tubo danneggiato.',
     code:  'PEX-SPOJNICA',
-    img: 'images/PEX/SPOJNICA.webp',
+    img: 'images/PEX/SPOJNICA.jpg',
     variants: [
       { label: '16',  code: 'PEX-SPOJ-16',  },
       { label: '20',  code: 'PEX-SPOJ-20',  },
@@ -2717,7 +2764,7 @@ const PRODUCTS = [
     desc:  'Poluspojnica s press priključkom na cijev 16 mm i holender maticom 1/2". Spoj je rastavljiv — cijev se odvaja ključem bez rezanja, što olakšava zamjenu slavine ili ventila.',
     desc_it: 'Semi-manicotto con attacco press per tubo 16 mm e ghiera 1/2". Il giunto è smontabile — il tubo si stacca con la chiave senza tagliare, il che facilita la sostituzione del rubinetto o della valvola.',
     code:  'PEX-POLUSP',
-    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ.webp',
+    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ.jpg',
     variants: [
       { label: '16',  code: 'PEX-POLUSPOJ-16',  },
       ]
@@ -2731,7 +2778,7 @@ const PRODUCTS = [
     desc:  'Poluspojnica s press priključkom i eurokonus maticom 3/4". Eurokonus je standardni priključak na razdjelnicima podnog grijanja i na radijatorskim ventilima.',
     desc_it: 'Semi-manicotto con attacco press e ghiera eurocono 3/4". L\'eurocono è l\'attacco standard sui collettori del riscaldamento a pavimento e sulle valvole dei radiatori.',
     code:  'PEX-POLUSP-EK',
-    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ EUROKONUS.webp',
+    img: 'images/PEX/PRELAZ 16 - 1_2 NA KLJUČ EUROKONUS.jpg',
     variants: [
       { label: '16 - 3/4"',  code: 'PEX-POLUSPOJ-16-3/4',  },
       { label: '20 - 3/4"',  code: 'PEX-POLUSPOJ-20-3/4',  },
@@ -2746,7 +2793,7 @@ const PRODUCTS = [
     desc:  'Modularni razdjelnik 3/4" s kosim ventilima i priključcima 16 mm. Razvodi medij na više krakova, pri čemu se svaki krak zasebno zatvara i regulira. Broj izlaza bira se prema broju krugova u sustavu.',
     desc_it: 'Collettore modulare 3/4" con valvole inclinate e attacchi da 16 mm. Distribuisce il fluido su più rami, ciascuno dei quali si chiude e si regola separatamente. Il numero di uscite si sceglie in base al numero di circuiti dell\'impianto.',
     code:  'RAZDJELNIK-MODULARNI',
-    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.webp',
+    img: 'images/PEX/MODULARNI RAZDJELNIK SA KOSIM VENTILIMA.jpg',
     variants: [
       { label: '3 IZLAZA',  code: 'RAZD-MODUL-3-IZL',  },
       { label: '4 IZLAZA', code: 'RAZD-MODUL-4-IZL',  },
@@ -2762,7 +2809,7 @@ const PRODUCTS = [
     desc:  'Kuglični ventil 3/4" za zatvaranje razdjelnika. Plava i crvena ručka služe za razlikovanje polaznog i povratnog voda pri servisu.',
     desc_it: 'Valvola a sfera 3/4" per l\'intercettazione del collettore. Le maniglie blu e rossa servono a distinguere la linea di mandata da quella di ritorno durante la manutenzione.',
     code:  'VENTIL-RAZDJELNIK',
-    img: 'images/PEX/KUGL VENTIL 3_4 ZA RAZDJELNIK - PLAVA-CRVENA RUČKA.webp',
+    img: 'images/PEX/KUGL VENTIL 3_4 ZA RAZDJELNIK - PLAVA-CRVENA RUČKA.jpg',
     variants: [
       { label: 'PLAVA RUČKA',  code: 'PLAVI',  },
       { label: 'CRVENA RUČKA', code: 'CRVENI',  },
@@ -2777,7 +2824,7 @@ const PRODUCTS = [
     desc:  'Podžbukni ormarić za modularne razdjelnike, dimenzija 240 × 400 × 80 mm. Štiti razdjelnik i ventile, a vratašca ostaju dostupna za kasniju regulaciju i servis.',
     desc_it: 'Cassetta a incasso per collettori modulari, dimensioni 240 × 400 × 80 mm. Protegge collettore e valvole, mentre lo sportello resta accessibile per la regolazione e la manutenzione successive.',
     code:  'ORMAR-RAZDJELNIK',
-    img: 'images/PEX/ORMAR ZA MODULARNE RAZDJELNIKE.webp',
+    img: 'images/PEX/ORMAR ZA MODULARNE RAZDJELNIKE.jpg',
     variants: [
       { label: '240 x 400 x 80 mm',  code: 'ORM-RAZDJ',  },
       ]
@@ -3064,7 +3111,7 @@ const PRODUCTS = [
     desc_it: 'Tubo flessibile per il collegamento dell\'apparecchio a gas (cucina, caldaia, stufa) all\'impianto. Sezione 8×13 mm, attacco filettato maschio–femmina da 1/2" o 3/4", in lunghezze da 40 a 300 cm. Per il collegamento alla bombola è disponibile anche la versione 20 – 21,8 con filetto femmina su entrambi i lati.',
     code:  'PLIN-FLEX',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX.webp',
+    img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX CRIJEVO.jpg',
     variants: [
       { label: '40 cm', code: 'PLIN-FLEX-12-40', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
       { label: '50 cm', code: 'PLIN-FLEX-12-50', group: '1/2" MŽ  8×13', group_it: '1/2" MF  8×13' },
@@ -3100,7 +3147,10 @@ const PRODUCTS = [
     desc_it: 'Tubo flessibile estensibile in acciaio inox Tecnogas per il collegamento dell\'apparecchio a gas. La versione estensibile copre un intervallo di lunghezza (per es. 20–40 cm) e si adatta alla distanza reale dall\'apparecchio, senza piegature né tensioni.',
     code:  'PLIN-FLEX-INOX',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/PLIN/FLEX CRIJEVO/PLIN FLEX INOX.webp',
+    imgs: [
+      'images/PLIN/FLEX CRIJEVO/PLIM PLEX INOX 1.jpg', 
+      'images/PLIN/FLEX CRIJEVO/PLIM PLEX INOX 2.jpg',
+      'images/PLIN/FLEX CRIJEVO/PLIM PLEX INOX 3.jpg'],
     variants: [
       { label: '1/2" · 20–40 cm', code: 'PLIN-FLEX-INOX-12-2040' },
       { label: '1/2" · 30–60 cm', code: 'PLIN-FLEX-INOX-12-3060' },
@@ -3120,7 +3170,13 @@ const PRODUCTS = [
     desc_it: 'Valvola a sfera di intercettazione realizzata e certificata per il gas. Chiude l\'alimentazione con un quarto di giro. Disponibile con filetto femmina su entrambi i lati (F/F), nella versione maschio–femmina (M/F), con maniglia a farfalla e nella versione angolare con portagomma 8 mm. Nell\'impianto a gas si possono installare esclusivamente valvole marcate per il gas.',
     code:  'PLIN-KUGL',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/PLIN/VENTILI/PLIN-KUGL.webp',
+    imgs: [
+      'images/PLIN/PLIN KUGL VENTILI/PLIN KUGL VENT ŽŽ.webp',
+      'images/PLIN/PLIN KUGL VENTILI/PLIN KUGL VENT MŽ.webp',
+      'images/PLIN/PLIN KUGL VENTILI/PLIN KUGL VENT L.R..webp',
+      'images/PLIN/PLIN KUGL VENTILI/PLIN KUGL VENT L.R. MŽ.webp',
+      'images/PLIN/PLIN KUGL VENTILI/PLIN KUGL VENT KUTNI.webp'
+    ],
     variants: [
       { label: '1/2"', code: 'PLIN-KUGL-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
       { label: '3/4"', code: 'PLIN-KUGL-34', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
@@ -3151,7 +3207,7 @@ const PRODUCTS = [
     desc_it: 'Rampa gas per collegare più bombole a un\'unica linea, fornita con regolatore e tubi flessibili. Quando una bombola si esaurisce subentra la successiva, senza interruzioni nell\'alimentazione. Disponibile con 2, 3 o 4 attacchi.',
     code:  'PLIN-RAMPA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/PLIN/RAMPA/PLIN-RAMPA.webp',
+    img: 'images/PLIN/PLIN RAMPA/PLIN RAMPA SA REG.png',
     variants: [
       { label: '2 izvoda', label_it: '2 attacchi', code: 'PLIN-RAMPA-2' },
       { label: '3 izvoda', label_it: '3 attacchi', code: 'PLIN-RAMPA-3' },
@@ -3166,7 +3222,7 @@ const PRODUCTS = [
     desc:    'Gumeno plinsko crijevo unutarnjeg promjera 8 mm, za priključak trošila preko nazuvice. Reže se na potrebnu dužinu i steže obujmicom.',
     desc_it: 'Tubo gas in gomma con diametro interno 8 mm, per il collegamento dell\'apparecchio tramite portagomma. Si taglia a misura e si fissa con fascetta.',
     code:  'PLIN-CRIJEVO-8',
-    // img: 'images/PLIN/CRIJEVA/PLIN-CRIJEVO-8.webp',
+    img: 'images/PLIN/PEX CIJEV/50204 - CRIJEVO ZA PLIN 8mm.jpg',
   },
   {
     group: 'plin',
@@ -3176,7 +3232,10 @@ const PRODUCTS = [
     desc:    'Ravni priključak s nazuvicom 8 mm za gumeno plinsko crijevo. Navojna strana se spaja na ventil ili instalaciju, a na nazuvicu ide crijevo stegnuto obujmicom.',
     desc_it: 'Raccordo diritto con portagomma 8 mm per tubo gas in gomma. Il lato filettato si collega alla valvola o all\'impianto, mentre sul portagomma va il tubo fissato con fascetta.',
     code:  'PLIN-PRIKLJUCAK-RAVNI',
-    // img: 'images/PLIN/PRIKLJUCCI/PLIN-PRIKLJUCAK-RAVNI.webp',
+    imgs: [
+        'images/PLIN/PLIN FITINZI/PORTAGOMMA F.jpg',
+        'images/PLIN/PLIN FITINZI/PORTAGOMMA M.jpg'
+    ],
     variants: [
       { label: '1/2" – 8 mm Ž', label_it: '1/2" – 8 mm F', code: 'PLIN-PRIKLJ-12-8-Z' },
       { label: '1/2" – 8 mm M', label_it: '1/2" – 8 mm M', code: 'PLIN-PRIKLJ-12-8-M' },
@@ -3191,7 +3250,10 @@ const PRODUCTS = [
     desc:    'Kutni priključak za spoj na plinsku bocu. Izvedba s lijevim navojem (SX), kako je propisano za plinske priključke.',
     desc_it: 'Raccordo angolare per il collegamento alla bombola del gas. Versione con filettatura sinistra (SX), come prescritto per gli attacchi gas.',
     code:  'PLIN-KODULO',
-    // img: 'images/PLIN/PRIKLJUCCI/PLIN-KODULO.webp',
+    imgs: [
+      'images/PLIN/PLIN FITINZI/PLIN KODULO.jpg',
+      'images/PLIN/PLIN FITINZI/PLIN KODULO 9mm.jpg'
+    ],
     variants: [
       { label: '21,8 × 1/4" SX', code: 'PLIN-KODULO-218-14-SX' },
       { label: '9 mm × 21,8 SX', code: 'PLIN-KODULO-9-218-SX' },
@@ -3205,11 +3267,11 @@ const PRODUCTS = [
     desc:    'Redukcija za prijelaz s jedne veličine navoja na drugu u plinskoj instalaciji.',
     desc_it: 'Riduzione per il passaggio da una misura di filetto all\'altra nell\'impianto a gas.',
     code:  'PLIN-REDUKCIJA',
-    // img: 'images/PLIN/PRIKLJUCCI/PLIN-REDUKCIJA.webp',
+    img:'images/PLIN/PLIN FITINZI/PLIN REDUKCIJA.jpg',
     variants: [
       { label: '20 Ž × 1/2" M',   label_it: '20 F × 1/2" M',   code: 'PLIN-RED-20-12' },
       { label: '21,8 Ž × 1/4" M', label_it: '21,8 F × 1/4" M', code: 'PLIN-RED-218-14' },
-      { label: '30 × 21,8',       code: 'PLIN-RED-30-218' },
+      { label: '20 × 21,8',       code: 'PLIN-RED-20-218' },
     ],
   },
   {
@@ -3220,7 +3282,7 @@ const PRODUCTS = [
     desc:    'Dvostrani navojni spojnik (nipl) 20 × 20 mm s lijevim navojem (SX), za plinski priključak.',
     desc_it: 'Nipplo filettato su entrambi i lati 20 × 20 mm con filettatura sinistra (SX), per attacco gas.',
     code:  'PLIN-NIPL-20-20-SX',
-    // img: 'images/PLIN/PRIKLJUCCI/PLIN-NIPL-20-20-SX.webp',
+    img: 'images/PLIN/PLIN FITINZI/NIPL 20 20 SX.jpg',
   },
   {
     group: 'plin',
@@ -3231,7 +3293,7 @@ const PRODUCTS = [
     desc:    'Anaerobno tekuće brtvilo za navojne spojeve, LOXEAL 58-11. Zamjenjuje teflonsku traku i kudjelju: nanosi se na navoj, ispunjava zazor i brtvi bez stezanja naknadnim dotezanjem. Pakiranje 100 ml.',
     desc_it: 'Sigillante liquido anaerobico per raccordi filettati, LOXEAL 58-11. Sostituisce il nastro di teflon e la canapa: si applica sul filetto, riempie il gioco e sigilla senza richiedere ulteriori serraggi. Confezione da 100 ml.',
     code:  'LOXEAL-58-11-100',
-    // img: 'images/PLIN/BRTVILA/LOXEAL-58-11.webp',
+    img: 'images/PLIN/PLIN FITINZI/LOXEAL 58-11.jpg',
   },
   {
     group: 'plin',
@@ -3241,7 +3303,7 @@ const PRODUCTS = [
     desc:    'Regulator tlaka za izravnu montažu na plinsku bocu, kapaciteta 6 kg/h.',
     desc_it: 'Regolatore di pressione per montaggio diretto sulla bombola del gas, portata 6 kg/h.',
     code:  'PLIN-REG-BOCA-6',
-    // img: 'images/PLIN/REGULATORI/PLIN-REG-BOCA-6.webp',
+    img: 'images/PLIN/PLIN FITINZI/REG 2 STUP 6 KG.jpg',
   },
   {
     group: 'plin',
@@ -3251,7 +3313,7 @@ const PRODUCTS = [
     desc:    'Regulator tlaka kapaciteta 4 kg/h, s priključkom 21,8 mm za plinsku bocu.',
     desc_it: 'Regolatore di pressione con portata 4 kg/h e attacco 21,8 mm per bombola del gas.',
     code:  'PLIN-REG-4-218',
-    // img: 'images/PLIN/REGULATORI/PLIN-REG-4-218.webp',
+    img: 'images/PLIN/PLIN FITINZI/REG 4 KG.jpg'
   },
 
   // ── PLIN › PLIN PEX-AL-PEX ────────────────────────────────────
@@ -4326,7 +4388,7 @@ const PRODUCTS = [
     desc_it: 'Vaso di espansione piatto per impianti di riscaldamento chiusi. La forma piana occupa poco spazio, quindi si monta accanto alla caldaia o a parete.',
     code:  'ESP-PLOSNATA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-plosnata.jpg',
+    img: 'images/VODOMATERIJAL/Ekspanzione posude/vrp - 6-10.webp',
     variants: [
       { label: '6 litara', code: 'ZI6GD0GZA3265' },
       { label: '10 litara', code: 'ZI0GD0GZA3255' },
@@ -4343,7 +4405,7 @@ const PRODUCTS = [
     desc_it: 'Vaso di espansione VRV per impianti di riscaldamento chiusi. Assorbe la dilatazione dell\'acqua durante il riscaldamento e mantiene la pressione dell\'impianto entro il campo di lavoro.',
     code:  'ESP-VRV',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-vrv.jpg',
+    img: 'images/VODOMATERIJAL/Ekspanzione posude/vrv.png',
     variants: [
       { label: '35 litara', code: 'IIJRE01R01DA0' },
       { label: '50 litara', code: 'IIKRE01R01DA0' },
@@ -4362,7 +4424,7 @@ const PRODUCTS = [
     desc_it: 'Vaso di espansione per impianti solari. La membrana resiste alle temperature di esercizio più elevate e alla miscela di acqua e glicole che circola nel circuito solare.',
     code:  'ESP-SOLAR',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-solar.jpg',
+    img: 'images/VODOMATERIJAL/Ekspanzione posude/solar.jpg',
     variants: [
       { label: '18 litara', code: 'IIGPL00W01DA1' },
       { label: '24 litara', code: 'IIIPL00W01DA1' },
@@ -4379,7 +4441,7 @@ const PRODUCTS = [
     desc_it: 'Vaso di espansione per impianti di acqua sanitaria (potabile) e autoclavi. La membrana è idonea al contatto con acqua potabile. Disponibile in versione verticale e orizzontale.',
     code:  'ESP-SAN-VODA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/EKSPANZIONE POSUDE/esp-san-voda.jpg',
+    img: 'images/VODOMATERIJAL/Ekspanzione posude/esp pos san voda.webp',
     variants: [
       { label: '50 litara', code: 'IIKVE01B01EA0', group: 'Vertikalna', group_it: 'Verticale' },
       { label: '80 litara', code: 'IIMVE01B01EA0', group: 'Vertikalna', group_it: 'Verticale' },
@@ -4404,7 +4466,7 @@ const PRODUCTS = [
     desc_it: 'Nipplo in ottone con filetto maschio su entrambi i lati. Serve a collegare due elementi con filetto femmina: manicotti, valvole, collettori.',
     code:  'MESING-NIPL',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-NIPL.webp',
+    img: 'images/Grijanje/MESING/NIPL.jpg',
     variants: [
       { label: '1/8"', code: 'MESING-NIPL-18' },
       { label: '1/4"', code: 'MESING-NIPL-14' },
@@ -4428,7 +4490,7 @@ const PRODUCTS = [
     desc_it: 'Nipplo ridotto in ottone con filetti maschio di misure diverse sui due lati. Collega due elementi con filetto femmina di dimensioni diverse.',
     code:  'MESING-NIPL-RED',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-NIPL-RED.webp',
+    img: 'images/Grijanje/MESING/NIPL RED.webp',
     variants: [
       { label: '1/2" × 1/4"', code: 'MESING-NIPL-RED-12-14' },
       { label: '1/2" × 3/8"', code: 'MESING-NIPL-RED-12-38' },
@@ -4456,7 +4518,7 @@ const PRODUCTS = [
     desc_it: 'Riduzione esagonale in ottone con filetto maschio sul lato maggiore e femmina sul minore. Per passare da una misura di filetto a un\'altra.',
     code:  'MESING-RED',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-RED.webp',
+    img: 'images/Grijanje/MESING/RED.jpg',
     variants: [
       { label: '1/8" × 1/4"', code: 'MESING-RED-18-14' },
       { label: '1/8" × 3/8"', code: 'MESING-RED-18-38' },
@@ -4487,7 +4549,7 @@ const PRODUCTS = [
     desc_it: 'Manicotto in ottone con filetto femmina su entrambi i lati. Collega due elementi con filetto maschio o prolunga l\'impianto.',
     code:  'MESING-MUFA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-MUFA.webp',
+    img: 'images/Grijanje/MESING/MUFA.jpg',
     variants: [
       { label: '1/4"', code: 'MESING-MUFA-14' },
       { label: '3/8"', code: 'MESING-MUFA-38' },
@@ -4510,7 +4572,7 @@ const PRODUCTS = [
     desc_it: 'Manicotto ridotto in ottone con filetto femmina di misure diverse sui due lati. Collega due tubi di dimensioni diverse.',
     code:  'MESING-MUFA-RED',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-MUFA-RED.webp',
+    img: 'images/Grijanje/MESING/MUFA RED.jpg',
     variants: [
       { label: '3/8" × 1/2"', code: 'MESING-MUFA-RED-38-12' },
       { label: '3/8" × 3/4"', code: 'MESING-MUFA-RED-38-34' },
@@ -4536,7 +4598,7 @@ const PRODUCTS = [
     desc_it: 'Prolunga ridotta in ottone — filetto femmina su un lato e maschio di misura minore sull\'altro. Unisce prolunga e riduzione in un solo pezzo.',
     code:  'MESING-MUFA-NIPL-RED',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-MUFA-NIPL-RED.webp',
+    img: 'images/Grijanje/MESING/MUFA NIPL RED.jpg',
     variants: [
       { label: '3/8" × 1/4"', code: 'MESING-MUFA-NIPL-RED-38-14' },
       { label: '1/2" × 1/4"', code: 'MESING-MUFA-NIPL-RED-12-14' },
@@ -4562,7 +4624,10 @@ const PRODUCTS = [
     desc_it: 'Tappo in ottone per chiudere un attacco non utilizzato. Disponibile con filetto maschio (si avvita nel manicotto) e femmina (si avvita sul tubo).',
     code:  'MESING-CEP',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-CEP.webp',
+    imgs: [
+      'images/Grijanje/MESING/ČEP M.webp',
+      'images/Grijanje/MESING/ČEP Ž.webp',
+    ],
     variants: [
       { label: '1/4"', code: 'MESING-CEP-14-M', group: 'Muški navoj', group_it: 'Filetto maschio' },
       { label: '3/8"', code: 'MESING-CEP-38-M', group: 'Muški navoj', group_it: 'Filetto maschio' },
@@ -4593,7 +4658,10 @@ const PRODUCTS = [
     desc_it: 'Bocchettone in ottone: giunto smontabile che permette di staccare l\'impianto senza tagliare il tubo — indispensabile prima di boiler, pompe e valvole da manutenere.',
     code:  'MESING-HOLENDER',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-HOLENDER.webp',
+    imgs: [
+      'images/Grijanje/MESING/HOLENDER ŽŽ.jpg',
+      'images/Grijanje/MESING/HOLENDER MŽ.jpg'
+    ],
     variants: [
       { label: '1/2"', code: 'MESING-HOLENDER-12-ZZ', group: 'Ženski/ženski (ŽŽ)', group_it: 'Femmina/femmina' },
       { label: '3/4"', code: 'MESING-HOLENDER-34-ZZ', group: 'Ženski/ženski (ŽŽ)', group_it: 'Femmina/femmina' },
@@ -4617,7 +4685,10 @@ const PRODUCTS = [
     desc_it: 'Gomito in ottone a 90° per cambiare direzione all\'impianto. Disponibile con filetto femmina su entrambi i lati (FF) e maschio su un lato (MF).',
     code:  'MESING-KOLJENO',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-KOLJENO.webp',
+    imgs: [
+      'images/Grijanje/MESING/KOLJENO.jpg',
+      'images/Grijanje/MESING/KOLJENO MŽ.jpg'
+    ],
     variants: [
       { label: '1/4"', code: 'MESING-KOLJENO-14-ZZ', group: 'Ženski/ženski (ŽŽ)', group_it: 'Femmina/femmina' },
       { label: '3/8"', code: 'MESING-KOLJENO-38-ZZ', group: 'Ženski/ženski (ŽŽ)', group_it: 'Femmina/femmina' },
@@ -4648,7 +4719,7 @@ const PRODUCTS = [
     desc_it: 'Raccordo a T in ottone con filetto femmina su tutti e tre i lati. Serve a derivare un ramo dell\'impianto o a unire due linee in una.',
     code:  'MESING-TEE',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-TEE.webp',
+    img: 'images/Grijanje/MESING/TEE.webp',
     variants: [
       { label: '1/4"', code: 'MESING-TEE-14' },
       { label: '3/8"', code: 'MESING-TEE-38' },
@@ -4672,7 +4743,7 @@ const PRODUCTS = [
     desc_it: 'Bocchettone a gomito in ottone: unisce in un solo pezzo il cambio di direzione a 90° e il giunto smontabile. L\'impianto si stacca svitando il dado, senza tagliare il tubo — utile prima di boiler, pompe e valvole da manutenere.',
     code:  'MESING-HOLENDER-KOLJENO',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-HOLENDER-KOLJENO.webp',
+    img: 'images/Grijanje/MESING/holender koljeno.jpg',
     variants: [
       { label: '1/2"', code: 'MESING-HOLENDER-KOLJENO-12' },
       { label: '3/4"', code: 'MESING-HOLENDER-KOLJENO-34' },
@@ -4693,7 +4764,7 @@ const PRODUCTS = [
     desc_it: 'Codolo in ottone: raccordo corto con filetto maschio su un lato e filetto femmina di misura maggiore sull\'altro. Serve a passare a un filetto più grande allungando l\'impianto il minimo indispensabile.',
     code:  'MESING-KODULO',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-KODULO.webp',
+    img: 'images/Grijanje/MESING/KODULO.jpg',
     variants: [
       { label: '3/8" × 1/2"', code: 'MESING-KODULO-38-12' },
       { label: '1/2" × 3/4"', code: 'MESING-KODULO-12-34' },
@@ -4714,7 +4785,7 @@ const PRODUCTS = [
     desc_it: 'Croce in ottone con filetto femmina su tutti e quattro i lati. Unisce quattro linee in un solo punto — si usa dove altrimenti servirebbero due raccordi a T affiancati.',
     code:  'MESING-KRIZ',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-KRIZ.webp',
+    img: 'images/Grijanje/MESING/KRIŽ.jpg',
     variants: [
       { label: '1/2"', code: 'MESING-KRIZ-12' },
       { label: '3/4"', code: 'MESING-KRIZ-34' },
@@ -4735,7 +4806,7 @@ const PRODUCTS = [
     desc_it: 'Raccordo in ottone per serbatoi. Passa attraverso la parete del serbatoio e si serra con dado e guarnizione; al filetto esterno si collega rubinetto, valvola o tubo. Adatto a serbatoi d\'acqua in plastica e in metallo.',
     code:  'MESING-BADANJ',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-BADANJ.webp',
+    img: 'images/Grijanje/MESING/PRIKLJ ZA BADANJ.webp',
     variants: [
       { label: '1/2"', code: 'MESING-BADANJ-12' },
       { label: '3/4"', code: 'MESING-BADANJ-34' },
@@ -4754,7 +4825,7 @@ const PRODUCTS = [
     desc_it: 'Raccordo portagomma in ottone — filetto su un lato e codolo dentellato sull\'altro, sul quale si infila il tubo fissandolo con una fascetta. Il primo numero indica la misura del filetto in pollici, il secondo il diametro del tubo in millimetri.',
     code:  'MESING-SALUF',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-SALUF.webp',
+    img: 'images/Grijanje/MESING/PRIKLJ ZA ŠLAUF.jpg',
     variants: [
       { label: '1/2" × Ø 10 mm', code: 'MESING-SALUF-12-10' },
       { label: '1/2" × Ø 15 mm', code: 'MESING-SALUF-12-15' },
@@ -4780,7 +4851,7 @@ const PRODUCTS = [
     desc_it: 'Tutto filetto in ottone — nipplo filettato per l\'intera lunghezza (40 mm). Serve a colmare la distanza tra due elementi e a regolare la profondità di avvitamento, dato che si può avvitare quanto serve.',
     code:  'MESING-NAVOJ-DUGI',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/MESING/MESING-NAVOJ-DUGI.webp',
+    img: 'images/Grijanje/MESING/DUGI NAVOJ.jpg',
     variants: [
       { label: '1/2" × 40 mm', code: 'MESING-NAVOJ-DUGI-12-40' },
       { label: '3/4" × 40 mm', code: 'MESING-NAVOJ-DUGI-34-40' },
@@ -4827,7 +4898,7 @@ const PRODUCTS = [
     desc_it: 'Tappo inox con filetto maschio per chiudere un\'uscita non utilizzata su raccordi, valvole o collettori.',
     code:  'INOX-CEP',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-CEP.webp',
+    img: 'images/Grijanje/INOX/ČEP.jpg',
     variants: [
       { label: '1/2" M', code: 'INOX-CEP-12-M' },
       { label: '3/4" M', code: 'INOX-CEP-34-M' },
@@ -4848,7 +4919,7 @@ const PRODUCTS = [
     desc_it: 'Bocchettone inox (giunto smontabile) con sede di tenuta e ghiera girevole. Permette di smontare l\'impianto senza tagliare il tubo — a monte di boiler, pompe e valvole.',
     code:  'INOX-HOLENDER',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-HOLENDER.webp',
+    img: 'images/Grijanje/INOX/HOLENDER.jpg',
     variants: [
       { label: '3/8"', code: 'INOX-HOLENDER-38' },
       { label: '1/2"', code: 'INOX-HOLENDER-12' },
@@ -4870,7 +4941,7 @@ const PRODUCTS = [
     desc_it: 'Gomito filettato inox a 90° per il cambio di direzione della tubazione. Disponibile con filetto femmina su entrambi i lati (F/F) e nella versione maschio–femmina (M/F), da 3/8" a 2".',
     code:  'INOX-KOLJENO',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-KOLJENO.webp',
+    img: 'images/Grijanje/INOX/KOLJENO.jpg',
     variants: [
       { label: '3/8"', code: 'INOX-KOLJENO-38', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
       { label: '1/2"', code: 'INOX-KOLJENO-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
@@ -4899,7 +4970,7 @@ const PRODUCTS = [
     desc_it: 'Nipplo inox con filetto maschio su entrambi i lati. Collega due elementi con filetto femmina: manicotti, valvole, collettori.',
     code:  'INOX-NIPL',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-NIPL.webp',
+    img: 'images/Grijanje/INOX/NIPL.jpg',
     variants: [
       { label: '3/8"', code: 'INOX-NIPL-38' },
       { label: '1/2"', code: 'INOX-NIPL-12' },
@@ -4921,7 +4992,7 @@ const PRODUCTS = [
     desc_it: 'Manicotto inox con filetto femmina su entrambi i lati. Unisce due tubi o elementi con filetto maschio della stessa misura.',
     code:  'INOX-MUFA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-MUFA.webp',
+    img: 'images/Grijanje/INOX/MUFA.webp',
     variants: [
       { label: '3/8"', code: 'INOX-MUFA-38' },
       { label: '1/2"', code: 'INOX-MUFA-12' },
@@ -4943,7 +5014,7 @@ const PRODUCTS = [
     desc_it: 'Manicotto inox in versione corta — stessa funzione del manicotto standard ma con lunghezza ridotta, per collegamenti dove non c\'è spazio per quello intero.',
     code:  'INOX-MUFA-KRATKA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-MUFA-KRATKA.webp',
+    img: 'images/Grijanje/INOX/MUFA KRATKA.PNG',
     variants: [
       { label: '1/2"', code: 'INOX-MUFA-KRATKA-12' },
       { label: '3/4"', code: 'INOX-MUFA-KRATKA-34' },
@@ -4961,7 +5032,7 @@ const PRODUCTS = [
     desc_it: 'Prolunga inox con filetto su un lato ed estremità liscia da saldare sull\'altro. Passaggio dall\'impianto filettato a quello saldato in inox.',
     code:  'INOX-PRODUZETAK-VAR',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-PRODUZETAK-VAR.webp',
+    img: 'images/Grijanje/INOX/PROD NA VARENJE.jpg',
     variants: [
       { label: '1/2"', code: 'INOX-PRODUZETAK-VAR-12' },
       { label: '3/4"', code: 'INOX-PRODUZETAK-VAR-34' },
@@ -4982,7 +5053,7 @@ const PRODUCTS = [
     desc_it: 'Raccordo a T inox con filetto femmina su tutti e tre i lati. Serve a derivare una diramazione dalla linea principale.',
     code:  'INOX-TEE',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-TEE.webp',
+    img: 'images/Grijanje/INOX/TEE.jpg',
     variants: [
       { label: '3/8"', code: 'INOX-TEE-38' },
       { label: '1/2"', code: 'INOX-TEE-12' },
@@ -5004,7 +5075,7 @@ const PRODUCTS = [
     desc_it: 'Valvola a sfera inox con leva. Si monta in linea e chiude il flusso con un quarto di giro; il passaggio totale comporta una perdita di carico trascurabile da aperta.',
     code:  'INOX-KUGL-VENTIL',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-KUGL-VENTIL.webp',
+    img: 'images/Grijanje/INOX/KUGL VENT.jpg',
     variants: [
       { label: '1/2"', code: 'INOX-KUGL-VENTIL-12' },
       { label: '3/4"', code: 'INOX-KUGL-VENTIL-34' },
@@ -5025,7 +5096,7 @@ const PRODUCTS = [
     desc_it: 'Rubinetto a sfera inox con leva — organo di intercettazione a fine linea, per il prelievo e lo svuotamento dell\'impianto.',
     code:  'INOX-KUGL-SLAVINA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/INOX/INOX-KUGL-SLAVINA.webp',
+    img: 'images/Grijanje/INOX/KUGL SLAV.jpg',
     variants: [
       { label: '1/2"', code: 'INOX-KUGL-SLAVINA-12' },
       { label: '3/4"', code: 'INOX-KUGL-SLAVINA-34' },
@@ -5047,7 +5118,7 @@ const PRODUCTS = [
     desc_it: 'Gomito filettato zincato per il cambio di direzione della tubazione. Disponibile a 90° e 45°, con filetto femmina su entrambi i lati (F/F) o nella versione maschio–femmina (M/F), nelle misure da 1/2" a 3".',
     code:  'POC-KOLJENO',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-KOLJENO.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/KOLJENO.jpg',
     variants: [
       { label: '1/2"', code: 'POC-KOLJENO-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
       { label: '3/4"', code: 'POC-KOLJENO-34', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
@@ -5089,7 +5160,7 @@ const PRODUCTS = [
     desc_it: 'Raccordo a T zincato con filetto femmina su tutti e tre i lati. Serve a derivare una diramazione dalla linea principale.',
     code:  'POC-TEE',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-TEE.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/TEE.jpg',
     variants: [
       { label: '1/2"', code: 'POC-TEE-12' },
       { label: '3/4"', code: 'POC-TEE-34' },
@@ -5110,7 +5181,7 @@ const PRODUCTS = [
     desc_it: 'Tappo zincato con filetto maschio per chiudere un\'uscita non utilizzata su raccordi, valvole o collettori.',
     code:  'POC-CEP',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-CEP.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/ČEP.jpg',
     variants: [
       { label: '1/2"', code: 'POC-CEP-12' },
       { label: '3/4"', code: 'POC-CEP-34' },
@@ -5131,7 +5202,7 @@ const PRODUCTS = [
     desc_it: 'Bocchettone zincato (giunto smontabile) con sede di tenuta e ghiera girevole. Permette di smontare l\'impianto senza tagliare il tubo — indispensabile a monte di boiler, pompe e valvole.',
     code:  'POC-HOLENDER',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-HOLENDER.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/HOLENDER.jpg',
     variants: [
       { label: '1/2"', code: 'POC-HOLENDER-12', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
       { label: '3/4"', code: 'POC-HOLENDER-34', group: 'Unutarnji navoj (Ž/Ž)', group_it: 'Femmina–femmina' },
@@ -5158,7 +5229,7 @@ const PRODUCTS = [
     desc_it: 'Croce zincata con filetto femmina su tutti e quattro i lati. Collega quattro linee in un unico punto.',
     code:  'POC-KRIZ',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-KRIZ.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/KRIŽ.jpg',
     variants: [
       { label: '1/2"', code: 'POC-KRIZ-12' },
       { label: '3/4"', code: 'POC-KRIZ-34' },
@@ -5179,7 +5250,7 @@ const PRODUCTS = [
     desc_it: 'Manicotto zincato con filetto femmina su entrambi i lati. Unisce due tubi o elementi con filetto maschio della stessa misura.',
     code:  'POC-MUFA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-MUFA.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/MUFA.jpg',
     variants: [
       { label: '1/2"', code: 'POC-MUFA-12' },
       { label: '3/4"', code: 'POC-MUFA-34' },
@@ -5202,7 +5273,7 @@ const PRODUCTS = [
     desc_it: 'Nipplo zincato con filetto maschio su entrambi i lati. Collega due elementi con filetto femmina: manicotti, valvole, collettori.',
     code:  'POC-NIPL',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-NIPL.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/NIPL.jpg',
     variants: [
       { label: '1/2"', code: 'POC-NIPL-12' },
       { label: '3/4"', code: 'POC-NIPL-34' },
@@ -5225,7 +5296,7 @@ const PRODUCTS = [
     desc_it: 'Prolunga zincata — spezzone di tubo con filetto maschio su entrambi i lati, in lunghezze da 50 a 1000 mm. Serve a colmare distanze e a portare l\'attacco fuori dal muro o dal pozzetto.',
     code:  'POC-PRODUZETAK',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-PRODUZETAK.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/PROD.jpg',
     variants: [
       { label: '1/2" × 50 mm', code: 'POC-PRODUZETAK-12-50', group: '1/2"', group_it: '1/2"' },
       { label: '1/2" × 60 mm', code: 'POC-PRODUZETAK-12-60', group: '1/2"', group_it: '1/2"' },
@@ -5286,7 +5357,7 @@ const PRODUCTS = [
     desc_it: 'Riduzione zincata con filetto maschio nella misura maggiore e filetto femmina in quella minore. Passaggio da un diametro maggiore a uno minore su impianto filettato.',
     code:  'POC-REDUKCIJA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    // img: 'images/VODOMATERIJAL/POCINCANO/POC-REDUKCIJA.webp',
+    img: 'images/VODOMATERIJAL/POCINČANO/RED.jpg',
     variants: [
       { label: '3/4" × 1/2"', code: 'POC-REDUKCIJA-34-12' },
       { label: '1" × 1/2"', code: 'POC-REDUKCIJA-1-12' },
