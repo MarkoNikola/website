@@ -294,15 +294,26 @@ const PRODUCTS = [
 
 
   // ── GRIJANJE › DIMOVODNE CIJEVI ───────────────────────────────
-  /* {
+  {
     group: 'grijanje',
     cat:   'dimovodne-cijevi',
-    brand: 'TECNOGAS',
-    name:  'Dimovod DN80/125 – 1m',
-    desc:  'Koaksijalna dimovod cijev DN80/125, dužina 1 m. Za kondenzacijske kotlove, nehrđajući čelik.',
-    code:  'TG-DV-80-1M',
-     img: 'images/tecnogas-dimovod-80.jpg',
- }, */
+    name:    'DIMOVODNA CIJEV',
+    name_it: 'TUBO PER CANNA FUMARIA',
+    desc:    'Dimovodna cijev za odvod dimnih plinova od trošila do dimnjaka. Dostupna u promjerima Ø80, Ø120 i Ø180 mm te u više dužina, pa se trasa slaže iz gotovih komada bez rezanja na licu mjesta.',
+    desc_it: 'Tubo per lo scarico dei fumi dall\'apparecchio alla canna fumaria. Disponibile nei diametri Ø80, Ø120 e Ø180 mm e in più lunghezze, così il percorso si compone di pezzi pronti senza tagli in cantiere.',
+    code:  'DIMOVODNA-CIJEV',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/Grijanje/DIMOVODNE CIJEVI/DIMOVODNA-CIJEV.webp',
+    variants: [
+      { label: '250 mm',  code: 'DIM-80-250',   group: 'Ø80 mm',  group_it: 'Ø80 mm'  },
+      { label: '500 mm',  code: 'DIM-80-500',   group: 'Ø80 mm',  group_it: 'Ø80 mm'  },
+      { label: '1000 mm', code: 'DIM-80-1000',  group: 'Ø80 mm',  group_it: 'Ø80 mm'  },
+      { label: '500 mm',  code: 'DIM-120-500',  group: 'Ø120 mm', group_it: 'Ø120 mm' },
+      { label: '1000 mm', code: 'DIM-120-1000', group: 'Ø120 mm', group_it: 'Ø120 mm' },
+      { label: '500 mm',  code: 'DIM-180-500',  group: 'Ø180 mm', group_it: 'Ø180 mm' },
+      { label: '1000 mm', code: 'DIM-180-1000', group: 'Ø180 mm', group_it: 'Ø180 mm' },
+    ],
+  },
 
   // ── GRIJANJE › SPREMNICI, BUFFERI, BOJLERI ────────────────────
   {
@@ -1544,16 +1555,51 @@ const PRODUCTS = [
       { label: '60 cm', code: 'FLEX-VK-12-DG-60', group: '1/2" duža glava', group_it: '1/2" attacco lungo' },
     ],
   },
-  // ── VODOMATERIJAL › WC DASKE ──────────────────────────────────
- /* {
-    group: 'vodomaterijal',
+  // ── SANITARIJE › WC DASKE ─────────────────────────────────────
+  {
+    group: 'sanitarije',
     cat:   'wc-daske',
-    brand: 'GEBERIT',
-    name:  'Sedo WC daska softclose',
-    desc:  'WC daska s mekim zatvaranjem, bijela. Uklanjanje jednim pritiskom dugmeta za lako čišćenje.',
-    code:  'GE-SED-WCS',
-    // img: 'images/geberit-sedo-daska.jpg',
-  },*/
+    name:    'WC DASKA ARIZONA',
+    name_it: 'SEDILE WC ARIZONA',
+    desc:    'WC daska ARIZONA s poklopcem i pripadajućim priborom za montažu.',
+    desc_it: 'Sedile WC ARIZONA con coperchio e relativa minuteria di fissaggio.',
+    // ŠIFRA: privremena — zamijenite pravim artiklom kad bude poznat.
+    code:  'WC-DASKA-ARIZONA',
+    // SLIKA: dodajte kad bude dostupna, npr.
+    // img: 'images/VODOMATERIJAL/WC DASKE/ARIZONA.webp',
+  },
+  {
+    group: 'sanitarije',
+    cat:   'wc-daske',
+    name:    'WC DASKA CHAMONIX',
+    name_it: 'SEDILE WC CHAMONIX',
+    desc:    'WC daska CHAMONIX s poklopcem i pripadajućim priborom za montažu.',
+    desc_it: 'Sedile WC CHAMONIX con coperchio e relativa minuteria di fissaggio.',
+    // ŠIFRA: privremena — zamijenite pravim artiklom kad bude poznat.
+    code:  'WC-DASKA-CHAMONIX',
+    // img: 'images/VODOMATERIJAL/WC DASKE/CHAMONIX.webp',
+  },
+  {
+    group: 'sanitarije',
+    cat:   'wc-daske',
+    name:    'WC DASKA PRESTIGE',
+    name_it: 'SEDILE WC PRESTIGE',
+    desc:    'WC daska PRESTIGE s poklopcem i pripadajućim priborom za montažu.',
+    desc_it: 'Sedile WC PRESTIGE con coperchio e relativa minuteria di fissaggio.',
+    code:  '38348',
+    // img: 'images/VODOMATERIJAL/WC DASKE/PRESTIGE.webp',
+  },
+  {
+    group: 'sanitarije',
+    cat:   'wc-daske',
+    name:    'WC DASKA TANGO',
+    name_it: 'SEDILE WC TANGO',
+    desc:    'WC daska TANGO s poklopcem i pripadajućim priborom za montažu.',
+    desc_it: 'Sedile WC TANGO con coperchio e relativa minuteria di fissaggio.',
+    // ŠIFRA: privremena — zamijenite pravim artiklom kad bude poznat.
+    code:  'WC-DASKA-TANGO',
+    // img: 'images/VODOMATERIJAL/WC DASKE/TANGO.webp',
+  },
 
   // ── VODOMATERIJAL › BATERIJE ──────────────────────────────────
   {
@@ -2171,6 +2217,157 @@ const PRODUCTS = [
       'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 3.webp',
       'images/VODOMATERIJAL/TUŠ STIJENKE/PROZIRNO STAKLO/ROCCO ECO - 80 X 200 PROZIRNO STAKLO 4.webp'
     ]
+  },
+
+  {
+    group: 'sanitarije',
+    cat:   'kabine',
+    brand: 'ROCCO ECO',
+    name:    'KABINA TUŠ S KADOM KVADRATNA 90×90 – MAT STAKLO',
+    name_it: 'CABINA DOCCIA CON PIATTO QUADRATA 90×90 – VETRO SATINATO',
+    desc:    'Kabina tuš s kadom, kvadratna 90×90 cm, visina 200 cm, mat staklo. ROCCO ECO.',
+    desc_it: 'Cabina doccia con piatto, quadrata 90×90 cm, altezza 200 cm, vetro satinato. ROCCO ECO.',
+    code:  '31320',
+    // SLIKA: dodajte kad bude dostupna.
+  },
+  {
+    group: 'sanitarije',
+    cat:   'kabine',
+    brand: 'ROCCO',
+    name:    'KABINA TUŠ S KADOM 100×80 – PROZIRNO STAKLO',
+    name_it: 'CABINA DOCCIA CON PIATTO 100×80 – VETRO TRASPARENTE',
+    desc:    'Kabina tuš s kadom, 100×80 cm, visina 196 cm, prozirno staklo. ROCCO.',
+    desc_it: 'Cabina doccia con piatto, 100×80 cm, altezza 196 cm, vetro trasparente. ROCCO.',
+    code:  '31434',
+  },
+  {
+    group: 'sanitarije',
+    cat:   'kabine',
+    brand: 'ROCCO ECO',
+    name:    'KABINA TUŠ KVADRATNA – KROM PROFILI h-195',
+    name_it: 'CABINA DOCCIA QUADRATA – PROFILI CROMATI h-195',
+    desc:    'Kabina tuš kvadratna s krom profilima, visina 195 cm. ROCCO ECO. Dostupna 90×90 cm s mat staklom i 80×80 cm s prozirnim staklom.',
+    desc_it: 'Cabina doccia quadrata con profili cromati, altezza 195 cm. ROCCO ECO. Disponibile 90×90 cm con vetro satinato e 80×80 cm con vetro trasparente.',
+    code:  '31218',
+    variants: [
+      { label: '90×90 cm – mat staklo',            label_it: '90×90 cm – vetro satinato',      code: '31218' },
+      // NAPOMENA: u popisu su stigla DVA artikla s istim opisom (80×80,
+      // prozirno) i različitim šiframa — zato su razlučeni brojem artikla.
+      { label: '80×80 cm – prozirno (art. 31224)', label_it: '80×80 cm – trasparente (art. 31224)', code: '31224' },
+      { label: '80×80 cm – prozirno (art. 31225)', label_it: '80×80 cm – trasparente (art. 31225)', code: '31225' },
+    ],
+  },
+  {
+    group: 'sanitarije',
+    cat:   'kabine',
+    brand: 'ROCCO ECO',
+    name:    'KABINA TUŠ POLUKRUŽNA 80×80 – MAT STAKLO',
+    name_it: 'CABINA DOCCIA SEMICIRCOLARE 80×80 – VETRO SATINATO',
+    desc:    'Kabina tuš polukružna 80×80 cm, visina 180 cm, mat staklo. ROCCO ECO.',
+    desc_it: 'Cabina doccia semicircolare 80×80 cm, altezza 180 cm, vetro satinato. ROCCO ECO.',
+    code:  '31213',
+  },
+  {
+    group: 'sanitarije',
+    cat:   'kabine',
+    brand: 'ROCCO ECO',
+    name:    'KABINA TUŠ POLUKRUŽNA – MAT STAKLO h-180',
+    name_it: 'CABINA DOCCIA SEMICIRCOLARE – VETRO SATINATO h-180',
+    // NAPOMENA: za ovaj artikl dimenzija nije bila navedena u popisu —
+    // dopunite je kad bude poznata (vjerojatno 90×90).
+    desc:    'Kabina tuš polukružna, visina 180 cm, mat staklo. ROCCO ECO.',
+    desc_it: 'Cabina doccia semicircolare, altezza 180 cm, vetro satinato. ROCCO ECO.',
+    code:  '31217',
+  },
+  {
+    group: 'sanitarije',
+    cat:   'kabine',
+    brand: 'AQUACASA',
+    name:    'TUŠ KABINA POLUKRUŽNA AQUACASA – 5 mm',
+    name_it: 'CABINA DOCCIA SEMICIRCOLARE AQUACASA – 5 mm',
+    desc:    'Polukružna tuš kabina AQUACASA, staklo debljine 5 mm, visina 185 cm. Dostupna u radijusu 80 i 90 cm te u izvedbi s mat, prozirnim i staklom s kvadratićima.',
+    desc_it: 'Cabina doccia semicircolare AQUACASA, vetro da 5 mm, altezza 185 cm. Disponibile con raggio 80 e 90 cm e con vetro satinato, trasparente o a quadretti.',
+    code:  'AQUACASA-POLUKRUZNA',
+    variants: [
+      { label: 'R80×185 – mat staklo',         label_it: 'R80×185 – vetro satinato',    code: 'JA-5280',  group: 'R80 cm', group_it: 'R80 cm' },
+      { label: 'R80×185 – s kvadratićima',     label_it: 'R80×185 – vetro a quadretti', code: 'JAK-5281', group: 'R80 cm', group_it: 'R80 cm' },
+      { label: 'R90×185 – prozirno staklo',    label_it: 'R90×185 – vetro trasparente', code: 'JA-5292',  group: 'R90 cm', group_it: 'R90 cm' },
+      { label: 'R90×185 – s kvadratićima',     label_it: 'R90×185 – vetro a quadretti', code: 'JAK-5291', group: 'R90 cm', group_it: 'R90 cm' },
+    ],
+  },
+
+  // ── SANITARIJE › KADE ─────────────────────────────────────────
+  {
+    group: 'sanitarije',
+    cat:   'kade',
+    brand: 'HIDRA DOMINA',
+    name:    'KADA TUŠ PVC POLUKRUŽNA S OBLOGOM – BIJELA',
+    name_it: 'PIATTO DOCCIA PVC SEMICIRCOLARE CON PANNELLO – BIANCO',
+    desc:    'Polukružna tuš kada od PVC-a s oblogom, bijela. HIDRA DOMINA. Obloga prekriva prostor ispod kade, pa nije potrebno dodatno zidanje.',
+    desc_it: 'Piatto doccia semicircolare in PVC con pannello frontale, bianco. HIDRA DOMINA. Il pannello chiude lo spazio sotto il piatto, senza opere murarie aggiuntive.',
+    code:  'HIDRA-DOMINA',
+    variants: [
+      { label: '80×80 cm', code: '30718' },
+      { label: '90×90 cm', code: '30747' },
+    ],
+  },
+  {
+    group: 'sanitarije',
+    cat:   'kade',
+    brand: 'AQUAMAX',
+    name:    'KADA TUŠ AKRILNA POLUKRUŽNA LIBRA – BIJELA',
+    name_it: 'PIATTO DOCCIA ACRILICO SEMICIRCOLARE LIBRA – BIANCO',
+    desc:    'Polukružna tuš kada od akrila, bijela. AquaMax LIBRA.',
+    desc_it: 'Piatto doccia semicircolare in acrilico, bianco. AquaMax LIBRA.',
+    code:  '30686',
+  },
+
+  // ── SANITARIJE › TUŠ KANALICE ─────────────────────────────────
+  {
+    group: 'sanitarije',
+    cat:   'tus-kanalice',
+    brand: 'LIV',
+    name:    'TUŠ KANALICA LIV GALAXY',
+    name_it: 'CANALINA DOCCIA LIV GALAXY',
+    desc:    'Linijska tuš kanalica LIV GALAXY za ugradnju u pod tuš kabine. Dostupna u dužinama od 450 do 850 mm.',
+    desc_it: 'Canalina doccia lineare LIV GALAXY da incasso a pavimento. Disponibile nelle lunghezze da 450 a 850 mm.',
+    code:  'LIV-GALAXY',
+    variants: [
+      { label: '450 mm', code: '674718' },
+      // ŠIFRA: privremena — u popisu nije bila navedena.
+      { label: '650 mm', code: 'LIV-GALAXY-650' },
+      { label: '750 mm', code: '674730' },
+      { label: '850 mm', code: '674736' },
+    ],
+  },
+  {
+    group: 'sanitarije',
+    cat:   'tus-kanalice',
+    brand: 'LIV',
+    name:    'TUŠ KANALICA LIV ENERGY',
+    name_it: 'CANALINA DOCCIA LIV ENERGY',
+    desc:    'Linijska tuš kanalica LIV ENERGY za ugradnju u pod tuš kabine. Dostupna u dužinama 750 i 850 mm.',
+    desc_it: 'Canalina doccia lineare LIV ENERGY da incasso a pavimento. Disponibile nelle lunghezze 750 e 850 mm.',
+    code:  'LIV-ENERGY',
+    variants: [
+      { label: '750 mm', code: '674731' },
+      { label: '850 mm', code: '674737' },
+    ],
+  },
+  {
+    group: 'sanitarije',
+    cat:   'tus-kanalice',
+    brand: 'LIV',
+    name:    'TUŠ KANALICA LIV – CRNA',
+    name_it: 'CANALINA DOCCIA LIV – NERA',
+    desc:    'Linijska tuš kanalica LIV u crnoj izvedbi, za ugradnju u pod tuš kabine. Dostupna u dužinama 650 i 750 mm.',
+    desc_it: 'Canalina doccia lineare LIV in finitura nera, da incasso a pavimento. Disponibile nelle lunghezze 650 e 750 mm.',
+    code:  'LIV-CRNA',
+    variants: [
+      // ŠIFRA: privremena — u popisu nije bila navedena.
+      { label: '650 mm', code: 'LIV-CRNA-650' },
+      { label: '750 mm', code: '675025' },
+    ],
   },
 
   // ── VODOMATERIJAL › BOJLERI ───────────────────────────────────
