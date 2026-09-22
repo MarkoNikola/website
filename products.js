@@ -1975,7 +1975,7 @@ const PRODUCTS = [
     desc:  'Baterija tuš jednoručna INFINITY UNITAS.',
     desc_it: 'Miscelatore doccia monocomando INFINITY UNITAS.',
     code:  '00401',
-    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA TUŠ 00401 INFINITY.JPG',
+    img: 'images/VODOMATERIJAL/SLAVINE/UNITAS/INFINITY/SLAVINA ZA TUŠ 00401 INFINITY.jpg',
   },
   {
     group: 'sanitarije',
@@ -5014,7 +5014,7 @@ const PRODUCTS = [
     desc_it: 'Manicotto inox in versione corta — stessa funzione del manicotto standard ma con lunghezza ridotta, per collegamenti dove non c\'è spazio per quello intero.',
     code:  'INOX-MUFA-KRATKA',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/INOX/MUFA KRATKA.PNG',
+    img: 'images/INOX/MUFA-KRATKA.webp',
     variants: [
       { label: '1/2"', code: 'INOX-MUFA-KRATKA-12' },
       { label: '3/4"', code: 'INOX-MUFA-KRATKA-34' },
@@ -5032,7 +5032,7 @@ const PRODUCTS = [
     desc_it: 'Prolunga inox con filetto su un lato ed estremità liscia da saldare sull\'altro. Passaggio dall\'impianto filettato a quello saldato in inox.',
     code:  'INOX-PRODUZETAK-VAR',
     // SLIKA: dodajte kad bude dostupna, npr.
-    img: 'images/Grijanje/INOX/PROD NA VARENJE.jpg',
+    img: 'images/INOX/PROD-NA-VARENJE.jpg',
     variants: [
       { label: '1/2"', code: 'INOX-PRODUZETAK-VAR-12' },
       { label: '3/4"', code: 'INOX-PRODUZETAK-VAR-34' },

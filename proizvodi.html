@@ -782,7 +782,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
   </div>
 </footer>
 
-<script src="products.js?v=39"></script>
+<script src="products.js?v=40"></script>
 <script>
 const CAT_LABELS = {
   // Grijanje
@@ -1050,6 +1050,17 @@ function placeholderSvg(stroke) {
    fotografija nije uploadana). Bez ovoga preglednik nacrta ikonu slomljene
    slike; ovako kartica izgleda isto kao kod proizvoda koji sliku nema. */
 function cardImgFallback(img) {
+  /* Prekinut zahtjev nije isto što i nepostojeća slika: ako se mreža
+     ponovno iscrta ili veza zapne, preglednik okine onerror iako je
+     datoteka uredno na poslužitelju. Zato jednom pokušamo ponovno —
+     tek ako i to padne, stavljamo sivi okvir. */
+  if (!img.dataset.retried) {
+    img.dataset.retried = '1';
+    const src = img.getAttribute('src');
+    img.removeAttribute('src');
+    setTimeout(function () { img.setAttribute('src', src); }, 400);
+    return;
+  }
   const box = img.parentElement;
   if (!box) { img.remove(); return; }
   img.remove();
@@ -1112,6 +1123,10 @@ function syncChecked() {
 }
 
 // ── Main filter ───────────────────────────────────────────────
+/* Zadnji ispis mreže — služi da isti sadržaj ne prepisujemo preko
+   postojećeg DOM-a i time ne prekinemo preuzimanje slika. */
+let lastGridHtml = null;
+
 function filterCards() {
   syncChecked();
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
@@ -1159,6 +1174,7 @@ function filterCards() {
       <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <p data-i18n="shop.empty.desc">Nema proizvoda za odabrani filtar.</p>
     </div>`;
+    lastGridHtml = null;   // sljedeći ispis s rezultatima mora proći
     pagWrap.innerHTML = '';
     pagInfo.textContent = '';
     return;
@@ -1171,7 +1187,7 @@ function filterCards() {
   const startIdx = (currentPage - 1) * PRODUCTS_PER_PAGE;
   const pageItems = filtered.slice(startIdx, startIdx + PRODUCTS_PER_PAGE);
 
-  grid.innerHTML = pageItems.map((p, i) => {
+  const html = pageItems.map((p, i) => {
     const [bg, stroke] = GROUP_COLORS[p.group] || ['#f4f6f8','#888'];
     const label = catName(p.cat);
     const hasVariants = p.variants && p.variants.length > 0;
@@ -1203,6 +1219,22 @@ function filterCards() {
       </div>
     </a>`;
   }).join('');
+
+  /* Mreža se pri otvaranju stranice iscrtava više puta: jednom iz ove
+     skripte, pa opet kad lang.js na DOMContentLoaded pozove
+     refreshDynamicContent(), i treći put ako je u adresi ?cat=.
+     Svako novo innerHTML baca <img> elemente koji su tek počeli
+     preuzimati sliku — preglednik te zahtjeve prekine, okine se onerror
+     i cardImgFallback trajno zamijeni sliku sivim okvirom. Na 40 velikih
+     fotografija to je značilo da se dio slika nikad ne prikaže, i to
+     različito od preglednika do preglednika, ovisno o tome što je stiglo
+     prije prekida.
+     Zato ne diramo DOM ako je ispis identičan — slike tada mirno
+     nastave preuzimanje. */
+  if (html !== lastGridHtml) {
+    lastGridHtml = html;
+    grid.innerHTML = html;
+  }
 
   renderPagination(totalPages, count, startIdx, pageItems.length);
 }
@@ -1444,8 +1476,12 @@ function applyListSeo(group, cat) {
     const btn = document.querySelector(`.gtab[data-group="${group}"]`);
     quickGroup(group, btn);
   }
+  /* Kategoriju iz adrese označavamo ODMAH, prije prvog iscrtavanja.
+     Dok je to stajalo u setTimeout-u, mreža se prvo iscrtala bez
+     filtra (i počela preuzimati slike svih 40 proizvoda), pa se 20 ms
+     poslije iscrtala ponovno — prvi niz slika bio je bačen. */
   if (cat) {
-    setTimeout(() => {
+    (() => {
       const cb = document.querySelector(`.sf-cb[data-cat="${cat}"]`);
       if (cb) {
         cb.checked = true;
@@ -1455,13 +1491,12 @@ function applyListSeo(group, cat) {
         const chev = document.getElementById('sfch-' + grp);
         if (sub) sub.classList.add('open');
         if (chev) chev.classList.add('open');
-        filterCards();
       }
-    }, 20);
+    })();
   }
   syncSidebarLabels();
   buildCounts();
-  filterCards();
+  filterCards();   // jedini prvi ispis — već s primijenjenim filtrom
 })();
 
 document.querySelectorAll('.mob-menu a').forEach(a =>
