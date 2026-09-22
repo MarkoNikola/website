@@ -95,7 +95,16 @@ nav{position:fixed;top:36px;left:0;right:0;z-index:1000;background:rgba(13,22,32
 .page-body{display:flex;align-items:flex-start;padding:0 6% 80px;gap:28px;margin-top:28px}
 
 /* SIDEBAR */
-.sidebar{width:240px;flex-shrink:0;position:sticky;top:130px}
+/* Kad su sve skupine otvorene, filter je viši od ekrana. Bez vlastitog
+   klizanja korisnik mora pomicati CIJELU stranicu da vidi dno filtera —
+   a tada mu proizvodi odu izvan ekrana. Zato filter klizi sam za sebe. */
+.sidebar{width:240px;flex-shrink:0;position:sticky;top:130px;
+  max-height:calc(100vh - 150px);overflow-y:auto;overscroll-behavior:contain;
+  padding-right:8px;margin-right:-8px}
+.sidebar::-webkit-scrollbar{width:7px}
+.sidebar::-webkit-scrollbar-thumb{background:var(--gray2);border-radius:4px}
+.sidebar::-webkit-scrollbar-thumb:hover{background:var(--gray3)}
+.sidebar{scrollbar-width:thin;scrollbar-color:var(--gray2) transparent}
 .sidebar-header-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:10px}
 .sidebar-title{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gray3);font-weight:600;flex:1;min-width:0}
 .sidebar-clear{font-family:'Barlow Condensed',sans-serif;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--red);cursor:pointer;font-weight:700;border:none;padding:6px 10px;border-radius:4px;display:none;align-items:center;gap:5px;transition:background .2s;flex-shrink:0}
@@ -190,7 +199,10 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:40px 6% 24px}
 @media(max-width:900px){
   .nav-links{display:none}.hamburger{display:flex}
   .page-body{flex-direction:column;padding:0 5% 60px}
-  .sidebar{display:none;width:100%;position:static}
+  /* Na mobitelu je filter ladica preko cijele visine — bez ograničenja
+     visine i bez negativne margine iz stolnog rasporeda. */
+  .sidebar{display:none;width:100%;position:static;max-height:none;
+    padding-right:0;margin-right:0}
   .sidebar.mob-open{display:block;position:fixed;top:68px;left:0;bottom:0;width:300px;background:#fff;z-index:300;overflow-y:auto;padding:20px 20px 90px;box-shadow:4px 0 24px rgba(0,0,0,.18)}
   .sidebar.mob-open .sidebar-apply{display:block;position:fixed;bottom:0;left:0;width:300px;padding:14px 20px;background:#fff;border-top:1px solid var(--gray2);box-shadow:0 -4px 16px rgba(0,0,0,.08);z-index:301}
   .mob-filter-btn{display:flex}
